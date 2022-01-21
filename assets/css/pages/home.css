@@ -1,0 +1,5 @@
+@import url('../variables.css');
+
+h1 {
+  color: var(--lead-primary);
+}

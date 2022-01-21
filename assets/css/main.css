@@ -1,0 +1,11 @@
+@import url('normalize.css');
+@import url('variables.css');
+
+
+/* 
+  Global CSS
+*/
+
+.active a{
+  color: var(--lead-secondary);
+}
