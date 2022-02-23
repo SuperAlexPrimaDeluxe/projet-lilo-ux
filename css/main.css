@@ -11,9 +11,9 @@ body {
   padding: 0;
 }
 
-/* [ALEX] - CSS PROPRE À LA PAGE ACTUS */
+/* [ALEX] - CSS PROPRE À LA PAGE [ACTUS] */
 
-main#actus{
+main#actus {
   position: relative;
   width: 100%;
   display: grid;
@@ -25,102 +25,192 @@ main#actus{
   justify-content: center;
 }
 
-.buttonsactus{
-  width:80%;
+.buttonsactus {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 50px;
 }
 
-#b1actus{
+#b1actus {
   background-color: #E5E5E5;
 }
 
-#b2actus{
+#b2actus {
   background-color: hotpink;
 }
 
-#b3actus{
+#b3actus {
   background-color: #000000;
 }
 
-.buttonactus{
+.buttonactus {
   cursor: pointer;
   position: relative;
-  display: block;  
-  width:48px;
-  height:24px;
-  border-radius:40px;
+  display: block;
+  width: 48px;
+  height: 24px;
+  border-radius: 40px;
   background: #f0efef;
-  box-shadow:inset 0px 0px 3px rgba(0,0,0,0.335);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.335);
   transition: .3s;
 }
 
-.buttonactus:after{
-    content:'';
-    display: block;
-    border-radius: 50px;;
-    width:20px;
-    height:20px;
-    top:2px;
-    left:2px;
-    position: absolute;
-    background:rgb(255, 255, 255);
-    box-shadow: 2px 1px 1px 0 rgba(0,0,0,0.335);
-    transition: .3s;
+.buttonactus:after {
+  content: '';
+  display: block;
+  border-radius: 50px;
+  ;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 1px 1px 0 rgba(0, 0, 0, 0.335);
+  transition: .3s;
 }
 
-.buttonactus span{
-position: absolute;
-top:25px;
+.buttonactus span {
+  position: absolute;
+  top: 25px;
 }
 
-.buttonactus.checked{
+.buttonactus.checked {
   background: hotpink;
 }
 
-.buttonactus.checked:after{
-    transform: translateX(-100%);
-    left:calc(100% - 2px);
+.buttonactus.checked:after {
+  transform: translateX(-100%);
+  left: calc(100% - 2px);
 }
 
-.buttonactus:active:after{
-    width:40px;
+.buttonactus:active:after {
+  width: 40px;
 }
 
-.titrearticleactus{
+.titrearticleactus {
   font-family: 'Roboto Mono', monospace;
   font-weight: 800;
   letter-spacing: 0.4em;
 }
 
-.voir_plus_actu_actus{
+.voir_plus_actu_actus {
   margin: 25px 0px;
   color: white;
 }
 
-.voir_plus_actu_black{
+.voir_plus_actu_black {
   margin: 25px 0px;
   color: black;
 }
 
 /* Le paragraphe des articles */
 
-p.articlepara{
-margin-bottom: 20px;
+p.articlepara {
+  margin-bottom: 20px;
+  /* font-size: 14px; */
+  /* margin-bottom: 8px; */
 }
 
-.allactus{
-/* max-height:100vh; */
-overflow:hidden;
-transition: .8s ease-in-out;
+.allactus {
+  /* max-height:100vh; */
+  overflow: hidden;
+  transition: .8s ease-in-out;
 }
 
-.hidden{
-  display:none;
+.hidden {
+  display: none;
   /* max-height: 0px;
   transition: .5s; */
 }
+
+/* section{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap:50px;
+  } */
+
+.actutitle {
+  text-align: center;
+}
+
+/* CI-DESSOUS LE CSS RELATIF AUX CARTES POUR LE TRI DANS LA PAGE ACTU */
+
+.pga_card {
+  display: flex;
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.pga_container:nth-child(3n + 1) .pga_card {
+  background-color: #242424;
+  color: white;
+}
+
+.pga_container:nth-child(3n + 2) .pga_card {
+  background-color: #E5E5E5;
+  color: #111111;
+}
+
+.pga_container:nth-child(3n + 3) .pga_card {
+  background-color: #D1557A;
+  color: white;
+}
+
+.pga_image_container {
+  width: 35%;
+}
+
+.pga_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .pga_card:hover{
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.171));
+  transform: scale(1.02);
+} */
+
+.pga_informations {
+  /* font-size: 12px;
+  color: black; */
+  width: 65%;
+  margin: 10px;
+}
+
+.spanactus {
+  font-size: 12px;
+}
+
+.titrearticleactus {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.show {
+  display: block;
+}
+
+/* CI-DESSOUS TOUT CE QUI CONCERNE LE RESPONSIVE */
+
+@media(max-width:768px) {
+
+/* [ALEX] - CSS PROPRE À LA PAGE [ACTUS]-[RESPONSIVE] */
+
+}
+
+
+
