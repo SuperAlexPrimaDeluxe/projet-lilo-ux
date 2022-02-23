@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="main.js" defer></script>
+    <title>Les actualité de LILO</title>
+</head>
+
+<body>
+
+    <!--01 - Titre principal de ma page -->
+    <h1 class="actutitle">Mes actus</h1>
+
+    <!--02- Zone contenant les filtres dans ma page -->
+    <div class="buttonsactus">
+
+        <!--Switch 0 : All-->
+
+        <div class="buttonactus " id="b0actus" data-product="all">
+            <span>All</span>
+        </div>
+
+        <!--Switch 1 : Articles-->
+
+        <div class="btn buttonactus" id="b1actus" data-product="article">
+            <span>Article</span>
+        </div>
+
+        <!--Switch 2 : Ateliers-->
+
+        <div class="btn buttonactus" id="b2actus" data-product="atelier">
+            <span>Ateliers</span>
+        </div>
+
+        <!--Switch 3 : Pop-up Store-->
+
+        <div class="btn buttonactus" id="b3actus" data-product="popupstore">
+            <span>Popup Stores</span>
+        </div>
+
+    </div>
+
+    <!--Fin de la zone pour les switchs-->
+    <!--Début du main-->
+
+    <main id="actus">
+
+        <!--Carte article 1 de type popupstore-->
+
+        <article class="pga_container popupstore allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/1.imprimante.svg" alt="imprimante">
+                </div>
+                <div class="pga_informations popupstore all">
+                    <span>26.01.22</span>
+                    <h2 class="titrearticleactus">SORRY, WE ARE CLOSED</h2>
+                    <p class="articlepara">Le site fermera ses portes, ce soir (20h), afin d'avancer sur les projets
+                        créer,produire des
+                        nouveautés... et penser à réassortir les boutiques en demande.
+                        On se retrouve tout bientôt, Courage (...)
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_actus">voir plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 2 de type article-->
+
+        <article class="pga_container article allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/2.badgesejeter.svg" alt="badge bon chips bon genre">
+                </div>
+
+                <div class="pga_informations">
+                    <span>24.01.22</span>
+                    <h2>JOURNEE MONDIALE DU CAVIARDIAGE</h2>
+                    <p class="articlepara">Et non. Ne vous méprenez pas ! Nous pourrions croire qu’il s’agit d’une
+                        journée spécialement
+                        destinée à célébrer les vieux œufs d’esturgeon qui croupissent et pourrissent au fond des grands
+                        frigos américains des riches qui n’ont aucun problèmes financiers et qui s’en balancent
+                        royalement (« caviar d’âge », pour ceux qui dorment au fond de la classe)… mais non (...)</p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
+                        plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 3 de type atelier-->
+
+        <article class="pga_container atelier allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/3.atelier.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>11.01.22</span>
+                    <h2>Atelier ouvert!</h2>
+                    <p>Dites-moi, un petit « atelier ouvert », ça vous dit ?
+                        <br>Des minis prix et des fins de séries, puis des nouveautés, aussi…
+                        On se prévoirait ça en février ?
+                        Pour info, je suis à 4 km de Mons.
+                        Si vous venez de plus loin, musées, brasseries, restos, commerces, cinéma, lieux culturels,
+                        randonnées ,… à découvrir !
+                        C’est l’occasion, non ?
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 4 de type popupstore-->
+
+        <article class="pga_container popupstore allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/11.popupstore.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>23.12.21</span>
+                    <h2>Brock'n'Roll FACTORY</h2>
+                    <p>Ce week-end, lors du Brock'n'Roll FACTORY, j’ai découvert le centre de la céramique Keramis, à La
+                        Louvière.
+                        <br>Ce lieu est à voir, les amis ! Tant pour ses splendides collections que pour le bâtiment.
+                        J’ai été soufflée.
+                        <br>Entendre des bribes de conversations telles que : « Tu vois, ma tante était à ce poste-là… »
+                        ou « Papy a travaillé X années, ici. » était le petit plus émouvant.
+                        <br>La transmission…
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 5 de type article-->
+
+        <article class="pga_container article allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/concours.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>21.12.21</span>
+                    <h2>CONCOURS</h2>
+                    <p>Cette lumineuse journée de solstice d’hiver est parfaite pour lancer mon petit concours annuel
+                        Une paire de BO en laiton brut et 5 badges sympathiques pour pimper vos journées.
+                        <br>Pour participer, commentez et dévoilez-nous (sous le post d’origine) le ou les badges de
+                        toute la collection « Les ateliers de Lilo » qui vous correspondent le plus.
+                        Tirage au sort le 28 décembre, à l’occasion de mon anniversaire (HOP!Date que je glisse, ni vu
+                        ni connu, en toute innocence)
+                        Good luck
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
+                        plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 6 de type atelier-->
+
+        <article class="pga_container atelier allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/12.atelier.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>11.01.22</span>
+                    <h2>SONGE D'UNE NUIT D'ETE.</h2>
+                    <p>Le site www.lesateliersdelilo.com est ouvert.
+                        Les minis prix ne sont pas encore encodés et les nouveautés arriveront en février.
+                        Je mets les bouchées doubles.
+                        D’ici-là, vous pouvez déjà vous amuser un petit peu.
+                        Belle journée ensoleillée.
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 7 de type popupstore-->
+
+        <article class="pga_container popupstore allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/6.pc.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>25.11.21</span>
+                    <h2>FLASH INFO boutique éphémère</h2>
+                    <p> Le 3 décembre, j’ouvrirai une boutique éphémère en ligne.
+                        <br>Ça sera peut-être même plutôt, si je fais ça bien.
+                        Il ne m’est plus possible de répondre à vos commandes via cette page, je n’arrive pas à suivre,
+                        c’est chronophage et cela me stresse de voir tous vos messages « non-lus » dans ma boîte de
+                        réception (...)
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Carte article 8 de type article-->
+
+        <article class="pga_container article allactus">
+            <div class="pga_card">
+                <div class="pga_image_container">
+                    <img src="images/4.badge.svg" alt="badge bon chips bon genre">
+                </div>
+                <div class="pga_informations">
+                    <span>11.01.22</span>
+                    <h2>Salut les musclées</h2>
+                    <p>Le site www.lesateliersdelilo.com est ouvert.
+                        <br>Les minis prix ne sont pas encore encodés et les nouveautés arriveront en février.
+                        Je mets les bouchées doubles.
+                        D’ici-là, vous pouvez déjà vous amuser un petit peu
+                        <br>Belle journée ensoleillée.
+                    </p>
+                    <a href="#" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
+                        plus</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+
+</html>

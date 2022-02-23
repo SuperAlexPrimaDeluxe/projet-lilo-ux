@@ -1,0 +1,126 @@
+/* 01 - IMPORT DES POLICES UTILISÉE DANS l'ENSEMBLE DU SITE */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* 02- ON STANDARDISE LE BODY ET ON LE MET À ZERO */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* [ALEX] - CSS PROPRE À LA PAGE ACTUS */
+
+main#actus{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsactus{
+  width:80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 50px;
+}
+
+#b1actus{
+  background-color: #E5E5E5;
+}
+
+#b2actus{
+  background-color: hotpink;
+}
+
+#b3actus{
+  background-color: #000000;
+}
+
+.buttonactus{
+  cursor: pointer;
+  position: relative;
+  display: block;  
+  width:48px;
+  height:24px;
+  border-radius:40px;
+  background: #f0efef;
+  box-shadow:inset 0px 0px 3px rgba(0,0,0,0.335);
+  transition: .3s;
+}
+
+.buttonactus:after{
+    content:'';
+    display: block;
+    border-radius: 50px;;
+    width:20px;
+    height:20px;
+    top:2px;
+    left:2px;
+    position: absolute;
+    background:rgb(255, 255, 255);
+    box-shadow: 2px 1px 1px 0 rgba(0,0,0,0.335);
+    transition: .3s;
+}
+
+.buttonactus span{
+position: absolute;
+top:25px;
+}
+
+.buttonactus.checked{
+  background: hotpink;
+}
+
+.buttonactus.checked:after{
+    transform: translateX(-100%);
+    left:calc(100% - 2px);
+}
+
+.buttonactus:active:after{
+    width:40px;
+}
+
+.titrearticleactus{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+}
+
+.voir_plus_actu_actus{
+  margin: 25px 0px;
+  color: white;
+}
+
+.voir_plus_actu_black{
+  margin: 25px 0px;
+  color: black;
+}
+
+/* Le paragraphe des articles */
+
+p.articlepara{
+margin-bottom: 20px;
+}
+
+.allactus{
+/* max-height:100vh; */
+overflow:hidden;
+transition: .8s ease-in-out;
+}
+
+.hidden{
+  display:none;
+  /* max-height: 0px;
+  transition: .5s; */
+}
