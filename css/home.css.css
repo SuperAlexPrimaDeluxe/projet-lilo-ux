@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27");
+
+* body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hachure::after {
+    content: "";
+    display: block;
+    height: 60px;
+    background-image: url(https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png.webp);
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+
+.hachure {
+    width: 100%;
+    background-image: url("badge-motif.png");
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-position: center;
+    background-size: cover;
+    /*background-image: url(https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png.webp);*/
+}
+
+h2 {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 80px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    display: inline-block;
+}
+
+/*-------LlLO PRESENTATION-------*/
+
+.lilo {
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+.lilo-photo {
+    width: 470px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.116);
+}
+
+.logo-lilo {
+    width: 450px;
+}
+
+.text-lilo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+}
+
+.rose {
+    background-color: #D35379;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 50px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 100px;
+}
+
+.rose:hover{
+    animation-direction: alternate-reverse;
+    background-color: #ff4b81;
+    float: left;
+    
+  transition: all 0.6s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
+    
+}
+
+/*-------BLOCK_POLAROID-------*/
+
+
+.block-pola::before {
+    content: "";
+    display: block;
+    height: 65px;
+    background-image: url(https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png.webp);
+    position: absolute;
+    width: 100%;
+}
+
+
+.block-pola::after {
+    content: "";
+    display: block;
+    height: 65px;
+    background-image: url(https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png.webp);
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.block-pola {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #201a25;
+}
+
+.polaroid {}
+
+a {
+    background-color: #373737;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: #D35379;
+
+}
+
+
+
+/*-------POLAROID-------*/
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    margin-top: 170px;
+    padding: 28px;
+
+}
+
+h3 {
+    margin-bottom: 16px;
+    margin-top: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.collant1 {
+    position: absolute;
+    top: -111px;
+    left: 61px;
+    transform: rotate(354deg);
+}
+
+.collant2 {
+    position: absolute;
+    top: -106px;
+    left: 52px;
+    transform: rotate(344deg);
+}
+
+.collant3 {
+    position: absolute;
+    top: -111px;
+    left: 61px;
+    transform: rotate(171deg);
+}
+
+.collant4 {
+    position: absolute;
+    top: -111px;
+    left: 61px;
+    transform: rotate(354deg);
+}
+
+.collant5 {
+    position: absolute;
+    top: -111px;
+    left: 61px;
+    transform: rotate(354deg);
+}
+
+.collant6 {
+    position: absolute;
+    top: -111px;
+    left: 61px;
+    transform: rotate(354deg);
+}
+
+.ligne-box1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box1 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(3deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+}
+
+.box2 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(1deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+}
+
+.box3 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(-4deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+
+}
+
+
+.ligne-box2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.box4 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(-4deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+}
+
+.box5 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(2deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+}
+
+.box6 {
+    margin: 60px;
+    padding: 20px;
+    background-color: white;
+    z-index: 0;
+    transform: rotate(2deg);
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+}
+
+.box6:hover {
+    transform: rotate(10deg);
+}
+.box5:hover {
+    transform: rotate(10deg);
+}
+.box4:hover {
+    transform: rotate(10deg);
+}
+.box3:hover {
+    transform: rotate(10deg);
+}
+.box2:hover {
+    transform: rotate(10deg);
+}
+.box1:hover {
+    transform: rotate(10deg);
+}
+
+
+.box::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: -30px;
+    left: -35px;
+    transform: rotate(-15deg);
+    background-image: url('tape.png');
+    background-size: cover;
+    z-index: 10;
+}
+
+
+
+@media (max-width: 1300px) {
+    .main {
+        width: 100%;
+    }
+
+    .ligne-box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ligne-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hachure {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .lilo {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .polaroid {
+        display: flex;
+        align-content: center;
+    }
+
+}
+
+@media (max-width: 840px) {
+    .main {
+        width: 100%;
+    }
+
+    .ligne-box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ligne-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hachure {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .lilo {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .lilo:div:nth-of-type(1){
+        background-color: #D35379;
+    }
+
+    .lilo-photo {
+        width: 400px;
+    }
+
+    .polaroid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+
+    .ligne-box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ligne-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hachure {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .lilo {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 350px) {
+    .main {
+        width: 100%;
+    }
+
+    .ligne-box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ligne-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hachure {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .lilo {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
