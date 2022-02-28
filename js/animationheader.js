@@ -7,6 +7,7 @@ window.onload = init;
 var largeur = window.innerWidth;
 if (largeur <= 768){
 
+
 /* 1- LES DECLARAITONS */
 var targetDiv = document.getElementById("ctnmenures");
 targetDiv.style.display = "none";
@@ -19,10 +20,13 @@ var getsousmenuboutique = document.getElementById("sousmenuboutique");
 getsousmenuboutique.style.display = "none";
 var getsousmenucontact = document.getElementById("sousmenucontact");
 getsousmenucontact.style.display = "none";
+var getlionlymobile = document.getElementById("lionlymobile");
 
 // console.log(targetDiv.style.display);
 
 btn.onclick = function () {
+  document.getElementById("supresslink1").removeAttribute("href");
+  document.getElementById("supresslink2").removeAttribute("href");
   if (targetDiv.style.display == "none") {
     targetDiv.style.display = "block";
     closegetter.style.display = "block";
@@ -39,6 +43,7 @@ btn.onclick = function () {
 lionclick.onclick = function () {
   if (getsousmenuboutique.style.display == "none") {
     getsousmenuboutique.style.display = "block";
+    getlionlymobile.style.display = "block";
     document.getElementById("arrowdown1").style.transform = "rotate(180deg)";
 
   } else {

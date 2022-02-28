@@ -52,9 +52,23 @@ header .top_header .iconheader img {
     height: 32px;
 }
 
+header .top_header .iconheader img:hover {
+    width: 34px;
+    height: 34px;
+}
+
 .headerusername {
     color: white;
     padding-left: 10px;
+}
+
+.headerusername a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerusername a:hover {
+    text-decoration: underline;
 }
 
 .ctn_icons_right_header {
@@ -144,6 +158,15 @@ li.none {
     font-weight: 500;
     font-size: 16px;
     list-style-type: none;
+    transition: width .2s;
+    transition-timing-function: linear;
+}
+
+#ctnmenures li:hover {
+    font-weight: 700;
+    letter-spacing: 3;
+    background-color: #ff4079b2;
+    width: 20%;
 }
 
 .sous-menuheader {
@@ -161,7 +184,7 @@ li.none {
 }
 
 .sous-menuheader li:hover {
-     background-color: #ff4079b2;
+    background-color: #ff4079b2;
 }
 
 .sous-menuheader a {
@@ -201,13 +224,17 @@ li.none {
     height: 30px;
     position: relative;
     border: none;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.3);
     padding-left: 24px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-indent: 22px;
     font-size: 16px;
     /* border: 1px solid white;  */
+}
+
+li#suprarecherche:hover {
+    background-color: rgba(0, 0, 0, 0.493);
 }
 
 a.justlink {
@@ -242,12 +269,19 @@ textarea:focus {
     display: none;
 }
 
+#lionlymobile {
+    display: none;
+}
 
 @media(max-width: 768px) {
 
     header {
         background-size: 100% auto;
         background-repeat: no-repeat;
+    }
+
+    .shortkiki {
+        width: 30%;
     }
 
     /*Je cache la recherche version bureau */
@@ -295,6 +329,12 @@ textarea:focus {
         background-color: #2E2E2E;
         color: white;
         border-top: 1px solid white;
+        transition: none;
+    }
+
+    #ctnmenures li:hover {
+        width: 100%;
+        background-color: #2E2E2E;
     }
 
     #ctnmenures li a {
@@ -357,7 +397,7 @@ textarea:focus {
         position: relative;
         left: 80%;
         text-align: center;
-        content: url(media/img/downarrow.svg);
+        content: url(/medias/icons/downarrow.svg);
     }
 
     #arrowdown2 {
@@ -365,7 +405,7 @@ textarea:focus {
         position: relative;
         left: 81.5%;
         text-align: center;
-        content: url(media/img/downarrow.svg);
+        content: url(/medias/icons/downarrow.svg);
     }
 
     #arrowremove1 {
@@ -454,9 +494,19 @@ textarea:focus {
         border: 1px solid #ff4079;
         box-shadow: none;
     }
+}
 
-    /*CSS POUR LES ARROWS DANS LE MENU*/
+@media(max-width: 460px) {
 
+    header .top_header {
+        padding: 10px;
+    }
 
+    #arrowdown1 {
+        left: 70%;
+    }
 
+    #arrowdown2 {
+        left: 72.5%;
+    }
 }
