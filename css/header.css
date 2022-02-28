@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Mise en flex du main et appel du Montserrat pour l'ensemble des élélments sauf si contradiction */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS HEADER */
+
+header {
+    margin: 0;
+    font-size: 18px;
+    background-image: url("../medias/img/lilo_background.jpg");
+    background-size: cover;
+}
+
+header .top_header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 25px 50px;
+}
+
+#logoheader {
+    width: 100px;
+    opacity: 90%;
+    transition: .4s ease;
+}
+
+#logoheader:hover {
+    stroke: rgb(17, 46, 212);
+    animation-name: neonheader;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    opacity: 100%;
+    width: 110px;
+}
+
+.iconheader {
+    display: flex;
+    align-items: baseline;
+}
+
+header .top_header .iconheader img {
+    width: 32px;
+    height: 32px;
+}
+
+.headerusername {
+    color: white;
+    padding-left: 10px;
+}
+
+.ctn_icons_right_header {
+    padding: 5px;
+    position: relative;
+}
+
+.pastille-type1 {
+    position: absolute;
+    right: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #4EDC4B;
+    border: 1px solid white;
+}
+
+.pastille-type2 {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Naviguation */
+
+.navheader ul {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    list-style: none;
+}
+
+ul.navheader li {
+    width: 33%;
+}
+
+.navheader a {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+li.none {
+    display: none;
+}
+
+.navheader .menuheader {
+    display: flex;
+    /*1*/
+    flex-direction: row;
+    /*2*/
+    justify-content: center;
+    /*3*/
+}
+
+.has-childrenheader {
+    /*1*/
+    position: relative;
+}
+
+.has-childrenheader:hover>.sous-menuheader {
+    display: flex;
+}
+
+#ctnmenures {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 100%;
+}
+
+#ctnmenures li {
+    width: 17%;
+    border-right: 1px solid white;
+    line-height: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.sous-menuheader {
+    /*3*/
+    display: none;
+    flex-flow: column wrap;
+    min-width: 100px;
+    position: absolute;
+    background: dodgerblue;
+    z-index: 999;
+}
+
+.sous-menuheader li {
+    width: 100% !important;
+}
+
+.sous-menuheader li:hover {
+     background-color: #ff4079b2;
+}
+
+.sous-menuheader a {
+    /*4*/
+    text-align: left;
+    color: white;
+
+}
+
+.sous-menuheader .sous-menuheader {
+    /*5*/
+    top: 0px;
+    left: 100%;
+    background: #1e76d6;
+}
+
+#recherchemobileheader {
+    display: none;
+}
+
+.supersearch {
+    position: relative;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+.searchcontainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    flex-grow: 1;
+}
+
+.supersearch input {
+    height: 30px;
+    position: relative;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding-left: 24px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 22px;
+    font-size: 16px;
+    /* border: 1px solid white;  */
+}
+
+a.justlink {
+    position: absolute;
+    padding: 5px 8px;
+    left: 5px;
+    display: inline;
+    z-index: 999999999;
+}
+
+#searchheader {
+    width: 100%;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #ff4079;
+    box-shadow: 0 0 15px #ff4079;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 1px solid #ff4079;
+    /* box-shadow: 0 0 15px #ff4079; */
+}
+
+#arrowdown1 {
+    display: none;
+}
+
+#arrowdown2 {
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+
+    header {
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    /*Je cache la recherche version bureau */
+
+    #suprarecherche {
+        display: none;
+    }
+
+    #ctnmenures {
+        display: none;
+    }
+
+    .nonehover {
+        display: none;
+    }
+
+    /* J'affiche le li contenant le burger qui était caché */
+
+    li.none {
+        display: block;
+    }
+
+    /* Classe qui sera appelée en JAVASCRIPT ne pas toucher */
+
+    .hidden {
+        display: block;
+    }
+
+    /* CSS DU DEBUT DE NAVIGUATION */
+
+    .navheader .menuheader {
+        flex-flow: column wrap;
+        background-color: #26A08A;
+        /*4 raccourci de flex-direction et de flex-wrap */
+    }
+
+    li#toggleheader {
+        height: 42px;
+        color: white;
+        background-color: #ff4079;
+    }
+
+    #ctnmenures li {
+        width: 100%;
+        background-color: #2E2E2E;
+        color: white;
+        border-top: 1px solid white;
+    }
+
+    #ctnmenures li a {
+        text-align: left !important;
+    }
+
+    .has-childrenheader:hover>.sous-menuheader {
+        display: none;
+    }
+
+    /* CSS DES SOUS-MENUS EN REPSONSIVE */
+
+    .menuheader {
+        position: relative;
+        z-index: 1;
+    }
+
+    .sous-menuheader {
+        display: none;
+        flex-flow: column wrap;
+        min-width: 100px;
+        position: absolute;
+        background: dodgerblue;
+        position: static;
+    }
+
+    .sous-menuheader.is-active {
+        display: flex !important;
+    }
+
+    .sous-menuheader li:hover {
+        /*4*/
+        text-align: left;
+        padding-left: 10px;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    .sous-menuheader a {
+        /*4*/
+        text-align: left;
+        padding-left: 80px;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    .sous-menuheader a:hover {
+        /*4*/
+        color: #ff4079;
+    }
+
+    .sous-menuheader .sous-menuheader {
+        top: 0px;
+        left: 100%;
+        background: #1e76d6;
+    }
+
+    #arrowdown1 {
+        display: inline;
+        position: relative;
+        left: 80%;
+        text-align: center;
+        content: url(media/img/downarrow.svg);
+    }
+
+    #arrowdown2 {
+        display: inline;
+        position: relative;
+        left: 81.5%;
+        text-align: center;
+        content: url(media/img/downarrow.svg);
+    }
+
+    #arrowremove1 {
+        display: none;
+
+    }
+
+    .sous-menuheader a:after {
+        display: none;
+    }
+
+    /* CSS DES ICONES BURGER ET CLOSE POUR LE MENU MOBILE */
+
+    #backpackheader {
+        width: 10%;
+        height: 42px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #burgerheader {
+        width: 30px;
+        height: 30px;
+    }
+
+    .is-open {
+        margin-top: 15px;
+        opacity: 1;
+    }
+
+    #closeheader {
+        display: none;
+        width: 27px;
+        height: 27px;
+    }
+
+    #sousmenuboutique {
+        display: none;
+    }
+
+    /* CSS POUR LA RECHERCHE MOBILE */
+
+    #recherchemobileheader {
+        display: block;
+        width: 100%;
+    }
+
+    #recherchemobileheader .input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90%;
+    }
+
+    #inputsearchmobile {
+        width: 100%;
+        height: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-indent: 40px;
+    }
+
+    .supersearch input {
+        position: absolute;
+        right: 0;
+    }
+
+    a.justlink2header {
+        position: absolute;
+        padding: 9px 8px;
+        left: 5px;
+        display: inline;
+        z-index: 999999999;
+        color: lightgrey;
+    }
+
+    input:focus {
+        outline: none !important;
+        border: 1px solid #ff4079;
+        box-shadow: none;
+    }
+
+    textarea:focus {
+        outline: none !important;
+        border: 1px solid #ff4079;
+        box-shadow: none;
+    }
+
+    /*CSS POUR LES ARROWS DANS LE MENU*/
+
+
+
+}
