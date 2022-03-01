@@ -10,41 +10,17 @@ html{
     text-align: justify; 
     text-justify: inter-word;
 }
-main{
-  width: 90%;
-  margin: 0 auto;
-}
 h1{
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
-    margin: 75px auto;
+    margin: 75px;
 }
 h2{
     text-align: center;
-    margin: 50px auto;
+    margin: 100px;
 }
-hr{
-    margin: 10px 0;
-}
-main hr{
-    margin: 75px auto;
-}
-p{
-    text-indent: 20px;
-}
-.indentation{
-    text-indent: 40px;
-}
-.indentation-plus{
-    text-indent: 50px;
-}
-/* ********** */
-@media screen and (min-width: 768px) {
-    main{
-        width: 70%;
-    }
-    h2{
-        text-align: left;
-    }
+main{
+  width: 70%;
+  margin: 0 auto;
 }
