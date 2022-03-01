@@ -1,0 +1,267 @@
+/*--TYPO--*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27");
+
+
+/*--PROPRIETE GLOBALE DU FOOTER--*/
+
+.footer {
+    background-color: #2E2E2E;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    height: 400px;
+    text-align: justify;
+    left: 0;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    height: 65px;
+    background-image: url(https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png.webp);
+    position: absolute;
+    margin-top: -65px;
+    width: 100%;
+    background-color: #2E2E2E;
+}
+
+
+
+.all {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+/*--PROPRIETE DES TITRES--*/
+
+.h3-footer {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.h4-footer {
+    color: #7B7B7B;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/*--PROPRIETE DES LISTES--*/
+
+ul {
+    padding: 0;
+}
+
+li {
+    color: #7B7B7B;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+a {
+    color: #7B7B7B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+span {
+    color: #7B7B7B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*--COLONNE 1--*/
+
+.liste-info {
+    line-height: -2;
+}
+
+
+/*--COLONNE 2--*/
+/*--COLONNE 3--*/
+
+.colonne-3{
+    text-align: center;
+}
+
+.colonne-3 h3{
+    text-align: left;
+}
+/*--COLONNE 4--*/
+/*--COLONNE 5--*/
+
+.colonne-5 {
+    display: grid;
+    justify-content: center;
+}
+
+.block-reseaux {
+    margin: none;
+    display: flex;
+
+}
+
+
+
+/*--CONDITION GENERALE--*/
+
+.liens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conditions {
+    font-size: 13px;
+    position: absolute;
+    margin-top: 300px;
+    display: inline-flex;
+}
+
+
+
+
+/*--RECHERCHE--*/
+
+/* A VOIR */
+
+/* .recherche{
+    display: flex;
+    position: absolute;
+    margin-top: 205px;
+    left: 653px;
+}
+
+input{
+    background-color: #2E2E2E;
+    border: 2px solid #7B7B7B;
+    font-family: 'Montserrat', sans-serif;
+    width: 345px;
+}
+
+.loupe{
+    background-color: #2E2E2E;
+    border: 2px solid #D35379;
+} */
+
+
+/*----IMAGE----*/
+
+.paiement img {
+    width: 35px;
+}
+
+.facebook {
+    width: 27px 27px;
+}
+
+.block-footer-logo {
+    width: 120px;
+}
+
+.picto {
+    width: 27px;
+    background-color: #2E2E2E;
+    display: flex;
+}
+
+.facebook .insta .messenger .mail {
+    color: #7B7B7B;
+    background-color: #7B7B7B;
+    width: 100%;
+}
+
+.all a:hover{
+    color: #FF4070;
+ }
+
+ img.picto{
+     padding: 30px 5px;
+ }
+
+ .liens a:nth-child(1){
+    border-left: 1px solid #7b7b7b;
+    padding: 0 5px;
+}
+
+.liens a{
+    border-right: 1px solid #7b7b7b;
+    padding: 0 5px;
+}
+
+
+
+
+@media(max-width:768px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        position: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer::before {
+        display: none;
+    }
+
+    .all {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 50px 0;
+    }
+
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-basis: 100%;
+        flex: 1;
+      }
+
+      .conditions{
+          padding-top: 25px;
+          position: initial !important;
+          margin-top: 0;
+      }
+
+      .liens{
+      justify-content: center;
+    }
+
+    .liens a:nth-child(1){
+        border-left: 1px solid #7b7b7b;
+        padding: 0 5px;
+    }
+
+    .liens a{
+        border-right: 1px solid #7b7b7b;
+        padding: 0 5px;
+    }
+
+    .all a:hover{
+       color: #FF4070;
+    }
+
+    img.picto{
+        padding: 30px 5px;
+    }
+
+      .column:nth-child(6) { order: -1; }
+
+}
