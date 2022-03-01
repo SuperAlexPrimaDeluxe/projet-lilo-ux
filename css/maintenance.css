@@ -159,7 +159,7 @@ a{
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
 
     .logo{
         width: 250px;
