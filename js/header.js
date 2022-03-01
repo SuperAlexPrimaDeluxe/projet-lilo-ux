@@ -6,20 +6,20 @@ class MyHeader extends HTMLElement {
         <!--HEADER PT1 - IMAGE & ICONES DE CONNEXION -->
     
         <div class="top_header">
-            <a href="index.html"><img src="/medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader" /></a>
+            <a href="index.html"><img src="medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader" /></a>
             <div class="iconheader">
                 <span class="headerusername"><a href="login/connexion.html">Connexion</a> | <a href="login/dashboard.html">Pita88</a></span>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type1"></span>
-                    <a href="login/dashboard.html"><img src="/medias/icons/poeple2.svg" alt="" id="icon" /></a>
+                    <a href="login/dashboard.html"><img src="medias/icons/poeple2.svg" alt="" id="icon" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">3</span>
-                    <a href="espace_client/panier.html"><img src="/medias/icons/basket.svg" alt="" id="icon" /></a>
+                    <a href="espace_client/panier.html"><img src="medias/icons/basket.svg" alt="" id="icon" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">1</span>
-                    <a href="espace_client/wishlist.html"><img src="/medias/icons/coeur_lilo.svg" alt="" id="icon" /></a>
+                    <a href="espace_client/wishlist.html"><img src="projet-lilo-ux/medias/icons/coeur_lilo.svg" alt="" id="icon" /></a>
                 </div>
             </div>
         </div>
@@ -31,21 +31,21 @@ class MyHeader extends HTMLElement {
     
                 <li class="none" id="toggleheader">
                     <div id="backpackheader">
-                        <img src="/medias/icons/burger.svg" alt="menu burger" id="burgerheader">
-                        <img src="/medias/icons/close.svg" alt="close icon" id="closeheader">
+                        <img src="medias/icons/burger.svg" alt="menu burger" id="burgerheader">
+                        <img src="medias/icons/close.svg" alt="close icon" id="closeheader">
                     </div>
                 </li>
     
                 <li id="recherchemobileheader">
                     <div class="input">
-                        <a href="404/index.html" class="justlink2header"><img src="/medias/icons/search.svg" alt="" /></a>
+                        <a href="404/index.html" class="justlink2header"><img src="medias/icons/search.svg" alt="" /></a>
                         <input type="text" placeholder="Recherche ..." id="inputsearchmobile" />
                     </div>
                 </li>
     
                 <div id="ctnmenures">
                     <li><a href="#">Accueil</a></li>
-                    <li class="has-childrenheader" id="colorerheader"><a href="boutique.html" id="supresslink1">Boutique<img id="arrowdown1" src="/medias/icons/downarrow.svg"></a>
+                    <li class="has-childrenheader" id="colorerheader"><a href="boutique.html" id="supresslink1">Boutique<img id="arrowdown1" src="medias/icons/downarrow.svg"></a>
         
                         <!-- sous menu-->
                         <ul class="sous-menuheader" id="sousmenuboutique">
@@ -61,7 +61,7 @@ class MyHeader extends HTMLElement {
     
                     <li><a href="actus.html">Actus</a></li>
     
-                    <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact<img id="arrowdown2" src="/medias/icons/downarrow.svg"></a>
+                    <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact<img id="arrowdown2" src="medias/icons/downarrow.svg"></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
                             <li><a href="contact.html">Nos point de ventes</a></li>
                             <li><a href="contact.html">Formulaire de contact</a></li>
@@ -73,7 +73,7 @@ class MyHeader extends HTMLElement {
                         <div class="supersearch">
                             <!-- <button id="menu-button" class="mobile"></button> -->
                             <div class="input">
-                                <a href="404/index.html" class="justlink"><img src="/medias/icons/search.svg" alt="" class="search"/></a>
+                                <a href="404/index.html" class="justlink"><img src="medias/icons/search.svg" alt="" class="search"/></a>
                                 <input type="text" placeholder="Recherche ..." id="searchheader" />
                             </div>
                         </div>
