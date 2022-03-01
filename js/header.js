@@ -19,7 +19,7 @@ class MyHeader extends HTMLElement {
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">1</span>
-                    <a href="espace_client/wishlist.html"><img src="medias/icons/coeur_lilo.svg" alt="" id="icon" /></a>
+                    <a href="espace_client/wishlist.html"><img src="projet-lilo-ux/medias/icons/coeur_lilo.svg" alt="" id="icon" /></a>
                 </div>
             </div>
         </div>
