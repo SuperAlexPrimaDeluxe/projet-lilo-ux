@@ -11,15 +11,15 @@ class MyHeader extends HTMLElement {
                 <span class="headerusername"><a href="login/connexion.html">Connexion</a> | <a href="login/dashboard.html">Pita88</a></span>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type1"></span>
-                    <a href="login/dashboard.html"><img src="medias/icons/poeple2.svg" alt="" id="icon" /></a>
+                    <a href="login/dashboard.html"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">3</span>
-                    <a href="espace_client/panier.html"><img src="medias/icons/basket.svg" alt="" id="icon" /></a>
+                    <a href="espace_client/panier.html"><img src="medias/icons/basket.svg" alt="" id="icon2" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">1</span>
-                    <a href="espace_client/wishlist.html"><img src="projet-lilo-ux/medias/icons/coeur_lilo.svg" alt="" id="icon" /></a>
+                    <a href="espace_client/wishlist.html"><img src="medias/icons/coeur_lilo.svg" alt="" id="icon3" /></a>
                 </div>
             </div>
         </div>
