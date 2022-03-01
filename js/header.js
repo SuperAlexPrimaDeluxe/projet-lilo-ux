@@ -6,20 +6,20 @@ class MyHeader extends HTMLElement {
         <!--HEADER PT1 - IMAGE & ICONES DE CONNEXION -->
     
         <div class="top_header">
-            <a href="index.html"><img src="medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader" /></a>
+            <a href="index.html" id="returnhome"><img src="medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader"/></a>
             <div class="iconheader">
                 <span class="headerusername"><a href="login/connexion.html">Connexion</a> | <a href="login/dashboard.html">Pita88</a></span>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type1"></span>
-                    <a href="login/dashboard.html"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
+                    <a href="login/dashboard.html" id="godash"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">3</span>
-                    <a href="espace_client/panier.html"><img src="medias/icons/basket.svg" alt="" id="icon2" /></a>
+                    <a href="espace_client/panier.html" id="gopanier"><img src="medias/icons/basket.svg" alt="" id="icon2" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type2">1</span>
-                    <a href="espace_client/wishlist.html"><img src="medias/icons/coeur_lilo.svg" alt="" id="icon3" /></a>
+                    <a href="espace_client/wishlist.html" id="gowishlist"><img src="medias/icons/coeur_lilo.svg" alt="" id="icon3" /></a>
                 </div>
             </div>
         </div>
@@ -38,28 +38,28 @@ class MyHeader extends HTMLElement {
     
                 <li id="recherchemobileheader">
                     <div class="input">
-                        <a href="404/index.html" class="justlink2header"><img src="medias/icons/search.svg" alt="" /></a>
+                        <a href="404/index.html" class="justlink2header" id="iconederecherchemobile"><img src="medias/icons/search.svg" alt="" id="lasupericonederecherche"/></a>
                         <input type="text" placeholder="Recherche ..." id="inputsearchmobile" />
                     </div>
                 </li>
     
                 <div id="ctnmenures">
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="index.html" id="returnhome2">Accueil</a></li>
                     <li class="has-childrenheader" id="colorerheader"><a href="boutique.html" id="supresslink1">Boutique<img id="arrowdown1" src="medias/icons/downarrow.svg"></a>
         
                         <!-- sous menu-->
                         <ul class="sous-menuheader" id="sousmenuboutique">
-                            <li id="lionlymobile"><a href="badges.html">Tous les produits</a></li>
-                            <li><a href="badges.html">Badges</a></li>
-                            <li><a href="bijoux.html">Bijoux</a></li>
-                            <li><a href="papetrie.html">Papeterie</a></li>
-                            <li><a href="nouveaute.html">Nouveautés</a></li>
-                            <li><a href="favorites.html">Préférés</a></li>
-                            <li><a href="petitsprix.html">Petits prix</a></li>
+                            <li id="lionlymobile"><a href="boutique.html" id="globalboutique">Tous les produits</a></li>
+                            <li><a href="badges.html" id="globalbadges">Badges</a></li>
+                            <li><a href="bijoux.html" id="globalbijoux">Bijoux</a></li>
+                            <li><a href="papetrie.html" id="globalpapetrie">Papeterie</a></li>
+                            <li><a href="nouveaute.html" id="globalnew">Nouveautés</a></li>
+                            <li><a href="favorites.html" id="globalfavo">Préférés</a></li>
+                            <li><a href="petitsprix.html" id="globalpetitp">Petits prix</a></li>
                         </ul>
                     </li>
     
-                    <li><a href="actus.html">Actus</a></li>
+                    <li><a href="actus.html" id="actusredirect">Actus</a></li>
     
                     <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact<img id="arrowdown2" src="medias/icons/downarrow.svg"></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
@@ -73,7 +73,7 @@ class MyHeader extends HTMLElement {
                         <div class="supersearch">
                             <!-- <button id="menu-button" class="mobile"></button> -->
                             <div class="input">
-                                <a href="404/index.html" class="justlink"><img src="medias/icons/search.svg" alt="" class="search"/></a>
+                                <a href="recherche.html" class="justlink" id="rdeskto"><img src="medias/icons/search.svg" alt="" class="search" id="searchdesktoop"/></a>
                                 <input type="text" placeholder="Recherche ..." id="searchheader" />
                             </div>
                         </div>
