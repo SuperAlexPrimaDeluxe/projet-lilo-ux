@@ -36,5 +36,6 @@ document.getElementById("indexfooter").href = "/index.html";
 document.getElementById("boutiqueindex").href = "/index.html";
 document.getElementById("actusfooter").href = "/actus.html";
 document.getElementById("contactfooter").href ="/contact.html";
+document.getElementById("panierfooter").href ="/espace_client/panier.html";
 
 

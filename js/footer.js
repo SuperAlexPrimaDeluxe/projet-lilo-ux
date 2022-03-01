@@ -13,11 +13,11 @@ class MyFooter extends HTMLElement {
                             <h3 class="h3-footer">à propos de moi</h3>
                             <ul class="liste-info">
                                 <h4 class="h4-footer">Contact</h4>
-                                <li>Numéro</li>
-                                <li>E-mail</li>
+                                <li>+32 (0)470 98 78 52</li>
+                                <li>info@lilo.com</li>
                                 <h4 class="h4-footer">Adresse</h4>
-                                <li>Rue</li>
-                                <li>Numero</li>
+                                <li>3 Rue des Arbalestriers, 7500 Mons</li>
+                                <li><b>Ouvert du lundi au vendredi<br>de 10h à 18h</b></li>
                             </ul>
                         </div>
                     </div>
