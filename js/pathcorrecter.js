@@ -18,30 +18,30 @@ document.getElementById("searchdesktoop").src = "/projet-lilo-ux/medias/icons/se
 /* Changement des liens pour le HEADER */
 
 document.getElementById("returnhome").href = "/projet-lilo-ux/index.html";
-document.getElementById("godash").href = "/login/dashboard.html";
-document.getElementById("gopanier").href = "/espace_client/panier.html";
-document.getElementById("gowishlist").href = "/espace_client/wishlist.html";
-document.getElementById("iconederecherchemobile").href = "/recherche.html";
-document.getElementById("returnhome2").href = "/index.html";
-document.getElementById("returnhome").href = "/index.html";
-document.getElementById("supresslink1").href = "/boutique.html";
-document.getElementById("globalboutique").href = "/boutique.html";
-document.getElementById("globalbadges").href = "/badges.html";
-document.getElementById("globalbijoux").href = "/bijoux.html";
-document.getElementById("globalpapetrie").href = "/papetrie.html";
-document.getElementById("globalnew").href = "/nouveaute.html";
-document.getElementById("globalfavo").href = "/favorites.html";
-document.getElementById("globalpetitp").href = "/petitsprix.html";
-document.getElementById("actusredirect").href = "/actus.html";
-document.getElementById("supresslink2").href = "/contact.html";
-document.getElementById("rdeskto").href = "/recherche.html";
+document.getElementById("godash").href = "/projet-lilo-ux/login/dashboard.html";
+document.getElementById("gopanier").href = "/projet-lilo-ux/espace_client/panier.html";
+document.getElementById("gowishlist").href = "/projet-lilo-ux/espace_client/wishlist.html";
+document.getElementById("iconederecherchemobile").href = "/projet-lilo-ux/recherche.html";
+document.getElementById("returnhome2").href = "/projet-lilo-ux/index.html";
+document.getElementById("returnhome").href = "/projet-lilo-ux/index.html";
+document.getElementById("supresslink1").href = "/projet-lilo-ux/boutique.html";
+document.getElementById("globalboutique").href = "/projet-lilo-ux/boutique.html";
+document.getElementById("globalbadges").href = "/projet-lilo-ux/badges.html";
+document.getElementById("globalbijoux").href = "/projet-lilo-ux/bijoux.html";
+document.getElementById("globalpapetrie").href = "/projet-lilo-ux/papetrie.html";
+document.getElementById("globalnew").href = "/projet-lilo-ux/nouveaute.html";
+document.getElementById("globalfavo").href = "/projet-lilo-ux/favorites.html";
+document.getElementById("globalpetitp").href = "/projet-lilo-ux/petitsprix.html";
+document.getElementById("actusredirect").href = "/projet-lilo-ux/actus.html";
+document.getElementById("supresslink2").href = "/projet-lilo-ux/contact.html";
+document.getElementById("rdeskto").href = "/projet-lilo-ux/recherche.html";
 
 /* Changement des liens pour le FOOTER */
 
 document.getElementById("indexfooter").href = "/projet-lilo-ux/index.html";
-document.getElementById("boutiqueindex").href = "/index.html";
-document.getElementById("actusfooter").href = "/actus.html";
-document.getElementById("contactfooter").href ="/contact.html";
-document.getElementById("panierfooter").href ="/espace_client/panier.html";
+document.getElementById("boutiqueindex").href = "/projet-lilo-ux/index.html";
+document.getElementById("actusfooter").href = "/projet-lilo-ux/actus.html";
+document.getElementById("contactfooter").href ="/projet-lilo-ux/contact.html";
+document.getElementById("panierfooter").href ="/projet-lilo-ux/espace_client/panier.html";
 
 
