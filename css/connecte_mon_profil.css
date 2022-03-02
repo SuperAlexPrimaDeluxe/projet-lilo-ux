@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 75px;
+}
+h2{
+    text-align: center;
+    margin: 100px;
+}
+.bienvenue{
+    height: auto;
+}
+.bienvenue h5{
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 75px;
+}
+.bienvenue img{
+    display: block;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    margin: 0 auto;
+}
+main{
+    width: 70%;
+    margin: auto;
+}
+h3{
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+.titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+.titre-supprimer-compte p{
+    padding: 20px;
+}
+.titre-coordonnees img, .titre-commandes img, .titre-mp img, .titre-supprimer-compte img{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+.titre-supprimer-compte a{
+    display: block;
+    width: 100%;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: black;
+}
+.coordonnees .sous-section, .commandes .sous-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.coordonnees ul, .commandes ul{
+    margin: 10px;
+}
+.coordonnees li:nth-child(1), .commandes li:nth-child(1){
+    font-weight: bold;
+}
+.gauche, .droite{
+    width: 50%;
+}
+.coordonnees ul, .coordonnees li, .commandes ul, .commandes li, .commandes a{
+    padding: 5px;
+    list-style-type: none;
+    color: black;
+}
+.mp .sous-section{
+    flex-direction: column;
+    height: 450px
+}
+form p{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    padding: 5px;
+    margin-top: 20px; 
+}
+form input{
+    padding: 10px 5px 10px 30px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.accordion{
+    margin: 70px auto;
+}
+.accordion .sous-section{
+    height: 0;
+    overflow: hidden;
+    transition: height 2s ease;
+}
+:target .sous-section{
+    height: auto;
+}
+input::placeholder {
+    font-size: .9rem;
+    opacity: .5;
+    color: #d35379;
+    padding-left: 5px;
+  }
+.confirmation button{
+    padding: 5px 40px;
+    margin: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.suppression button{
+    padding: 5px 40px;
+    margin: 40px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    
+}
+.confirmation a{
+    display: block;
+    padding: 5px 40px;
+    margin: 40px;
+    color: black;
+    font-size: 1rem;
+}
+.suppression a{
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.confirmation, .suppression{
+    display: flex;
+    justify-content: space-around;
+}
+.mp span{
+    display: none;
+    padding: 5px;
+    color: #d35379;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.supprimer-compte .sous-section p{
+    padding: 5px;
+    margin-top: 40px;
+}
+
+
+
