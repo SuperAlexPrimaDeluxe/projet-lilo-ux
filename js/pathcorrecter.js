@@ -29,6 +29,8 @@ console.log("la bille noire");
 /* Changement des liens pour le HEADER */
 
 document.getElementById("returnhome").href = "/projet-lilo-ux/index.html";
+document.getElementById("txtconnexion").href = "/projet-lilo-ux/login/connexion.html";
+document.getElementById("godash0").href = "/projet-lilo-ux/login/dashboard.html";
 document.getElementById("godash").href = "/projet-lilo-ux/login/dashboard.html";
 document.getElementById("gopanier").href = "/projet-lilo-ux/espace_client/panier.html";
 document.getElementById("gowishlist").href = "/projet-lilo-ux/espace_client/wishlist.html";
