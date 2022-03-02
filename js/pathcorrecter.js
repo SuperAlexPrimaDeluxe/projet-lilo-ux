@@ -24,7 +24,7 @@ document.getElementById("facebookfooter").src = "/projet-lilo-ux/medias/icons/Fa
 document.getElementById("instafooter").src = "/projet-lilo-ux/medias/icons/Instagram.svg";
 document.getElementById("mailfooter").src = "/projet-lilo-ux/medias/icons/Mail.svg";
 
-
+console.log("la bille noire");
 
 /* Changement des liens pour le HEADER */
 
