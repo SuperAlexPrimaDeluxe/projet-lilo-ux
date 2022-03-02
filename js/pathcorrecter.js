@@ -20,8 +20,8 @@ document.getElementById("paypal").src = "/projet-lilo-ux/medias/icons/PAYPAL_LIL
 document.getElementById("visa").src = "/projet-lilo-ux/medias/icons/VISA_LILO.svg";
 document.getElementById("bpost").src = "/projet-lilo-ux/medias/icons/bpostlogo.svg";
 document.getElementById("logofooterlilo").src = "/projet-lilo-ux/medias/icons/lilologo.svg";
-document.getElementById("facebookfooter").src = "/projet-lilo-ux/medias/icons/Facebook.svg";
-document.getElementById("instafooter").src = "/projet-lilo-ux/medias/icons/Instagram.svg";
+document.getElementById("facebookfooter").src = "/projet-lilo-ux/medias/icons/facebook.svg";
+document.getElementById("instafooter").src = "/projet-lilo-ux/medias/icons/instagram.svg";
 document.getElementById("mailfooter").src = "/projet-lilo-ux/medias/icons/Mail.svg";
 
 console.log("la bille noire");
