@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les ateliers de Lilo | Wishlist</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="js/header.js" defer></script>
     <script src="js/pathcorrecter.js" defer></script>
     <script src="js/animationheader.js" defer></script>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="../css/wishlist.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <main-header current="home"></main-header>
@@ -166,28 +170,5 @@
             </div>
         </div>
     </div>
-    <script>
-        $(".carousel").owlCarousel({
-            margin: 20,
-            loop: true,
-        //    autoplay: true,
-        //    autoplayTimeout: 2000,
-        //    autoplayHoverPause: true,
-            responsive: {
-            0:{
-                items:1,
-                nav: false
-            },
-            768:{
-                items:2,
-                nav: false
-            },
-            1000:{
-                items:4,
-                nav: false
-            }
-            }
-        });
-    </script>
 </body>
 </html>
