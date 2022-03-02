@@ -118,40 +118,40 @@ font-weight: normal;
 box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 .carousel .card-1{
-background: center/cover no-repeat url(/images/produits/b1.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b1.jpg);
 }
 .carousel .card-2{
-background: center/cover no-repeat url(/images/produits/b2.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b2.jpg);
 }
 .carousel .card-3{
-background: center/cover no-repeat url(/images/produits/b3.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
 }
 .carousel .card-4{
-background: center/cover no-repeat url(/images/produits/b4.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
 }
 .carousel .card-5{
-background: center/cover no-repeat url(/images/produits/b5.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
 }
 .carousel .card-6{
-background: center/cover no-repeat url(/images/produits/b6.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
 }
 .carousel .card-7{
-background: center/cover no-repeat url(/images/produits/b7.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
 }
 .carousel .card-8{
-background: center/cover no-repeat url(/images/produits/b8.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
 }
 .carousel .card-9{
-background: center/cover no-repeat url(/images/produits/b9.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
 }
 .carousel .card-10{
-background: center/cover no-repeat url(/images/produits/b10.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b10.jpg);
 }
 .carousel .card-11{
-background: center/cover no-repeat url(/images/produits/b11.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
 }
 .carousel .card-12{
-background: center/cover no-repeat url(/images/produits/b12.jpg);
+background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
 }
 .carousel .card-prix a{
 color:#d35379;
