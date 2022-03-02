@@ -48,14 +48,14 @@ class MyFooter extends HTMLElement {
                         <div class="block-footer-entreprise">
                             <h3 class="h3-footer">mode de paiement</h3>
                             <div class="paiement">
-                                <img src="medias/icons/BANCONTACT_LILO.svg" alt="bancontact">
-                                <img src="medias/icons/MAESTRO_LILO.svg" alt="maestro">
-                                <img src="medias/icons/MASTERCARD_LILO.svg" alt="mastercard">
-                                <img src="medias/icons/PAYPAL_LILO.svg" alt="paypal">
-                                <img src="medias/icons/VISA_LILO.svg" alt="visa">
+                                <img src="medias/icons/BANCONTACT_LILO.svg" alt="bancontact" id="bancontact">
+                                <img src="medias/icons/MAESTRO_LILO.svg" alt="maestro" id="maestro">
+                                <img src="medias/icons/MASTERCARD_LILO.svg" alt="mastercard" id="mastercard">
+                                <img src="medias/icons/PAYPAL_LILO.svg" alt="paypal" id="paypal">
+                                <img src="medias/icons/VISA_LILO.svg" alt="visa" id="visa">
                             </div>
                             <h3 class="h3-footer">mode de livraison</h3>
-                            <img src="medias/icons/bpostlogo.svg" width="50" alt="visa" id="bpost">
+                            <img src="medias/icons/bpostlogo.svg" width="50" alt="logo bpost" id="bpost">
                             <!-- Mettre les logos adéquat -->
                         </div>
                     </div>
