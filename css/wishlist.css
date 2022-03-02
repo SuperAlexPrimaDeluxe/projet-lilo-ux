@@ -98,9 +98,6 @@ h4{
 /* *********************************
     CAROUSEL
 *********************************  */
-.album{
-width: 90%;  
-}
 .wrapper{
 width: 100%; 
 }
@@ -180,7 +177,11 @@ background: grey!important;
 /* ************************************** */
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
+  main{
+    width: 75%;
+    margin: auto;
+  }
   .article-wl{
     width: 350px;
   }
@@ -196,4 +197,9 @@ background: grey!important;
     align-items: center;
     width: 70%;
   }
+  .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    }
 }
