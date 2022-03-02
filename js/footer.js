@@ -85,10 +85,10 @@ class MyFooter extends HTMLElement {
                         </div>
                         <div class="block-reseaux">
                             <a class="" href="https://www.facebook.com/lesateliersdelilo/">
-                                <img class="picto" src="medias/icons/Facebook.svg" alt="facebook" id="facebookfooter">
+                                <img class="picto" src="medias/icons/facebook.svg" alt="facebook" id="facebookfooter">
                             </a>
                             <a href="https://www.instagram.com/lesateliersdelilo/">
-                                <img class="picto" src="medias/icons/Instagram.svg" alt="insta" id="instafooter">
+                                <img class="picto" src="medias/icons/instagram.svg" alt="insta" id="instafooter">
                             </a>
                             <a href="ml.desmanet@gmail.com">
                                 <img class="picto" src="medias/icons/Mail.svg" alt="mail" id="mailfooter">
