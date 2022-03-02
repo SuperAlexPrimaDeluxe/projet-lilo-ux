@@ -9,8 +9,67 @@
     <script src="/js/pathcorrecter.js" defer></script>
     <script src="/js/animationheader.js" defer></script>
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="../css/connexion.css">
 </head>
 <body>
     <main-header current="home"></main-header>
+    <h1>Mon compte</h1>
+    <main>
+        <div class="connexion">
+                <h2>
+                    Bonjour, connecte-toi pour conserver tes recherches !
+                </h2>
+                <a href="#nouveau-compte"> Pas encore de compte ? </a> 
+                <hr>
+                <section class="form-connexion">
+                <h3>Connexion</h3>
+                <form action="/">
+                    <label for="email">Adresse de messagerie*</label>
+                    <input type="email" placeholder="E-mail">
+                    <label for="password">Mot de passe*</label>
+                    <input type="password" placeholder="***Mot de passe">
+                    <a href="#oublier">Mot de passe oublié ?</a>
+                </form>
+                <div class="bouton">
+                    <input type="checkbox" class="toggle" id="toggle">
+                    <label for="toggle"></label>
+                    <p>Se souvenir de moi</p>
+                </div>
+                <button onclick="href=''">Se connecter</a></button>
+                <p>*champ obligatoire</p>
+            </section>
+        </div>
+        <div id="nouveau-compte" class="nouveau-compte">
+            <h2>
+                N'hésite pas à te créer un compte ;)
+            </h2>
+            <hr>
+            <section  class="form-nouveau-compte">
+                <h3>Inscription</h3>
+                <form action="/">
+                    <label for="email">Adresse de messagerie*</label>
+                    <input type="email" placeholder="E-mail">
+                    <label for="password">Mot de passe*</label>
+                    <input type="password" placeholder="***Mot de passe">
+                    <label for="password">Confirmer mot de passe*</label>
+                    <input type="password" placeholder="***Mot de passe">
+                    <div class="rgpd">
+                        <div class="connexion-g-f" >
+                        <hr><p>Ou se  connecter avec</p><hr>
+                        </div>
+                        <div class="logo-g-f">
+                            <img class="google" src="/images/icones/google.png" alt="logo_google">
+                            <img class="facebook" src="/images/icones/facebook.png" alt="facebook">
+                        </div>
+                        <p>
+                            Vos données personnelles seront utilisées pour améliorer votre expérience sur ce site, à gérer votre compte, et à d’autres fins décrites dans notre  <a href="">Chartre de vie privée.</a></a>
+                        </p>
+                    </div>
+                </form>
+                <button onclick="href=''">Inscription</a></button>
+                <p>*champ obligatoire</p>
+            </section>   
+        </div>
+    </main>    
 </body>
 </html>
