@@ -1,4 +1,4 @@
-/* Appel des îcones avec le chemin pour les différentes îcones dans le sous-dossier */
+/* Appel des îcones et img HEADER */
 
 document.getElementById("logoheader").src = "/medias/icons/lilo_logo.svg";
 document.getElementById("icon1").src = "/medias/icons/poeple2.svg"; 
@@ -11,7 +11,11 @@ document.getElementById("arrowdown1").src = "/medias/icons/search.svg";
 document.getElementById("arrowdown2").src = "/medias/icons/search.svg";
 document.getElementById("searchdesktoop").src = "/medias/icons/search.svg";
 
-/* Changement des liens pour les éléments seléctionnées pour que ces derniers renvoient au bon endroit */
+/* Appel des îcones et img pour le FOOTER */
+
+
+
+/* Changement des liens pour le HEADER */
 
 document.getElementById("returnhome").href = "/index.html";
 document.getElementById("godash").href = "/login/dashboard.html";
@@ -31,6 +35,8 @@ document.getElementById("globalpetitp").href = "/petitsprix.html";
 document.getElementById("actusredirect").href = "/actus.html";
 document.getElementById("supresslink2").href = "/contact.html";
 document.getElementById("rdeskto").href = "/recherche.html";
+
+/* Changement des liens pour le FOOTER */
 
 document.getElementById("indexfooter").href = "/index.html";
 document.getElementById("boutiqueindex").href = "/index.html";
