@@ -81,17 +81,17 @@ class MyFooter extends HTMLElement {
                 <div class="column">
                     <div class="colonne-5">
                         <div class="block-footer-logo">
-                            <img src="medias/icons/lilologo.svg" alt="Lilo-logo">
+                            <img src="medias/icons/lilologo.svg" alt="Lilo-logo" id="logofooterlilo">
                         </div>
                         <div class="block-reseaux">
                             <a class="" href="https://www.facebook.com/lesateliersdelilo/">
-                                <img class="picto" src="medias/icons/Facebook.svg" alt="facebook">
+                                <img class="picto" src="medias/icons/Facebook.svg" alt="facebook" id="facebookfooter">
                             </a>
                             <a href="https://www.instagram.com/lesateliersdelilo/">
-                                <img class="picto" src="medias/icons/Instagram.svg" alt="insta">
+                                <img class="picto" src="medias/icons/Instagram.svg" alt="insta" id="instafooter">
                             </a>
                             <a href="ml.desmanet@gmail.com">
-                                <img class="picto" src="medias/icons/Mail.svg" alt="mail">
+                                <img class="picto" src="medias/icons/Mail.svg" alt="mail" id="mailfooter">
                             </a>
                         </div>
                     </div>

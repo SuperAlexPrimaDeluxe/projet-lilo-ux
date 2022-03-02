@@ -7,11 +7,22 @@ document.getElementById("icon3").src = "/projet-lilo-ux/medias/icons/coeur_lilo.
 document.getElementById("burgerheader").src = "/projet-lilo-ux/medias/icons/burger.svg"; 
 document.getElementById("closeheader").src = "/projet-lilo-ux/medias/icons/close.svg"; 
 document.getElementById("lasupericonederecherche").src = "/projet-lilo-ux/medias/icons/search.svg";
-document.getElementById("arrowdown1").src = "/projet-lilo-ux/medias/icons/search.svg";
-document.getElementById("arrowdown2").src = "/projet-lilo-ux/medias/icons/search.svg";
+document.getElementById("arrowdown1").src = "/projet-lilo-ux/medias/icons/downarrow.svg";
+document.getElementById("arrowdown2").src = "/projet-lilo-ux/medias/icons/downarrow.svg";
 document.getElementById("searchdesktoop").src = "/projet-lilo-ux/medias/icons/search.svg";
 
 /* Appel des îcones et img pour le FOOTER */
+
+document.getElementById("bancontact").src = "/projet-lilo-ux/medias/icons/BANCONTACT_LILO.svg";
+document.getElementById("maestro").src = "/projet-lilo-ux/medias/icons/MAESTRO_LILO.svg";
+document.getElementById("mastercard").src = "/projet-lilo-ux/medias/icons/MASTERCARD_LILO.svg";
+document.getElementById("paypal").src = "/projet-lilo-ux/medias/icons/PAYPAL_LILO.svg";
+document.getElementById("visa").src = "/projet-lilo-ux/medias/icons/VISA_LILO.svg";
+document.getElementById("bpost").src = "/projet-lilo-ux/medias/icons/bpostlogo.svg";
+document.getElementById("logofooterlilo").src = "/projet-lilo-ux/medias/icons/lilologo.svg";
+document.getElementById("facebookfooter").src = "/projet-lilo-ux/medias/icons/Facebook.svg";
+document.getElementById("instafooter").src = "/projet-lilo-ux/medias/icons/Instagram.svg";
+document.getElementById("mailfooter").src = "/projet-lilo-ux/medias/icons/Mail.svg";
 
 
 
