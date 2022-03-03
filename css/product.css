@@ -15,9 +15,6 @@
 
 /*CONTENU IMAGE*/
 
-img{
-    width: 50px;
-}
 .images{
     display: flex;
     flex-direction: column;
@@ -49,6 +46,16 @@ img{
 
 h1{
     margin: 0;
+    margin-top: -10px;
+}
+
+h3{
+    font-size: 30px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+h4{
 }
 
 button{
@@ -68,4 +75,16 @@ button{
     justify-content: center;
 }
 
+p{
+    margin: 0;
+}
 
+
+.like{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coeur{
+    width: 35px;
+}
