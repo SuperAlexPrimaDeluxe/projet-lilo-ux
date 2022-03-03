@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+/* 4) CSS relatif à la grille contenant les produits */
+
+.gridelement {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.gridelement2 {
+    display: flex;
+    align-items: center;
+}
+
+/* 5) CSS pour le select qui permet de trier l'information */
+
+select {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 6) CSS pour l'ensemble des numéros de page */
+
+.page-numbers {
+    display: flex;
+}
+
+.page-numbers a {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    margin: 0 5px;
+}
+
+del {
+    text-decoration-thickness: 1px;
+}
+
+.productdescription span {
+    color: #F04022;
+}
+
+
+.robolight{
+    color: white;
+}
+
+.price{
+    color: white;
+}
+
+/* 6) CSS pour l'ensemble des numéros de page */
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background: url("../medias/img/home-badge-motif.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26A08A;
+}
+
+.banner a {
+    background-color: black;
+    height: 70%;
+    font-weight: 600;
+    font-size: 4em;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    color: white;
+}
+
+.banner::before {
+    content: " ";
+    display: block;
+    height: 65px;
+    background-image: url("../medias/img/torn.png");
+    position: absolute;
+    margin-top: 140px;
+    width: 100%;
+}
+
+.cards.container2 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    /* grid-auto-rows: 300px; */
+}
+
+.card2nav {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid black;
+    grid-row-start: span 3;
+    /* Valeur à changer en fonction du nombre d'élément sur la page */
+}
+
+.card2 {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 25px;
+    max-height: 700px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.card2 img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.totalinfo {
+    background-color: #262626;
+    margin-top: -5px;
+}
+
+.card2:hover {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.171));
+    transform: scale(1.02);
+}
+
+figure {
+    margin: 0 auto;
+}
+
+.con {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    line-height: 2;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.productdescription {
+    padding: 0 30px 0 30px;
+    color: #7a7a7a;
+    margin: 0;
+    font-size: 16px;
+}
+
+.infoprix {
+    padding: 10px 30px 30px 30px;
+    font-size: 18px;
+}
+
+.containerbtnachat {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+button.btnalex {
+    border: none;
+}
+
+.btnajoutpanier {
+    background-color: black;
+    padding: 10px;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    display: grid;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 100%;
+    font-size: 16px;
+    /* cursor: url(mi.jpg), auto; */ /*Ajout d'un curseur au survol*/
+
+}
+
+ul.pb_nav_lat_title>li {
+    font-family: Roboto Mono;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.btnajoutpanier:hover {
+    background-color: #ff4079;
+}
+
+.newmention {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #26A08A;
+    position: absolute;
+    left: 94%;
+    transform: translateX(-100%);
+    top: 3%;
+}
+
+.reduction2 {
+    color: #ff4079;
+}
+
+span.robolight {
+    font-weight: 500;
+}
+
+.fig2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 7%;
+    top: 74%;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+
+
+.fig2 button {
+    border: none;
+    background: none;
+    line-height: 12.5px;
+
+}
+
+.fig2.active {
+    background-color: white;
+    filter: drop-shadow(10px 10px 10px rgba(214, 214, 214, 0.171));
+    box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) inset;
+}
+
+.fig2 img.active {
+    filter: invert(45%) sepia(67%) saturate(4198%) hue-rotate(319deg) brightness(101%) contrast(104%);
+
+}
+
+img.hbk {
+    width: 25px;
+    height: 25px;
+    transition: .2s ease;
+    filter: invert(45%) sepia(67%) saturate(4198%) hue-rotate(319deg) brightness(101%) contrast(104%);
+}
+
+img.hbk.active {
+    filter: invert(45%) sepia(67%) saturate(4198%) hue-rotate(319deg) brightness(101%) contrast(104%);
+}
+
+/* CSS ANIMATION ROLLUP */
+
+.po {
+    height: 40px;
+    width: 450px;
+    margin-top: 20px;
+    background:
+        url(../medias/img/borders.webp),
+        url(../medias/img/borders2.webp),
+        url(../medias/img/home-badge-motif.png);
+    background-size: 100% 15%, 100% 15%, cover;
+    background-repeat: no-repeat;
+    background-position: 0px -4px, 0px 77px, center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 25px 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+    position: relative;
+    left: 100%;
+    transform: translateX(-550px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.po #bannertxt {
+    background: black;
+    padding: 5px 50px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.po:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 30px;
+    background: url(../medias/img/torn.png);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    margin-left: -15px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .25));
+    top: -5px;
+    z-index: 10;
+    animation: rollup 3s forwards;
+    animation-iteration-count: 1;
+}
+
+.po:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    animation: dechirage 3s forwards;
+    transform-origin: left;
+    animation-iteration-count: 1;
+}
+
+.page-numbers li a:hover {
+    background-color: #e0e0e0e5;
+}
+
+
+
+
+
+@keyframes rollup {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes dechirage {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+    }
+}
+
+/*Responsive*/
+
+@media(max-width:768px) {
+    main {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .cards.container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        grid-auto-rows: 300px;
+    }
+
+    header .container {
+        max-width: 90%;
+    }
+}
+
+@media(max-width:460px) {
+    .cards.container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ANIMATION NEON HEADER */
+
+@keyframes neonheader {
+    0% {
+        filter: drop-shadow(0px 0px 1px #ffff);
+    }
+
+    25% {
+        filter: drop-shadow(0px 0px 5px #000);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 10px #ffff);
+    }
+
+    75% {
+        filter: drop-shadow(0px 0px 20px #000);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 40px #ffff);
+    }
+}
