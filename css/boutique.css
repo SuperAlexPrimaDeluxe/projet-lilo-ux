@@ -12,8 +12,17 @@
     width: 100%;
 }
 
-#v1{
+#clicbold4{
+    border-color: #3EA995;
+}
+
+#clicbold4 a{
+    color: #3EA995;
+}
+
+#v1, #v4{
     padding-right: 15px;
+    display: none;
 }
 
 /* 4) CSS relatif à la grille contenant les produits */
