@@ -74,9 +74,10 @@ hr{
     border: none;
     background-color: #d35379;
     padding: 10px;
+    margin: 5px;
 }
 .btn-2-options{
-    height: 50px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -85,6 +86,7 @@ hr{
     color: #d35379;
     background-color: white;
     border: 1px solid #d35379;
+    margin: 5px;
 }
 h4{
     display: block;
