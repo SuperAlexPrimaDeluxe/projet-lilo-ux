@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px ;
+}
+hr{
+    margin: 10px 0;
+}
+.resume-panier{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 30px;
+}
+.produit{
+    display: block;
+    height: 220px;
+    width: 220px;
+}
+.quantite-prix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.quantite-prix .quantite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.quantite span, .compteur{
+    padding: 5px;
+    margin-bottom: 10px 0;
+}
+.informations-article li:nth-child(1), .informations-article span{
+    font-weight: bold;
+}
+.recapitulatif-panier{
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center;
+}
+.resume-panier ul, .recapitulatif-panier ul, li{
+    list-style: none;
+    padding: 5px;
+}
+.informations-article, .prix-article{
+    padding-left: 30px;
+}
+.resume-panier button, .btn-2-options button{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #d35379;
+    padding: 10px;
+}
+.btn-2-options{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.btn-2-options .vers-boutique{
+    color: #d35379;
+    background-color: white;
+    border: 1px solid #d35379;
+}
+h4{
+    display: block;
+    height: 30px;
+    margin: 100px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-size: bold;
+}
+
+/* *********************************
+    COMPTEUR
+********************************* */
+
+.compteur{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.compteur button{
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: black;
+    color: honeydew;
+}
+.compteur h2{
+    color: black;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 769px){
+    main{
+        width: 75%;
+        margin: auto;
+    }
+    .recapitulatif-panier{
+        display: flex;
+        justify-content: space-between;    
+    }
+    .informations-article{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65%;
+    }
+    .informations-article ul:nth-child(1){
+        width: 50%;
+    }
+    .informations-article ul:nth-child(2){
+        width: 30%;
+    }
+  }
