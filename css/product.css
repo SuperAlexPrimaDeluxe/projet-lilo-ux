@@ -15,29 +15,41 @@
 
 /*CONTENU IMAGE*/
 
+.big{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
 .images{
     display: flex;
     flex-direction: column;
 }
 
 .boom1{
-    background-color: white;
     width: 440px;
-    height: 440px;
+    background-color: white;
+    transform: translateY(-40px);
 }
 
 .boom2{
-    background-color: white;
     width: 100px;
-    height: 100px;
-}.boom3{
     background-color: white;
+    transform: translateY(-40px);
+}
+
+
+.boom3{
     width: 100px;
-    height: 100px;
-    margin-left: 14px;
+    background-color: white;
+    transform: translateY(-40px);
 }
 
 .small{
+    
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
     margin-top: 15px;
 }
 
@@ -102,4 +114,12 @@ p{
 .coeur{
     width: 35px;
     color: black;
+}
+
+
+@media (max-width: 800px){
+
+
+
+
 }
