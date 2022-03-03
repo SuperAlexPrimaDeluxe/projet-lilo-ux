@@ -13,23 +13,24 @@
     <script src="/js/panier.js" defer></script>
 </head>
 <body>
-    <main-header current="home"></main-header>
     <main>
         <h1>Votre panier</h1>
-        <section class="resume-panier">
+        <div class="resume-panier">
             <ul>
                 <li>VOTRE PANIER</li>
-                <li>ARTICLES AJOUTES</li>
+                <li>2 ARTICLES AJOUTES</li>
             </ul>
             <ul>
                 <li>TOTAL</li>
                 <li>15,00€</li>
             </ul>
-            <button>JE VALIDE MA COMMANDE</button>
-        </section>
+        </div>
+        <div class="btn-resume-panier">
+            <button class="btn-1-valider"><a href="">JE VALIDE MA COMMANDE</a></button>
+        </div>
         <hr>
         <div class="recapitulatif-panier">
-            <img class="produit" src="../medias/img/produits/b1.jpg" alt="badge 'se jeter à l'eau'">
+            <img class="produit" src="/images/badges/b1.jpg" alt="badge 'se jeter à l'eau'">
             <div class="informations-article">      
                 <ul class="description-article">
                     <li class="nom-article"> "Se jeter à l'eau comme... commencer... regarder..."</li>
@@ -54,10 +55,10 @@
                     </div>
                 </div>
             </div>         
-        </div>  
-        <hr>
+        </div>
+        <hr> 
         <div class="recapitulatif-panier">
-            <img class="produit" src="../medias/img/produits/b4.jpg" alt="badge 'se jeter à l'eau'">
+            <img class="produit" src="/images/badges/b1.jpg" alt="badge 'se jeter à l'eau'">
             <div class="informations-article">      
                 <ul class="description-article">
                     <li class="nom-article"> "Se jeter à l'eau comme... commencer... regarder..."</li>
@@ -69,7 +70,7 @@
                         <span>Quantité</span>
                         <div class="compteur">
                             <button onclick="decrement()">-</button>
-                            <h2 id="counting"></h2>
+                            <h3 id="counting-2">2</h3>
                             <button onclick="increment()">+</button>
                         </div> 
                     </div>    
@@ -84,9 +85,10 @@
             </div>         
         </div>  
         <hr>
-        <div class="btn-2-options">
-        <button class="vers-boutique"> < RETOUR VERS LA BOUTIQUE</button>
-        <button>JE VALIDE MA COMMANDE</button>
+        <div class="btn-options">
+        <button class="btn-vers-boutique"><a href=""> < RETOUR VERS LA BOUTIQUE</a></button>
+        <button class="
+        btn-2-valider"><a href="">JE VALIDE MA COMMANDE</a></button>
         </div> 
     </div>
         <h4>Vous aimerez aussi</h4>

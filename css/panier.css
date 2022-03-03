@@ -9,14 +9,14 @@ html{
     font-size: 18px;
 }
 main{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 h1{
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
-    margin: 50px ;
+    margin: 50px auto;
 }
 hr{
     margin: 10px 0;
@@ -30,15 +30,26 @@ hr{
     color: white;
     padding: 0 30px;
 }
+.recapitulatif-panier{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
 .produit{
     display: block;
     height: 220px;
     width: 220px;
+    margin: 5px;
+}
+.description-article{
+    text-align: center;
+    margin: 10px 0;
 }
 .quantite-prix{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: top;
+    justify-content: space-around;
     height: 100px;
 }
 .quantite-prix .quantite{
@@ -54,19 +65,11 @@ hr{
 .informations-article li:nth-child(1), .informations-article span{
     font-weight: bold;
 }
-.recapitulatif-panier{
-    display: flex;  
-    justify-content: space-between; 
-    align-items: center;
-}
 .resume-panier ul, .recapitulatif-panier ul, li{
     list-style: none;
     padding: 5px;
 }
-.informations-article, .prix-article{
-    padding-left: 30px;
-}
-.resume-panier button, .btn-2-options button{
+.btn-1-valider, .btn-2-valider, .btn-vers-boutique{
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -74,25 +77,36 @@ hr{
     border: none;
     background-color: #d35379;
     padding: 10px;
-    margin: 5px;
+    margin: 30px 10px;
 }
-.btn-2-options{
+.btn-resume-panier{
+    text-align: center;
+}
+.btn-1-valider a, .btn-2-valider a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-vers-boutique a{
+    text-decoration: none;
+    color: #d35379;
+    cursor: pointer;
+}
+.btn-options{
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin: 30px;
 }
-.btn-2-options .vers-boutique{
+.btn-vers-boutique{
     color: #d35379;
     background-color: white;
     border: 1px solid #d35379;
-    margin: 5px;
 }
 h4{
     display: block;
     height: 30px;
-    margin: 100px;
-    text-align: left;
+    margin: 75px auto;
+    text-align: center;
     font-size: 1.2rem;
     font-size: bold;
 }
@@ -114,32 +128,38 @@ h4{
     background-color: black;
     color: honeydew;
 }
-.compteur h2{
+.compteur h2,h3{
     color: black;
     margin: 0 20px;
     font-size: 1rem;
     font-weight: normal;
 }
-
+@media screen and (min-width: 360px){
+    main{
+        width: 90%;
+    }
+    .informations-article{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .description-article, .quantite-prix{
+        width: 50%;
+    }
+}
 @media screen and (min-width: 769px){
     main{
         width: 75%;
         margin: auto;
     }
     .recapitulatif-panier{
-        display: flex;
-        justify-content: space-between;    
+        flex-direction: row;
     }
     .informations-article{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 65%;
+        width: 70%;
     }
-    .informations-article ul:nth-child(1){
-        width: 50%;
-    }
-    .informations-article ul:nth-child(2){
-        width: 30%;
+    .btn-resume-panier{
+        text-align: right;
     }
   }
