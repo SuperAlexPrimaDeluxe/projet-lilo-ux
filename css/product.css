@@ -16,8 +16,8 @@
 /*CONTENU IMAGE*/
 
 .big{
-    width: 400px;
-    height: 400px;
+    width: 440px;
+    height: 440px;
     overflow: hidden;
 }
 
@@ -47,8 +47,8 @@
 
 .small{
     
-    width: 400px;
-    height: 400px;
+    width: 440px;
+    height: 440px;
     overflow: hidden;
     margin-top: 15px;
 }
