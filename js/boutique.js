@@ -1,24 +1,11 @@
-var bruno = document.querySelectorAll('.btnalex');
+function myFunction() {
+  var elements = document.getElementsByClassName("fig2");
 
-console.log(bruno);
-console.log("SOSOSOS");
-
-
-
-
-
-
-// const buttonsContainer = document.getElementById("buttonsContainer");
-
-// for (var i = 0; i < 5; i++) {
-//   const button = document.createElement("button");
-//   button.innerText = i;
-//   button.addEventListener("click", function() {
-//     console.log(i)
-//   })
-//   buttonsContainer.appendChild(button);
-
-
-
-
-
+  for (var i = 0, len = elements.length; i < len; i++) {
+    if (elements[i].style.backgroundColor !== "white") {
+      elements[i].style.backgroundColor = "white";
+    } else {
+      elements[i].style.backgroundColor = "transparent";
+    }
+  }
+};
