@@ -42,12 +42,21 @@ del {
     color: #F04022;
 }
 
+
+.robolight{
+    color: white;
+}
+
+.price{
+    color: white;
+}
+
 /* 6) CSS pour l'ensemble des numéros de page */
 
 .banner {
     width: 100%;
     height: 150px;
-    background: url("/medias/img/home-badge-motif.png");
+    background: url("../medias/img/home-badge-motif.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +82,7 @@ del {
     content: " ";
     display: block;
     height: 65px;
-    background-image: url("/medias/img/torn.png");
+    background-image: url("../medias/img/torn.png");
     position: absolute;
     margin-top: 140px;
     width: 100%;
@@ -197,7 +206,7 @@ ul.pb_nav_lat_title>li {
 }
 
 .btnajoutpanier:hover {
-    background-color: #353434;
+    background-color: #ff4079;
 }
 
 .newmention {
@@ -271,9 +280,9 @@ img.hbk.active {
     width: 450px;
     margin-top: 20px;
     background:
-        url(/medias/img/borders.webp),
-        url(/medias/img/borders2.webp),
-        url(/medias/img/home-badge-motif.png);
+        url(../medias/img/borders.webp),
+        url(../medias/img/borders2.webp),
+        url(../medias/img/home-badge-motif.png);
     background-size: 100% 15%, 100% 15%, cover;
     background-repeat: no-repeat;
     background-position: 0px -4px, 0px 77px, center center;
@@ -303,7 +312,7 @@ img.hbk.active {
     display: block;
     height: 100%;
     width: 30px;
-    background: url(/medias/img/torn.png);
+    background: url(../medias/img/torn.png);
     background-size: cover;
     position: absolute;
     left: 0;

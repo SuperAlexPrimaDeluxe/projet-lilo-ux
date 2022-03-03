@@ -110,7 +110,7 @@ class MyFooter extends HTMLElement {
                             Conditions des offres
                         </a>
                     </div>
-                    <span>
+                    <span id="lastspanfooter">
                         © 2022, Les ateliers de Lilo. Commerce électronique réaliser par le groupe "CALM"
                     </span>
                 </div>
