@@ -34,8 +34,12 @@
     background-color: white;
     width: 100px;
     height: 100px;
+    margin-left: 14px;
 }
 
+.small{
+    margin-top: 15px;
+}
 
 /*CONTENU TEXTE*/
 
@@ -87,4 +91,5 @@ p{
 
 .coeur{
     width: 35px;
+    color: black;
 }
