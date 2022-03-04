@@ -5,25 +5,47 @@
     border: #7A7A7A 1px solid;
     display: flex;
     margin: 10px 0px;
+    background-color: white;
+    padding: 10px 5px;
+    position: relative;   
 }
 
-.clicbold a{
-    padding: 10px 5px;
-    width: 100%;
+span#dbg1{
+    color: #3EA995;
+}
+
+span#dbg2{
+    color: #E28AA4;
+}
+
+span#dbg3{
+    color: #FF3D00;
 }
 
 #clicbold4{
     border-color: #3EA995;
+    background-color: white;
+    cursor: pointer;
 }
 
-#clicbold4 a{
-    color: #3EA995;
+#clicbold5{
+    border-color: #E28AA4;
+    color: #E28AA4;
+    cursor: pointer;
+    background-color: white;
 }
 
-#v1, #v4{
-    padding-right: 15px;
+#clicbold6{
+    border-color: #FF3D00;
+}
+
+#v1, #v4, #v5, #v6{
     display: none;
+    position: absolute;
+    top: 25%;
+    right: 15px;
 }
+
 
 /* 4) CSS relatif à la grille contenant les produits */
 
