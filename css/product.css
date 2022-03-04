@@ -43,10 +43,11 @@
     width: 100px;
     background-color: white;
     transform: translateY(-40px);
+    margin-left: 10px;
+
 }
 
 .small{
-    
     width: 440px;
     height: 440px;
     overflow: hidden;
