@@ -54,7 +54,17 @@
               nouveaufiltre.style.fontWeight = "bold";
               document.getElementById("v4").style.display = "block";
               document.getElementById("v4").style.filter = "invert(55%) sepia(80%) saturate(298%) hue-rotate(119deg) brightness(89%) contrast(90%)";
+              nouveaufiltre.classList.add("geek"); 
             } else {
+              for (let i = 0; i < nodeList1.length; i++) {
+                nodeList1[i].style.display = "block";
+              }
+              for (let j = 0; j < nodeList2.length; j++) {
+                nodeList2[j].style.display = "block";
+              }
+              for (let k = 0; k < nodeList3.length; k++) {
+                nodeList3[k].style.display = "block";
+              }
               nouveaufiltre.style.backgroundColor = "white";
               dbg.style.color = "#3EA995";
               document.getElementById("v4").style.display = "none";
@@ -79,6 +89,15 @@
     var dbg2 = document.getElementById("dbg2");
 
     nouveaufavoris.onclick = function () {
+      for (let i = 0; i < nodeList1.length; i++) {
+        nodeList1[i].style.display = "none";
+      }
+      for (let j = 0; j < nodeList2.length; j++) {
+        nodeList2[j].style.display = "block";
+      }
+      for (let k = 0; k < nodeList3.length; k++) {
+        nodeList3[k].style.display = "none";
+      }
       if (nouveaufavoris.style.backgroundColor === "white") {
         nouveaufavoris.style.borderRight = "2px solid #E28AA4";
         nouveaufavoris.style.borderBottom = "2px solid #E28AA4";
@@ -90,7 +109,17 @@
         nouveaufavoris.style.fontWeight = "bold";
         document.getElementById("v5").style.display = "block";
         document.getElementById("v5").style.filter = "invert(65%) sepia(35%) saturate(444%) hue-rotate(292deg) brightness(90%) contrast(96%)";
+        nouveaufiltre.classList.add("geek"); 
       } else {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
         nouveaufavoris.style.backgroundColor = "white";
         dbg2.style.color = "#E28AA4";
         document.getElementById("v5").style.display = "none";
@@ -113,6 +142,15 @@
     var dbg3 = document.getElementById("dbg3");
 
     nouveauprix.onclick = function () {
+      for (let i = 0; i < nodeList1.length; i++) {
+        nodeList1[i].style.display = "none";
+      }
+      for (let j = 0; j < nodeList2.length; j++) {
+        nodeList2[j].style.display = "none";
+      }
+      for (let k = 0; k < nodeList3.length; k++) {
+        nodeList3[k].style.display = "block";
+      }
       if (nouveauprix.style.backgroundColor === "white") {
         nouveauprix.style.borderRight = "2px solid #FF3D00";
         nouveauprix.style.borderBottom = "2px solid #FF3D00";
@@ -124,7 +162,17 @@
         nouveauprix.style.fontWeight = "bold";
         document.getElementById("v6").style.display = "block";
         document.getElementById("v6").style.filter = "invert(30%) sepia(38%) saturate(6105%) hue-rotate(3deg) brightness(103%) contrast(107%)";
+        nouveaufiltre.classList.add("geek"); 
       } else {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
         nouveauprix.style.backgroundColor = "white";
         dbg3.style.color = "#FF3D00";
         document.getElementById("v6").style.display = "none";
@@ -138,10 +186,14 @@
     };
 
 
+/*Double affichage*/
 
+var visi1 = document.getElementById("v4");
+var visi2 = document.getElementById("v5");
 
-
-
+if(document.getElementById("v4").style.display == "block" && document.getElementById("v5").style.display == "block"){
+console.log("OK");
+}else{console.log("PAS OK");}
 
 
 
