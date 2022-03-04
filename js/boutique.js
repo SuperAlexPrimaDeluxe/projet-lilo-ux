@@ -1,58 +1,75 @@
     //Attempt to get the element using document.getElementById
     var badges = document.getElementById("bannertxt");
     console.log(badges.textContent);
-    
-    if (badges.textContent.includes('BADGES')) { 
-      alert("OK");
-      document.getElementById("clicbold1").style.borderRight ="7px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderBottom ="7px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderTop ="2px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderLeft ="2px solid #7A7A7A";
-      document.getElementById("clicbold1").style.fontSize ="18px";
-      document.getElementById("clicbold1").style.fontWeight ="bold";
-     }else{
-       alert("FUCKO");
-     }
- 
- 
-    var nouveaufiltre = document.getElementById("clicbold4");
 
-     nouveaufiltre.onclick = function () {
-      nouveaufiltre.style.backgroundColor = "#3EA995";
-      document.getElementById("liennouveautebtq").style.color = "white";
-      document.getElementById("liennouveautebtq").style.fontWeight = "bold";
-      document.getElementById("v4").style.filter = "brightness(0) invert(1)";
-      document.getElementById("v4").style.display = "block";
-      // nouveaufiltre.style.borderColor = "#7A7A7A";
-      // nouveaufiltre.style.borderRight ="7px solid #7A7A7A";
-      // nouveaufiltre.style.borderBottom ="7px solid #7A7A7A";
-      // nouveaufiltre.style.borderTop ="2px solid #7A7A7A";
-      // nouveaufiltre.style.borderLeft ="2px solid #7A7A7A";
-      // nouveaufiltre.style.fontSize ="18px";
-      // nouveaufiltre.style.fontWeight ="bold";
-      // if (targetDiv.style.display == "none") {
-      //   targetDiv.style.display = "block";
-      //   closegetter.style.display = "block";
-      //   burgergetter.style.display = "none";
-      // }else {
-      //   targetDiv.style.display = "none";
-      //   closegetter.style.display = "none";
-      //   burgergetter.style.display = "block";
-      // }
+    if (badges.textContent.includes('BADGES')) {
+      alert("OK");
+      document.getElementById("clicbold1").style.borderRight = "7px solid #7A7A7A";
+      document.getElementById("clicbold1").style.borderBottom = "7px solid #7A7A7A";
+      document.getElementById("clicbold1").style.borderTop = "2px solid #7A7A7A";
+      document.getElementById("clicbold1").style.borderLeft = "2px solid #7A7A7A";
+      document.getElementById("clicbold1").style.fontSize = "18px";
+      document.getElementById("clicbold1").style.fontWeight = "bold";
+    } else {
+      alert("FUCKO");
+    }
+
+
+    var nouveaufiltre = document.getElementById("clicbold4");
+    nouveaufiltre.style.backgroundColor = "white";
+    var x = nouveaufiltre.style.backgroundColor;
+    console.log(x);
+
+
+    nouveaufiltre.onclick = function () {
+      if (nouveaufiltre.style.backgroundColor === "white") {
+        nouveaufiltre.style.backgroundColor = "#3EA995";
+        document.getElementById("liennouveautebtq").style.color = "white";
+        document.getElementById("liennouveautebtq").style.fontWeight = "bold";
+        document.getElementById("v4").style.filter = "brightness(0) invert(1)";
+        document.getElementById("v4").style.display = "block";
+      } else {
+        nouveaufiltre.style.backgroundColor = "white";
+        document.getElementById("liennouveautebtq").style.color = "#3EA995";
+        document.getElementById("v4").style.display = "none";
+        document.getElementById("liennouveautebtq").style.fontWeight = "normal";
+      }
     };
 
 
 
+    //   var favorisfiltre = document.getElementById("clicbold5");
 
-// fonction pour le clic sur le bouton like
-function myFunction() {
-  var elements = document.getElementsByClassName("fig2");
+    //     favorisfiltre.onclick = function () {
+    //     favorisfiltre.style.backgroundColor = "#E28AA4";
+    //     document.getElementById("lienfavoristebtq").style.color = "white";
+    //     document.getElementById("lienfavoristebtq").style.fontWeight = "bold";
+    //     document.getElementById("v5").style.filter = "brightness(0) invert(1)";
+    //     document.getElementById("v5").style.display = "block";
+    //   };
 
-  for (var i = 0, len = elements.length; i < len; i++) {
-    if (elements[i].style.backgroundColor !== "white") {
-      elements[i].style.backgroundColor = "white";
-    } else {
-      elements[i].style.backgroundColor = "transparent";
-    }
-  }
-};
+    //   var petitprixfiltre = document.getElementById("clicbold6");
+
+    //   petitprixfiltre.onclick = function () {
+    //   petitprixfiltre.style.backgroundColor = "#FF3D00";
+    //   document.getElementById("lienpetitprixbtq").style.color = "white";
+    //   document.getElementById("lienpetitprixbtq").style.fontWeight = "bold";
+    //   document.getElementById("v6").style.filter = "brightness(0) invert(1)";
+    //   document.getElementById("v6").style.display = "block";
+    // };
+
+
+
+
+    // fonction pour le clic sur le bouton like
+    function myFunction() {
+      var elements = document.getElementsByClassName("fig2");
+
+      for (var i = 0, len = elements.length; i < len; i++) {
+        if (elements[i].style.backgroundColor !== "white") {
+          elements[i].style.backgroundColor = "white";
+        } else {
+          elements[i].style.backgroundColor = "transparent";
+        }
+      }
+    };

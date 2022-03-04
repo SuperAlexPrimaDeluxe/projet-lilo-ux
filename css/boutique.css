@@ -5,6 +5,8 @@
     border: #7A7A7A 1px solid;
     display: flex;
     margin: 10px 0px;
+    background-color: white;
+    
 }
 
 .clicbold a{
@@ -14,16 +16,34 @@
 
 #clicbold4{
     border-color: #3EA995;
+    background-color: white;
 }
 
 #clicbold4 a{
     color: #3EA995;
 }
 
-#v1, #v4{
+#clicbold5{
+    border-color: #E28AA4;
+}
+
+#clicbold5 a{
+    color: #E28AA4;
+}
+
+#clicbold6{
+    border-color: #FF3D00;
+}
+
+#clicbold6 a{
+    color: #FF3D00;
+}
+
+#v1, #v4, #v5, #v6{
     padding-right: 15px;
     display: none;
 }
+
 
 /* 4) CSS relatif à la grille contenant les produits */
 
