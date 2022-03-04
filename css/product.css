@@ -118,9 +118,65 @@ p{
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 900px){
+    .texte{
+        margin-left: 35px;
+    }
 
+}
 
+@media (max-width: 765px){
 
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texte{
+        margin-left: 0;
+        margin-top: -75px;
+    }
+
+    .small{
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 444px){
+
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texte{
+        width: 250px;
+        margin-left: 0;
+        margin-top: -75px;
+    }
+
+    .small{
+        width: 220px;
+        height: 220px;
+    }
+
+    .big{
+        width: 265px;
+        height: 265px;
+        overflow: hidden;
+    }
+
+    .boom1{
+        width: 300px;
+    }
+
+    .images{
+        display: flex;
+        align-items: center;
+    }
 
 }
