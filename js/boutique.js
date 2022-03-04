@@ -28,14 +28,22 @@
 
     var dbg = document.getElementById("dbg1");
 
-    const nodeList1 = document.querySelectorAll(".new");
-    const nodeList2 = document.querySelectorAll(".favoris");
-    const nodeList3 = document.querySelectorAll(".petitsprix");
-    for (let i = 0; i < nodeList1.length; i++) {
-      for (let j = 0; j < nodeList2.length; j++) {
-        for (let k = 0; k < nodeList3.length; k++) {
+    var nodeList1 = document.querySelectorAll(".new");
+
+    var nodeList2 = document.querySelectorAll(".favoris");
+    var nodeList3 = document.querySelectorAll(".petitsprix");
+ 
           nouveaufiltre.onclick = function () {
             if (nouveaufiltre.style.backgroundColor === "white") {
+              for (let i = 0; i < nodeList1.length; i++) {
+                nodeList1[i].style.display = "block";
+              }
+              for (let j = 0; j < nodeList2.length; j++) {
+                nodeList2[j].style.display = "none";
+              }
+              for (let k = 0; k < nodeList3.length; k++) {
+                nodeList3[k].style.display = "none";
+              }
               nouveaufiltre.style.borderRight = "2px solid #3EA995";
               nouveaufiltre.style.borderBottom = "2px solid #3EA995";
               nouveaufiltre.style.borderTop = "1px solid #3EA995";
@@ -46,8 +54,6 @@
               nouveaufiltre.style.fontWeight = "bold";
               document.getElementById("v4").style.display = "block";
               document.getElementById("v4").style.filter = "invert(55%) sepia(80%) saturate(298%) hue-rotate(119deg) brightness(89%) contrast(90%)";
-              nodeList2[i].style.display = "none";
-              nodeList3[i].style.display = "none";
             } else {
               nouveaufiltre.style.backgroundColor = "white";
               dbg.style.color = "#3EA995";
@@ -57,14 +63,11 @@
               nouveaufiltre.style.borderBottom = "1px solid #3EA995";
               nouveaufiltre.style.borderTop = "1px solid #3EA995";
               nouveaufiltre.style.borderLeft = "1px solid #3EA995";
-              nodeList2[i].style.display = "block";
-              nodeList3[i].style.display = "block";
               dbg.style.fontSize = "14px";
             }
           };
-        }
-      }
-    }
+
+   
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE FAVORIS */
 
