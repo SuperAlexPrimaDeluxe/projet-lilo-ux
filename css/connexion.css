@@ -18,22 +18,19 @@ h1{
 /* ********************************************************* */
 main{
     width: 90%;
-    /* display: flex;
-    justify-content: space-between; */
     margin: 0 auto;
 }
-
 .connexion, .nouveau-compte{
-    width: 42%;
+    width: 80%;
     border: 1px solid black;
     margin: 100px auto;
     padding: 0 20px;
+    /* display: flex;
+    flex-direction: column; */
 }
 h2{
     margin: 40px auto;
     text-align: left;
-    /* font-family: "roboto-mono";
-    font-weight: 700; */
 }
 .connexion h2{
     margin-bottom: 15px;
@@ -51,7 +48,6 @@ h3{
     margin: 10px 0;
 }
 .form-connexion p{
-    /* color: #d35379; */
     margin: 10px 0;
     font-size: .8rem;
 }
@@ -59,9 +55,10 @@ h3{
     display: block;
     color: #d35379;
     margin-bottom: 40px;
-    margin-left: 50%;
+    margin-right: 20px;
+    text-align: end;
 }
-.form-connexion label, p, a{ 
+.form-connexion label, .form-nouveau-compte label, p, a{ 
     padding: 10px 0;
 }
 input{
@@ -78,15 +75,16 @@ input::placeholder {
     color: #d35379;
     padding-left: 5px;
   }
-.bouton{
-    display: inline-flex;
-    margin-bottom: 80px;
+.btn-toggle{
+    display: flex;
+    align-items: center;
 }
-.bouton p{
+.btn-toggle p{
     color: black;
-    padding: 0;
+    padding: 5px 0;
     margin: 20px;
 }
+
 .form-nouveau-compte .google{
     width: 30px;
     height: 30px;
@@ -115,6 +113,9 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
 }
+.connexion-g-f p{
+    text-align: center;
+}
 .logo-g-f{
     display: flex;
     justify-content: center;
@@ -123,7 +124,6 @@ input::placeholder {
     color: #d35379;
 }
 .form-nouveau-compte p:nth-child(4){
-    /* color: #d35379; */
     font-size: .8rem;
     margin: 10px 0;
 }
@@ -145,7 +145,6 @@ input[type="checkbox"].toggle + label{
     transition: all 0.5s ;
     margin: 20px 10px;
 }
-
 input[type="checkbox"].toggle + label::before {
     box-sizing: border-box;
     display: block;
@@ -162,22 +161,46 @@ input[type="checkbox"].toggle:checked + label {
 input[type="checkbox"].toggle:checked + label::before {
 margin-left: 1.5rem ;
 }
+.se-connecter, .inscription{
+    text-align: end;
+}
 
 /* ******************************* */
 /* button */
 /* ******************************* */
-main button{
+.form-connexion .btn-se-connecter, .btn-inscription{
+    display: inline-block;
     width: 100%;
-    background-color: black;
+    background-color: #d35379;
     color: white;
     font-size: 1rem;
     border: none;
     padding: 10px;
-    margin: 25px auto;
+    margin: 70px 0;
     /* outline: none; */
     cursor: pointer;
     transition: transform 0.5s;
 }
 main button:hover{
     transform: scale(1.05);
+}
+.newsletter{
+    height: 100px;
+}
+
+/* ********** */
+@media screen and (min-width:460px) {
+    .form-connexion .btn-se-connecter, .btn-inscription{
+        width: 300px;    
+    }     
+    .connexion, .nouveau-compte{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 860px){
+    .connexion, .nouveau-compte{
+        width: 50%;
+    }
+    
 }

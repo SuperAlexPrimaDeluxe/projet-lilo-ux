@@ -18,26 +18,28 @@
     <h1>Mon compte</h1>
     <main>
         <div class="connexion">
-                <h2>
-                    Bonjour, connecte-toi pour conserver tes recherches !
-                </h2>
-                <a href="#nouveau-compte"> Pas encore de compte ? </a> 
-                <hr>
-                <section class="form-connexion">
-                <h3>Connexion</h3>
+            <h2>
+                Bonjour, connecte-toi pour conserver tes recherches !
+            </h2>
+            <a href="#nouveau-compte"> Pas encore de compte ? </a> 
+            <hr>
+            <section class="form-connexion">
+            <h3>Connexion</h3>
                 <form action="/">
                     <label for="email">Adresse de messagerie*</label>
                     <input type="email" placeholder="E-mail">
                     <label for="password">Mot de passe*</label>
-                    <input type="password" placeholder="***Mot de passe">
+                    <input type="password" placeholder="***Mot de passe***">
                     <a href="#oublier">Mot de passe oublié ?</a>
                 </form>
-                <div class="bouton">
+                <div class="btn-toggle">
                     <input type="checkbox" class="toggle" id="toggle">
                     <label for="toggle"></label>
                     <p>Se souvenir de moi</p>
                 </div>
-                <button onclick="href=''">Se connecter</a></button>
+                <div class="se-connecter">
+                    <button class="btn-se-connecter" onclick="href=''">Se connecter</button>
+                </div>
                 <p>*champ obligatoire</p>
             </section>
         </div>
@@ -52,27 +54,29 @@
                     <label for="email">Adresse de messagerie*</label>
                     <input type="email" placeholder="E-mail">
                     <label for="password">Mot de passe*</label>
-                    <input type="password" placeholder="***Mot de passe">
+                    <input type="password" placeholder="***Mot de passe***">
                     <label for="password">Confirmer mot de passe*</label>
-                    <input type="password" placeholder="***Mot de passe">
+                    <input type="password" placeholder="***Mot de passe***">
                     <div class="rgpd">
                         <div class="connexion-g-f" >
-                        <hr><p>Ou se  connecter avec</p><hr>
+                            <hr><p>Ou se  connecter avec</p><hr>
                         </div>
                         <div class="logo-g-f">
-                            <img class="google" src="../medias/icons/google.png" alt="logo_google">/images/icones/google.png
-                            <img class="facebook" src="../medias/icons/facebook.png" alt="facebook">
+                            <img class="google" src="/images/icones/google.png" alt="logo_google">
+                            <img class="facebook" src="/images/icones/facebook.png" alt="facebook">
                         </div>
                         <p>
                             Vos données personnelles seront utilisées pour améliorer votre expérience sur ce site, à gérer votre compte, et à d’autres fins décrites dans notre  <a href="">Chartre de vie privée.</a></a>
                         </p>
                     </div>
-                </form>
-                <button onclick="href=''">Inscription</a></button>
+                <div class="inscription">  
+                    <button class="btn-inscription" onclick="href=''">Inscription</button>
+                </div>
                 <p>*champ obligatoire</p>
             </section>   
         </div>
-    </main> 
+        <div class="newsletter"></div>
+    </main>    
     <main-footer current="home"></main-footer>   
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/dashboard.js"></script>
     <script src="../js/header.js" defer></script>
     <script src="../js/footer.js" defer></script>
     <script src="../js/pathcorrecter.js" defer></script>
@@ -18,126 +19,110 @@
     <main-header current="home"></main-header>
     <div class="bienvenue">
         <h1>Mon compte</h1>
-        <img src="../medias/img/sarah_conor.jpeg" alt="photo de profil">
+        <img src="/images/sarah_conor.jpeg" alt="photo de profil">
         <h5>Bonjour Sarah Conor ;)</h5>
-    </div>
-    <main>
-        <section class="coordonnees">
-            <div class="titre-coordonnees">
-                <img src="../medias/icons/user.png" alt="icone d'utilisateur">
-                <h3>Mes coordonnées</h3>
-            </div>
-            <div class="sous-section">
-                <div class="gauche">
-                    <ul>
-                        <li>Nom : </li>
-                        <li>Sarah Conor</li>    
-                    </ul>
-                    <ul>
-                        <li>Date d'anniversaire : </li>
-                        <li>19/04/1994</li>
-                    </ul>
-                    <ul>
-                        <li>Numéro de téléphone : </li>
-                        <li>0470 01 02 03</li>
-                    </ul>    
-                </div>
-                <div class="droite">
-                    <ul>
-                        <li>Adresse e-mail : </li>
-                        <li>sarah_conor@gmail.com</li>
-                    </ul>
-                    <ul>
-                        <li>Adresse de livraison : </li>
-                        <li>3 Rue du Poirier - 7000 Mons</li>
-                    </ul>
-                </div> 
-            </div>
-        </section>
-        <section class="commandes">
-            <div class="titre-commandes">
-                <img src="../medias/icons/truck.png" alt="icone de camion">
-                <h3>Mes commandes</h3>
-            </div>
-            <div class="sous-section">
-                <div class="gauche">
-                    <ul>
-                        <li>Commande du 09/12/21</li>
-                        <li>N° de commande 2212094479</li>
-                        <li>Montant total 17,00 €</li>
-                        <a href="">détails</a>
-                    </ul>
-                </div>
-                <div class="droite">
-                    <ul>
-                        <li>Commande du 25/01/22</li>
-                        <li>N° de commande 220224856</li>
-                        <li>Montant total 17,00 €</li>
-                        <a href="">détails</a>
-                    </ul>
-                </div>
-            </div>    
-        </section>
-        <section class="mp">
-            <div class="titre-mp">
-                <img src="../medias/icons/user.png" alt="utilisateur">
-                <h3>Changer mon mot de passe</h3>
-            </div>
-            <div class="sous-section">
-                <form id="start" action="/">
-                    <p>
-                        <label for="password">Ancien mot de passe</label>
-                        <input type="password" placeholder="***Mot de passe">
-                    </p>
-                    <p>
-                        <label for="password">Nouveau mot de passe</label>
-                        <input type="password" placeholder="***Mot de passe">
-                    </p>
-                    <p>
-                        <label for="password">Confirmation du mot de passe</label>
-                        <input type="password" placeholder="***Mot de passe">
-                    </p>
-                </form>
-                <div class="confirmation">
-                    <button type="button" onclick="toggle_text()">CONFIRMER</button>
-                    <a href="#">Annuler</a>
-                </div> 
-                <span id="span_txt">Nouveau mot de passe confirmé !</span>
-            </div>
-        </section> 
-        <div class="accordion">
-            <section id="quatre" class="supprimer-compte">
-                <div class="titre-supprimer-compte">
-                    <img src="../medias/icons/trash-2.png" alt="poubelle">
-                    <a href="#quatre"> Supprimer mon compte</a>
-                    <p>V</p>
-                </div>    
-                <div class="sous-section">
-                    <p>Voulez-vous vraiment supprimer votre compte ?</p> 
-                    <div class="suppression" >
-                        <button>
-                            <img src="../medias/icons/check.png" alt="vu">
-                            <a class="btn" href="finish">Oui</a>
-                        </button>   
-                        <button>
-                            <a href="#start"> X Non</a>
-                        </button>
-                    </div> 
-                    </p>
-                </div>    
-            </section>
         </div>
-    </main>
+        <main>
+            <section class="coordonnees">
+                <div class="titre-coordonnees">
+                    <img src="/images/icones/user.png" alt="icone d'utilisateur">
+                    <h3>Mes coordonnées</h3>
+                </div>
+                <div class="sous-section">
+                    <div class="gauche">
+                        <ul>
+                            <li>Nom : </li>
+                            <li>Sarah Conor</li>    
+                        </ul>
+                        <ul>
+                            <li>Date d'anniversaire : </li>
+                            <li>19/04/1994</li>
+                        </ul>
+                        <ul>
+                            <li>Numéro de téléphone : </li>
+                            <li>0470 01 02 03</li>
+                        </ul>    
+                    </div>
+                    <div class="droite">
+                        <ul>
+                            <li>Adresse e-mail : </li>
+                            <li>sarah_conor@gmail.com</li>
+                        </ul>
+                        <ul>
+                            <li>Adresse de livraison : </li>
+                            <li>3 Rue du Poirier - 7000 Mons</li>
+                        </ul>
+                    </div> 
+                </div>
+            </section>
+            <section class="commandes">
+                <div class="titre-commandes">
+                    <img src="/images/icones/truck.png" alt="icone de camion">
+                    <h3>Mes commandes</h3>
+                </div>
+                <div class="sous-section">
+                    <div class="gauche">
+                        <ul>
+                            <li>Commande du 09/12/21</li>
+                            <li>N° de commande 2212094479</li>
+                            <li>Montant total 17,00 €</li>
+                            <a href="">détails</a>
+                        </ul>
+                    </div>
+                    <div class="droite">
+                        <ul>
+                            <li>Commande du 25/01/22</li>
+                            <li>N° de commande 220224856</li>
+                            <li>Montant total 17,00 €</li>
+                            <a href="">détails</a>
+                        </ul>
+                    </div>
+            </section>
+            <section class="mp">
+                <div class="titre-mp">
+                    <img src="/contact/images/icones/user.png" alt="utilisateur">
+                    <h3>Changer mon mot de passe</h3>
+                </div>
+                <div class="sous-section">
+                    <form id="start" action="/">
+                        <p>
+                            <label for="password">Ancien mot de passe</label>
+                            <input type="password" placeholder="***Mot de passe***">
+                        </p>
+                        <p>
+                            <label for="password">Nouveau mot de passe</label>
+                            <input type="password" placeholder="***Mot de passe***">
+                        </p>
+                        <p>
+                            <label for="password">Confirmation du mot de passe</label>
+                            <input type="password" placeholder="***Mot de passe***">
+                        </p>
+                    </form>
+                    <div class="confirmation">
+                        <button class="conf-btn-1" onclick="href='#'">ANNULER</button>
+                        <button type="conf-btn-2" onclick="toggle_text()">CONFIRMER</button>
+                    </div> 
+                    <div class="message-confirmation">
+                        <span id="span_txt">Nouveau mot de passe confirmé !</span>
+                    </div>
+                </div>
+            </section> 
+                <section class="supprimer-compte">
+                    <div class="titre-supprimer-compte">
+                        <img src="/contact/images/icones/trash-2.png" alt="poubelle">
+                        <h3>Supprimer mon compte</h3>
+                    </div>  
+                    <div class="sous-section">
+                        <p>Voulez-vous vraiment supprimer votre compte ?</p> 
+                        <div class="suppression" >
+                            <button onclick="">NON</button>
+                            <button onclick="href='#start'">OUI</button>
+                        </div> 
+                    </div>    
+                </div>
+            </section> 
+            <div class="newsletter"></div>   
+        </main>  
     <main-footer current="home"></main-footer> 
-    <script>
-        function toggle_text() {
-        var span = document.getElementById("span_txt");
-        if(span.style.display == "none") {
-            span.style.display = "block";
-        } else {
-            span.style.display = "none";
-        }
-    }   
-    </script> 
 </body>
 </html>

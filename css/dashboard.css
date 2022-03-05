@@ -35,8 +35,8 @@ h2{
     margin: 0 auto;
 }
 main{
-    width: 70%;
-    margin: auto;
+    width: 90%;
+    margin:  0 auto;
 }
 h3{
     padding: 10px 5px;
@@ -44,37 +44,32 @@ h3{
 }
 .titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
     display: flex;
+    justify-content: center;
     align-items: center;
     border: 1px solid black;
-}
-.titre-supprimer-compte p{
-    padding: 20px;
 }
 .titre-coordonnees img, .titre-commandes img, .titre-mp img, .titre-supprimer-compte img{
     height: 30px;
     width: 30px;
     padding: 10px;
 }
-.titre-supprimer-compte a{
-    display: block;
-    width: 100%;
-    padding: 20px 5px;
-    text-decoration: none;
-    color: black;
+.coordonnees .sous-section, .commandes .sous-section, .supprimer-compte .sous-section{
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
-.coordonnees .sous-section, .commandes .sous-section{
-    display: flex;
-    justify-content: space-between;
+.mp .sous-section{
+    margin-top: 30px;
     margin-bottom: 70px;
 }
 .coordonnees ul, .commandes ul{
+    width: 100%;
     margin: 10px;
 }
 .coordonnees li:nth-child(1), .commandes li:nth-child(1){
     font-weight: bold;
 }
 .gauche, .droite{
-    width: 50%;
+    width: 100%;
 }
 .coordonnees ul, .coordonnees li, .commandes ul, .commandes li, .commandes a{
     padding: 5px;
@@ -83,7 +78,6 @@ h3{
 }
 .mp .sous-section{
     flex-direction: column;
-    height: 450px
 }
 form p{
     display: flex;
@@ -98,69 +92,90 @@ form input{
     border: 1px solid black;
     font-size: 1rem;
 }
-.accordion{
-    margin: 70px auto;
-}
-.accordion .sous-section{
-    height: 0;
-    overflow: hidden;
-    transition: height 2s ease;
-}
-:target .sous-section{
-    height: auto;
-}
 input::placeholder {
     font-size: .9rem;
     opacity: .5;
     color: #d35379;
     padding-left: 5px;
-  }
-.confirmation button{
-    padding: 5px 40px;
-    margin: 40px;
-    background-color: black;
+}
+.confirmation button:nth-child(2), .suppression button:nth-child(2){
+    display: block;
+    width: 50%;
+    background-color: #d35379;
     color: white;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #d35379;
+    padding: 10px;
+    margin-top: 70px;
+    /* outline: none; */
     cursor: pointer;
+    transition: transform 0.5s;
 }
-.suppression button{
-    padding: 5px 40px;
-    margin: 40px;
-    background-color: white;
-    color: black;
-    font-size: 1rem;
-    display: flex;
-    
-}
-.confirmation a{
+.confirmation button, .suppression button:nth-child(1){
     display: block;
-    padding: 5px 40px;
-    margin: 40px;
-    color: black;
+    width: 50%;
+    background-color: white;
+    color: #d35379;
+    border: 1px solid #d35379;
     font-size: 1rem;
-}
-.suppression a{
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+    padding: 10px;
+    margin-top: 70px;
+    /* outline: none; */
+    cursor: pointer;
+    transition: transform 0.5s;
+} 
+.confirmation button, .suppression button:nth-child(1), .confirmation button:nth-child(2), .suppression button:nth-child(2){
+    width: 50%;
+} 
+main button:hover{
+    transform: scale(1.05);
 }
 .confirmation, .suppression{
     display: flex;
     justify-content: space-around;
 }
+.message-confirmation{
+    height: 32.5px;
+    margin-top: 50px;
+}
 .mp span{
     display: none;
     padding: 5px;
     color: #d35379;
-    font-size: 1.2rem;
-    font-weight: bold;
+    text-align: center;
 }
 .supprimer-compte .sous-section p{
     padding: 5px;
-    margin-top: 40px;
+}
+.newsletter{
+    height: 100px;
 }
 
+/* ********** */
+@media  screen and (min-width: 460px){
+    main{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
 
-
+@media screen and (min-width:860px) {
+    main{
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .gauche, .droite{
+        width: 50%;
+    } 
+    .coordonnees .sous-section, .commandes .sous-section{
+        display: flex;    
+    } 
+    .titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
+        justify-content: left;
+    }
+    .confirmation button, .suppression button:nth-child(1), .confirmation button:nth-child(2), .suppression button:nth-child(2){
+        width: 300px;
+    }
+}
