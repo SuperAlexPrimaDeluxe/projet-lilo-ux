@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
+.fig2:active{
+    background-color: #FF3D00;
+}
 
 .clicbold{
     border: #7A7A7A 1px solid;
@@ -39,7 +41,7 @@ span#dbg3{
 
 #clicbold6{
     border-color: #FF3D00;
-    cursor: pointer;
+     cursor: pointer;
 }
 
 #v1, #v4, #v5, #v6{
@@ -283,8 +285,8 @@ span.robolight {
     position: absolute;
     right: 7%;
     top: 74%;
-    border-radius: 50%;
-    border: 1px solid white;
+    /* border-radius: 50%;
+    border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,8 +386,14 @@ img.hbk.active {
     animation-iteration-count: 1;
 }
 
+.page-numbers li{
+    line-height: 135%;
+}
+
 .page-numbers li a:hover {
-    background-color: #e0e0e0e5;
+    background-color: #ff4079;
+    color: white;
+    
 }
 
 

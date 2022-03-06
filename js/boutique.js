@@ -1,3 +1,4 @@
+    
     //Attempt to get the element using document.getElementById
     var badges = document.getElementById("bannertxt");
     console.log(badges.textContent);
@@ -17,7 +18,25 @@
       alert("FUCKO");
     }
 
+    /*ROSE POUR LE BOUTTON CURRENT */
+    var badgesp1 = document.getElementById("pagegetter");
 
+    if (badgesp1.textContent.includes('12 résultats sur 46')) {
+      document.getElementById("linktonumero1").style.backgroundColor = "#FF4079";
+      document.getElementById("linktonumero1").style.color = "white";
+    } else if(badgesp1.textContent.includes('24 résultats sur 46')) {
+      document.getElementById("linktonumero2").style.backgroundColor = "#FF4079";
+      document.getElementById("linktonumero2").style.color = "white";
+    }else if(badgesp1.textContent.includes('36 résultats sur 46')) {
+      document.getElementById("linktonumero3").style.backgroundColor = "#FF4079";
+      document.getElementById("linktonumero3").style.color = "white";
+    }else if(badgesp1.textContent.includes('46 résultats sur 46')) {
+      document.getElementById("linktonumero4").style.backgroundColor = "#FF4079";
+      document.getElementById("linktonumero4").style.color = "white";
+    }
+
+
+   
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
 
@@ -360,15 +379,16 @@
 
 
 
-    // fonction pour le clic sur le bouton like
-    function myFunction() {
-      var elements = document.getElementsByClassName("fig2");
+    // // fonction pour le clic sur le bouton like
+    // function myFunction() {
+    //   var elements = document.getElementsByClassName("fig2");
 
-      for (var i = 0, len = elements.length; i < len; i++) {
-        if (elements[i].style.backgroundColor !== "white") {
-          elements[i].style.backgroundColor = "white";
-        } else {
-          elements[i].style.backgroundColor = "transparent";
-        }
-      }
-    };
+    //   for (var i = 0, len = elements.length; i < len; i++) {
+    //     if (elements[i].style.backgroundColor !== "white") {
+    //       elements[i].style.backgroundColor = "white";
+    //       return;
+    //     } else {
+    //       elements[i].style.backgroundColor = "transparent";
+    //     }
+    //   }
+    // };
