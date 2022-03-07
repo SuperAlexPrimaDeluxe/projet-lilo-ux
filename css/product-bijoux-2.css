@@ -8,6 +8,7 @@
 .all-product{
     display: flex;
     margin-top: 150px;
+    margin-bottom: 300px;
     justify-content: center;
     align-content: center;
 }
@@ -27,10 +28,9 @@
 }
 
 .boom1{
-    width: 500px;
+    width: 450px;
     background-color: white;
-    transform: translateY(-40px);
-    transform: translateX(-18px);
+    transform: translateY(-85px);
 }
 
 .boom2{

@@ -28,16 +28,16 @@
 }
 
 .boom1{
-    width: 640px;
+    width: 450px;
     background-color: white;
-    transform: translateY(-40px);
-    transform: translateX(-110px);
+    transform: translateY(-165px);
 }
 
 .boom2{
     width: 100px;
+    height: 106px;
     background-color: white;
-    transform: translateY(-40px);
+    transform: translateY(-5px);
 }
 
 
@@ -76,7 +76,7 @@ h3{
 
 h4{
     margin: 0;
-    color: rgb(22, 175, 42);
+    color: rgb(67, 175, 17);
     font-weight: normal;
 
 }
