@@ -392,3 +392,11 @@
     //     }
     //   }
     // };
+
+const mq = window.matchMedia( "(min-width: 960px)" );
+
+if (mq.matches) {
+       
+} else {
+     document.getElementById("v1").style.display ="none";
+}
