@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 .fig2:active{
     background-color: #FF3D00;
 }
@@ -66,6 +69,9 @@ span#dbg3{
 padding: 25px;
 }
 
+.GE2{
+    display: none;
+}
 /* 5) CSS pour le select qui permet de trier l'information */
 
 select {
@@ -317,11 +323,6 @@ img.hbk {
     width: 25px;
     height: 25px;
     transition: .2s ease;
-    filter: invert(45%) sepia(67%) saturate(4198%) hue-rotate(319deg) brightness(101%) contrast(104%);
-}
-
-img.hbk.active {
-    filter: invert(45%) sepia(67%) saturate(4198%) hue-rotate(319deg) brightness(101%) contrast(104%);
 }
 
 /* CSS ANIMATION ROLLUP */
@@ -396,9 +397,7 @@ img.hbk.active {
     
 }
 
-
-
-
+/* ANIMATION POUR LE ROLL UP DU DESSUS */
 
 @keyframes rollup {
     from {
@@ -420,107 +419,7 @@ img.hbk.active {
     }
 }
 
-/*Responsive*/
-
-@media(max-width:500px) {
-    .cards.container2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card2nav{
-        flex-direction: row;
-    }
-
-    .item1{
-        
-    }
-
-    #test{display: flex;
-        flex-direction: column;}
-
-    /* .item1 li{
-        padding: 0;
-    }
-
-    .item1 li a{
-        padding: 0;
-    }
-    .item1 li span{
-        padding: 0;
-    } */
-
-    img #v1{
-        display: none !important;
-    }
-
-    .gridelement2{
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .clicbold{
-        padding: 0;
-        display: initial;
-    }
-
-   
-
-    .fig2 {
-        position: initial;
-        display: block;
-        width: 50px;
-        height: 50px;
-        transition: 1s ease;
-        padding-left: 30px;
-    }
-
-    main {
-        display: block;
-    }
-
-    nav {
-        display: block;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    ul {
-        text-align: center;
-    }
-
-    ul li {
-        display: inline;
-        text-align: center;
-    }
-
-    .container {
-        max-width: 100%;
-    }
-
-    .cards.container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-        grid-auto-rows: 300px;
-    }
-
-    header .container {
-        max-width: 90%;
-    }
-}
-
-
-
-
-
-/* ANIMATION NEON HEADER */
+/* ANIMATION POUR LE NEON DU HEADER */
 
 @keyframes neonheader {
     0% {
@@ -543,4 +442,110 @@ img.hbk.active {
         filter: drop-shadow(0px 0px 40px #ffff);
     }
 }
+
+/*Responsive*/
+
+@media(max-width:768px) {
+
 }
+
+ @media(max-width:500px) {
+    .gridelement2{
+        flex-direction: column;
+    }
+
+     #clicbold1, #clicbold2, #clicbold3{
+         display: none;
+     }
+
+     .hider{
+         display: none;
+     }
+    .cards.container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clicbold{
+        padding: 0;
+        display: initial;
+    }
+
+    .fig2 {
+        width: 50px;
+        height: 50px;
+        transition: 1s ease;
+        padding-left: 30px;
+    }
+
+    .cards.container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        grid-auto-rows: 300px;
+    }
+    .clicbold{
+        display: flex;
+        padding: 10px 0;
+    }
+    .iconheader{
+        font-size: 12px;
+    }
+
+    img#logoheader{
+        width: 75px;
+    }
+
+    #logoheader:hover{
+        width: 75px;
+    }
+
+    #txtconnexion{
+        display: none;
+    }
+
+    #inputsearchmobile{
+        width: 99%;
+    }
+
+    .gridelement{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .page-numbers{
+        padding-left: 0;
+    }
+
+    img.hbk{
+        position: absolute;
+        display: none;
+    }
+
+    #filter{
+        justify-content: center;
+        display: flex;
+    }
+  
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+    .GE2:hover{
+        background-color: #ff4079;
+    }
+} 
+
+
