@@ -451,6 +451,42 @@ img.hbk {
     .card2nav {
         grid-column: 1 / span 3;
     }
+    .gridelement{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gridelement2{
+        flex-direction: column;
+    }
+
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+    .GE2:hover{
+        background-color: #ff4079;
+    }
+   
+    #inputsearchmobile{
+        width: 97%;
+    }
+
+    #clicbold1, #clicbold2, #clicbold3{
+        display: none;
+    }
+
+    .hider{
+        display: none;
+    }
 }
 
 @media(max-width:768px) {
@@ -459,6 +495,42 @@ img.hbk {
     }
     .card2nav {
         grid-column: 1 / span 2;
+    }
+    .gridelement{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gridelement2{
+        flex-direction: column;
+    }
+
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+    .GE2:hover{
+        background-color: #ff4079;
+    }
+   
+    #inputsearchmobile{
+        width: 97%;
+    }
+
+    #clicbold1, #clicbold2, #clicbold3{
+        display: none;
+    }
+
+    .hider{
+        display: none;
     }
 }
 
@@ -498,15 +570,22 @@ img.hbk {
     #inputsearchmobile{
         width: 97%;
     }
+
+    #clicbold1, #clicbold2, #clicbold3{
+        display: none;
+    }
+
+    .hider{
+        display: none;
+    }
+    .po{
+        margin-top: 0px;
+    }
     /* 
 
-     #clicbold1, #clicbold2, #clicbold3{
-         display: none;
-     }
+ 
 
-     .hider{
-         display: none;
-     }
+  
     .cards.container2 {
         display: flex;
         flex-direction: column;
@@ -590,9 +669,7 @@ img.hbk {
         background-color: #ff4079;
     }
 
-    .po{
-        margin-top: 0px;
-    } */
+ 
 } 
 
 
