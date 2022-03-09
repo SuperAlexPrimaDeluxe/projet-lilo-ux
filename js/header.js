@@ -14,11 +14,11 @@ class MyHeader extends HTMLElement {
                     <a href="login/dashboard.html" id="godash"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
-                    <span class="pastille-type2">3</span>
+                    <span class="pastille-type2" ">0</span>
                     <a href="espace_client/panier.html" id="gopanier"><img src="medias/icons/basket.svg" alt="" id="icon2" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
-                    <span class="pastille-type2">1</span>
+                    <span class="pastille-type2" id="psty2">0</span>
                     <a href="espace_client/wishlist.html" id="gowishlist"><img src="medias/icons/coeur_lilo.svg" alt="" id="icon3" /></a>
                 </div>
             </div>
