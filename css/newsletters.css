@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/*1ère partie= rose pale*/
+.newsletter{
+    width:750px;
+    height:415;
+    left: 0%;
+    right: 0%;
+    top:0%;
+    bottom:0%;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  
+}
+/*Ne manquez pas...=h2*/
+h2{
+   
+    height: 164px;
+    width: 750px;
+    padding-left: 65px;
+    padding-top: 60px;
+    margin: 0;
+    background-color: #d353793d;
+    color:white;
+    font-family:'Montserrat', sans-serif;
+    font:bold;
+    font-size: 38px;
+    display: block;
+
+}
+/*Abonnez-vous..=h3*/
+h3{
+    
+    height: 122px;
+    width: 750px;
+    padding-left: 65px;
+    padding-top: 10px;
+    margin:0;
+    background-color: #d353793d;
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-size:20px;
+    line-height: 120px;
+    align-items: center;
+    font:small-caption;
+    letter-spacing:3px;
+    
+   
+}
+/*2ème partie= rose fonce*/
+.box2{
+    height: 129px;
+    width: 750px;
+    padding-left: 65px;
+    margin-top: auto;
+    background-color:rgba(236, 181, 197, 1);
+
+}
+/*Inscivez vous=h4*/
+h4{
+    height: 50px;
+    margin-top: 3px;
+    padding-top: 3px;
+    margin-left: 50px;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-style:normal;
+    font-weight: 17px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+/*mail ensemble*/
+.fields{
+    display: flex;
+    position: absolute;
+    padding-top: 50px;
+    height: 28px;
+    width: 300px;
+   
+}
+/*mail case*/
+.fields input{
+    height: 28px;
+    width:230px;
+    border: none;
+   
+}
+/*logo enveloppe*/
+.logoenveloppe{
+    padding-top: 50px;
+    padding-left: 265px;
+    width: 30px;
+    height: 29px;
+    transform: none;
+    border-bottom-right-radius: 0px;
+    position: relative;
+}
+/*bouton mail*/
+button{
+    height: 28px;
+    width: 45px;
+    border: none;
+    margin-left:0px;
+    cursor: pointer;
+    background-color: black;
+   
+ 
+}
+
+/*3eme partie: image (machine à écrire)*/
+img{
+    height: 350px;
+    width: 350px;
+    transform:rotate(0deg) translateX(465px) translateY(-350px);
+    position:static;
+    border-bottom-right-radius: 60px;
+
+}
+
+  
+  /*Responsive: 
+  Sur les écran de 520px de large ou moin, les colonnes s'empile les unes sur les autres */
+
+@media (max-width: px){
+    .newsletter { 
+      width: 100%;
+     
+    }
+    .h2,.h3{
+        display:block;
+    }
+    .box2{
+        display:block;
+    }
+    h4{
+        display: block;
+        position: initial;
+        margin: 0px;
+
+    }
+   .email{
+       display: flex;
+   }
+    .caseemail{
+        
+        display: block;
+
+    }
+    .button1{
+        margin-top: 0px;
+    }
+    .enveloppe,.button1{
+        display: inline-block;
+      
+     
+    }
+    .img{
+        display:block;
+    }
+
+}
+/*case pour écrire l'adresse mail*/
+/*.caseemail{
+    height: 27px;
+    width: 237px;
+    background-color: rgb(252, 249, 249);
+    border:none;
+    vertical-align: middle;
+    display:inline-block;
+}/*bouton envoi*/
+/*.button1{
+    cursor: pointer;
+    height:30px;
+    width: 46px;
+    margin-top: 56px;
+    background-color:black;
+    border: none;
+    vertical-align:bottom;
+
+}
