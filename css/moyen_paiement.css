@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 75px;
+}
+h2{
+    text-align: center;
+    margin: 100px;
+}
+.bienvenue{
+    height: auto;
+}
+.bienvenue h5{
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 75px;
+}
+.bienvenue img{
+    display: block;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    margin: 0 auto;
+}
+main{
+    width: 90%;
+    margin:  0 auto;
+}
+h3{
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+.titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.titre-coordonnees img, .titre-commandes img, .titre-mp img, .titre-supprimer-compte img{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+.coordonnees .sous-section, .commandes .sous-section, .supprimer-compte .sous-section{
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.mp .sous-section{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.coordonnees ul, .commandes ul{
+    width: 100%;
+    margin: 10px;
+}
+.coordonnees li:nth-child(1), .commandes li:nth-child(1){
+    font-weight: bold;
+}
+.gauche, .droite{
+    width: 100%;
+}
+.coordonnees ul, .coordonnees li, .commandes ul, .commandes li, .commandes a{
+    padding: 5px;
+    list-style-type: none;
+    color: black;
+}
+.mp .sous-section{
+    flex-direction: column;
+}
+form p{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    padding: 5px;
+    margin-top: 20px; 
+}
+form input{
+    padding: 10px 5px 10px 30px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+input::placeholder {
+    font-size: .9rem;
+    opacity: .5;
+    color: #d35379;
+    padding-left: 5px;
+}
+.confirmation button:nth-child(2), .suppression button:nth-child(2){
+    display: block;
+    width: 50%;
+    background-color: #d35379;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #d35379;
+    padding: 10px;
+    margin-top: 70px;
+    /* outline: none; */
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.confirmation button, .suppression button:nth-child(1){
+    display: block;
+    width: 50%;
+    background-color: white;
+    color: #d35379;
+    border: 1px solid #d35379;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 70px;
+    /* outline: none; */
+    cursor: pointer;
+    transition: transform 0.5s;
+} 
+.confirmation button, .suppression button:nth-child(1), .confirmation button:nth-child(2), .suppression button:nth-child(2){
+    width: 50%;
+} 
+main button:hover{
+    transform: scale(1.05);
+}
+.confirmation, .suppression{
+    display: flex;
+    justify-content: space-around;
+}
+.message-confirmation{
+    height: 32.5px;
+    margin-top: 50px;
+}
+.mp span{
+    display: none;
+    padding: 5px;
+    color: #d35379;
+    text-align: center;
+}
+.supprimer-compte .sous-section p{
+    padding: 5px;
+}
+.newsletter{
+    height: 100px;
+}
+
+/* ********** */
+@media  screen and (min-width: 460px){
+    main{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:860px) {
+    main{
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .gauche, .droite{
+        width: 50%;
+    } 
+    .coordonnees .sous-section, .commandes .sous-section{
+        display: flex;    
+    } 
+    .titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
+        justify-content: left;
+    }
+    .confirmation button, .suppression button:nth-child(1), .confirmation button:nth-child(2), .suppression button:nth-child(2){
+        width: 300px;
+    }
+}
