@@ -474,9 +474,31 @@ img.hbk {
         display: flex;
         flex-direction: column-reverse;
     }
-    /* .gridelement2{
+
+    .gridelement2{
         flex-direction: column;
     }
+
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+    .GE2:hover{
+        background-color: #ff4079;
+    }
+   
+    #inputsearchmobile{
+        width: 97%;
+    }
+    /* 
 
      #clicbold1, #clicbold2, #clicbold3{
          display: none;
