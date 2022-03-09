@@ -1,4 +1,3 @@
-    
     //Attempt to get the element using document.getElementById
     var badges = document.getElementById("bannertxt");
     console.log(badges.textContent);
@@ -24,19 +23,19 @@
     if (badgesp1.textContent.includes('12 résultats sur 46')) {
       document.getElementById("linktonumero1").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero1").style.color = "white";
-    } else if(badgesp1.textContent.includes('24 résultats sur 46')) {
+    } else if (badgesp1.textContent.includes('24 résultats sur 46')) {
       document.getElementById("linktonumero2").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero2").style.color = "white";
-    }else if(badgesp1.textContent.includes('36 résultats sur 46')) {
+    } else if (badgesp1.textContent.includes('36 résultats sur 46')) {
       document.getElementById("linktonumero3").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero3").style.color = "white";
-    }else if(badgesp1.textContent.includes('46 résultats sur 46')) {
+    } else if (badgesp1.textContent.includes('46 résultats sur 46')) {
       document.getElementById("linktonumero4").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero4").style.color = "white";
     }
 
 
-   
+
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
 
@@ -115,15 +114,15 @@
 
     nouveaufavoris.onclick = function () {
       if (nouveaufavoris.style.backgroundColor === "white") {
-          for (let i = 0; i < nodeList1.length; i++) {
-            nodeList1[i].style.display = "none";
-          }
-          for (let j = 0; j < nodeList2.length; j++) {
-            nodeList2[j].style.display = "block";
-          }
-          for (let k = 0; k < nodeList3.length; k++) {
-            nodeList3[k].style.display = "none";
-          }
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "none";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "none";
+        }
         nouveaufavoris.style.borderRight = "2px solid #E28AA4";
         nouveaufavoris.style.borderBottom = "2px solid #E28AA4";
         nouveaufavoris.style.borderTop = "1px solid #E28AA4";
@@ -156,13 +155,13 @@
         dbg2.style.fontSize = "14px";
         le2.style.display = "none";
       }
-      
+
 
       /* Conditions d'affichage lors du clic sur le le boutton 2 */
 
       // /* Quand je clique sur NOUVEAUTES & FAVORIS il affiche le contenu des 2 ou ALL si décoché */
 
-      if (le1.style.display === "block" && le2.style.display === "block"){
+      if (le1.style.display === "block" && le2.style.display === "block") {
 
         // console.log("les deux s'affichent");
 
@@ -175,9 +174,9 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-     
-      } else if (le1.style.display === "block" && le2.style.display === "none"){
-        
+
+      } else if (le1.style.display === "block" && le2.style.display === "none") {
+
         // console.log("le 1 pd");
 
         for (let i = 0; i < nodeList1.length; i++) {
@@ -189,8 +188,7 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-      }
-      else if (le1.style.display === "none" && le2.style.display === "block"){
+      } else if (le1.style.display === "none" && le2.style.display === "block") {
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "none";
         }
@@ -201,10 +199,10 @@
           nodeList3[k].style.display = "none";
         }
       }
-   
 
-    
-   
+
+
+
 
 
     };
@@ -265,109 +263,47 @@
         le3.style.display = "none";
       }
 
-      /* CASE FOR 2 ET 3 */
-   
-      // if (le2.style.display === "block" && le3.style.display === "block") {
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "none";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "block";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("2 & 3 coché");
-      // } 
+        if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
 
-      // else if (le2.style.display === "none" && le3.style.display === "block") {
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "none";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "none";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("2 & 3 coché");
-      // }
-      
-      // else if (le2.style.display === "block" && le3.style.display === "none") {
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "none";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "block";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "none";
-      //   }
-      //   console.log("2 & 3 coché");
-      // }
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
+        console.log("Les 3 sont cochés motherfucka !!!");
 
-      /* CASE FOR 1 ET 3 */
+      } 
+
+      else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "none") {
+
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "none";
+        }
+        console.log("Les 3 sont cochés motherfucka !!!");
+
+      } 
+
     
-      // else if (le1.style.display === "block" && le3.style.display === "block") {
 
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "block";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "block";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("1 & 3 coché");
-   
-      // }
+ 
 
-      // else if (le1.style.display === "none" && le3.style.display === "block") {
+      
+         
 
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "none";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "none";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("1 coché");
-   
-      // }
+      
 
-      // else if (le1.style.display === "block" && le3.style.display === "none") {
 
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "none";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "none";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("3 coché");
-   
-      // }
 
-      // else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
-
-      //   for (let i = 0; i < nodeList1.length; i++) {
-      //     nodeList1[i].style.display = "block";
-      //   }
-      //   for (let j = 0; j < nodeList2.length; j++) {
-      //     nodeList2[j].style.display = "block";
-      //   }
-      //   for (let k = 0; k < nodeList3.length; k++) {
-      //     nodeList3[k].style.display = "block";
-      //   }
-      //   console.log("1 & 3 coché");
-   
-      // } 
-  
     };
 
 
@@ -379,33 +315,46 @@
 
 
 
-    // // fonction pour le clic sur le bouton like
-    // function myFunction() {
-    //   var elements = document.getElementsByClassName("fig2");
-
-    //   for (var i = 0, len = elements.length; i < len; i++) {
-    //     if (elements[i].style.backgroundColor !== "white") {
-    //       elements[i].style.backgroundColor = "white";
-    //       return;
-    //     } else {
-    //       elements[i].style.backgroundColor = "transparent";
-    //     }
-    //   }
-    // };
-
-const mq = window.matchMedia( "(min-width: 960px)" );
-
-if (mq.matches) {
-       
-} else {
-     document.getElementById("v1").style.display ="none";
-}
 
 
+    const mq = window.matchMedia("(min-width: 960px)");
 
-document.getElementById("hbk1").onclick = function() {petitesas()};
+    if (mq.matches) {
 
-function petitesas() {
-  document.getElementById("hbk1").filter = "invert(69%) sepia(32%) saturate(711%) hue-rotate(299deg) brightness(92%) contrast(92%)";
-  console.log("click ok");
-}
+    } else {
+      document.getElementById("v1").style.display = "none";
+    }
+
+    // JAVASCRIPT POUR LE CLIC SUR LE BOUTON LIKE CI-DESSOUS.
+    // Piste d'amélioration rendre le tout dynamique avec l'appel d'une boucle et d'une classe.
+    // Pourquoi cela n'a pas été fait ? -> délais du projet et plus simple de dupliquer les 12 éléments dans cette version de démo pur !!!!!
+    // Chevalier Alexandre.
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 1 
+
+    function petitesas() {
+      if (document.getElementById("hbk1").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk1").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk1").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+
+      } else {
+        document.getElementById("hbk1").style.filter = "none";
+        document.getElementById("hbk1").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 2 
+
+    function petitesas2(){
+      if (document.getElementById("hbk2").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk2").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk2").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else{
+        document.getElementById("hbk2").style.filter = "none";
+        document.getElementById("hbk2").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
