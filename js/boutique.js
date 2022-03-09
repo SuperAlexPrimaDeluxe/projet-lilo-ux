@@ -403,3 +403,9 @@ if (mq.matches) {
 
 
 
+document.getElementById("hbk1").onclick = function() {petitesas()};
+
+function petitesas() {
+  document.getElementById("hbk1").filter = "invert(69%) sepia(32%) saturate(711%) hue-rotate(299deg) brightness(92%) contrast(92%)";
+  console.log("click ok");
+}
