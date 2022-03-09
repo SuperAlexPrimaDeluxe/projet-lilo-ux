@@ -3,60 +3,35 @@
 
 /*1ère partie= rose pale*/
 .newsletter{
-    width:750px;
-    height:415;
-    left: 0%;
-    right: 0%;
-    top:0%;
-    bottom:0%;
-    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 695px;
+    height:300px;
+    background-color: #f3dde3;
     margin: 0 auto;
-    display: block;
-    position: relative;
   
 }
 /*Ne manquez pas...=h2*/
 h2{
-   
-    height: 164px;
-    width: 750px;
     padding-left: 65px;
-    padding-top: 60px;
-    margin: 0;
-    background-color: #d353793d;
     color:white;
     font-family:'Montserrat', sans-serif;
-    font:bold;
     font-size: 38px;
     display: block;
 
 }
 /*Abonnez-vous..=h3*/
 h3{
-    
-    height: 122px;
-    width: 750px;
     padding-left: 65px;
-    padding-top: 10px;
-    margin:0;
-    background-color: #d353793d;
-    color: black;
-    font-family:'Montserrat', sans-serif;
-    font-size:20px;
-    line-height: 120px;
-    align-items: center;
     font:small-caption;
-    letter-spacing:3px;
     
    
 }
 /*2ème partie= rose fonce*/
 .box2{
-    height: 129px;
-    width: 750px;
+    height: 88px;
     padding-left: 65px;
-    margin-top: auto;
-    background-color:rgba(236, 181, 197, 1);
 
 }
 /*Inscivez vous=h4*/
@@ -114,11 +89,9 @@ button{
 
 /*3eme partie: image (machine à écrire)*/
 img{
-    height: 350px;
-    width: 350px;
-    transform:rotate(0deg) translateX(465px) translateY(-350px);
-    position:static;
+    display: flex;
     border-bottom-right-radius: 60px;
+    width: 300px;
 
 }
 
