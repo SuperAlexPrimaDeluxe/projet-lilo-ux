@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 75px;
+}
+/**************************************************/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.paiement{
+    width: 80%;
+    border: 1px solid black;
+    margin: 100px auto;
+    padding: 0 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+h2{
+    margin: 40px auto;
+    text-align: left;
+    margin-left: 40px;
+}
+.connexion h2{
+    margin-bottom: 15px;
+}
+p{
+    font-size: 16px;
+}
+
+/* le contenair */
+.container{
+    width: 100% auto;
+   margin-bottom: 15px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   display: flex;
+    align-items:center;
+    cursor: pointer;
+    justify-content:space-between;
+
+}
+
+/*la case cocher */
+.container input{
+    position: absolute;
+   
+}
+
+.checkmark{
+  margin-bottom: 17px;
+  margin-left: 3px;
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  border: solid rgb(39, 8, 8);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/********************
+Image de paiement
+*********************/
+img.modepaiement{
+    width: 60px;
+    margin-left:50px;
+}
+
+
+
+/**************************************************/
+/*button*/
+/**************************************************/
+.continuer{
+    text-align: center;
+    align-items: center; 
+}
+.btn-continuer{
+    border:none;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: #d35379;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 25px auto;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+button:hover{
+    transform:scale(1.05);
+}
+/* ********** */
+@media screen and (min-width:460px) {
+    .main{
+        width: 300px;    
+    }     
+    .paiement,.btn-continuer{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 860px){
+    .paiement, .btn-continuer{
+        width: 50%;
+    }
+    
+}
