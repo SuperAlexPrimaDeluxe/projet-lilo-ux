@@ -250,7 +250,10 @@ button.btnalex {
     width: 100%;
     font-size: 16px;
     /* cursor: url(mi.jpg), auto; */ /*Ajout d'un curseur au survol*/
+}
 
+.btnajoutpanier:hover{
+    background-color: #ff4079;
 }
 
 ul.pb_nav_lat_title>li {
