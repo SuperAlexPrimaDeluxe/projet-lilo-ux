@@ -400,3 +400,12 @@ if (mq.matches) {
 } else {
      document.getElementById("v1").style.display ="none";
 }
+
+const mq2 = window.matchMedia( "(min-width: 500px)" );
+
+if (mq2.matches) {
+       
+} else {
+     document.getElementById("GE2").innerHTML = "Retour au sommet";
+     document.getElementById("GE2").href = "https://www.w3schools.com";
+}

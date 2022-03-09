@@ -7,7 +7,7 @@
 /*--PROPRIETE GLOBALE DU FOOTER--*/
 
 .footer {
-    background-color: #2E2E2E;
+    background-color: #101010;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     padding: 0;
@@ -28,7 +28,7 @@ footer::before {
     position: absolute;
     margin-top: -65px;
     width: 100%;
-    background-color: #2E2E2E;
+    background-color: #101010;
 }
 
 
@@ -95,9 +95,7 @@ span {
 /*--COLONNE 2--*/
 /*--COLONNE 3--*/
 
-.colonne-3{
-    text-align: center;
-}
+
 
 .colonne-3 h3{
     text-align: left;
@@ -113,7 +111,7 @@ span {
 .block-reseaux {
     margin: none;
     display: flex;
-
+    justify-content: center;
 }
 
 
@@ -175,7 +173,6 @@ input{
 
 .picto {
     width: 27px;
-    background-color: #2E2E2E;
     display: flex;
 }
 
