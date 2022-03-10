@@ -44,12 +44,10 @@ h2 {
 }
 
 .image-article {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
-    width:  100% auto;
-    height: 657px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
      /*---image badge-----*/
