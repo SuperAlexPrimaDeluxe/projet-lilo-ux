@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les ateliers de Lilo | Sélection de votre moyen de paiement</title>
-    <script src="/js/header.js" defer></script>
-    <script src="/js/pathcorrecter.js" defer></script>
-    <script src="/js/animationheader.js" defer></script>
-    <script src="/js/selectionpaiement.js" defer></script>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/moyen_paiement.css">
+    <script src="../js/header.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/pathcorrecter.js" defer></script>
+    <script src="../js/animationheader.js" defer></script>
+    <script src="../js/selectionpaiement.js" defer></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/moyen_paiement.css">
 </head>
 <body>
     <main-header current="home"></main-header>
 
     <main>
-        <div class="paiement">
+        <div class="paiementmoni">
             <h1>Moyen de paiement</h1>
             <hr>
             <div class="facture">
@@ -36,11 +38,11 @@
                 <!--checkbox 2-->
                 <label class="container"><h2>Bancontact</h2>
                     <div class="check">
-                        <input type ="checkbox" checked="checked">
-                        <span class="checkmark"></span>
+                        <input type ="checkbox" checked="checked" id="input1_2">
+                        <span class="checkmark" id="chckfact2"></span>
                     </div>
                 </label>
-                <img src="/medias/icons/BANCONTACT_LILO.svg"alt="bancontact"class="modepaiement">
+                <img src="../medias/icons/BANCONTACT_LILO.svg"alt="bancontact"class="modepaiement">
        
             </div>
             <hr>
@@ -49,12 +51,12 @@
                 <!--checkbox3-->
                 <label class="container"><h2>Carte de crédit</h2>
                     <div class="check">
-                        <input type ="checkbox" checked="checked">
-                        <span class="checkmark"><span>
+                        <input type ="checkbox" checked="checked" id="input1_3">
+                        <span class="checkmark" id="chckfact3"><span>
                     </div>
                 </label>
-                <img src="/medias/icons/VISA_LILO.svg"alt="visa"class="modepaiement">
-                <img src="/medias/icons/MASTERCARD_LILO.svg"alt="mastercard"class="modepaiement">
+                <img src="../medias/icons/VISA_LILO.svg"alt="visa"class="modepaiement">
+                <img src="../medias/icons/MASTERCARD_LILO.svg"alt="mastercard"class="modepaiement">
             </div>
 
             <hr>
@@ -63,11 +65,11 @@
                 <!--checkbox4-->
                 <label class="container"><h2>PayPal</h2>
                     <div class="check">
-                        <input type ="checkbox" checked="checked">
-                        <span class="checkmark"></span>
+                        <input type ="checkbox" checked="checked" id="input1_4">
+                        <span class="checkmark" id="chckfact4"></span>
                     </div>
                 </label>
-                <img src="/medias/icons/PAYPAL_LILO.svg"alt="paypal"class="modepaiement">
+                <img src="../medias/icons/PAYPAL_LILO.svg"alt="paypal"class="modepaiement">
             </div>
 
             <hr>
@@ -107,7 +109,7 @@
             </div>
 
             <div class="continuer">
-                <button class="btn-continuer" onclick="href=''">CONTINUER</button>
+                <a  href="../espace_client/validation_commande.html" class="btn-continuer">CONTINUER</a>
             </div>
         </div>
     </main>

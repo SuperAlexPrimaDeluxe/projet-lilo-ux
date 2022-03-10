@@ -72,6 +72,14 @@ h2 {
     align-items: center;
 }
 
+.indexbyloane{
+    width: 100%;
+}
+
+.indexbyloane a{
+    width: 50%;
+}
+
 span.spanindexbyloane {
     padding: 60px;
     font-family: 'Montserrat', sans-serif;

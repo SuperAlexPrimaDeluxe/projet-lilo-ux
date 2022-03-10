@@ -44,12 +44,10 @@ h2 {
 }
 
 .image-article {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
-    width:  100% auto;
-    height: 657px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
      /*---image badge-----*/
@@ -71,31 +69,18 @@ img.badge {
 }
     /* titre du texte de l'article*/
 h3{
-    margin-top: 75px;
     margin-bottom: 20px;
-    margin-left: 64px;
     font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: normal;
     font-weight: 500;
-    font-size: 30px;
     line-height: 28px;
     text-align: center;
-    align-items: center;
     color:#7a7a7a;
 } 
  /* texte de l'article*/
 p {
-    font-size: 20px;
     font-family: "Roboto Mono", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    color: #7a7a7a;
-    line-height: 28px;
-    width: 720px;
-    height: 540px;
-    text-align:start;
+    line-height: 25px;
+    width: 605px;
 
 }
 img.badge,.texte{
@@ -103,21 +88,22 @@ img.badge,.texte{
 }
 
 button {
-    background-color: #BD506D;
+    background-color: #1d1d1d;
     color: white;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: bold;
-    line-height: 28px;
-    align-items: center;
     border: none;
     height: 61px;
-    width: 100% auto;
     width: 537px;
     margin-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 90px;
+}
+
+button:hover{
+    background-color: #BD506D;
+    cursor: pointer;
+
 }
 /*============================Fin:Titre,image article et texte présentation======================*/
 
