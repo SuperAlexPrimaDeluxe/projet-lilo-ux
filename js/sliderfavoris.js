@@ -1,7 +1,8 @@
 class MySection extends HTMLElement {
     connectedCallback() {
         var current2 = this.getAttribute('current2');
-        this.innerHTML = `  <div class="album">
+        this.innerHTML = `<div class="album">
+        <h4 id="h4a">Vous aimerez aussi : </h4>
         <div class="wrapper">
             <div class="carousel owl-carousel">
                 <div class="card-prix"> 
