@@ -263,7 +263,7 @@
         le3.style.display = "none";
       }
 
-        if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
+      if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
 
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
@@ -276,9 +276,7 @@
         }
         console.log("Les 3 sont cochés motherfucka !!!");
 
-      } 
-
-      else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "none") {
+      } else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "none") {
 
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
@@ -291,16 +289,16 @@
         }
         console.log("Les 3 sont cochés motherfucka !!!");
 
-      } 
+      }
 
-    
 
- 
 
-      
-         
 
-      
+
+
+
+
+
 
 
 
@@ -347,14 +345,28 @@
 
     // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 2 
 
-    function petitesas2(){
+    function petitesas2() {
       if (document.getElementById("hbk2").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
         document.getElementById("hbk2").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
         document.getElementById("hbk2").style.width = "27px";
         document.getElementById("psty2").textContent++;
-      } else{
+      } else {
         document.getElementById("hbk2").style.filter = "none";
         document.getElementById("hbk2").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 3 
+
+    function petitesas3() {
+      if (document.getElementById("hbk3").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk3").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk3").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk3").style.filter = "none";
+        document.getElementById("hbk3").style.width = "25px";
         document.getElementById("psty2").textContent--;
       }
     }
