@@ -41,8 +41,8 @@ p{
 
 /* le contenair */
 .container{
-    width: 100% auto;
-   margin-bottom: 15px;
+   width: 100% auto;
+   margin-bottom: 1px;
    cursor: pointer;
    font-size: 22px;
    -webkit-user-select: none;
@@ -54,17 +54,25 @@ p{
     cursor: pointer;
     justify-content:space-between;
 
+
 }
 
 /*la case cocher */
 .container input{
-    position: absolute;
-   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
-
+.check{
+    
+    border: 1px solid black;
+    height: 15px;
+    width: 15px;
+    position:absolute;
+}
 .checkmark{
   margin-bottom: 17px;
-  margin-left: 3px;
+  margin-left: 0px;
   position: absolute;
   width: 10px;
   height: 18px;
@@ -73,6 +81,9 @@ p{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+    margin-bottom: 0px;
+    bottom: 1px;
+
 }
 /********************
 Image de paiement
@@ -107,7 +118,7 @@ img.modepaiement{
     transition: transform 0.5s;
 }
 button:hover{
-    transform:scale(1.05);
+  
 }
 /* ********** */
 @media screen and (min-width:460px) {
