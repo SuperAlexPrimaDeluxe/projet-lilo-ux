@@ -48,6 +48,7 @@ h4{
     display: flex;
     padding-top: 35px;
     height: 28px;
+    font-size: 15px;
    
 }
 /*mail case*/
@@ -55,6 +56,8 @@ h4{
     width:280px;
     border: none;
     font-family: "Montserrat", sans-serif;
+    
+    font-size: 15px;
    
 }
 /*logo enveloppe*/

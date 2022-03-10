@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px ;
+}
+hr{
+    margin: 10px 0;
+}
+.info-contact .merci{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.info-contact p{
+    padding: 10px 0;
+}
+.info-contact a{
+    color: #d35379;
+}
+.resume-commande{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px 0 10px 0;
+    padding: 0 30px;
+}
+.resume-commande ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resume-commande a{
+    color: black;
+}
+.resume-commande .icone{
+    height: 30px;
+    width: auto;
+}
+.recapitulatif-achats .detail-article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recapitulatif-achats .detail-article .article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article .produit{
+    display: block;
+    height: 120px;
+    width: 120px;
+}
+.recapitulatif-achat ul{
+    padding: 0 30px;
+}
+main li{
+    list-style: none;
+    padding: 5px;
+}
+.quantite, .prix-article{
+    height: 120px;
+    padding: 10px 0;
+}
+.quantite{
+    text-align: center;
+}
+.quantite .span{
+    
+}
+.quantite-prix ul :nth-child(1){
+    font-weight: bold;
+}
+.votre-commande{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 769px){
+    main{
+        width: 70%;
+        margin: auto;
+    }
+    .article-wl{
+        width: 350px;
+    }
+    .description-article ul:nth-child(1){
+        width: 50%;
+    }
+    .description-article ul:nth-child(2){
+        width: 30%;
+    }
+    .description-article{
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 70%;
+    }
+    
+}
