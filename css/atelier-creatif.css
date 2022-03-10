@@ -22,14 +22,21 @@ h2{
 p{
     font-size: 14px;
     text-align: center;
+    align-items: center;
+    width: 75%;
+
    
 }
  /* ****GALLERIE PHOTO**** */
 .grid{
     display:grid;
     grid-template-columns:318px 323px 323px 314px;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
+    line-height: 0;
+    position: relative;
+  
 
  
 }
@@ -37,6 +44,8 @@ p{
 width: 318px;
 grid-column: 1;
 height: 2544px;
+position: absolute;
+z-index: 2;
 
 }
 .column-2{
@@ -45,10 +54,12 @@ height: 2544px;
     grid-column: 323px;
     height:2544px;
     grid-column: 2;
+    position: absolute;
 }
 .column-3#hibou{
-
    grid-column: 3;
+   position: absolute;
+   z-index: 2;
 }
 
 .column-3{
@@ -81,15 +92,18 @@ height: 2544px;
     grid-auto-rows: auto;
     grid-auto-flow: dense;
     margin-left: 18px;
-    margin-top: 18px;
-}
-.gallery:hover{
-    filter: drop-shadow(2px 2px 3px #333);
-    opacity: 0.8;
+    margin-top: 18px;  
+   
+    border-radius: 10px;
+
+
 }
 
 
-@media  (max-width: 500px) {
+@media  (max-width: 480px) {
+    main{
+        max-width:300px;
+    }
     .h1,.h2{
         text-align: center;
         width: 100%;
@@ -99,10 +113,11 @@ height: 2544px;
       .grid {
         display: flex;
         flex-direction: column;
-        flex: wrap;
-        gap: 2.5rem;
-        margin: 5rem;
         align-items: center;
-      }  
+        
+      } 
+      .grid:last-child{
+          display: inline-block;
+      } 
     }
 
