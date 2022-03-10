@@ -82,9 +82,6 @@ main li{
 .quantite{
     text-align: center;
 }
-.quantite .span{
-    
-}
 .quantite-prix ul :nth-child(1){
     font-weight: bold;
 }
