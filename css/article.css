@@ -92,17 +92,12 @@ button {
     color: white;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: bold;
-    line-height: 28px;
-    align-items: center;
     border: none;
     height: 61px;
-    width: 100% auto;
     width: 537px;
     margin-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 90px;
 }
 
 button:hover{
