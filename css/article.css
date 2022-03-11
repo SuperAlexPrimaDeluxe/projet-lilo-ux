@@ -105,6 +105,13 @@ button:hover{
     cursor: pointer;
 
 }
+
+.article-all{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*============================Fin:Titre,image article et texte présentation======================*/
 
 /*===================Autres articles récents  proposé en carousel===============================*/
