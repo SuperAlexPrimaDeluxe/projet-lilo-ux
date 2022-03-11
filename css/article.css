@@ -4,43 +4,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /*===============================Header=============================================*/
-/*
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify; 
+    text-justify: inter-word;
+}
 
-body {
-    min-height:100vh;
-    display: flex;
-    align-items: center;
-}*/
 /*==========================================Main================================================*/
 main{
-      width: 100% auto;
-    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
 }
 /*============================Titre,image article et texte présentation======================*/
 
 /*Titre au dessus de l'image*/
 
 h2.momoh2 {  
-    font-family: "Montserrat",sans-serif;
-    font-style: normal;
-    font-weight: 700 bold;
-    font-size: 40px;
-    line-height: 28px;
-    align-items: center;
+    font-size: 2.25rem;
+    font-weight: bold;
     text-align: center;
-    color: black;
-    width: 100% auto;
-    margin-top: 150px;
-    border-bottom: 1px solid #7a7a7a;
-    padding-bottom: 40px;
-}
+    margin: 75px auto;
+    padding-top: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
+}
+hr{
+    margin: 10px 0;
+}
+main hr{
+    margin: 75px auto;
+}
 .image-article {
     display: flex;
    
@@ -99,11 +102,17 @@ button.btnmomo {
     border: none;
     height: 61px;
     width: 537px;
+<<<<<<< Updated upstream
+=======
+    margin-top: 50px;
+    margin-left: 60px;
+>>>>>>> Stashed changes
 }
 
 button:hover{
     background-color: #BD506D;
     cursor: pointer;
+   
 
 }
 
