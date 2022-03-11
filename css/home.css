@@ -8,8 +8,16 @@
     margin: 0;
 }
 
+#txtconnexion{
+    display: block !important;
+}
+
 #godash0{
     display: none;
+}
+
+.pastille-type1{
+    background-color: grey;
 }
 
 main {
