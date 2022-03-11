@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+#godash0{
+    display: none;
+}
+
 main {
     width: 100%;
     display: flex;
