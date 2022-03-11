@@ -20,6 +20,10 @@ h1{
     font-weight: bold;
     text-align: center;
     margin: 75px auto;
+    padding-top: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 h2{
     text-align: center;
