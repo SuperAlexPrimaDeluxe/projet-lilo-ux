@@ -9,6 +9,7 @@ body {
 
 }
 
+
 /* CSS HEADER */
 
 header {
@@ -170,9 +171,6 @@ li.none {
     /* width: 20%; */
 }
 
-.pastille-type1{
-    background-color: grey;
-}
 .sous-menuheader {
     /*3*/
     display: none;
