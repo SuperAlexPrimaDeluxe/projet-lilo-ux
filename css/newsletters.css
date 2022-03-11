@@ -69,7 +69,7 @@
     position: relative;
 }
 /*bouton mail*/
-button{
+button#newb{
     border: none;
     cursor: pointer;
     background-color: black;
@@ -78,7 +78,7 @@ button{
 }
 
 /*3eme partie: image (machine à écrire)*/
-img{
+img#imgnew{
     display: flex;
     border-bottom-right-radius: 60px;
     width: 300px;
@@ -93,15 +93,15 @@ img{
 @media (max-width: px){
     .newsletter { 
       width: 100%;
-     
+      
     }
-    .h2,.h3{
+    .h2new,.h3new{
         display:block;
     }
-    .box2{
+    .bloc2{
         display:block;
     }
-    h4{
+    .h4new{
         display: block;
         position: initial;
         margin: 0px;
@@ -115,15 +115,15 @@ img{
         display: block;
 
     }
-    .button1{
+    button#newb{
         margin-top: 0px;
     }
-    .enveloppe,.button1{
+    .enveloppe, button#newb{
         display: inline-block;
       
      
     }
-    .img{
+    img#imgnew{
         display:block;
     }
 
