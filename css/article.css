@@ -102,11 +102,17 @@ button.btnmomo {
     border: none;
     height: 61px;
     width: 537px;
+<<<<<<< Updated upstream
+=======
+    margin-top: 50px;
+    margin-left: 60px;
+>>>>>>> Stashed changes
 }
 
 button:hover{
     background-color: #BD506D;
     cursor: pointer;
+   
 
 }
 
