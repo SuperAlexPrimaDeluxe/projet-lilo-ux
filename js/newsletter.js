@@ -1,9 +1,10 @@
 class MyNewsLetter extends HTMLElement {
     connectedCallback() {
         var current5 = this.getAttribute('current5');
-        this.innerHTML = `<div class="newsletter">
+        this.innerHTML = `    <div class="newsletter">
+
         <div class="info">
-        <div class="box1">
+        <div class="bloc1">
             <div class ="texte">
                 <h2>Ne manquez pas<br>les nouveautés!</h2>
             </div>
@@ -12,7 +13,7 @@ class MyNewsLetter extends HTMLElement {
             </div>
         </div>
 
-        <div class="box2">
+        <div class="bloc2">
             <h4>Inscrivez-vous ici!</h4>
            
             <form action="" class ="fields">

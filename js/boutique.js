@@ -370,3 +370,129 @@
         document.getElementById("psty2").textContent--;
       }
     }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 4 
+
+    function petitesas4() {
+      if (document.getElementById("hbk4").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk4").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk4").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk4").style.filter = "none";
+        document.getElementById("hbk4").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 5 
+
+    function petitesas5() {
+      if (document.getElementById("hbk5").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk5").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk5").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk5").style.filter = "none";
+        document.getElementById("hbk5").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 6 
+
+    function petitesas6() {
+      if (document.getElementById("hbk6").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk6").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk6").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk6").style.filter = "none";
+        document.getElementById("hbk6").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 7 
+
+    function petitesas7() {
+      if (document.getElementById("hbk7").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk7").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk7").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk7").style.filter = "none";
+        document.getElementById("hbk7").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 8 
+
+    function petitesas8() {
+      if (document.getElementById("hbk8").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk8").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk8").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk8").style.filter = "none";
+        document.getElementById("hbk8").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 9 
+
+    function petitesas9() {
+      if (document.getElementById("hbk9").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk9").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk9").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk9").style.filter = "none";
+        document.getElementById("hbk9").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 10 
+
+    function petitesas10() {
+      if (document.getElementById("hbk10").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk10").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk10").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk10").style.filter = "none";
+        document.getElementById("hbk10").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 11 
+
+    function petitesas11() {
+      if (document.getElementById("hbk11").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk11").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk11").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk11").style.filter = "none";
+        document.getElementById("hbk11").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
+
+    // FONCTION POUR LE CLIC SUR LE BOUTON LIKE NUMERO 12 
+
+    function petitesas12() {
+      if (document.getElementById("hbk12").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
+        document.getElementById("hbk12").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
+        document.getElementById("hbk12").style.width = "27px";
+        document.getElementById("psty2").textContent++;
+      } else {
+        document.getElementById("hbk12").style.filter = "none";
+        document.getElementById("hbk12").style.width = "25px";
+        document.getElementById("psty2").textContent--;
+      }
+    }
