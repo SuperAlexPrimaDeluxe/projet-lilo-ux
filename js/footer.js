@@ -1,3 +1,4 @@
+
 class MyFooter extends HTMLElement {
     connectedCallback() {
         const current = this.getAttribute('current');

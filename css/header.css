@@ -9,6 +9,7 @@ body {
 
 }
 
+
 /* CSS HEADER */
 
 header {
@@ -163,10 +164,11 @@ li.none {
 }
 
 #ctnmenures li:hover {
-    font-weight: 700;
-    letter-spacing: 3;
+    /* font-weight: 700;
+    letter-spacing: 3; */
     background-color: #ff4079b2;
-    width: 20%;
+    border: none;
+    /* width: 20%; */
 }
 
 .sous-menuheader {
@@ -181,6 +183,7 @@ li.none {
 
 .sous-menuheader li {
     width: 100% !important;
+    background-color: black;
 }
 
 .sous-menuheader li:hover {
