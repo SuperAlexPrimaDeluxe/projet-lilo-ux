@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/newsletters.css">
-</head>
-<body>
-    <div class="newsletter">
-
+class MyNewsLetter extends HTMLElement {
+    connectedCallback() {
+        var current5 = this.getAttribute('current5');
+        this.innerHTML = `<div class="newsletter">
         <div class="info">
         <div class="box1">
             <div class ="texte">
@@ -35,6 +27,9 @@
             <img src="./medias/img/newsletter-machine.svg" class="print"id="print">
         </div>
     </div>
-    </div>
-</body>
-</html>
+    </div>`
+    }
+}
+
+customElements.define('main-newsletter', MyNewsLetter);
+

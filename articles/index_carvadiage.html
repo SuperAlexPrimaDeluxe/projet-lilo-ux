@@ -5,143 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-    <script src="../js/header.js" defer></script>
-    <script src="../js/footer.js" defer></script>
-    <script src="../js/pathcorrecter.js" defer></script>
-    <script src="../js/animationheader.js" defer></script>
+
+
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="../css/wishlist.css">
     <link rel="stylesheet" href="../css/article.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">  -->
+    <script src="../js/header.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/animationheader.js" defer></script>
+    <script src="../js/sliderpetitsprix.js" defer></script>
+    <script src="../js/wishlist.js" defer></script>
+
     <title>Article</title>
 </head>
 
 <body>
     <main-header current="home"></main-header>
     <main>
-       <!--Titre,image article et texte présentation-->
+        <!--Titre,image article et texte présentation-->
 
-      
-       
-        <h2>Article</h2>
+
+
+        <h2 class="momoh2">Article</h2>
         <div class="article-all">
-         <div class="image-article">
-
-            
-            <img class="badge" src="../medias/img/article-1.svg" alt="badge">
-       
+            <div class="image-article">
+                <img class="badge" src="../medias/img/article-1.svg" alt="badge">
+                <div class="btnmomoctn">
+                    <a href="/actus.html"><button class="btnmomo">RETOUR AUX ACTUS</button></a>
+                </div>
+            </div>
 
             <div class="texte">
-              
-                <h3>Journée mondiale du caviardage</h3>
-                
-                <div>
 
-                    <p> Le 29 janvier sera la journée mondiale du caviardage.
-                        Et non. Ne vous méprenez pas ! Nous pourrions croire qu’il s’agit d’une journée spécialement
-                        destinée à célébrer les vieux œufs d’esturgeon qui croupissent et pourrissent au fond des grands
-                        frigos américains des riches qui n’ont aucun problèmes financiers et qui s’en balancent
-                        royalement (« caviar d’âge », pour ceux qui dorment au fond de la classe)… mais non.
-                        Le caviardage est une technique d’écriture créative qui consiste à biffer un message original en
-                        barrant de grandes parties d’un texte long et en ne conservant que les phrases, mots, passages
-                        qui construisent alors un nouveau texte, récit, poème, etc… Comme mon petit badge qui vous
-                        invite à vous jeter à l’eau. ❤️
-                        Le caviardage est à l’origine, une histoire moins poétique étant donné qu’il avait pour objectif
-                        de censurer purement et simplement des textes, mots et pensées allant à l’encontre de la
-                        bienséance. Misère. Ça donne presque envie d’hurler un gros mot, non ?
-                        Mais pourquoi diable nous en parler le 24 janvier ?!
-                        Effectivement, j’ai pris les devants me disant que cela pourrait être une chouette idée
-                        d’activité à faire, cette semaine, seul.e ou avec des enfants….à la maison ou en classe…
-                        Belle journée et belle semaine ❤️
-                    </p>
+                <h3 class="titrearticlemomo">Journée mondiale du caviardage</h3>
 
-                </div>
+
+
+                <p class="artmoni"> Le 29 janvier sera la journée mondiale du caviardage.
+                    Et non. Ne vous méprenez pas ! Nous pourrions croire qu’il s’agit d’une journée spécialement
+                    destinée à célébrer les vieux œufs d’esturgeon qui croupissent et pourrissent au fond des grands
+                    frigos américains des riches qui n’ont aucun problèmes financiers et qui s’en balancent
+                    royalement (« caviar d’âge », pour ceux qui dorment au fond de la classe)… mais non.
+                    Le caviardage est une technique d’écriture créative qui consiste à biffer un message original en
+                    barrant de grandes parties d’un texte long et en ne conservant que les phrases, mots, passages
+                    qui construisent alors un nouveau texte, récit, poème, etc… Comme mon petit badge qui vous
+                    invite à vous jeter à l’eau. ❤️
+                    Le caviardage est à l’origine, une histoire moins poétique étant donné qu’il avait pour objectif
+                    de censurer purement et simplement des textes, mots et pensées allant à l’encontre de la
+                    bienséance. Misère. Ça donne presque envie d’hurler un gros mot, non ?
+                    Mais pourquoi diable nous en parler le 24 janvier ?!
+                    Effectivement, j’ai pris les devants me disant que cela pourrait être une chouette idée
+                    d’activité à faire, cette semaine, seul.e ou avec des enfants….à la maison ou en classe…
+                    Belle journée et belle semaine ❤️
+                </p>
+   
             </div>
         </div>
-    
-        <div>
-        <a href=""><button>RETOUR AUX ACTUS</button></a>
-    </div>
 
-    </div>
+      
+
+        </div>
         <!--Fin:Titre,image article et texte présentation -->
 
-        <!--Autres articles récents  proposé avec un carousel d'images-->
-        <div class="container-article-carousel">
-            
-            <h4>Autre articles récents</h4>
-
-            <div class="wrapper">
-                <div class="carousel owl-carousel">
-                    
-                    <div class="articles">
-                        <div class="article-1">
-                        <a href="#"><img src="../medias/img/article-2.svg"></a>
-                        </div>
-                        <a href="#"><p>Close</p></a>  
-                    </div>
-                    
-                    <div class="articles">
-                        <div class="article-2">
-                        <a href="#"><img src="../medias/img/article-3.svg"></a>
-                        </div>
-                        <a href="#"><p>Close</p></a>  
-                    </div>
-
-                    <div class="articles">
-                        <div class="article-3">
-                        <a href="#"><img src="../medias/img/article-4.svg"></a>
-                        </div>
-                        <a href="#"><p>Close</p></a>  
-                    </div>
-
-                    <div class="articles">
-                        <div class="article-4">
-                        <a href="#"><img src="../medias/img/article-5.svg"></a>
-                        </div>
-                        <a href="#"><p>Close</p></a>  
-                    </div>
-                </div>
-                Bouton flêche
-                <div class="fleche">
-                    <div id="nav-button--prev" class="slider_nav-button"></div>
-                    <div id="nav-button--next" class="slider_nav-button"></div>
-                </div>
-
-            </div>
-        </div>
-        <!-- fin: Autres articles récents  proposé avec un carousel d'images-->
-
     </main>
-    <script>
-        $(".carousel").owlCarousel({
-          margin: 20,
-          loop: true,
-       //    autoplay: true,
-       //    autoplayTimeout: 2000,
-       //    autoplayHoverPause: true,
-          responsive: {
-            0:{
-              items:1,
-              nav: false
-            },
-            600:{
-              items:2,
-              nav: false
-            },
-            1000:{
-              items:4,
-              nav: false
-            }
-          }
-        });
-    </script>
+    <main-section3 current4="home"></main-section3>
+    <!--Slider petit prix-->
     <main-footer current="home"></main-footer>
-    
+
 
 </body>
 
