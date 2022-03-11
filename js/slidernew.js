@@ -1,8 +1,8 @@
-class MySection extends HTMLElement {
+class MySection2 extends HTMLElement {
     connectedCallback() {
-        var current2 = this.getAttribute('current2');
+        var current3 = this.getAttribute('current3');
         this.innerHTML = `<div class="album">
-        <h4 id="h4a">Vous aimerez aussi : </h4>
+        <h4 id="h4a">Les nouveautés sur le site :</h4>
         <div class="wrapper">
             <div class="carousel owl-carousel">
                 <div class="card-prix"> 
@@ -107,5 +107,5 @@ class MySection extends HTMLElement {
     }
 }
 
-customElements.define('main-section', MySection);
+customElements.define('main-section2', MySection2);
 

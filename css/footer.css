@@ -48,12 +48,18 @@ footer::before {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-variant: small-caps;
+    position: initial;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .h4-footer {
     color: #7B7B7B;
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 0px;
+    text-align: left;
 }
 
 /*--PROPRIETE DES LISTES--*/
@@ -210,6 +216,15 @@ input{
         position: initial;
         display: flex;
         justify-content: center;
+    }
+
+    .h3-footer{
+        text-align: center;
+        padding: 15px;
+    }
+
+    .h4-footer{
+        text-align: center;
     }
 
     footer::before {
