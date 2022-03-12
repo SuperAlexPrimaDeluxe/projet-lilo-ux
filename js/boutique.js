@@ -11,8 +11,6 @@
       document.getElementById("clicbold1").style.fontSize = "18px";
       document.getElementById("clicbold1").style.fontWeight = "bold";
       document.getElementById("v1").style.display = "block";
-      // document.getElementById("clicbold1").style.backgroundColor = "#FF4079";
-      // document.getElementById("cbild+1").style.color = "white";
     } else {
       alert("FUCKO");
     }

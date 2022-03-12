@@ -5,6 +5,14 @@ html{
     scroll-behavior: smooth;
 }
 
+#clicbold1, #clicbold2, #clicbold3{
+    padding-left: 25px;
+}
+
+#clicbold4, #clicbold5, #clicbold6{
+    padding-left: 25px;
+}
+
 .nouveaufilter{
     display: flex; 
     flex-direction: column; 
@@ -32,8 +40,8 @@ html{
     position: relative;   
 }
 
-.clicbold a{
-    padding-left: 25px;
+li#clicbold1{
+    line-height: normal;
 }
 
 span#dbg1{
@@ -453,7 +461,11 @@ img.hbk {
         grid-template-columns: none;
     }
     .card2nav {
+        display: flex;
         grid-column: 1 / span 3;
+    }
+    .card2nav ul{
+        width: 50%;
     }
     .gridelement{
         display: flex;
@@ -482,18 +494,6 @@ img.hbk {
    
     #inputsearchmobile{
         width: 97%;
-    }
-
-    #clicbold1, #clicbold2, #clicbold3{
-        
-    }
-
-    #clicbold4, #clicbold5, #clicbold6{
-        padding-left: 25px;
-    }
-
-    .hider{
-        
     }
 }
 
@@ -532,22 +532,15 @@ img.hbk {
     #inputsearchmobile{
         width: 97%;
     }
-
-    #clicbold1, #clicbold2, #clicbold3{
-        display: none;
-    }
-
-    .hider{
-        display: none;
-    }
 }
 
  @media(max-width:500px) {
     .cards.container2 {
-        grid-template-columns: none;
+        display: flex;
+        flex-wrap: wrap;
     }
     .card2nav {
-        grid-column: 1 / span 1;
+      line-height: auto;
     }
 
     .gridelement{
@@ -579,13 +572,6 @@ img.hbk {
         width: 97%;
     }
 
-    #clicbold1, #clicbold2, #clicbold3{
-        display: none;
-    }
-
-    .hider{
-        display: none;
-    }
     .po{
         margin-top: 0px;
     }
