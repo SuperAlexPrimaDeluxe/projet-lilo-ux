@@ -26,7 +26,7 @@ main#actus {
 }
 
 .buttonsactus {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,14 +37,17 @@ main#actus {
 
 #b1actus {
   background-color: #E5E5E5;
+  cursor:pointer
 }
 
 #b2actus {
   background-color: hotpink;
+  cursor:pointer
 }
 
 #b3actus {
   background-color: #000000;
+  cursor:pointer
 }
 
 .buttonactus {
@@ -96,22 +99,31 @@ main#actus {
   font-family: 'Roboto Mono', monospace;
   font-weight: 800;
   letter-spacing: 0.4em;
+  line-height: 1.5;
 }
 
 .voir_plus_actu {
   margin: 25px 0px;
   color: white;
+  text-decoration: underline;
+}
+
+#flexcorrector{
+  display: flex;
+  flex-direction: column;
 }
 
 .voir_plus_actu_black {
   margin: 25px 0px;
   color: black;
+  text-decoration: underline;
 }
 
 /* Le paragraphe des articles */
 
 p.articlepara {
   margin-bottom: 20px;
+  line-height: 1.5;
   /* font-size: 14px; */
   /* margin-bottom: 8px; */
 }
@@ -144,7 +156,7 @@ p.articlepara {
 .pga_card {
   display: flex;
   position: relative;
-  height: 270px;
+  height: 350px;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
@@ -189,10 +201,32 @@ p.articlepara {
   color: black; */
   width: 65%;
   margin: 10px;
+  padding: 15px;
 }
 
 .spanactus {
+  margin-bottom: 25px;
+}
+
+.spanactusgris{
   font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.spanactusrose{
+  font-size: 12px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+.spanactusblack{
+  font-size: 12px;
+  background-color: #FF4070;
+  color: white;
+  padding: 5px;
 }
 
 .titrearticleactus {
@@ -206,9 +240,16 @@ p.articlepara {
 
 /* CI-DESSOUS TOUT CE QUI CONCERNE LE RESPONSIVE */
 
-@media(max-width:768px) {
+@media(max-width:1200px) {
 
-/* [ALEX] - CSS PROPRE À LA PAGE [ACTUS]-[RESPONSIVE] */
+main#actus{
+  display: flex;
+  flex-wrap: wrap;;
+}
+
+.pga_card{
+  height: auto;
+}
 
 }
 
