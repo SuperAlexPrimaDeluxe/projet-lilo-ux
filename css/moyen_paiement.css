@@ -13,7 +13,7 @@ main{
     width: 90%;
     margin: 0 auto;
 }
-
+/***TITRE: moyen de paiement****/
 .paiementmoni h1{
     font-size: 40px;
     font-weight: bold;
@@ -27,6 +27,7 @@ hr{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 /*****Bloc********/
 .paiementmoni{
     width: 75%;
@@ -39,20 +40,20 @@ hr{
     /* display: flex;
     flex-direction: column; */
 }
+
 /* sous-titre: Facture-bancontact carte de crédits*/
 .container h2{
     margin: 40px auto;
     text-align: left;
     margin-left: 40px;
 }
+
 /*texte sous facture */
 .paiementmoni p{
     padding: 10px 0;
     font-size: 32px;
     font-family: 'Montserrat' sans-serif;
     font-style:lighter;
-
-    
 }
 
 /* le contenair */
