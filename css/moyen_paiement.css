@@ -19,6 +19,7 @@ main{
     font-weight: bold;
     text-align: center;
     margin: 50px;
+    padding-bottom: 50px;
 }
 /**********Ligne*********/
 hr{
@@ -108,8 +109,9 @@ img.modepaiement{
 }
 /******   Bloc total   ******/
 .contenu-total ul{
-padding-right: 20px;
 padding-top: 20px;
+padding-right: 10px;
+padding-left: 10px;
 }
 .sous-total,.frais-port,.tva{
     height: 50px;
@@ -153,7 +155,7 @@ padding-top: 20px;
     text-align: center;
     align-items: center;
     display: inline-block;
-    width: 50%;
+    width: 25%;
     height: 45px;
     background-color:black;
     color: white;
@@ -188,9 +190,7 @@ button:hover{
     .paiement, .btn-1-continuer{
         width: 50%;
     }
-    .total ul{
-        padding: 0 auto;
-    }
+
     hr{
         margin: 20px;
         margin-top: 20px;
@@ -201,6 +201,10 @@ button:hover{
         text-align: left;
         margin-left: 20px;
     }
+    .paiementmoni p{
+        font-size: 20px;
+        font-style: lighter;
+    }
     img.modepaiement{
         width: 60px;
         margin:20px;
@@ -209,9 +213,18 @@ button:hover{
     .container h2{
         padding-left: 10px;
     }
+    .contenu-total ul{
+        padding-top: 0px;
+        margin-top: 0px; 
+    }  
+    .total ul{
+        padding-left: 20px;
+        height: 60px;
+        padding-top: 0px;
+    }
 }
 
-@media (max-width:460px) {
+@media (max-width:460px){
     .main{
         width: 75%;    
         margin: 0 auto;
@@ -254,12 +267,7 @@ button:hover{
         font-size: 10px;
         font-style: lighter;
     }
-    .contenu-total ul{
-        border-left-width: 5px;
-        padding-right: 5px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+
    .total ul{
        height:50px;
    }
