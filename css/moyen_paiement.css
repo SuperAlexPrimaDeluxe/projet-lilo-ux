@@ -188,9 +188,7 @@ button:hover{
     .paiement, .btn-1-continuer{
         width: 50%;
     }
-    .total ul{
-        padding: 0 auto;
-    }
+
     hr{
         margin: 20px;
         margin-top: 20px;
@@ -201,6 +199,10 @@ button:hover{
         text-align: left;
         margin-left: 20px;
     }
+    .paiementmoni p{
+        font-size: 20px;
+        font-style: lighter;
+    }
     img.modepaiement{
         width: 60px;
         margin:20px;
@@ -209,9 +211,18 @@ button:hover{
     .container h2{
         padding-left: 10px;
     }
+    .contenu-total ul{
+        padding-top: 0px;
+        margin-top: 0px; 
+    }  
+    .total ul{
+        padding-left: 20px;
+        height: 60px;
+        padding-top: 0px;
+    }
 }
 
-@media (max-width:460px) {
+@media (max-width:460px){
     .main{
         width: 75%;    
         margin: 0 auto;
