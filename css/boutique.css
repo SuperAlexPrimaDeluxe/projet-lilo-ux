@@ -5,13 +5,35 @@ html{
     scroll-behavior: smooth;
 }
 
+.nouveaufilter{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.nouveaufilter li{
+    border: #7a7a7a 1px solid;
+    color: white;
+    padding: 5px 25px;
+    margin: 0px 25px;
+    border-radius: 50px;
+}
+
+.nouveaufilter li a{
+ padding: 0 50px;
+}
+
 .clicbold{
     border: #7A7A7A 1px solid;
+    border-radius: 50px ;
     display: flex;
     margin: 10px 0px;
     background-color: white;
     padding: 10px 5px;
     position: relative;   
+}
+
+.clicbold a{
+    padding-left: 25px;
 }
 
 span#dbg1{
@@ -463,11 +485,15 @@ img.hbk {
     }
 
     #clicbold1, #clicbold2, #clicbold3{
-        display: none;
+        
+    }
+
+    #clicbold4, #clicbold5, #clicbold6{
+        padding-left: 25px;
     }
 
     .hider{
-        display: none;
+        
     }
 }
 
