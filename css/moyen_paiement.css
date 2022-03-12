@@ -8,35 +8,50 @@ html{
     font-weight: 400;
     font-size: 18px;
 }
-h1{
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 75px;
-}
 /**************************************************/
 main{
     width: 90%;
     margin: 0 auto;
 }
+
+.paiementmoni h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+/**********Ligne*********/
+hr{
+    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*****Bloc********/
 .paiementmoni{
-    width: 80%;
+    width: 75%;
     border: 1px solid black;
     margin: 100px auto;
     padding: 0 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 0 auto;
     /* display: flex;
     flex-direction: column; */
 }
-h2{
+/* sous-titre: Facture-bancontact carte de crédits*/
+.container h2{
     margin: 40px auto;
     text-align: left;
     margin-left: 40px;
 }
-.connexion h2{
-    margin-bottom: 15px;
-}
-p{
-    font-size: 16px;
+/*texte sous facture */
+.paiementmoni p{
+    padding: 10px 0;
+    font-size: 32px;
+    font-family: 'Montserrat' sans-serif;
+    font-style:lighter;
+
+    
 }
 
 /* le contenair */
@@ -85,54 +100,169 @@ p{
     bottom: 1px;
 
 }
-/********************
-Image de paiement
-*********************/
+/*****   LOGO PAIEMENT  *****************/
 img.modepaiement{
     width: 60px;
     margin-left:50px;
+    border: 1px solid gray;
+}
+/******   Bloc total   ******/
+.contenu-total ul{
+padding-right: 20px;
+padding-top: 20px;
+}
+.sous-total,.frais-port,.tva{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 90%;
+    color: rgb(2, 1, 1);
+    margin: 10px 0;
+    font-weight: 400;
+    size: 15px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    align-items: center;
+    font-weight: 700px bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 28px;
+    color: black;
+  
+    background-color: black;
+}
+.total h2{
+    color: white;
 }
 
-
-
-/**************************************************/
-/*button*/
-/**************************************************/
-.continuer{
-    text-align: center;
-    align-items: center; 
-}
+/********    Button  **************************/
 .btn-continuer{
+    text-align: center;
+    align-items: center;
+}
+.btn-1-continuer{
     border:none;
     text-align: center;
     align-items: center;
     display: inline-block;
-    width: 100%;
+    width: 50%;
     height: 45px;
-    background-color: #d35379;
+    background-color:black;
     color: white;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: bold;
     padding: 10px;
-    margin: 25px auto;
+    margin: 30px 10px;
     cursor: pointer;
     transition: transform 0.5s;
 }
+.btn-1-continuer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: 0 auto;
+}
 button:hover{
+    background-color: #d35379;
+    cursor: pointer;
+    transition:transform 0.5s;
   
 }
-/* ********** */
-@media screen and (min-width:460px) {
-    .main{
-        width: 300px;    
-    }     
-    .paiement,.btn-continuer{
-        width: 75%;
+/* ********** RESPONSIVE********/
+
+
+@media(max-width:768px) {
+    main{
+        width: 70%;
+        margin: auto;
+    }
+    .paiement, .btn-1-continuer{
+        width: 50%;
+    }
+    .total ul{
+        padding: 0 auto;
+    }
+    hr{
+        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container h2{
+        margin: 0 auto;
+        text-align: left;
+        margin-left: 20px;
+    }
+    img.modepaiement{
+        width: 60px;
+        margin:20px;
+        border: 1px solid gray;
+    }
+    .container h2{
+        padding-left: 10px;
     }
 }
 
-@media screen and (min-width: 860px){
-    .paiement, .btn-continuer{
-        width: 50%;
+@media (max-width:460px) {
+    .main{
+        width: 75%;    
+        margin: 0 auto;
+    }    
+    .paiementmoni{
+        height: 0 auto;
+        padding-bottom: 50px;
+        margin-top: 50px;
+    } 
+    .paiementmoni h1{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
-    
+    hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .paiementmoni h2{
+       font-size: 15px;
+    }
+    .paiementmoni p{
+        font-size: 10px;
+        font-style: lighter;
+    }
+    .paiementmoni h3{
+        font-size: 15px;
+    }
+    .paiementmoni h4{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .promo p{
+        font-size: 10px;
+        font-style: lighter;
+    }
+    .contenu-total ul{
+        border-left-width: 5px;
+        padding-right: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+   .total ul{
+       height:50px;
+   }
+    .btn-1-continuer,a{
+      height: 50px;
+      width: 150px;
+      font-size: 15px;
+    }
+  
 }
