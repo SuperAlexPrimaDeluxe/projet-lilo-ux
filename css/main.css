@@ -13,6 +13,24 @@ body {
 
 /* [ALEX] - CSS PROPRE À LA PAGE [ACTUS] */
 
+#filtresimple{
+  display: flex;
+  width: 90%;
+  background-color: red;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.filtresimpleli{
+  padding: 25px;
+  background-color: #111111;
+}
+
+.filtresimplelien{
+  padding: 25px;
+  background-color: #111111;
+}
+
 main#actus {
   position: relative;
   width: 100%;

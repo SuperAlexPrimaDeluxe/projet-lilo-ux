@@ -308,6 +308,17 @@ ul.pb_nav_lat_title>li {
     top: 3%;
 }
 
+.outmention {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #a02626;
+    position: absolute;
+    left: 94%;
+    transform: translateX(-100%);
+    top: 3%;
+}
+
 .reduction2 {
     color: #ff4079;
 }
