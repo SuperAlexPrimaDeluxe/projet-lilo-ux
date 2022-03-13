@@ -140,7 +140,7 @@ z-index: 2;
 }
 @media  (max-width: 460px) {
     main{
-        width: 75%;
+        width: 95%;
         margin: 0 auto;
     }
     h1.atelier{
@@ -149,7 +149,7 @@ z-index: 2;
         text-align: center;
         padding-top: 0px;
         padding-bottom: 0px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     
     hr{
@@ -158,25 +158,57 @@ z-index: 2;
         margin-left: 0px;
         margin-right: 0px;
     }
-
-    .h1,.h2{
-        text-align: center;
-        width: 100%;
-        margin:auto;
-
+    
+    h2.petitsonge{
+        font-size: 30px;
     }
-      .column-1 {
+ 
+    p{
+        font-family:'Roboto Mono',sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .grid{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        -moz-column-count : 1 ; 
-        -webkit-column-count : 1 ; 
-  
-
-        
-      } 
-      .grid:last-child{
-          display: inline-block;
-      } 
+        flex:wrap;
+        gap: 2.5rem;
+        margin: 5rem;
+        top: 0px;
+        margin-top:0px;
+        position: none;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+    .column-1{
+       width: 0 auto;
+        grid-column: 1;
+        height: 0 auto;
+        position: none;
+        z-index: none;
+        left: 0px;
+        right: 0px;
+        
+    }
+    .column-2{
+        position: none;
+        grid-column: 1;
+    }
+    .column-2-1 {
+        width: 450px auto;
+        grid-column:1;
+        height:0 auto;
+        grid-column: 1;
+        position: none;
+        right: 0px;
+        left: 0px;
+        margin-left: 0px;
+        top: 2562px;
+    }
+    .column-2,img.column-2-3{
+        width: 320px;
+        margin-left: 0px;
+    }
+   
+}
 
