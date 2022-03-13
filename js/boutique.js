@@ -197,12 +197,6 @@
           nodeList3[k].style.display = "none";
         }
       }
-
-
-
-
-
-
     };
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE PETITS PRIX */
@@ -227,17 +221,17 @@
         nodeList3[k].style.display = "block";
       }
       if (nouveauprix.style.backgroundColor === "white") {
-        nouveauprix.style.borderRight = "2px solid #FF3D00";
-        nouveauprix.style.borderBottom = "2px solid #FF3D00";
-        nouveauprix.style.borderTop = "1px solid #FF3D00";
-        nouveauprix.style.borderLeft = "1px solid #FF3D00";
+        nouveauprix.style.borderRight = "1px solid #FF4070";
+        nouveauprix.style.borderBottom = "2px solid #FF4070";
+        nouveauprix.style.borderTop = "1px solid #FF4070";
+        nouveauprix.style.borderLeft = "1px solid #FF4070";
         nouveauprix.style.backgroundColor = "transparent";
-        dbg3.style.color = "#FF3D00";
-        dbg3.style.fontSize = "18px";
+        dbg3.style.color = "#FF4070";
+        // dbg3.style.fontSize = "18px";
         nouveauprix.style.fontWeight = "bold";
         document.getElementById("v6").style.display = "block";
         le3.style.display = "block";
-        document.getElementById("v6").style.filter = "invert(30%) sepia(38%) saturate(6105%) hue-rotate(3deg) brightness(103%) contrast(107%)";
+        document.getElementById("v6").style.color = "#ff4070";
         nouveaufiltre.classList.add("geek");
       } else {
         for (let i = 0; i < nodeList1.length; i++) {
@@ -250,13 +244,13 @@
           nodeList3[k].style.display = "block";
         }
         nouveauprix.style.backgroundColor = "white";
-        dbg3.style.color = "#FF3D00";
+        dbg3.style.color = "#7A7A7A";
         document.getElementById("v6").style.display = "none";
         nouveauprix.style.fontWeight = "normal";
-        nouveauprix.style.borderRight = "1px solid #FF3D00";
-        nouveauprix.style.borderBottom = "1px solid #FF3D00";
-        nouveauprix.style.borderTop = "1px solid #FF3D00";
-        nouveauprix.style.borderLeft = "1px solid #FF3D00";
+        nouveauprix.style.borderRight = "1px solid #7A7A7A";
+        nouveauprix.style.borderBottom = "1px solid #7A7A7A";
+        nouveauprix.style.borderTop = "1px solid #7A7A7A";
+        nouveauprix.style.borderLeft = "1px solid #7A7A7A";
         dbg3.style.fontSize = "14px";
         le3.style.display = "none";
       }
@@ -288,24 +282,72 @@
         console.log("Les 3 sont cochés motherfucka !!!");
 
       }
-
-
-
-
-
-
-
-
-
-
-
-
     };
 
 
 
 
+    /* REINITFILTER */
 
+    var le7 = document.getElementById("v7");
+
+    var rfilter = document.getElementById("clicbold7");
+    rfilter .style.backgroundColor = "white";
+    var x = rfilter .style.backgroundColor;
+    console.log(x);
+
+    var dbg7 = document.getElementById("dbg7");
+
+    var nodeList1 = document.querySelectorAll(".new");
+
+    var nodeList2 = document.querySelectorAll(".favoris");
+    var nodeList3 = document.querySelectorAll(".petitsprix");
+
+    rfilter .onclick = function () {
+      if (rfilter.style.backgroundColor === "white") {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
+        rfilter.style.borderRight = "2px solid #3EA995";
+        rfilter.style.borderBottom = "2px solid #3EA995";
+        rfilter.style.borderTop = "1px solid #3EA995";
+        rfilter.style.borderLeft = "1px solid #3EA995";
+        rfilter.style.backgroundColor = "transparent";
+        dbg7.style.color = "#3EA995";
+        dbg7.style.fontSize = "18px";
+        rfilter.style.fontWeight = "bold";
+        document.getElementById("v7").style.display = "block";
+        document.getElementById("v7").style.filter = "invert(55%) sepia(80%) saturate(298%) hue-rotate(119deg) brightness(89%) contrast(90%)";
+        rfilter.classList.add("geek");
+        le7.style.display = "block";
+      } else {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "block";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
+        rfilter.style.backgroundColor = "white";
+        dbg7.style.color = "#3EA995";
+        document.getElementById("v7").style.display = "none";
+        rfilter.style.fontWeight = "normal";
+        rfilter.style.borderRight = "1px solid #3EA995";
+        rfilter.style.borderBottom = "1px solid #3EA995";
+        rfilter.style.borderTop = "1px solid #3EA995";
+        rfilter.style.borderLeft = "1px solid #3EA995";
+        dbg7.style.fontSize = "14px";
+        le7.style.display = "none";
+      }
+    };
 
 
 

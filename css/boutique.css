@@ -5,11 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 
-#clicbold1, #clicbold2, #clicbold3{
-    padding-left: 25px;
-}
-
-#clicbold4, #clicbold5, #clicbold6{
+#clicbold0, #clicbold1, #clicbold2, #clicbold3, #clicbold4, #clicbold5, #clicbold6, #clicbold7{
     padding-left: 25px;
 }
 
@@ -44,7 +40,7 @@ li#clicbold1{
     line-height: normal;
 }
 
-span#dbg1{
+/* span#dbg1{
     color: #3EA995;
 }
 
@@ -54,31 +50,32 @@ span#dbg2{
 
 span#dbg3{
     color: #FF3D00;
-}
+} */
 
 #clicbold4{
-    border-color: #3EA995;
+    /* border-color: #3EA995; */
     background-color: white;
     cursor: pointer;
 }
 
 #clicbold5{
-    border-color: #E28AA4;
-    color: #E28AA4;
+    /* border-color: #E28AA4;
+    color: #E28AA4; */
     cursor: pointer;
     background-color: white;
 }
 
 #clicbold6{
-    border-color: #FF3D00;
+    /* border-color: #FF3D00; */
      cursor: pointer;
 }
 
-#v1, #v4, #v5, #v6{
+#v1, #v4, #v5, #v6, #v7{
     display: none;
     position: absolute;
     top: 25%;
     right: 15px;
+    font-size: 30px;
 }
 
 
@@ -214,6 +211,9 @@ del {
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
+    width: 350px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .totalinfo {
@@ -346,6 +346,7 @@ img.hbk {
     height: 25px;
     transition: .2s ease;
     background-color: none;
+    object-fit: initial;
 }
 
 /* CSS ANIMATION ROLLUP */

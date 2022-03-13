@@ -7,12 +7,16 @@
     width: 695px;
     background-color: #f3dde3;
     margin: 0 auto;
+    position: relative;
   
 }
 /*Ne manquez pas...=h2*/
 .h2new{
     padding-left: 65px;
-    color:white;
+    background: transparent;
+    text-align: left;
+    margin: 0;
+    color:black;
     font-family:'Montserrat', sans-serif;
     font-size: 38px;
     display: block;
@@ -22,23 +26,23 @@
 .h3new{
     font-family:'Montserrat', sans-serif;
     padding-left: 65px;
-    
+    font-size: 14px;
+    font-weight: normal;
    
 }
 /*2ème partie= rose fonce*/
 .bloc2{
-    height: 82px;
+    height: 100px;
     padding-left: 65px;
-    margin-right: -300px;
+    margin-right: -292px;
     background-color: #e6b3c1bd;
-
 }
 /*Inscivez vous=h4*/
 .h4new{
-    margin-top: 0px;
-    padding-top: 11px;
-    margin-left: 85px;
+    margin: 0;
+    padding-top: 10px;
     position: absolute;
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     color: white;
 
@@ -62,9 +66,7 @@
 }
 /*logo enveloppe*/
 .logoenveloppe{
-    padding-top: 0px;
-    padding-left: 3px;
-    width: 25px;
+    padding: 5px;
     border-bottom-right-radius: 0px;
     position: relative;
 }
@@ -79,13 +81,16 @@ button#newb{
 
 /*3eme partie: image (machine à écrire)*/
 img#imgnew{
-    display: flex;
-    border-bottom-right-radius: 60px;
-    width: 300px;
-    padding-top: 27px;
+    width: 250px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 
 }
 
+input:focus{
+    box-shadow: none;
+}
   
   /*Responsive: 
   Sur les écran de 520px de large ou moin, les colonnes s'empile les unes sur les autres */
