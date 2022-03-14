@@ -2,28 +2,28 @@
     var liclick1 = document.getElementById("clicbold0");
     liclick1.onclick = function () {
       alert("ssssss");
-      window.open('../boutique.html');
+      window.open('/projet-lilo-ux/boutique.html');
     }
 
     //Quand on clique sur le li Badges.
     var liclick2 = document.getElementById("clicbold1");
     liclick2.onclick = function () {
       alert("ssssss");
-      window.open('../badges.html');
+      window.open('/projet-lilo-ux/badges.html');
     }
 
     //Quand on clique sur le li Bijoux.
     var liclick3 = document.getElementById("clicbold2");
     liclick3.onclick = function () {
       alert("ssssss");
-      window.open('../bijoux.html');
+      window.open('/projet-lilo-ux/bijoux.html');
     }
 
     //Quand on clique sur le li Papeterie.
     var liclick4 = document.getElementById("clicbold3");
     liclick4.onclick = function () {
       alert("ssssss");
-      window.open('../papetrie.html');
+      window.open('/projet-lilo-ux/papetrie.html');
     }
 
     //Ensemble des produits

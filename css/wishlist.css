@@ -117,6 +117,10 @@ button:hover{
 .btn-1-ajout{
     width: 300px;
 }
+
+#h4a, #h4b, #h4c{
+    text-align: center;
+} 
 .btn-vers-boutique{
     color: #d35379;
     background-color: white;
