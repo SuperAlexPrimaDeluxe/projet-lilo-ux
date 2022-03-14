@@ -1,43 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
-h1{
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 50px ;
-}
-.atelier_lilo{
-    position: relative;
-    height:890px;
-    overflow: hidden;
-}
 .superposition{
-    height: 250px;
+    height: 150px;
     width: 100%;
-    background-image: url("../medias/img/rectangle_22.jpg");
+    margin-bottom: 100px;
+    background-image: url("/images/rectangle_22.jpg");
     background-repeat: none;
     background-size: cover;
     position: relative;
 }
-.adresse{
-    height: 400px;
+.superposition h1{
+    display: block;
     width: 100%;
-    background-color: white;
-    margin: auto;
-    box-shadow: 0px 10px 50px gray;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 5px 0;
+    line-height: 2.8rem;
+    background-color: black;
+    position: absolute;
+    top: 50px;
 }
-.adresse .carte-visite{
-    height: 350px;
+main{
+    width: 90%;
+    margin: 0 auto;
 }
-.dechirure-1{
+button{
+    font-family: 'Montserrat';
+}
+.atelier_lilo{
+    width: 100%;
+    margin: 0 auto;
+}
+/* .dechirure-1{
     display: block;
     width: 100%;
     height: 50px;
@@ -45,40 +49,44 @@ h1{
     background-size: cover;
     position: absolute;
     top: 360px;
-}
-.dechirure-2{
+} */
+h2{
     display: block;
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 20px 0;
+}
+.adresse h2{
+    margin: 70px;
+}
+.adresse{
     width: 100%;
-    height: 50px;
-    background-image: url("../medias/img/dechirure-cv.webp");
-    transform: rotate(180deg);
-    background-size: cover;
-    position: absolute;
-    top: 795px;
+    margin: 70px auto;
+    background-color: white;
+    overflow: hidden;
 }
 h4{
     display: block;
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    padding: 0 10px;
-    margin-top: 10px;
+    padding: 20px 0;
 }
 .polaroid-shop{
-    display: none;
-    height: 340px;
-    width: 315px;
+    height: 330px;
+    width: 290px;
+    margin: 60px auto 40px;
     background-color: rgb(243, 242, 242);
     transform: rotate(7deg);
-    margin: 0 65%;
-    position: absolute;
     z-index: 50;
+    scale: 10%;
 }
 .polaroid-shop .shop{
     display: block;
     height: 250px;
     width: 250px;
-    margin: 30px auto;
+    padding: 20px;
+    margin: 0 auto;
     transform: rotate(.1deg);
     position: relative;
 }
@@ -86,45 +94,21 @@ h4{
     height: 118px;
     width :130px;
     position: relative;
-    transform: rotate(-40deg);
-    bottom: 370px;
+    transform: rotate(-70deg);
+    bottom: 320px;
     left: 90px;
 }   
-h2{
-    display: block;
-    text-align: center;
-    font-size: 2.25rem;
+hr{
+    width: 50%;
+    margin: 100px auto 70px;
 }
-.points-vente h2{
-    margin: 0px auto 70px;
-}
-.faq h2{
-    margin: 50px auto 20px;
-}
-.faq h4{
-    padding: 0;
-    margin: 20px auto 70px;
-}
-.contactez-nous h2{
-   margin: 50px auto 70px; 
-}
-h3{
-    color: white;
-    text-align: center;
-    font-size: 1.4rem;;
-    padding: 5px;
-    line-height: 2rem;
-    background-color: #1a252f;
-    position: absolute;
-    top: 55px;
-    margin:0 10%;
-}
-.adresse hr, .faq hr{
+.atelier_lilo hr{
     width: 20%;
     margin: 10px auto;
 }
-.adresse h4{
-    padding: 0 10px 20px;
+h2 + hr{
+    width: 20%;
+    margin: 10px auto;
 }
 .adresse img{
     margin-top: -27px ;
@@ -137,9 +121,7 @@ h3{
     padding: 20px 0;
 }
 .points-vente{
-    height: 1955;
     width: 100%;
-    margin: 50px auto 50px;
 }
 .points-vente ul{
     display: block;
@@ -147,8 +129,8 @@ h3{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    margin: 0 auto;
+    padding-bottom: 20px;
+    margin: 70px auto 0;
 }
 .points-vente img{
     display: block;
@@ -185,70 +167,67 @@ h3{
 /* FAQ-CONTACT */
 /* ***************************************** */
 
-.faq-contact{
-    /* height: 1650px; */
-    width: 90%;
-    margin: 0px auto;
-}
-.tabs {
+.tabs{
+    display: block;
     overflow: hidden;
+    margin: 70px auto 0;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-  }
-  .tab {
+}
+.tab{
     width: 100%;
     color: white;
     overflow: hidden;
-  }
-  .tab-label {
+}
+.tab-label{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background: #2c3e50;
+    background: rgba(0, 0, 0, 0.9);
     border: 1px solid black;
     cursor: pointer;
-  }
-  .tab-label:hover {
-    background: #1a252f;
-  }
-  .tab-label::after {
+}
+.tab-label:hover{
+    background: #474747;
+}
+.tab-label::after{
     content: "\276F";
     width: 10px;
     height: 10px;
     text-align: center;
-    -webkit-transition: all .35s;
     transition: all .35s;
-  }
-  .tab-content {
+}
+.tab-content{
     max-height: 0;
     padding: 0 10px;
     color: #2c3e50;
     background: white;
     transition: all .35s;
-  }
-  .tab input:checked + .tab-label {
+}
+.tab input:checked + .tab-label{
     background: #1a252f;
     color: white;
-  }
-  .tab input:checked + .tab-label::after {
+}
+.tab input:checked + .tab-label::after{
     transform: rotate(90deg);
-  }
-  .tab input:checked ~ .tab-content {
+}
+.tab input:checked ~ .tab-content{
     max-height: 100vh;
     padding: 10px;
-  }
-  .tab input {
+}
+.tab input{
     position: absolute;
     opacity: 0;
     z-index: -1;
-  }
+}
 .contactez-nous{
-    display: block;
     display: flex;
     flex-direction: column;
-}
-.contactez-nous .separation{
-    width: 90%;
-    background-color: #c9c9c9;
+    width: 100%;
+}   
+.corps-formulaire{
+    width: 100%;
+    margin: 70px auto 0;
+
 }
 .contactez-nous .groupe{
     margin-top: 20px;
@@ -274,7 +253,7 @@ h3{
 }
 textarea::placeholder {
     color: #d35379;  
-  }
+}
 .contactez-nous .pied-formulaire button{
     width: 100%;
     background-color: #d35379;
@@ -295,59 +274,82 @@ textarea::placeholder {
     height: 100px;
 }
 
-@media screen and (min-width: 460px) {
-    h3{
-        display: block;
-        font-size: 1.4rem;
-        text-align: center;
-        color: white;
-        background-color: black;
-        margin: auto;
-        padding: 10px;
-        position: absolute;
-        top: 55px;
-        margin-left: 10%;
+@media screen and (min-width: 360px) {
+    .contactez-nous .pied-formulaire button{
+        width: 100%;
+    }
+    .adresse{
+        display: flex;
+        height: 450px;
+        width: 100%;
+        
+    }
+    .faq{
+        width: 75%;
+        padding: 20px;
+        margin: 70px auto;
+        border: 1px solid black;
+    }
+    .contactez-nous{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .corps-formulaire{
+        width: 75%;
+        border: 1px solid black;
+        padding: 20px;
     }
     .contactez-nous .pied-formulaire button{
         width: 300px;
         margin-right: 0;
-    }
+    } 
 }    
 
 @media screen and (min-width: 768px) {
-    .atelier_lilo{
-        height:920px;
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
     }
-    .superposition{
-        height: 300px;
+    h2{
+        display: block;
+        width: 50%;
+        margin: 0 auto;;
     }
-    h3{
-        font-size: 2.5rem;
-        padding: 20px;
-        margin-left: 15%;
-        margin-top: 20px;
+    .adresse{
+        display: flex;
+        height: 450px;
+        width: 70%;
+        margin: 70px auto;
     }
-    .dechirure-1{
-        height: 100px;
-    }
-    .dechirure-2{
-        height: 100px;
-        top: 830px;
-    }
-    .adresse .carte-visite{
-        width: 570px;
-        padding: 50px 50px 30px 50px;
-        margin-left: 10%;
+    .carte-visite{
+        margin: auto;
     }
     .polaroid-shop{
-        display: block;
+        margin: auto;
     }
     .points-vente{
         width: 60%;
-    }   
-    .faq-contact{
-        width: 60%;
-        margin:0 auto;
+        margin: 0 auto;
+    }
+    .faq{
+        width: 50%;
+        padding: 20px;
+        margin: 70px auto;
+        border: 1px solid black;
+    }
+    .contactez-nous{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .corps-formulaire{
+        width: 50%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .contactez-nous .pied-formulaire button{
+        width: 300px;
+        margin-right: 0;
     }
 }
 
