@@ -11,15 +11,15 @@ class MySection extends HTMLElement {
                     .
                     </div>
                     </a>
-                    <p>Badges - "Se jeter à l'eau..."</p>
-                    <p>5€</p>
+                    <p>Carte postale <br>Distribution de sourires...</p>
+                    <p>2€</p>
                     <a href="product.html">Il me le faut !</a>
                 </div> 
                 <div class="card-prix"> 
                     <div class="card card-21">
                     .
                     </div>
-                    <p>Boucles d'oreilles - "Mermaid pampilles turquoises"</p>
+                    <p>Boucles d'oreilles <br>Fun Terrazzo-pois</p>
                     <p>25€</p>
                     <a href="">Je les veux !</a>
                 </div> 
@@ -27,7 +27,7 @@ class MySection extends HTMLElement {
                     <div class="card card-31">
                     .
                     </div>
-                    <p>Badges - "Drache queen."</p>
+                    <p>Badge <br> Drache queen</p>
                     <p>5€</p>
                     <a href="">Celui-ci, c'est le bon !</a>
                 </div>  
@@ -35,7 +35,7 @@ class MySection extends HTMLElement {
                     <div class="card card-41">
                     .
                     </div>
-                    <p>Badges - "Hi hi. Je jubile."</p>
+                    <p>Badge <br>Hi hi. Je jubile</p>
                     <p>5€</p>
                     <a href="">Je le prends !</a>
                 </div>  
@@ -43,7 +43,7 @@ class MySection extends HTMLElement {
                     <div class="card card-51">
                     .
                     </div>
-                    <p>Badges - "God save the spleen."</p>
+                    <p>Badge<br>God save the spleen</p>
                     <p>5€</p>
                     <a href="">J'en ai besoin !</a>
                 </div>  
@@ -51,7 +51,7 @@ class MySection extends HTMLElement {
                     <div class="card card-61">
                     .
                     </div>
-                    <p>Badges - "Foutons-nous la paix."</p>
+                    <p>Badge<br>Foutons-nous la paix</p>
                     <p>5€</p>
                     <a href="">C'est tout-moi !</a>
                 </div>  
@@ -59,7 +59,7 @@ class MySection extends HTMLElement {
                     <div class="card card-71">
                     .
                     </div>
-                    <p>Boucles d'oreilles - "Mosaïc pampilles rouges."</p>
+                    <p>Boucles d'oreilles <br>Mosaïc pampilles rouges</p>
                     <p>25€</p>
                     <a href="">J'achète !</a>
                 </div>  
@@ -67,7 +67,7 @@ class MySection extends HTMLElement {
                     <div class="card card-81">
                     .
                     </div>
-                    <p>Boucles d'oreilles - "Vtamine C"</p>
+                    <p>Boucles d'oreilles <br>Vitamine C</p>
                     <p>25€</p>
                     <a href="">Yess... !</a>
                 </div>  
@@ -75,7 +75,7 @@ class MySection extends HTMLElement {
                     <div class="card card-91">
                     .
                     </div>
-                    <p>Cartes - "Vieillir est un privilège."</p>
+                    <p>Carte postale <br>Vieillir est un privilège</p>
                     <p>2€</p>
                     <a href="">Celui-là, c'est pour moi !</a>
                 </div>  
@@ -83,15 +83,15 @@ class MySection extends HTMLElement {
                     <div class="card card-101">
                     .
                     </div>
-                    <p>Badges - "La reine déneige."</p>
-                    <p>5€</p>
+                    <p>Badge<br>il est conseillé de sourire</p>
+                    <p>2€</p>
                     <a href="">J'en rêve !</a>
                 </div>  
                 <div class="card-prix"> 
                     <div class="card card-111">
                     .
                     </div>
-                    <p>Badges - "Just doux it."</p>
+                    <p>Badge <br>Just doux it</p>
                     <p>5€</p>
                     <a href="">I want it !</a>
                 </div>  
@@ -99,8 +99,8 @@ class MySection extends HTMLElement {
                     <div class="card card-121">
                     .
                     </div>
-                    <p>Cartes - "Distribution de sourires..."</p>
-                    <p>2€</p>
+                    <p>Boucles d'oreilles<br> Sprakling limonade</p>
+                    <p>25€</p>
                     <a href="">Je passe commande !</a>
                 </div>  
             </div>
