@@ -347,6 +347,7 @@ img.hbk {
     transition: .2s ease;
     background-color: none;
     object-fit: initial;
+    cursor: pointer;
 }
 
 /* CSS ANIMATION ROLLUP */
