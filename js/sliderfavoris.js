@@ -5,16 +5,18 @@ class MySection extends HTMLElement {
         <h4 id="h4a">Vous aimerez aussi : </h4>
         <div class="wrapper">
             <div class="carousel owl-carousel">
-                <div class="card-prix"> 
-                    <div class="card card-1">
+                <div class="card-prix">
+                    <a href="product.html" alt="lien vers le badge">
+                    <div class="card card-11">
                     .
                     </div>
+                    </a>
                     <p>Badges - "Se jeter à l'eau..."</p>
                     <p>5€</p>
-                    <a href="">Il me le faut !</a>
+                    <a href="product.html">Il me le faut !</a>
                 </div> 
                 <div class="card-prix"> 
-                    <div class="card card-2">
+                    <div class="card card-21">
                     .
                     </div>
                     <p>Boucles d'oreilles - "Mermaid pampilles turquoises"</p>
@@ -22,7 +24,7 @@ class MySection extends HTMLElement {
                     <a href="">Je les veux !</a>
                 </div> 
                 <div class="card-prix"> 
-                    <div class="card card-3">
+                    <div class="card card-31">
                     .
                     </div>
                     <p>Badges - "Drache queen."</p>
@@ -30,7 +32,7 @@ class MySection extends HTMLElement {
                     <a href="">Celui-ci, c'est le bon !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-4">
+                    <div class="card card-41">
                     .
                     </div>
                     <p>Badges - "Hi hi. Je jubile."</p>
@@ -38,7 +40,7 @@ class MySection extends HTMLElement {
                     <a href="">Je le prends !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-5">
+                    <div class="card card-51">
                     .
                     </div>
                     <p>Badges - "God save the spleen."</p>
@@ -46,7 +48,7 @@ class MySection extends HTMLElement {
                     <a href="">J'en ai besoin !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-6">
+                    <div class="card card-61">
                     .
                     </div>
                     <p>Badges - "Foutons-nous la paix."</p>
@@ -54,7 +56,7 @@ class MySection extends HTMLElement {
                     <a href="">C'est tout-moi !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-7">
+                    <div class="card card-71">
                     .
                     </div>
                     <p>Boucles d'oreilles - "Mosaïc pampilles rouges."</p>
@@ -62,7 +64,7 @@ class MySection extends HTMLElement {
                     <a href="">J'achète !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-8">
+                    <div class="card card-81">
                     .
                     </div>
                     <p>Boucles d'oreilles - "Vtamine C"</p>
@@ -70,7 +72,7 @@ class MySection extends HTMLElement {
                     <a href="">Yess... !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-9">
+                    <div class="card card-91">
                     .
                     </div>
                     <p>Cartes - "Vieillir est un privilège."</p>
@@ -78,7 +80,7 @@ class MySection extends HTMLElement {
                     <a href="">Celui-là, c'est pour moi !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-10">
+                    <div class="card card-101">
                     .
                     </div>
                     <p>Badges - "La reine déneige."</p>
@@ -86,7 +88,7 @@ class MySection extends HTMLElement {
                     <a href="">J'en rêve !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-11">
+                    <div class="card card-111">
                     .
                     </div>
                     <p>Badges - "Just doux it."</p>
@@ -94,7 +96,7 @@ class MySection extends HTMLElement {
                     <a href="">I want it !</a>
                 </div>  
                 <div class="card-prix"> 
-                    <div class="card card-12">
+                    <div class="card card-121">
                     .
                     </div>
                     <p>Cartes - "Distribution de sourires..."</p>
