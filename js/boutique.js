@@ -4,15 +4,34 @@
 
     if (badges.textContent.includes('BADGES')) {
       alert("OK");
-      document.getElementById("clicbold1").style.borderRight = "2px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderBottom = "2px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderTop = "1px solid #7A7A7A";
-      document.getElementById("clicbold1").style.borderLeft = "1px solid #7A7A7A";
-      document.getElementById("clicbold1").style.fontSize = "18px";
+      document.getElementById("clicbold1").style.borderRight = "1px solid #FF4070";
+      document.getElementById("clicbold1").style.borderBottom = "1px solid #FF4070";
+      document.getElementById("clicbold1").style.borderTop = "1px solid #FF4070";
+      document.getElementById("clicbold1").style.borderLeft = "1px solid #FF4070";
       document.getElementById("clicbold1").style.fontWeight = "bold";
+      document.getElementById("cbild+1").style.color = "#FF4070";
       document.getElementById("v1").style.display = "block";
+      document.getElementById("v1").style.color = "#FF4070";
     } else {
-      alert("FUCKO");
+      console.log("c'est les badges");
+    }
+
+    //Bijoux -check de la bonne case au chargement de la page
+    var badges = document.getElementById("bannertxt");
+    console.log(badges.textContent);
+
+    if (badges.textContent.includes('BIJOUX')) {
+      alert("OK");
+      document.getElementById("clicbold2").style.borderRight = "1px solid #FF4070";
+      document.getElementById("clicbold2").style.borderBottom = "1px solid #FF4070";
+      document.getElementById("clicbold2").style.borderTop = "1px solid #FF4070";
+      document.getElementById("clicbold2").style.borderLeft = "1px solid #FF4070";
+      document.getElementById("clicbold2").style.fontWeight = "bold";
+      document.getElementById("cbild+2").style.color = "#FF4070";
+      document.getElementById("v2").style.display = "block";
+      document.getElementById("v2").style.color = "#FF4070";
+    } else {
+      console.log("c'est les bijoux");
     }
 
     /*ROSE POUR LE BOUTTON CURRENT */
@@ -31,9 +50,6 @@
       document.getElementById("linktonumero4").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero4").style.color = "white";
     }
-
-
-
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
 
@@ -62,16 +78,16 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-        nouveaufiltre.style.borderRight = "2px solid #3EA995";
-        nouveaufiltre.style.borderBottom = "2px solid #3EA995";
-        nouveaufiltre.style.borderTop = "1px solid #3EA995";
-        nouveaufiltre.style.borderLeft = "1px solid #3EA995";
+        nouveaufiltre.style.borderRight = "1px solid #FF4070";
+        nouveaufiltre.style.borderBottom = "1px solid #FF4070";
+        nouveaufiltre.style.borderTop = "1px solid #FF4070";
+        nouveaufiltre.style.borderLeft = "1px solid #FF4070";
         nouveaufiltre.style.backgroundColor = "transparent";
-        dbg.style.color = "#3EA995";
-        dbg.style.fontSize = "18px";
+        dbg.style.color = "#FF4070";
+        // dbg.style.fontSize = "18px";
         nouveaufiltre.style.fontWeight = "bold";
         document.getElementById("v4").style.display = "block";
-        document.getElementById("v4").style.filter = "invert(55%) sepia(80%) saturate(298%) hue-rotate(119deg) brightness(89%) contrast(90%)";
+        document.getElementById("v4").style.color = "#FF4070";
         nouveaufiltre.classList.add("geek");
         le1.style.display = "block";
       } else {
@@ -85,13 +101,13 @@
           nodeList3[k].style.display = "block";
         }
         nouveaufiltre.style.backgroundColor = "white";
-        dbg.style.color = "#3EA995";
+        dbg.style.color = "#7A7A7A";
         document.getElementById("v4").style.display = "none";
         nouveaufiltre.style.fontWeight = "normal";
-        nouveaufiltre.style.borderRight = "1px solid #3EA995";
-        nouveaufiltre.style.borderBottom = "1px solid #3EA995";
-        nouveaufiltre.style.borderTop = "1px solid #3EA995";
-        nouveaufiltre.style.borderLeft = "1px solid #3EA995";
+        nouveaufiltre.style.borderRight = "1px solid #7A7A7A";
+        nouveaufiltre.style.borderBottom = "1px solid #7A7A7A";
+        nouveaufiltre.style.borderTop = "1px solid #7A7A7A";
+        nouveaufiltre.style.borderLeft = "1px solid #7A7A7A";
         dbg.style.fontSize = "14px";
         le1.style.display = "none";
       }
@@ -121,16 +137,16 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-        nouveaufavoris.style.borderRight = "2px solid #E28AA4";
-        nouveaufavoris.style.borderBottom = "2px solid #E28AA4";
-        nouveaufavoris.style.borderTop = "1px solid #E28AA4";
-        nouveaufavoris.style.borderLeft = "1px solid #E28AA4";
+        nouveaufavoris.style.borderRight = "1px solid #FF4070";
+        nouveaufavoris.style.borderBottom = "1px solid #FF4070";
+        nouveaufavoris.style.borderTop = "1px solid #FF4070";
+        nouveaufavoris.style.borderLeft = "1px solid #FF4070";
         nouveaufavoris.style.backgroundColor = "transparent";
-        dbg2.style.color = "#E28AA4";
-        dbg2.style.fontSize = "18px";
+        dbg2.style.color = "#FF4070";
+        // dbg2.style.fontSize = "18px";
         nouveaufavoris.style.fontWeight = "bold";
         document.getElementById("v5").style.display = "block";
-        document.getElementById("v5").style.filter = "invert(65%) sepia(35%) saturate(444%) hue-rotate(292deg) brightness(90%) contrast(96%)";
+        document.getElementById("v5").style.color = "#FF4070";
         nouveaufiltre.classList.add("geek");
       } else {
         for (let i = 0; i < nodeList1.length; i++) {
@@ -143,13 +159,13 @@
           nodeList3[k].style.display = "block";
         }
         nouveaufavoris.style.backgroundColor = "white";
-        dbg2.style.color = "#E28AA4";
+        dbg2.style.color = "#7A7A7A";
         document.getElementById("v5").style.display = "none";
         nouveaufavoris.style.fontWeight = "normal";
-        nouveaufavoris.style.borderRight = "1px solid #E28AA4";
-        nouveaufavoris.style.borderBottom = "1px solid #E28AA4";
-        nouveaufavoris.style.borderTop = "1px solid #E28AA4";
-        nouveaufavoris.style.borderLeft = "1px solid #E28AA4";
+        nouveaufavoris.style.borderRight = "1px solid #7A7A7A";
+        nouveaufavoris.style.borderBottom = "1px solid #7A7A7A";
+        nouveaufavoris.style.borderTop = "1px solid #7A7A7A";
+        nouveaufavoris.style.borderLeft = "1px solid #7A7A7A";
         dbg2.style.fontSize = "14px";
         le2.style.display = "none";
       }
@@ -222,7 +238,7 @@
       }
       if (nouveauprix.style.backgroundColor === "white") {
         nouveauprix.style.borderRight = "1px solid #FF4070";
-        nouveauprix.style.borderBottom = "2px solid #FF4070";
+        nouveauprix.style.borderBottom = "1px solid #FF4070";
         nouveauprix.style.borderTop = "1px solid #FF4070";
         nouveauprix.style.borderLeft = "1px solid #FF4070";
         nouveauprix.style.backgroundColor = "transparent";
@@ -289,11 +305,13 @@
 
     /* REINITFILTER */
 
+
+
     var le7 = document.getElementById("v7");
 
     var rfilter = document.getElementById("clicbold7");
-    rfilter .style.backgroundColor = "white";
-    var x = rfilter .style.backgroundColor;
+    rfilter.style.backgroundColor = "white";
+    var x = rfilter.style.backgroundColor;
     console.log(x);
 
     var dbg7 = document.getElementById("dbg7");
@@ -303,7 +321,8 @@
     var nodeList2 = document.querySelectorAll(".favoris");
     var nodeList3 = document.querySelectorAll(".petitsprix");
 
-    rfilter .onclick = function () {
+
+    rfilter.onclick = function lol() {
       if (rfilter.style.backgroundColor === "white") {
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
@@ -314,40 +333,28 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "block";
         }
-        rfilter.style.borderRight = "2px solid #3EA995";
-        rfilter.style.borderBottom = "2px solid #3EA995";
-        rfilter.style.borderTop = "1px solid #3EA995";
-        rfilter.style.borderLeft = "1px solid #3EA995";
+        rfilter.style.borderRight = "2px solid #FF4070";
+        rfilter.style.borderBottom = "2px solid #FF4070";
+        rfilter.style.borderTop = "1px solid #FF4070";
+        rfilter.style.borderLeft = "1px solid #FF4070";
         rfilter.style.backgroundColor = "transparent";
-        dbg7.style.color = "#3EA995";
-        dbg7.style.fontSize = "18px";
+        dbg7.style.color = "#FF4070";
+        // dbg7.style.fontSize = "18px";
         rfilter.style.fontWeight = "bold";
         document.getElementById("v7").style.display = "block";
-        document.getElementById("v7").style.filter = "invert(55%) sepia(80%) saturate(298%) hue-rotate(119deg) brightness(89%) contrast(90%)";
-        rfilter.classList.add("geek");
+        document.getElementById("v7").style.color = "#FF4070";
         le7.style.display = "block";
+        document.getElementById("clicbold6").style = "null";
+        document.getElementById("dbg3").style = "null";
+        document.getElementById("v6").style = "null";
+        setTimeout(lol, 100);
+        location.reload();
+
       } else {
-        for (let i = 0; i < nodeList1.length; i++) {
-          nodeList1[i].style.display = "block";
-        }
-        for (let j = 0; j < nodeList2.length; j++) {
-          nodeList2[j].style.display = "block";
-        }
-        for (let k = 0; k < nodeList3.length; k++) {
-          nodeList3[k].style.display = "block";
-        }
-        rfilter.style.backgroundColor = "white";
-        dbg7.style.color = "#3EA995";
-        document.getElementById("v7").style.display = "none";
-        rfilter.style.fontWeight = "normal";
-        rfilter.style.borderRight = "1px solid #3EA995";
-        rfilter.style.borderBottom = "1px solid #3EA995";
-        rfilter.style.borderTop = "1px solid #3EA995";
-        rfilter.style.borderLeft = "1px solid #3EA995";
-        dbg7.style.fontSize = "14px";
-        le7.style.display = "none";
+        console.log("cela fonctionne");
       }
     };
+
 
 
 
