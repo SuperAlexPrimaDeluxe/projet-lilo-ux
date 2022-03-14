@@ -21,7 +21,7 @@ li{
     height: 150px;
     width: 100%;
     margin-bottom: 100px;
-    background-image: url("/images/rectangle_22.jpg");
+    background-image: url("../medias/img/rectangle_22.jpg");
     background-repeat: none;
     background-size: cover;
     position: relative;
@@ -66,18 +66,18 @@ hr{
     align-items: center;
 }
 .produit-1{
-    background-image: url("/images/produits/badge_boom_boom.jpg");
+    background-image: url("../medias/img/produits/badge_boom_boom.jpg");
     background-size: 120%;
 }
 .produit-2{
-    background-image: url("/images/produits/bo_vitamine_d.webp");
+    background-image: url("../medias/img/produits/bo_vitamine_d.webp");
     background-size: cover;
 }
 .produit-3{
-    background-image: url("/images/produits/bo_mosaic.webp");
+    background-image: url("../medias/img/produits/bo_mosaic.webp");
 }
 .produit-4{
-    background-image: url("/images/produits/cp_fille_craquante.webp");
+    background-image: url("../medias/img/produits/cp_fille_craquante.webp");
 }
 .produit-1, .produit-2, .produit-3, .produit-4{
     display: block;
