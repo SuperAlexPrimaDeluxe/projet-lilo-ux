@@ -1,30 +1,30 @@
     // Quand on clique sur le li tous les produits.
     var liclick1 = document.getElementById("clicbold0");
     liclick1.onclick = function () {
-    alert("ssssss");
-    window.open('../boutique.html');
+      alert("ssssss");
+      window.open('../boutique.html');
     }
 
-   //Quand on clique sur le li Badges.
-      var liclick2 = document.getElementById("clicbold1");
-      liclick2.onclick = function () {
+    //Quand on clique sur le li Badges.
+    var liclick2 = document.getElementById("clicbold1");
+    liclick2.onclick = function () {
       alert("ssssss");
       window.open('../badges.html');
-      }
+    }
 
-     //Quand on clique sur le li Bijoux.
-     var liclick3 = document.getElementById("clicbold2");
-     liclick3.onclick = function () {
-     alert("ssssss");
-     window.open('../bijoux.html');
-     }
+    //Quand on clique sur le li Bijoux.
+    var liclick3 = document.getElementById("clicbold2");
+    liclick3.onclick = function () {
+      alert("ssssss");
+      window.open('../bijoux.html');
+    }
 
-     //Quand on clique sur le li Papeterie.
-     var liclick4 = document.getElementById("clicbold4");
-     liclick4.onclick = function () {
-     alert("ssssss");
-    window.open('../papetrie.html');
-          }
+    //Quand on clique sur le li Papeterie.
+    var liclick4 = document.getElementById("clicbold3");
+    liclick4.onclick = function () {
+      alert("ssssss");
+      window.open('../papetrie.html');
+    }
 
     //Ensemble des produits
     var touspd = document.getElementById("bannertxt");
@@ -79,6 +79,24 @@
     } else {
       console.log("c'est les bijoux");
     }
+
+    //Papetrie
+    var papeterie = document.getElementById("bannertxt");
+    console.log(papeterie.textContent);
+    if (papeterie.textContent.includes('PAPETERIE')) {
+      alert("OK");
+      document.getElementById("clicbold3").style.borderRight = "1px solid #FF4070";
+      document.getElementById("clicbold3").style.borderBottom = "1px solid #FF4070";
+      document.getElementById("clicbold3").style.borderTop = "1px solid #FF4070";
+      document.getElementById("clicbold3").style.borderLeft = "1px solid #FF4070";
+      document.getElementById("clicbold3").style.fontWeight = "bold";
+      document.getElementById("cbild+3").style.color = "#FF4070";
+      document.getElementById("v3").style.display = "block";
+      document.getElementById("v3").style.color = "#FF4070";
+    } else {
+      console.log("c'est les bijoux");
+    }
+  
 
     /*ROSE POUR LE BOUTTON CURRENT */
     var badgesp1 = document.getElementById("pagegetter");
