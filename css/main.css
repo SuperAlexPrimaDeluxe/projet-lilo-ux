@@ -10,7 +10,28 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.superposition{
+  height: 150px;
+  width: 100%;
+  margin-bottom: 100px;
+  background-image: url("../medias/img/rectangle_22.jpg");
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+.superposition h1{
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 5px 0;
+  line-height: 2.8rem;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+}
 /* [ALEX] - CSS PROPRE À LA PAGE [ACTUS] */
 
 #filtresimple{
@@ -266,6 +287,13 @@ p.articlepara {
 }
 
 /* CI-DESSOUS TOUT CE QUI CONCERNE LE RESPONSIVE */
+@media  screen and (min-width: 460px){
+.superposition h1{
+  width: 600px;
+  margin-right: 0px;
+  right: 0px;
+}
+}
 
 @media(max-width:1200px) {
 
