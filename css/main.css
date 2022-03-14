@@ -21,6 +21,15 @@ body {
   margin: 0 auto;
 }
 
+ #flexcorrector {
+   display: block !important;
+ }
+
+ .all#flexcorrector {
+  margin: 10px;
+}
+
+
 .filtresimpleli{
   padding: 25px;
   background-color: #111111;
