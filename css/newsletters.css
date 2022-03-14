@@ -33,12 +33,14 @@
 /*2ème partie= rose fonce*/
 .bloc2{
     height: 100px;
-    padding-left: 65px;
-    margin-right: -292px;
     background-color: #e6b3c1bd;
+    display: flex;
+    width: 695px;
+    margin: 0 auto;
 }
 /*Inscivez vous=h4*/
 .h4new{
+    padding-left: 135px;
     margin: 0;
     padding-top: 10px;
     position: absolute;
@@ -49,6 +51,8 @@
 }
 /*mail ensemble*/
 .fields{
+    
+    padding-left: 65px;
     display: flex;
     padding-top: 35px;
     height: 28px;
@@ -95,41 +99,117 @@ input:focus{
   /*Responsive: 
   Sur les écran de 520px de large ou moin, les colonnes s'empile les unes sur les autres */
 
-@media (max-width: px){
-    .newsletter { 
-      width: 100%;
-      
-    }
-    .h2new,.h3new{
-        display:block;
+@media (max-width: 768px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
     }
     .bloc2{
-        display:block;
+        width: 174%;
     }
-    .h4new{
-        display: block;
-        position: initial;
-        margin: 0px;
+    
+    #imgnew{
+        display: none;
+    }
 
+}
+
+@media (max-width: 675px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
     }
-   .email{
-       display: flex;
-   }
-    .caseemail{
+    .bloc2{
+        width: 174%;
+    }
+    
+    #imgnew{
+        display: none;
+    }
+
+}
+
+@media (max-width: 250px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .bloc1{
+        margin-left: -25px;
+    }
+    
+    .bloc2{
+        width: 89%;
+        margin-left: -25px;
+    }
+    
+    #imgnew{
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .bloc1{
+        margin-left: -25px;
+    }
+    
+    .bloc2{
+        width: 89%;
+        margin-left: -25px;
+    }
+    
+    #imgnew{
+        display: none;
+    }
+
+}
+
+@media (max-width: 414px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .bloc1{
+        margin-left: -25px;
+    }
+    
+    .bloc2{
+        width: 93%;
+        margin-left: -25px;
+    }
+    
+    #imgnew{
+        display: none;
+    }
+
+}
+
+@media (max-width: 560px){
+    .newsletter {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .bloc1{
+        margin-left: -25px;
+    }
+    
+    .bloc2{
+        width: 116%;
         
-        display: block;
-
+        margin-left: -25px;
     }
-    button#newb{
-        margin-top: 0px;
-    }
-    .enveloppe, button#newb{
-        display: inline-block;
-      
-     
-    }
-    img#imgnew{
-        display:block;
+    
+    #imgnew{
+        display: none;
     }
 
 }
