@@ -150,6 +150,125 @@ background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
 .carousel .card-12{
 background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
 }
+
+/* IMAGE pour le slider vous aimerez aussi */
+
+.carousel .card-11{
+  background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+  }
+  .carousel .card-21{
+  background: center/cover no-repeat url(../medias/img/produits/b14.jpg);
+  }
+  .carousel .card-31{
+  background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
+  }
+  .carousel .card-41{
+  background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
+  }
+  .carousel .card-51{
+  background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
+  }
+  .carousel .card-61{
+  background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
+  }
+  .carousel .card-71{
+  background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
+  }
+  .carousel .card-81{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-91{
+  background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
+  }
+  .carousel .card-101{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-111{
+  background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
+  }
+  .carousel .card-121{
+  background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+  }
+
+  /* SLIDER NEW */
+
+.carousel .card-n1{
+  background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+  }
+  .carousel .card-n2{
+  background: center/cover no-repeat url(../medias/img/produits/b14.jpg);
+  }
+  .carousel .card-n3{
+  background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
+  }
+  .carousel .card-n4{
+  background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
+  }
+  .carousel .card-n5{
+  background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
+  }
+  .carousel .card-n6{
+  background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
+  }
+  .carousel .card-n7{
+  background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
+  }
+  .carousel .card-n8{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-n9{
+  background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
+  }
+  .carousel .card-n10{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-n11{
+  background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
+  }
+  .carousel .card-n12{
+  background: center/cover no-repeat url(../medias/img/produits/b1.jpg);
+  }
+
+   /* SLIDER PETIT PRIX */
+
+.carousel .card-p1{
+  background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+  }
+  .carousel .card-p2{
+  background: center/cover no-repeat url(../medias/img/produits/b14.jpg);
+  }
+  .carousel .card-p3{
+  background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
+  }
+  .carousel .card-p4{
+  background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
+  }
+  .carousel .card-p5{
+  background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
+  }
+  .carousel .card-p6{
+  background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
+  }
+  .carousel .card-p7{
+  background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
+  }
+  .carousel .card-p8{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-p9{
+  background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
+  }
+  .carousel .card-p10{
+  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+  }
+  .carousel .card-p11{
+  background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
+  }
+  .carousel .card-p12{
+  background: center/cover no-repeat url(../medias/img/produits/b1.jpg);
+  }
+
+
 .carousel .card-prix a{
 color:#d35379;
 margin: 5px 0;
