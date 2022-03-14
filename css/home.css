@@ -121,6 +121,29 @@ span.spanindexbyloane {
     
 }
 
+#rose2 {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    color: #201a25;
+    padding: 16px 8px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px;
+}
+
+#rose2:hover{
+    animation-direction: alternate-reverse;
+    background-color: #D35379;
+    color: white;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
+    
+}
+
+
 /*-------BLOCK_POLAROID-------*/
 
 
