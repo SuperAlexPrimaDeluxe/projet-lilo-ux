@@ -100,27 +100,49 @@ span.spanindexbyloane {
     text-align: center;
 }
 
-.rose {
-    background-color: #D35379;
+#rose {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #373737;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-decoration: none;
-    border: none;
-    padding: 10px 50px;
-    font-size: 40px;
+    padding: 16px 8px;
+    font-size: 30px;
     font-weight: bold;
     margin: 100px;
 }
 
-.rose:hover{
+#rose:hover{
     animation-direction: alternate-reverse;
-    background-color: #ff4b81;
+    background-color: #D35379;
     float: left;
-    
-  transition: all 0.6s;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
     
 }
+
+#rose2 {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #e9beca;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    padding: 16px 8px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px;
+}
+
+#rose2:hover{
+    animation-direction: alternate-reverse;
+    background-color: #D35379;
+    color: white;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
+    
+}
+
 
 /*-------BLOCK_POLAROID-------*/
 
@@ -183,7 +205,6 @@ h1 {
     font-size: 70px;
     border-top: 1px white solid;
     border-bottom: 1px white solid;
-    margin-top: 170px;
     padding: 28px;
 
 }
@@ -248,7 +269,7 @@ h3 {
 .box1 {
     margin: 60px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(240, 235, 235);
     z-index: 0;
     transform: rotate(3deg);
     justify-content: space-around;
@@ -258,7 +279,7 @@ h3 {
 .box2 {
     margin: 60px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     z-index: 0;
     transform: rotate(1deg);
     justify-content: space-around;
@@ -268,7 +289,7 @@ h3 {
 .box3 {
     margin: 60px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(243, 242, 242);
     z-index: 0;
     transform: rotate(-4deg);
     justify-content: space-around;
@@ -285,44 +306,54 @@ h3 {
 
 
 .box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
     margin: 60px;
     padding: 20px;
-    background-color: white;
-    z-index: 0;
-    transform: rotate(-4deg);
-    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+    background-color: #201a25;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
 }
 
 .box5 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
     margin: 60px;
     padding: 20px;
-    background-color: white;
-    z-index: 0;
-    transform: rotate(2deg);
-    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+    background-color: #201a25;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
 }
 
 .box6 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
     margin: 60px;
     padding: 20px;
-    background-color: white;
-    z-index: 0;
-    transform: rotate(2deg);
-    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+    background-color: #201a25;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
 }
 
-.box6:hover {
-    transform: rotate(10deg);
-}
-.box5:hover {
-    transform: rotate(10deg);
-}
-.box4:hover {
-    transform: rotate(10deg);
-}
+
+
 .box3:hover {
     transform: rotate(10deg);
 }
