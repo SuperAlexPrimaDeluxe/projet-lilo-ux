@@ -17,98 +17,105 @@
 <body>
     <main-header current="home"></main-header>
 
+    <div class="superposition">
+        <h1>Moyens de paiement</h1>
+    </div>
     <main>
-        <div class="paiementmoni">
-            <h1>Moyen de paiement</h1>
-            <hr>
+        <div class="paiement">
             <div class="facture">
                 <!--checkbox 1-->
-                <label class="container"><h2>Facture</h2>                  
+                <label class="container">
+                    <h2>Facture</h2>                  
                     <div class="check">
                         <input type ="checkbox" checked="checked" id="input1_1">
                         <span class="checkmark" id="chckfact"></span>
                     </div>
                 </label>
-                <p>vous recevrez une facture avec votre commande.
-                <br>Merci de virer le montant sur le compte dans un délai de 14 jours.</p>
-                
+                <p>Vous recevrez une facture avec votre commande.</p>  
             </div>
             <hr>
+
             <div class="bancontact">
                 <!--checkbox 2-->
-                <label class="container"><h2>Bancontact</h2>
+                <label class="container">
+                    <h2>Bancontact</h2>
                     <div class="check">
                         <input type ="checkbox" checked="checked" id="input1_2">
                         <span class="checkmark" id="chckfact2"></span>
                     </div>
                 </label>
-                <img src="../medias/icons/BANCONTACT_LILO.svg"alt="bancontact"class="modepaiement">
-       
+                <img src="/medias/icons/BANCONTACT_LILO.svg"alt="bancontact"class="modepaiement">
             </div>
             <hr>
 
             <div class="creditcart">
                 <!--checkbox3-->
-                <label class="container"><h2>Carte de crédit</h2>
+                <label class="container">
+                    <h2>Carte de crédit</h2>
                     <div class="check">
                         <input type ="checkbox" checked="checked" id="input1_3">
                         <span class="checkmark" id="chckfact3"><span>
                     </div>
                 </label>
-                <img src="../medias/icons/VISA_LILO.svg" alt="visa" class="modepaiement">
-                <img src="../medias/icons/MASTERCARD_LILO.svg" alt="mastercard" class="modepaiement">
+                <img src="/medias/icons/VISA_LILO.svg"alt="visa"class="modepaiement">
+                <img src="/medias/icons/MASTERCARD_LILO.svg"alt="mastercard"class="modepaiement">
             </div>
-
             <hr>
 
             <div class="Paypal">
                 <!--checkbox4-->
-                <label class="container"><h2>PayPal</h2>
+                <label class="container">
+                    <h2>PayPal</h2>
                     <div class="check">
                         <input type ="checkbox" checked="checked" id="input1_4">
                         <span class="checkmark" id="chckfact4"></span>
                     </div>
                 </label>
-                <img src="../medias/icons/PAYPAL_LILO.svg" alt="paypal" class="modepaiement">
+                <img src="/medias/icons/PAYPAL_LILO.svg"alt="paypal"class="modepaiement">
             </div>
-
             <hr>
 
             <div class="promo">
-            <h3>CODE PROMO & CARTE CADEAUX</h3><h4>faculatif</h4>
-            <p>
-                Code promo: sélectionner votre moyen de paiement et entrez votre code suivante.
+                <h3>CODE PROMO & CARTE CADEAUX (facultatif)</h3>
+                <p>
+                    <strong>Code promo :</strong>  sélectionnez votre moyen de paiement et entrez votre code sur la page suivante.
                 </p>
                 <p>
-                <br>carte cadeau: si le montant de votre carte vaut plus ou égale au montant de votre commande, veuillez sélectionner n'importe lequel des moyens de paiement afin de sauter cette étape et directement entrer votre code sur la page suivante.
+                    <strong>Carte cadeau :</strong>  si la valeur de votre carte cadeau vaut plus que le montant de votre commande ou égale celui-ci, veuillez sélectionner n'importe quel moyen de paiement afin de sauter cette étape et entrez directement votre code sur la page suivante.
                 </p>
             </div>
             <hr>
 
-            <section class="contenu-total">
-                <ul class="sous-total">
-                    <li><h2>Sous-Total</h2></li>
-                    <li><span class="sous-total" id="sous-total"><h2>€ 80,00</h2></span></li>
-                </ul>
-                <ul class="frais-port">               
-                    <li><h2>Frais de port</h2></li>
-                    <li><span class="sous-total" id="sous-total">€ 3,00</span></li>
-                </ul>
-                <ul class="tva">
-                    <li><h2>TVA(tva incluses)</h2> </li>
-                    <li><span class="sous-total" id="sous-total"><h2>21%</h2></span></li>
-                </ul>
-                <ul class="total">
-                    <li><h2>TOTAL TTC</h2></li>
-                    <li><span class="sous-total" id="sous-total"><h2>€ 33,00</h2></span></li>
-                </ul>
-            </section>
+            <div class="contenu-total">
+                <div class="sous-total">
+                    <h3>Sous-Total</h3>
+                    <span class="sous-total" id="sous-total">€ 99,00</span>
+                </div>
+                <div class="contenu-frais-port">
+                    <div class="frais-port">
+                        <h3>Frais de port</h3>
+                        <span class="sous-total" id="sous-total">€  03,00</span>
+                    </div>
+                </div>
+                <div class="contenu-tva">
+                    <div class="tva">
+                        <h3>(TVA incluse)</h3> 
+                        <span class="sous-total" id="sous-total">-</span>
+                    </div>
+                </div>
+            </div>
 
-            <div class="btn-continuer">
-                <button class="btn-1-continuer"><a  href="../espace_client/validation_commande.html" class="btn-continuer">JE CONTINUER</a></button>
+            <div class="tva-final">
+                <h3>TOTAL TTC : </h3>
+                    <span class="sous-total" id="sous-total">€ 102,00</span>    
+            </div>
+
+            <div class="valider-1">
+                <button class="btn-continuer" onclick="href=''">CONTINUER</button>
             </div>
         </div>
     </main>
+    
     <main-footer current="home"></main-footer>
 </body>
 </html>

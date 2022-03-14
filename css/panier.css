@@ -8,99 +8,172 @@ html{
     font-weight: 400;
     font-size: 18px;
 }
-main{
-    width: 100%;
-    margin: auto;
+button{
+    transition: transform 0.5s;
 }
-h1{
-    font-size: 2.25rem;
-    font-weight: bold;
+button:hover{
+    transform: scale(1.05);
+}
+li{
+    list-style: none;
+}
+.superposition{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("/images/rectangle_22.jpg");
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+.superposition h1{
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: white;
     text-align: center;
-    margin: 50px auto;
+    font-size: 2.2rem;
+    padding: 5px 0;
+    line-height: 2.8rem;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+}
+main{
+    width: 90%;
+    margin: auto;
 }
 hr{
     margin: 10px 0;
 }
 .resume-panier{
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: black;
     color: white;
-    padding: 0 30px;
+    padding: 10px 30px;
 }
-.recapitulatif-panier{
+.resume-panier ul{
+    height: 60px;
+    padding-inline-end: 5px;
+    text-align: center;
+}
+.resume-panier li{
+    padding-top: 5px;
+}
+.wishlist-1375{
     display: flex;  
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
 }
-.produit{
+.produit-1{
+    background-image: url("/images/produits/badge_boom_boom.jpg");
+    background-size: 120%;
+}
+.produit-2{
+    background-image: url("/images/produits/bo_vitamine_d.webp");
+    background-size: cover;
+}
+.produit-3{
+    background-image: url("/images/produits/bo_mosaic.webp");
+}
+.produit-4{
+    background-image: url("/images/produits/cp_fille_craquante.webp");
+}
+.produit-1, .produit-2, .produit-3, .produit-4{
     display: block;
     height: 220px;
     width: 220px;
-    margin: 5px;
+}
+.informations-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .description-article{
+    width: 90%;
     text-align: center;
     margin: 10px 0;
 }
-.quantite-prix{
+.poubelle-prix-article{
+    width: 100%;
+    height: 214px;
     display: flex;
-    align-items: top;
     justify-content: space-around;
-    height: 100px;
+    align-items: end;
 }
-.quantite-prix .quantite{
+.partie-1{
+    width: 50%;
+    height: 214px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
 }
-.quantite span, .compteur{
-    padding: 5px;
-    margin-bottom: 10px 0;
+.partie-2{
+    width: 50%;
+    height: 214px;
 }
-.informations-article li:nth-child(1), .informations-article span{
+.partie-2 ul{
+    height: 50%;
+    display: block;
+}
+.wishlist-1375 li{
+    padding: 5px;
+}
+.poubelle-delete{
+    height: 50%;  
+}
+.trash{
+    display: block;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    margin: 22px auto;
+}
+.quantite{
+    height: 50%;
+}
+.informations-article li:nth-child(1), .quantite:nth-child(2){
     font-weight: bold;
 }
-.resume-panier ul, .recapitulatif-panier ul, li{
-    list-style: none;
-    padding: 5px;
+.montant-total{
+    text-align: end;
+    padding:  5px 30px;
 }
 .btn-1-valider, .btn-2-valider, .btn-vers-boutique{
-    color: white;
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: none;
-    background-color: #d35379;
     padding: 10px;
-    margin: 30px 10px;
+    margin: 30px 0;
+    cursor: pointer;
 }
-.btn-resume-panier{
-    text-align: center;
-}
-.btn-1-valider a, .btn-2-valider a{
-    text-decoration: none;
+.btn-1-valider, .btn-2-valider{
     color: white;
-    cursor: pointer;
-}
-.btn-vers-boutique a{
-    text-decoration: none;
-    color: #d35379;
-    cursor: pointer;
-}
-.btn-options{
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+    background-color: #d35379;
 }
 .btn-vers-boutique{
     color: #d35379;
     background-color: white;
     border: 1px solid #d35379;
+    width: 50%;
+}
+.valider-1 .btn-1-valider{
+    margin-top: 40px;
+}
+.btn-1-valider{
+    height: 66.8px;
+    width: 100%;
+}
+.btn-2-valider{
+    width: 50%;
+}
+.btn-options{
+    display: flex;
+    justify-content: space-between;
 }
 h4{
     display: block;
@@ -114,11 +187,21 @@ h4{
 /* *********************************
     COMPTEUR
 ********************************* */
-
+.quantite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px 0;
+    align-items: center;
+}
+.quantite span, .compteur{
+    padding: 10px 0 5px;
+}
 .compteur{
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     text-align: center;
 }
 .compteur button{
@@ -128,38 +211,85 @@ h4{
     background-color: black;
     color: honeydew;
 }
-.compteur h2,h3{
+.compteur h2{
+    display: block;
+    width: 40px;
+    height: 40px;
     color: black;
-    margin: 0 20px;
-    font-size: 1rem;
     font-weight: normal;
+} 
+.newsletter{
+    height: 100px;
 }
-@media screen and (min-width: 461px){
-    main{
-        width: 90%;
+
+@media screen and (min-width: 360px){
+    .poubelle-prix-article{
+        justify-content: space-around;
     }
-    .informations-article{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    .partie-1, .partie-2{
+        width: 30%;
     }
-    .description-article, .quantite-prix{
-        width: 50%;
+    .btn-1-valider, .btn-options button{
+        width: 300px;
+    }
+    .valider-1{
+        text-align: end;
     }
 }
-@media screen and (min-width: 769px){
+
+@media screen and (min-width: 768px){
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
+    }
     main{
         width: 75%;
         margin: auto;
     }
-    .recapitulatif-panier{
+    .resume-panier{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+    }
+    .poubelle-prix-article{
+        height: auto;
+    }
+    .partie-1{
+        width: 50%;
+        height: auto;
         flex-direction: row;
+        justify-content: space-around;
+    }
+    .partie-2{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }  
+    .trash{
+        padding-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1375px){
+    main{
+        width: 70%;
+        margin: auto;
+    }
+    .wishlist-1375{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .informations-article{
-        width: 70%;
+        width: 80%;
     }
-    .btn-resume-panier{
-        text-align: right;
+    .informations-article :nth-child(4){
+        border-left: 1px solid black;
     }
-  }
+}

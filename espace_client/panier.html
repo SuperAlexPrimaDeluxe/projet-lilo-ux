@@ -22,86 +22,147 @@
 
     <main-header current="home"></main-header>
 
-    <main>
+    <div class="superposition">
         <h1>Votre panier</h1>
+    </div>
+    <main>
         <div class="resume-panier">
             <ul>
-                <li>VOTRE PANIER</li>
-                <li>2 ARTICLES AJOUTES</li>
+                <li>VOTRE PANIER :</li>
+                <li>17 ARTICLES AJOUTES</li>
             </ul>
+            <hr>
             <ul>
-                <li>TOTAL</li>
-                <li>15,00€</li>
+                <li>TOTAL TTC :</li>
+                <li>99,00€</li>
             </ul>
         </div>
-        <div class="btn-resume-panier">
-            <button class="btn-1-valider"><a href="../espace_client/selection_moyen_de_paiement.html">JE VALIDE MA COMMANDE</a></button>
+        <div class="valider-1">
+            <button class="btn-1-valider" onclick="href=''">JE VALIDE MA COMMANDE</button>
         </div>
         <hr>
-        <div class="recapitulatif-panier">
-            <img class="produit" src="../medias/img/badges/b1.jpg" alt="badge 'se jeter à l'eau'">
+        <div class="wishlist-1375">
+            <div class="produit-1"></div>        
             <div class="informations-article">      
                 <ul class="description-article">
-                    <li class="nom-article"> "Se jeter à l'eau comme... commencer... regarder..."</li>
-                    <li>Relief rouge pailleté</li>
-                    <li class="limited">Série limitée!</li>
+                    <li class="nom-article">Badge - "Boum.Boum."</li>
+                    <li>Pour protéger son petit cœur des niqueurs de Chakras.</li>
                 </ul>
-                <div class="quantite-prix">
-                    <div class="quantite">  
-                        <span>Quantité</span>
-                        <div class="compteur">
-                            <button onclick="decrement()">-</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="increment()">+</button>
+                <div class="poubelle-prix-article">
+                    <div class="partie-1">
+                        <div class="poubelle-delete">
+                            <img class="trash" src="/images/icones/trash-2.png" alt="icone poubelle">
+                        </div>    
+                        <div class="quantite">  
+                            <span>Quantité</span>
+                            <div class="compteur">
+                                <button onclick="decrement()">-</button>
+                                <h2 id="counting">15<h2>
+                                <button onclick="increment()">+</button>
+                            </div> 
                         </div> 
-                    </div>    
-                    <div class="prix-article">
+                    </div>
+                    <div class="partie-2">
                         <ul>
-                            <li >Prix</li>
+                            <li >Prix/Unité</li>
                             <li>5,00€</li>
+                            <li>TVA (incluse)</li>
+                        </ul>
+                        <ul>
+                            <li >Prix/Total</li>
+                            <li>75,00€</li>
                             <li>TVA (incluse)</li>
                         </ul>
                     </div>
                 </div>
-            </div>         
+            </div>     
         </div>
         <hr> 
-        <div class="recapitulatif-panier">
-            <img class="produit" src="../medias/img/badges/b3.jpg" alt="badge 'se jeter à l'eau'">
+        <div class="wishlist-1375">
+            <div class="produit-2"></div>        
             <div class="informations-article">      
                 <ul class="description-article">
-                    <li class="nom-article"> "Se jeter à l'eau comme... commencer... regarder..."</li>
-                    <li>Relief rouge pailleté</li>
-                    <li class="limited">Série limitée!</li>
+                    <li class="nom-article">Mosaïc"</li>
+                    <li>Boucles d'oreilles</li>
                 </ul>
-                <div class="quantite-prix">
-                    <div class="quantite">  
-                        <span>Quantité</span>
-                        <div class="compteur">
-                            <button onclick="decrement()">-</button>
-                            <h3 id="counting-2">2</h3>
-                            <button onclick="increment()">+</button>
+                <div class="poubelle-prix-article">
+                    <div class="partie-1">
+                        <div class="poubelle-delete">
+                            <img class="trash" src="/images/icones/trash-2.png" alt="icone poubelle">
+                        </div>    
+                        <div class="quantite">  
+                            <span>Quantité</span>
+                            <div class="compteur">
+                                <button onclick="decrement()">-</button>
+                                <h2 id="counting">1<h2>
+                                <button onclick="increment()">+</button>
+                            </div> 
                         </div> 
-                    </div>    
-                    <div class="prix-article">
+                    </div>
+                    <div class="partie-2">
                         <ul>
-                            <li >Prix</li>
-                            <li>5,00€</li>
+                            <li >Prix/Unité</li>
+                            <li>22,00€</li>
+                            <li>TVA (incluse)</li>
+                        </ul>
+                        <ul>
+                            <li >Prix/Total</li>
+                            <li>22,00€</li>
                             <li>TVA (incluse)</li>
                         </ul>
                     </div>
                 </div>
-            </div>         
-        </div>  
+            </div>     
+        </div>
         <hr>
+        <div class="wishlist-1375">
+            <div class="produit-3"></div>        
+            <div class="informations-article">      
+                <ul class="description-article">
+                    <li class="nom-article">"Fille craquante"</li>
+                    <li>Carte postale</li>
+                </ul>
+                <div class="poubelle-prix-article">
+                    <div class="partie-1">
+                        <div class="poubelle-delete">
+                            <img class="trash" src="/images/icones/trash-2.png" alt="icone poubelle">
+                        </div>    
+                        <div class="quantite">  
+                            <span>Quantité</span>
+                            <div class="compteur">
+                                <button onclick="decrement()">-</button>
+                                <h2 id="counting">1<h2>
+                                <button onclick="increment()">+</button>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="partie-2">
+                        <ul>
+                            <li >Prix/Unité</li>
+                            <li>2,00€</li>
+                            <li>TVA (incluse)</li>
+                        </ul>
+                        <ul>
+                            <li >Prix/Total</li>
+                            <li>2,00€</li>
+                            <li>TVA (incluse)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <hr>
+        
+        <p class="montant-total">Montant total : 99,00€</p>
+        <hr>
+        <hr>
+        
         <div class="btn-options">
-        <button class="btn-vers-boutique"><a href="../espace_client/validation_commande.html"> RETOUR VERS LA BOUTIQUE</a></button>
-        <button class="
-        btn-2-valider"><a href="">JE VALIDE MA COMMANDE</a></button>
-        </div> 
-    </div>
-        <h4>Vous aimerez aussi</h4>
-    </main>
+            <button class="btn-vers-boutique" onclick="href=''">JE VEUX CONTINUER MES ACHATS</button>
+            <button class="btn-2-valider" onclick="href=''">JE VALIDE MA COMMANDE</button>
+        </div>
+        <div class="newsletter"></div>
+    </main>   
 </body>
 
 <main-footer current="home"></main-footer>
