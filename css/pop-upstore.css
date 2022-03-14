@@ -121,6 +121,8 @@ hr{
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
     padding-left: 50px;
+    height:400px;
+    margin-bottom: 0px;
 /*
   margin-left: 50px;
   width: 700px;*/
@@ -151,7 +153,7 @@ img.badge,.texte{
 }
 
 .btnmomoctn{
-    margin-top: 50px;
+    margin-top: 20px;
     display: block;
     float: left;
 }
@@ -286,7 +288,7 @@ button:hover{
     .texte,.titrearticlemomo{
         margin-left: 0px;
         width: 95%;
-        height: 0 auto;
+        height: 400px auto;
     }
     h3.titrearticlemomo{
         padding-top: 0px;
@@ -306,6 +308,7 @@ button:hover{
         margin-top: 50px;
         display: block;
         float: none;
+        margin-bottom: 0px;
     }
     button.btnmomo{
         
