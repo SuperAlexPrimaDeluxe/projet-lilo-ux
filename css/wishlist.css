@@ -99,10 +99,10 @@ button:hover{
 .informations-article li:nth-child(1){
     font-weight: bold;
 }
-.recapitulatif-wishlist ul, li{
+/* .recapitulatif-wishlist ul, li{
     list-style: none;
     padding: 5px;
-}
+} */
 .btn-1-ajout, .btn-2-valider, .btn-vers-boutique{
     color: white;
     font-size: 1rem;
