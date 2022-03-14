@@ -52,7 +52,7 @@ class MySection3 extends HTMLElement {
                     </div>
                     <p>Boucles d'oreilles<br>Trio beige</p>
                     <p><del>25€</del>  <b>14€</b></p>
-                    <a href="">C'est tout-moi !</a>
+                    <a href="">Je les prends !</a>
                 </div>  
                 <div class="card-prix"> 
                     <div class="card card-p7">
