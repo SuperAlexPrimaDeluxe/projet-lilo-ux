@@ -36,17 +36,11 @@ html{
     position: relative;   
 }
 
-/* span#dbg1{
-    color: #3EA995;
-}
 
-span#dbg2{
-    color: #E28AA4;
-}
 
-span#dbg3{
-    color: #FF3D00;
-} */
+#clicbold0, #clicbold1, #clicbold2, #clicbold3{
+    cursor: pointer;
+}
 
 #clicbold4{
     /* border-color: #3EA995; */
@@ -66,7 +60,7 @@ span#dbg3{
      cursor: pointer;
 }
 
-#v1, #v2, #v4, #v5, #v6, #v7{
+#v0, #v1, #v2, #v4, #v5, #v6, #v7{
     display: none;
     position: absolute;
     top: 25%;

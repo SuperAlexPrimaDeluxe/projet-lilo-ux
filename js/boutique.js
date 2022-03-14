@@ -1,4 +1,50 @@
-    //Attempt to get the element using document.getElementById
+    // Quand on clique sur le li tous les produits.
+    var liclick1 = document.getElementById("clicbold0");
+    liclick1.onclick = function () {
+    alert("ssssss");
+    window.open('../boutique.html');
+    }
+
+   //Quand on clique sur le li Badges.
+      var liclick2 = document.getElementById("clicbold1");
+      liclick2.onclick = function () {
+      alert("ssssss");
+      window.open('../badges.html');
+      }
+
+     //Quand on clique sur le li Bijoux.
+     var liclick3 = document.getElementById("clicbold2");
+     liclick3.onclick = function () {
+     alert("ssssss");
+     window.open('../bijoux.html');
+     }
+
+     //Quand on clique sur le li Papeterie.
+     var liclick4 = document.getElementById("clicbold4");
+     liclick4.onclick = function () {
+     alert("ssssss");
+    window.open('../papetrie.html');
+          }
+
+    //Ensemble des produits
+    var touspd = document.getElementById("bannertxt");
+    console.log(touspd.textContent);
+
+    if (touspd.textContent.includes('LA BOUTIQUE')) {
+      alert("OK");
+      document.getElementById("clicbold0").style.borderRight = "1px solid #FF4070";
+      document.getElementById("clicbold0").style.borderBottom = "1px solid #FF4070";
+      document.getElementById("clicbold0").style.borderTop = "1px solid #FF4070";
+      document.getElementById("clicbold0").style.borderLeft = "1px solid #FF4070";
+      document.getElementById("clicbold0").style.fontWeight = "bold";
+      document.getElementById("cbild+0").style.color = "#FF4070";
+      document.getElementById("v0").style.display = "block";
+      document.getElementById("v0").style.color = "#FF4070";
+    } else {
+      console.log("c'est les bijoux");
+    }
+
+    //Badges dans la banière
     var badges = document.getElementById("bannertxt");
     console.log(badges.textContent);
 
@@ -17,10 +63,10 @@
     }
 
     //Bijoux -check de la bonne case au chargement de la page
-    var badges = document.getElementById("bannertxt");
-    console.log(badges.textContent);
+    var bijoux = document.getElementById("bannertxt");
+    console.log(bijoux.textContent);
 
-    if (badges.textContent.includes('BIJOUX')) {
+    if (bijoux.textContent.includes('BIJOUX')) {
       alert("OK");
       document.getElementById("clicbold2").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold2").style.borderBottom = "1px solid #FF4070";
