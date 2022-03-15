@@ -50,7 +50,6 @@ class MyHeader extends HTMLElement {
         
                         <!-- sous menu-->
                         <ul class="sous-menuheader" id="sousmenuboutique">
-                            <li id="lionlymobile"><a href="boutique.html" id="globalboutique">Tous les produits</a></li>
                             <li><a href="boutique.html" id="globalboutique">Toute la boutique</a></li>
                             <li><a href="badges.html" id="globalbadges">Badges</a></li>
                             <li><a href="bijoux.html" id="globalbijoux">Bijoux</a></li>
