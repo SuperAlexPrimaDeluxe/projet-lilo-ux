@@ -43,7 +43,6 @@ btn.onclick = function () {
 lionclick.onclick = function () {
   if (getsousmenuboutique.style.display == "none") {
     getsousmenuboutique.style.display = "block";
-    getlionlymobile.style.display = "block";
     document.getElementById("arrowdown1").style.transform = "rotate(180deg)";
 
   } else {
