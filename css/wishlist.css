@@ -15,13 +15,6 @@ a{
     text-align: center;
     height: 45px;    
 }
-a{
-    display: block;
-    text-decoration: none;
-    width: 300px;
-    text-align: center;
-    height: 45px;    
-}
 .superposition{
     height: 150px;
     width: 100%;
@@ -386,7 +379,7 @@ h4{
     /* ************************************** */
 
 @media screen and (min-width: 460px){
-    .btn-options button{
+    .btn-options a{
         width: 300px;
     }
 }
