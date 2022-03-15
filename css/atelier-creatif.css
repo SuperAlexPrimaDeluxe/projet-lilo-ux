@@ -70,9 +70,9 @@ p{
     bottom: 50px;
     margin-left: 0px;
     margin-right: 0px;
-
- 
+    justify-content: center !important;
 }
+
 .column-1{
 width: 318px;
 grid-column: 1;
