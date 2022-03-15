@@ -41,9 +41,12 @@ document.getElementById("globalboutique").href = "../boutique.html";
 document.getElementById("globalbadges").href = "../badges.html";
 document.getElementById("globalbijoux").href = "../bijoux.html";
 document.getElementById("globalpapetrie").href = "../papetrie.html";
-document.getElementById("actusredirect").href = "../../actus.html";
+document.getElementById("actusredirect").href = "../actus.html";
 document.getElementById("supresslink2").href = "../contact.html";
 document.getElementById("rdeskto").href = "../recherche.html";
+document.getElementById("pdv").href = "../contact.html#pointdevente";
+document.getElementById("fde").href = "../contact.html#fdecontact";
+document.getElementById("FAQlinker").href = "../contact.html#FAQQ";
 
 /* Changement des liens pour le FOOTER */
 

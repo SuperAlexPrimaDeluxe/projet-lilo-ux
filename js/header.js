@@ -50,7 +50,6 @@ class MyHeader extends HTMLElement {
         
                         <!-- sous menu-->
                         <ul class="sous-menuheader" id="sousmenuboutique">
-                            <li id="lionlymobile"><a href="boutique.html" id="globalboutique">Tous les produits</a></li>
                             <li><a href="boutique.html" id="globalboutique">Toute la boutique</a></li>
                             <li><a href="badges.html" id="globalbadges">Badges</a></li>
                             <li><a href="bijoux.html" id="globalbijoux">Bijoux</a></li>
@@ -62,9 +61,9 @@ class MyHeader extends HTMLElement {
     
                     <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact<img id="arrowdown2" src="medias/icons/downarrow.svg"></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
-                            <li><a href="contact.html">Nos point de ventes</a></li>
-                            <li><a href="contact.html">Formulaire de contact</a></li>
-                            <li><a href="contact.html">Foire aux questions</a></li>
+                            <li><a href="contact.html#pointdevente" id="pdv">Nos point de ventes</a></li>
+                            <li><a href="contact.html#fdecontact" id="fde">Formulaire de contact</a></li>
+                            <li><a href="contact.html#FAQQ" id="FAQlinker">Foire aux questions</a></li>
                         </ul>
                     </li>
     

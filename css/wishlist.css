@@ -1,324 +1,418 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
-h1{
-  font-size: 2.25rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 50px ;
+.superposition{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("../medias/img/rectangle_22.jpg");
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
 }
-hr{
-  margin: 10px;
+.superposition h1{
+    display: block;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 5px 0;
+    line-height: 2.8rem;
+    background-color: black;
+    position: absolute;
+    top: 20px;
 }
 main{
-  width: 90%;
-  margin: auto;
+    width: 90%;
+    margin: auto;
 }
-main .bloc-produit-1, main .bloc-produit-2{
-  display: flex;
-  justify-content: space-between;
+hr{
+    margin: 10px 0;
 }
-.article-wl{
-height: auto;
-width: auto;
-display: flex;
-justify-content:space-between;
-align-items: center;
+button{
+    transition: transform 0.5s;
 }
-.article-wl .poubelle-delete{
-display: block;
-height: 40px;
-width: 40px;
-margin: 20px;
+button:hover{
+    transform: scale(1.05);
 }
-.article-wl .produit{
-display: block;
-height: 200px;
-width: 200px;
+.wishlist-1375{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+    .informations-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.produit-1{
+    background-image: url("../medias/img/produits/badge_boom_boom.jpg");
+    background-size: 120%;
+}
+.produit-2{
+    background-image: url("../medias/img/produits/bo_vitamine_d.webp");
+    background-size: cover;
+}
+.produit-3{
+    background-image: url("../medias/img/produits/bo_mosaic.webp");
+}
+.produit-4{
+    background-image: url("../medias/img/produits/cp_fille_craquante.webp");
+}
+.produit-1, .produit-2, .produit-3, .produit-4{
+    display: block;
+    height: 220px;
+    width: 220px;
+    margin: 5px 0;
 }
 .description-article{
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-width: 50%;
-margin-left: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 10px 0;
 }
-.boutons-redirection{
-display: flex;
-justify-content: space-around;
+.informations-article{
+    align-items: center;
+    width: 100%;
 }
-.boutons-redirection a{
-color: #d35379;
-font-size: .9rem;
-display: block;
-text-align: center;
+.poubelle-prix-article{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
 }
-.btn-retour-btq, .btn-ajout-panier{
-font-size: 1rem;
-font-weight: bold;
-padding: 10px;
-}
-.btn-retour-btq{
-color: #d35379;
-background-color: white;
-border: 1px solid #d35379;
-margin-top: 5px;
-margin-bottom: auto;
-}
-.btn-ajout-panier{
-color: white;
-background-color: #d35379;
-border: none;
-}
-.description-article .nom-article, .prix-article{
-font-weight: bold;
-}
-main ul{
-    list-style: none;
-    text-align: left;
-}
-main li{
+.poubelle-delete{
+    display: block;
+    height: 40px;
+    width: 40px;
     padding: 5px;
+    margin: 5px;
+}
+.informations-article li:nth-child(1){
+    font-weight: bold;
+}
+/* .recapitulatif-wishlist ul, li{
+    list-style: none;
+    padding: 5px;
+} */
+.btn-1-ajout, .btn-2-valider, .btn-vers-boutique{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.btn-1-ajout{
+    width: 300px;
+}
+
+#h4a, #h4b, #h4c{
+    text-align: center;
+} 
+.btn-vers-boutique{
+    color: #d35379;
+    background-color: white;
+    border: 1px solid #d35379;
+    width: 50%;
+}
+.btn-2-valider{
+    width: 50%;
+    background-color: #d35379;
+}
+.btn-options{
+    display: flex;
+    justify-content: space-between;
 }
 h4{
-    margin: 100px 10% 50px 10%;
+    display: block;
+    height: 30px;
+    margin: 75px auto;
     text-align: left;
     font-size: 1.2rem;
     font-size: bold;
 }
+.newsletter{
+    height: 100px;
+}
 
+/* *********************************
+    COMPTEUR
+********************************* */
+
+/* .compteur{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.compteur button{
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: black;
+    color: honeydew;
+}
+.compteur h2,h3{
+    color: black;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: normal;
+}  */
 
 /* *********************************
     CAROUSEL
 *********************************  */
 .wrapper{
-width: 100%; 
-}
-.carousel{
-max-width: 1200px;
-margin: auto;
-padding: 0 20px;
-}
-.carousel .card{
-color: black;
-text-align: left;
-margin: 20px 0;
-line-height: 250px;
-font-weight: normal;
-box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-}
-.carousel .card-1{
-background: center/cover no-repeat url(../medias/img/produits/b1.jpg);
-}
-.carousel .card-2{
-background: center/cover no-repeat url(../medias/img/produits/b2.jpg);
-}
-.carousel .card-3{
-background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
-}
-.carousel .card-4{
-background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
-}
-.carousel .card-5{
-background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
-}
-.carousel .card-6{
-background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
-}
-.carousel .card-7{
-background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
-}
-.carousel .card-8{
-background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
-}
-.carousel .card-9{
-background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
-}
-.carousel .card-10{
-background: center/cover no-repeat url(../medias/img/produits/b10.jpg);
-}
-.carousel .card-11{
-background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
-}
-.carousel .card-12{
-background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
-}
-
-/* IMAGE pour le slider vous aimerez aussi */
-
-.carousel .card-11{
-  background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
-  }
-  .carousel .card-21{
-  background: center/cover no-repeat url(../medias/img/produits/b14.jpg);
-  }
-  .carousel .card-31{
-  background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
-  }
-  .carousel .card-41{
-  background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
-  }
-  .carousel .card-51{
-  background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
-  }
-  .carousel .card-61{
-  background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
-  }
-  .carousel .card-71{
-  background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
-  }
-  .carousel .card-81{
-  background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
-  }
-  .carousel .card-91{
-  background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
-  }
-  .carousel .card-101{
-  background: center/cover no-repeat url(../medias/img/produits/b16.webp);
-  }
-  .carousel .card-111{
-  background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
-  }
-  .carousel .card-121{
-  background: center/cover no-repeat url(../medias/img/produits/b17.webp);
-  }
-
-  /* SLIDER NEW */
-
-.carousel .card-n1{
-  background: center/cover no-repeat url(../medias/img/produits/n1.jpg);
-  }
-  .carousel .card-n2{
-  background: center/cover no-repeat url(../medias/img/produits/n2.jpg);
-  }
-  .carousel .card-n3{
-  background: center/cover no-repeat url(../medias/img/produits/n3.jpg);
-  }
-  .carousel .card-n4{
-  background: center/cover no-repeat url(../medias/img/produits/n4.jpg);
-  }
-  .carousel .card-n5{
-  background: center/cover no-repeat url(../medias/img/produits/n5.jpg);
-  }
-  .carousel .card-n6{
-  background: center/cover no-repeat url(../medias/img/produits/n6.jpg);
-  }
-  .carousel .card-n7{
-  background: center/cover no-repeat url(../medias/img/produits/n7.jpg);
-  }
-  .carousel .card-n8{
-  background: center/cover no-repeat url(../medias/img/produits/n8.jpg);
-  }
-  .carousel .card-n9{
-  background: center/cover no-repeat url(../medias/img/produits/n9.jpg);
-  }
-  .carousel .card-n10{
-  background: center/cover no-repeat url(../medias/img/produits/n10.jpg);
-  }
-  .carousel .card-n11{
-  background: center/cover no-repeat url(../medias/img/produits/n11.jpg);
-  }
-  .carousel .card-n12{
-  background: center/cover no-repeat url(../medias/img/produits/n12.jpg);
-  }
-
-   /* SLIDER PETIT PRIX */
-
-.carousel .card-p1{
-  background: center/cover no-repeat url(../medias/img/produits/p1.webp);
-  }
-  .carousel .card-p2{
-  background: center/cover no-repeat url(../medias/img/produits/p2.webp);
-  }
-  .carousel .card-p3{
-  background: center/cover no-repeat url(../medias/img/produits/p3.webp);
-  }
-  .carousel .card-p4{
-  background: center/cover no-repeat url(../medias/img/produits/p4.webp);
-  }
-  .carousel .card-p5{
-  background: center/cover no-repeat url(../medias/img/produits/p5.webp);
-  }
-  .carousel .card-p6{
-  background: center/cover no-repeat url(../medias/img/produits/p6.webp);
-  }
-  .carousel .card-p7{
-  background: center/cover no-repeat url(../medias/img/produits/p7.webp);
-  }
-  .carousel .card-p8{
-  background: center/cover no-repeat url(../medias/img/produits/p8.webp);
-  }
-  .carousel .card-p9{
-  background: center/cover no-repeat url(../medias/img/produits/p9.webp);
-  }
-  .carousel .card-p10{
-  background: center/cover no-repeat url(../medias/img/produits/p10.webp);
-  }
-  .carousel .card-p11{
-  background: center/cover no-repeat url(../medias/img/produits/p11.webp);
-  }
-  .carousel .card-p12{
-  background: center/cover no-repeat url(../medias/img/produits/p12.webp);
-  }
-
-
-.carousel .card-prix a{
-color:#d35379;
-margin: 5px 0;
-}
-.owl-dots{
-text-align: center;
-margin: 40px;
-}
-.owl-dot{
-height: 15px;
-width: 45px;
-margin: 0 5px;
-outline: none;
-border-radius: 14px;
-border: 2px solid #E5E5E5!important;
-box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-transition: all 0.3s ease;
-}
-.owl-dot.active,
-.owl-dot:hover{
-background: grey!important;
-}
-
-
-/* ************************************** */
-
-
-@media screen and (min-width: 769px){
-  main{
-    width: 75%;
-    margin: auto;
-  }
-  .article-wl{
-    width: 350px;
-  }
-  .description-article ul:nth-child(1){
-    width: 50%;
-  }
-  .description-article ul:nth-child(2){
-    width: 30%;
-  }
-  .description-article{
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    width: 70%;
-  }
-  .carousel{
+    width: 100%; 
+    }
+    .carousel{
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    }
+    .carousel .card{
+    color: black;
+    text-align: left;
+    margin: 20px 0;
+    line-height: 250px;
+    font-weight: normal;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    .carousel .card-1{
+    background: center/cover no-repeat url(../medias/img/produits/b1.jpg);
+    }
+    .carousel .card-2{
+    background: center/cover no-repeat url(../medias/img/produits/b2.jpg);
+    }
+    .carousel .card-3{
+    background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
+    }
+    .carousel .card-4{
+    background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
+    }
+    .carousel .card-5{
+    background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
+    }
+    .carousel .card-6{
+    background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
+    }
+    .carousel .card-7{
+    background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
+    }
+    .carousel .card-8{
+    background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+    }
+    .carousel .card-9{
+    background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
+    }
+    .carousel .card-10{
+    background: center/cover no-repeat url(../medias/img/produits/b10.jpg);
+    }
+    .carousel .card-11{
+    background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
+    }
+    .carousel .card-12{
+    background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+    }
+    
+    /* IMAGE pour le slider vous aimerez aussi */
+    
+    .carousel .card-11{
+      background: center/cover no-repeat url(../medias/img/produits/b12.jpg);
+      }
+      .carousel .card-21{
+      background: center/cover no-repeat url(../medias/img/produits/b14.jpg);
+      }
+      .carousel .card-31{
+      background: center/cover no-repeat url(../medias/img/produits/b3.jpg);
+      }
+      .carousel .card-41{
+      background: center/cover no-repeat url(../medias/img/produits/b4.jpg);
+      }
+      .carousel .card-51{
+      background: center/cover no-repeat url(../medias/img/produits/b5.jpg);
+      }
+      .carousel .card-61{
+      background: center/cover no-repeat url(../medias/img/produits/b6.jpg);
+      }
+      .carousel .card-71{
+      background: center/cover no-repeat url(../medias/img/produits/b7.jpg);
+      }
+      .carousel .card-81{
+      background: center/cover no-repeat url(../medias/img/produits/b8.jpg);
+      }
+      .carousel .card-91{
+      background: center/cover no-repeat url(../medias/img/produits/b9.jpg);
+      }
+      .carousel .card-101{
+      background: center/cover no-repeat url(../medias/img/produits/b16.webp);
+      }
+      .carousel .card-111{
+      background: center/cover no-repeat url(../medias/img/produits/b11.jpg);
+      }
+      .carousel .card-121{
+      background: center/cover no-repeat url(../medias/img/produits/b17.webp);
+      }
+    
+      /* SLIDER NEW */
+    
+    .carousel .card-n1{
+      background: center/cover no-repeat url(../medias/img/produits/n1.jpg);
+      }
+      .carousel .card-n2{
+      background: center/cover no-repeat url(../medias/img/produits/n2.jpg);
+      }
+      .carousel .card-n3{
+      background: center/cover no-repeat url(../medias/img/produits/n3.jpg);
+      }
+      .carousel .card-n4{
+      background: center/cover no-repeat url(../medias/img/produits/n4.jpg);
+      }
+      .carousel .card-n5{
+      background: center/cover no-repeat url(../medias/img/produits/n5.jpg);
+      }
+      .carousel .card-n6{
+      background: center/cover no-repeat url(../medias/img/produits/n6.jpg);
+      }
+      .carousel .card-n7{
+      background: center/cover no-repeat url(../medias/img/produits/n7.jpg);
+      }
+      .carousel .card-n8{
+      background: center/cover no-repeat url(../medias/img/produits/n8.jpg);
+      }
+      .carousel .card-n9{
+      background: center/cover no-repeat url(../medias/img/produits/n9.jpg);
+      }
+      .carousel .card-n10{
+      background: center/cover no-repeat url(../medias/img/produits/n10.jpg);
+      }
+      .carousel .card-n11{
+      background: center/cover no-repeat url(../medias/img/produits/n11.jpg);
+      }
+      .carousel .card-n12{
+      background: center/cover no-repeat url(../medias/img/produits/n12.jpg);
+      }
+    
+       /* SLIDER PETIT PRIX */
+    
+    .carousel .card-p1{
+      background: center/cover no-repeat url(../medias/img/produits/p1.webp);
+      }
+      .carousel .card-p2{
+      background: center/cover no-repeat url(../medias/img/produits/p2.webp);
+      }
+      .carousel .card-p3{
+      background: center/cover no-repeat url(../medias/img/produits/p3.webp);
+      }
+      .carousel .card-p4{
+      background: center/cover no-repeat url(../medias/img/produits/p4.webp);
+      }
+      .carousel .card-p5{
+      background: center/cover no-repeat url(../medias/img/produits/p5.webp);
+      }
+      .carousel .card-p6{
+      background: center/cover no-repeat url(../medias/img/produits/p6.webp);
+      }
+      .carousel .card-p7{
+      background: center/cover no-repeat url(../medias/img/produits/p7.webp);
+      }
+      .carousel .card-p8{
+      background: center/cover no-repeat url(../medias/img/produits/p8.webp);
+      }
+      .carousel .card-p9{
+      background: center/cover no-repeat url(../medias/img/produits/p9.webp);
+      }
+      .carousel .card-p10{
+      background: center/cover no-repeat url(../medias/img/produits/p10.webp);
+      }
+      .carousel .card-p11{
+      background: center/cover no-repeat url(../medias/img/produits/p11.webp);
+      }
+      .carousel .card-p12{
+      background: center/cover no-repeat url(../medias/img/produits/p12.webp);
+      }
+    
+    
+    .carousel .card-prix a{
+    color:#d35379;
+    margin: 5px 0;
+    }
+    .owl-dots{
+    text-align: center;
+    margin: 40px;
+    }
+    .owl-dot{
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #E5E5E5!important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    }
+    .owl-dot.active,
+    .owl-dot:hover{
+    background: grey!important;
+    }
+    
+    
+    /* ************************************** */
+
+@media screen and (min-width: 460px){
+    .btn-options button{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
+        height: 50px;
+        top: 50px;
+    }
+    main{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1375px){
+    main{
+        width: 70%;
+        margin: auto;
+    }
+    .wishlist-1375{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .informations-article{
+        width: 35%;
+    }
+    .description-article{
+        text-align: left;
+    }
+    .btn-1-ajout{
+        margin: 5px 0;
+    }
+    .carousel{
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
     }
 }

@@ -60,7 +60,7 @@ html{
      cursor: pointer;
 }
 
-#v0, #v1, #v2, #v4, #v5, #v6, #v7{
+#v0, #v1, #v2, #v3, #v4, #v5, #v6, #v7{
     display: none;
     position: absolute;
     top: 25%;
