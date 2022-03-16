@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="js/main.js" defer></script>
-    <script src="js/toggler.js" defer></script>
+    <!-- <script src="js/toggler.js" defer></script> -->
     <script src="js/header.js" defer></script>
     <script src="js/footer.js" defer></script>
     <script src="js/animationheader.js" defer></script>
@@ -27,51 +27,26 @@
 
     <!-- <h1 class="actutitle">Mes actus</h1> -->
 
-    <!--02- Zone contenant les filtres dans ma page -->
-    <div class="buttonsactus">
-
-        <!--Switch 0 : All-->
-
-        <div class="buttonactus " id="b0actus" data-product="all">
-            <span class="spanactus">All</span>
-        </div>
-
-        <!--Switch 1 : Articles-->
-
-        <div class="btn buttonactus" id="b1actus" data-product="article">
-            <span class="spanactus">Article</span>
-        </div>
-
-        <!--Switch 2 : Ateliers-->
-
-        <div class="btn buttonactus" id="b2actus" data-product="atelier">
-            <span class="spanactus">Ateliers</span>
-        </div>
-
-        <!--Switch 3 : Pop-up Store-->
-
-        <div class="btn buttonactus" id="b3actus" data-product="popupstore">
-            <span class="spanactus">Popup Stores</span>
-        </div>
-
-    </div>
-
     <!--Fin de la zone pour les switchs-->
 
     <!--Système de switch de la dernière chance-->
-    <!-- <ul id="filtresimple">
-        <li class="filtresimpleli"><a href="#" class="filtresimplelien">Voir tout</a></li>
-        <li class="filtresimpleli"><a href="#" class="filtresimplelien" id="showhideart1">Articles</a></li>
-        <li class="filtresimpleli"><a href="#" class="filtresimplelien">Ateliers Créatifs</a></li>
-        <li class="filtresimpleli"><a href="#" class="filtresimplelien">popup-store</a></li>
-    </ul> -->
+    <div id="cetor">
+    <span id="spanfilter">Je souhaite filtrer mes actualités par : </span>
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" id="allb1" onclick="filterSelection('allactus')">All<span class="margoulin">&#x1F5F8;</span></button>
+        <button class="btn" id="allb2" onclick="filterSelection('popupstore')">Pop-up Store<span class="margoulin">&#x1F5F8;</span></button>
+        <button class="btn" id="allb3" onclick="filterSelection('article')">Articles<span class="margoulin">&#x1F5F8;</span></button>
+        <button class="btn" id="allb4" onclick="filterSelection('atelier')">Atelier<span class="margoulin">&#x1F5F8;</span></button>
+    </div>
+
     <!--Début du main-->
 
     <main id="actus">
 
         <!--Carte article 1 de type popupstore-->
 
-        <article class="pga_container popupstore allactus">
+        <article class="pga_container filterDiv popupstore allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/machine_ecrire.jpg" alt="imprimante">
@@ -91,7 +66,7 @@
 
         <!--Carte article 2 de type article-->
 
-        <article class="pga_container article allactus">
+        <article class="pga_container filterDiv article allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/badge_se_jeter_à_l'eau.jpg" alt="badge se jeter à l'eau">
@@ -103,8 +78,7 @@
                     <p class="articlepara">Et non. Ne vous méprenez pas ! Nous pourrions croire qu’il s’agit d’une
                         journée spécialement
                         destinée à célébrer les vieux œufs d’esturgeon qui croupissent et pourrissent au fond des grands
-                        frigos américains des riches qui n’ont aucun problèmes financiers et qui s’en balancent
-                        royalement (« caviar d’âge », pour ceux qui dorment au fond de la classe)… mais non (...)</p>
+                        frigos américains (...)</p>
                     <a href="articles/index_carvadiage.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
                         plus</a>
                 </div>
@@ -113,7 +87,7 @@
 
         <!--Carte article 3 de type atelier-->
 
-        <article class="pga_container atelier allactus">
+        <article class="pga_container filterDiv atelier allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/les_badges_de_lilo.jpg" alt="Le coin de rangement des badges de LILO avec ses pots à badges">
@@ -121,13 +95,8 @@
                 <div class="pga_informations">
                     <span class="spanactusrose">11.01.22</span>
                     <h2 class="titrearticleactus">Atelier ouvert!</h2>
-                    <p class="articlepara">Dites-moi, un petit « atelier ouvert », ça vous dit ?
-                        <br>Des minis prix et des fins de séries, puis des nouveautés, aussi…
-                        On se prévoirait ça en février ?
-                        Pour info, je suis à 4 km de Mons.
-                        Si vous venez de plus loin, musées, brasseries, restos, commerces, cinéma, lieux culturels,
-                        randonnées ,… à découvrir !
-                        C’est l’occasion, non ? (...)
+                    <p class="articlepara">Dites-moi, un petit « atelier ouvert », ça vous dit ? Des minis prix et des fins de séries, puis des nouveautés, aussi…
+                        On se prévoirait ça en février ? Pour info, je suis à 4 km de Mons (...)
                     </p>
                     <a href="ateliers_creatifs/atelier-creatif.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
                 </div>
@@ -136,7 +105,7 @@
 
         <!--Carte article 4 de type popupstore-->
 
-        <article class="pga_container popupstore allactus">
+        <article class="pga_container filterDiv popupstore allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/popup_store_1.jpg" alt="Un des événements temporaire de LILO en photo">
@@ -145,8 +114,7 @@
                     <span class="spanactusblack">23.12.21</span>
                     <h2 class="titrearticleactus">Brock'n'Roll FACTORY</h2>
                     <p class="articlepara">Ce week-end, lors du Brock'n'Roll FACTORY, j’ai découvert le centre de la céramique Keramis, à La
-                        Louvière. Ce lieu est à voir, les amis, tant pour ses splendides collections que pour le bâtiment.<br><br>
-                        J’ai été soufflée ! Entendre des bribes de conversations telles que : « Tu vois, ma tante était à ce poste-là… »(...)
+                        Louvière. Ce lieu est à voir, les amis, tant pour ses splendides collections que pour le bâtiment (...)
                     </p>
                     <a href="/articles/pop-upstore.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
                 </div>
@@ -155,7 +123,7 @@
 
         <!--Carte article 5 de type article-->
 
-        <article class="pga_container article allactus">
+        <article class="pga_container filterDiv article allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/Lilo_concours.jpg" alt="L'image de fond pour les concours organisés par LILO">
@@ -164,9 +132,7 @@
                     <span class="spanactusgris">21.12.21</span>
                     <h2 class="titrearticleactus">CONCOURS</h2>
                     <p class="articlepara">Cette lumineuse journée de solstice d’hiver est parfaite pour lancer mon petit concours annuel
-                        Une paire de BO en laiton brut et 5 badges sympathiques pour pimper vos journées.
-                        <br>Pour participer, commentez et dévoilez-nous (sous le post d’origine) le ou les badges de
-                        toute la collection « Les ateliers de Lilo » qui vous correspondent le plus (...)
+                        Une paire de BO en laiton brut et 5 badges sympathiques pour pimper vos journées (...)
                     </p>
                     <a href="articles/index_carvadiage.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
                         plus</a>
@@ -176,7 +142,7 @@
 
         <!--Carte article 6 de type atelier-->
 
-        <article class="pga_container atelier allactus">
+        <article class="pga_container filterDiv atelier allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/atelier_creatif_1.jpg" alt="un exemple d'atelier créatif réalisé par mes soins">
@@ -186,9 +152,7 @@
                     <h2 class="titrearticleactus">SONGE D'UNE NUIT D'ETE.</h2>
                     <p class="articlepara">Le site www.lesateliersdelilo.com est ouvert.
                         Les minis prix ne sont pas encore encodés et les nouveautés arriveront en février.
-                        Je mets les bouchées doubles.
-                        D’ici-là, vous pouvez déjà vous amuser un petit peu.
-                        Belle journée ensoleillée. (...)
+                        Je mets les bouchées doubles. (...)
                     </p>
                     <a href="ateliers_creatifs/atelier-creatif.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
                 </div>
@@ -197,7 +161,7 @@
 
         <!--Carte article 7 de type popupstore-->
 
-        <article class="pga_container popupstore allactus">
+        <article class="pga_container filterDiv popupstore allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/minitel_lilo.jpg" alt="Minitel rétro pour la communication sur la boutique éphémère.">
@@ -205,11 +169,7 @@
                 <div class="pga_informations">
                     <span class="spanactusblack">25.11.21</span>
                     <h2 class="titrearticleactus">FLASH INFO boutique éphémère</h2>
-                    <p class="articlepara">Le 3 décembre, j’ouvrirai une boutique éphémère en ligne.
-                        <br>Ça sera peut-être même plutôt, si je fais ça bien.
-                        Il ne m’est plus possible de répondre à vos commandes via cette page, je n’arrive pas à suivre,
-                        c’est chronophage et cela me stresse de voir tous vos messages « non-lus » dans ma boîte de
-                        réception (...)
+                    <p class="articlepara">Le 3 décembre, j’ouvrirai une boutique éphémère en ligne. Ça sera peut-être même plutôt, si je fais ça bien. Il ne m’est plus possible de répondre à vos commandes via cette page (...)
                     </p>
                     <a href="articles/pop-upstore.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu">voir plus</a>
                 </div>
@@ -218,7 +178,7 @@
 
         <!--Carte article 8 de type article-->
 
-        <article class="pga_container article allactus">
+        <article class="pga_container filterDiv article allactus">
             <div class="pga_card">
                 <div class="pga_image_container">
                     <img src="medias/img/badge_haltere_ego_1.jpg" alt="badge haltère égo.">
@@ -226,11 +186,9 @@
                 <div class="pga_informations">
                     <span class="spanactusgris">11.01.22</span>
                     <h2 class="titrearticleactus" >Salut les musclées</h2>
-                    <p class="articlepara">Le site www.lesateliersdelilo.com est ouvert.
-                        <br>Les minis prix ne sont pas encore encodés et les nouveautés arriveront en février.
-                        Je mets les bouchées doubles.
-                        D’ici-là, vous pouvez déjà vous amuser un petit peu
-                        <br>Belle journée ensoleillée.
+                    <p class="articlepara">Le site des ateliers de Lilo est ouvert.
+                        Les minis prix ne sont pas encore encodés et les nouveautés arriveront en février.
+                        Je mets les bouchées doubles (...)
                     </p>
                     <a href="articles/index_carvadiage.html" alt="lien vers l'article sorry, we are colsed" class="voir_plus_actu_black">voir
                         plus</a>
