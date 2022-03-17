@@ -161,18 +161,24 @@ button:hover{
     .article-all{
      display: inline-block;
      width: 100%;
-    
     }
+
+    .article-all img{
+        text-align: center;
+    }
+    
     .image-article{
         position: none;
         height: 0 auto;
-        width: 95% auto;    
+        width: 95% auto; 
+        text-align: center;    
     }
 
     /*image badge*/
     img.badge{
      width: 50%;
      margin: 0 auto;
+     text-align: center;
     }
     .texte{
       margin-left: 0px;

@@ -55,70 +55,61 @@ hr {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 30%;
+    height: 400px;
 
 }
 
 /*---image pop Upstore-----*/
 .store1 {
-    width: 550px;
-
-    /*
-    margin-top: 75px;
-    height: 537px auto;
-    width: 537px auto;
-    float: left;*/
+    width: 100%;
+    margin-top: 100px;
 }
 
 /*---image petit pop upstore-----*/
 .small {
-    overflow: hidden;
+  
     margin-top: 15px;
 }
 
 .store2 {
     width: 75px;
-    background-color: white;
-    transform: translateY(-40px);
+
 }
 
 
 .store3 {
     width: 75px;
     background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
+
 
 }
 
 .store4 {
     width: 75px;
     background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
+   
 
 }
 
 .store5 {
     width: 75px;
     background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
+  
 
 }
 
 .store6 {
     width: 75px;
     background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
+   
 
 }
 
 .store7 {
     width: 75px;
     background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
+ 
     object-fit: cover;
 
 }
@@ -128,8 +119,9 @@ hr {
 .texte {
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
-   
-    height: 400px;
+    width: 65%;
+    padding-left: 25px;
+
     margin-bottom: 0px;
     /*
   margin-left: 50px;
@@ -242,7 +234,7 @@ button:hover {
     .images-article {
         position: none;
         height: 0 auto;
-        width: 95% auto;
+        width: 100%;
     }
 
     /*----image pop upstore----*/
@@ -349,10 +341,11 @@ button:hover {
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-
-
     }
 
+    .images-article {
+        height: auto;
+    }
 
 
 

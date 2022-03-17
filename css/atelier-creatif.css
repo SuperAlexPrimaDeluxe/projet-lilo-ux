@@ -63,7 +63,6 @@ p{
 .grid{
     display:grid;
     grid-template-columns:318px 323px 323px 314px;
-    height: 100%;
     line-height: 0;
     position: relative;
     top: 50px;
@@ -76,7 +75,6 @@ p{
 .column-1{
 width: 318px;
 grid-column: 1;
-height: 2544px;
 position: absolute;
 z-index: 2;
 
@@ -85,7 +83,7 @@ z-index: 2;
     width: 646px;
     margin-left: 18px;
     grid-column: 323px;
-    height:2544px;
+
     grid-column: 2;
     position: absolute;
 }
@@ -101,7 +99,7 @@ z-index: 2;
 
     width: 318px;
     grid-column: 3;
-    height: 2544px;
+
 
 }
 #perruche{
@@ -115,7 +113,7 @@ z-index: 2;
     margin-left: 36px;
     width: 318px;
     grid-column: 4;
-    height: 2544px;
+
     margin-right: 65px;
 
 }
