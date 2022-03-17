@@ -28,6 +28,10 @@ main{
 
 /*Titre au dessus de l'image*/
 
+.article-all{
+    position: relative;
+}
+
 h2.momoh2 {  
     font-size: 2.25rem;
     font-weight: bold;
@@ -43,18 +47,21 @@ hr{
 }
 
 .image-article {
-    display: flex;
+    /* display: flex;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
+    height: 300px; */
 
 }
      /*---image badge-----*/
 img.badge {
-    margin-top: 75px;
+    /* margin-top: 75px;
     height: 537px auto;
     width: 537px auto;
-    float: left;
+    float: left; */
+    width: 30%;
 }
     /*--- fin image badge-----*/
 
@@ -62,8 +69,7 @@ img.badge {
     /*titre de l'article*/
 .texte {
   margin-left: 50px;
-  width: 720px auto;
-  height: 600px;
+  width: 65%;
   margin-top: 0px; 
 }
     /* titre du texte de l'article*/
@@ -123,7 +129,7 @@ button:hover{
 /*==================fin: Autres articles récents  proposé en carousel==============================*/
 
 /*==================RESPONSIVE: 460px==============================*/
-@media (max-width: 460px){
+@media (max-width: 768px){
  
 
     /*-------------------------Titre,image article et texte présentation-------------------------*/
@@ -165,9 +171,8 @@ button:hover{
 
     /*image badge*/
     img.badge{
-        margin-top: 0px;
-        height: 322px auto;
-        width: 327px auto;
+     width: 50%;
+     margin: 0 auto;
     }
     .texte{
       margin-left: 0px;

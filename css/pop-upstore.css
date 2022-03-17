@@ -5,30 +5,32 @@
 
 /*===============================Header=============================================*/
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-html{
+
+html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    text-align: justify; 
+    text-align: justify;
     text-justify: inter-word;
 }
 
 /*==========================================Main================================================*/
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
+
 /*============================Titre,image article et texte présentation======================*/
 
 /*Titre au dessus de l'image*/
 
-h2.momoh2 {  
+h2.momoh2 {
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
@@ -36,14 +38,16 @@ h2.momoh2 {
     padding-bottom: 50px;
 
 }
-hr{
+
+hr {
     margin: 10px 0;
     margin-top: 20px;
     margin-bottom: 100px;
 }
-.all-article{
-    display:flex;
-  
+
+.all-article {
+    display: flex;
+
 }
 
 .images-article {
@@ -53,43 +57,32 @@ hr{
     justify-content: space-evenly;
 
 }
-     /*---image pop Upstore-----*/
-.store1{
+
+/*---image pop Upstore-----*/
+.store1 {
     width: 550px;
-  
+
     /*
     margin-top: 75px;
     height: 537px auto;
     width: 537px auto;
     float: left;*/
 }
+
 /*---image petit pop upstore-----*/
-.small{
+.small {
     overflow: hidden;
     margin-top: 15px;
 }
-.store2{
+
+.store2 {
     width: 75px;
     background-color: white;
     transform: translateY(-40px);
 }
 
 
-.store3{
-    width: 75px;
-    background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
-
-}
-.store4{
-    width: 75px;
-    background-color: white;
-    transform: translateY(-40px);
-    margin-left: 15px;
-
-}
-.store5{
+.store3 {
     width: 75px;
     background-color: white;
     transform: translateY(-40px);
@@ -97,14 +90,31 @@ hr{
 
 }
 
-.store6{
+.store4 {
     width: 75px;
     background-color: white;
     transform: translateY(-40px);
     margin-left: 15px;
 
 }
-.store7{
+
+.store5 {
+    width: 75px;
+    background-color: white;
+    transform: translateY(-40px);
+    margin-left: 15px;
+
+}
+
+.store6 {
+    width: 75px;
+    background-color: white;
+    transform: translateY(-40px);
+    margin-left: 15px;
+
+}
+
+.store7 {
     width: 75px;
     background-color: white;
     transform: translateY(-40px);
@@ -114,43 +124,48 @@ hr{
 }
 
 /* ============Article et texte=======*/
-    /*titre de l'article*/
+/*titre de l'article*/
 .texte {
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
-    padding-left: 50px;
-    height:400px;
+   
+    height: 400px;
     margin-bottom: 0px;
-/*
+    /*
   margin-left: 50px;
   width: 700px;*/
-  margin-top: 0px; 
+    margin-top: 0px;
 }
-    /* titre du texte de l'article*/
-h3.titrearticlemomo{
+
+/* titre du texte de l'article*/
+h3.titrearticlemomo {
     margin-bottom: 20px;
     padding-top: 0px;
     font-size: 30px;
     font-weight: 500;
     line-height: 28px;
-    color:#7a7a7a;
+    color: #7a7a7a;
     font-family: "Roboto Mono", sans-serif;
-} 
-h4.date{
-    margin-top:0px;
+}
+
+h4.date {
+    margin-top: 0px;
     margin-bottom: 10px;
 }
- /* texte de l'article*/
-p.artmoni{
+
+/* texte de l'article*/
+p.artmoni {
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
 
 }
-img.badge,.texte{
+
+img.badge,
+.texte {
     display: inline-block;
 }
 
-.btnmomoctn{
+.btnmomoctn {
     margin-top: 20px;
     display: block;
     float: left;
@@ -169,14 +184,14 @@ button.btnmomo {
     width: 100%;
 }
 
-button:hover{
-    background-color:#d35379;
+button:hover {
+    background-color: #d35379;
     cursor: pointer;
-   
+
 
 }
 
-.article-all{
+.article-all {
     display: flex;
     justify-content: center;
 }
@@ -188,82 +203,74 @@ button:hover{
 /*==================fin: Autres articles récents  proposé en carousel==============================*/
 
 /*==================RESPONSIVE: 460px==============================*/
-@media (max-width: 460px){
- 
+@media (max-width: 768px) {
 
-        /*-------------------------Titre,image article et texte présentation-------------------------*/
 
-        main{
+    /*-------------------------Titre,image article et texte présentation-------------------------*/
+
+    main {
         width: 95%;
         margin: 0 auto;
-        }
+    }
 
-        /*titre au dessus de l'image*/
-        h2.momoh2{
-            font-size: 20px;
-            line-height: 28px;
-            text-align: center;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 0px;
-            margin-top: 0px;
-        }
-        hr{
-            margin-top: 10px;
-            margin-bottom: 50px;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+    /*titre au dessus de l'image*/
+    h2.momoh2 {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
 
-        /*-------- bloc image +texte de l'article---------*/
+    hr {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
-        .all-article{
+    /*-------- bloc image +texte de l'article---------*/
+
+    .all-article {
         display: inline-block;
         width: 100%;
         margin: 10px;
-        
-        }
-        .images-article{
-            position: none;
-            height: 0 auto;
-            width: 95% auto;    
-        }
 
-        /*----image pop upstore----*/
-        .pop,img.store1{
-            margin: 0px;
-            width: 436px;
-        }
+    }
 
-        /*---petites images  pop upstore-----*/
-    .small{
-        width: 436px;
-        height: 100px;
+    .images-article {
+        position: none;
+        height: 0 auto;
+        width: 95% auto;
+    }
+
+    /*----image pop upstore----*/
+    .pop,
+    img.store1 {
+        margin: 0px;
+        width: 98%;
+    }
+
+    /*---petites images  pop upstore-----*/
+    .small {
+        width: 100%;
         overflow: hidden;
         margin-top: 5px;
     }
-    .store2{
+
+    .small img{
+        height: 100px;
+    }
+
+    .store2 {
         width: 75px;
         background-color: white;
         transform: translateY(-40px);
     }
 
 
-    .store3{
-        width: 75px;
-        background-color: white;
-        transform: translateY(-40px);
-        margin-left: 10px;
-
-    }
-    .store4{
-        width: 75px;
-        background-color: white;
-        transform: translateY(-40px);
-        margin-left: 10px;
-
-    }
-    .store5{
+    .store3 {
         width: 75px;
         background-color: white;
         transform: translateY(-40px);
@@ -271,48 +278,71 @@ button:hover{
 
     }
 
-    .store6{
+    .store4 {
         width: 75px;
         background-color: white;
         transform: translateY(-40px);
         margin-left: 10px;
 
     }
-    .store7{
-    display: none;
+
+    .store5 {
+        width: 75px;
+        background-color: white;
+        transform: translateY(-40px);
+        margin-left: 10px;
 
     }
 
-    .texte,.titrearticlemomo{
+    .store6 {
+        width: 75px;
+        background-color: white;
+        transform: translateY(-40px);
+        margin-left: 10px;
+
+    }
+
+    .store7 {
+        display: none;
+
+    }
+
+    .texte,
+    .titrearticlemomo {
         margin-left: 0px;
         width: 95%;
         height: 400px auto;
     }
-    h3.titrearticlemomo{
+
+    h3.titrearticlemomo {
         padding-top: 0px;
         font-size: 20px;
         text-align: center;
-        
-    } 
-    h4.date{
+
+    }
+
+    h4.date {
         font-size: 15px;
         text-align: center;
     }
-    p.artmoni{
+
+    p.artmoni {
 
         font-size: 14px;
     }
-    .btnmomoctn{
+
+    .btnmomoctn {
         margin-top: 50px;
         display: block;
         float: none;
         margin-bottom: 0px;
     }
-    button.btnmomo{
-        
+
+    button.btnmomo {
+
         font-size: 20px;
         height: 45px auto;
-        width:327px auto;
+        width: 327px auto;
         padding-left: 0px;
         padding-right: 0px;
         align-items: center;
@@ -320,11 +350,11 @@ button:hover{
         margin-right: 0px;
         margin-top: 0px;
 
-        
+
     }
 
 
- 
-   
- 
+
+
+
 }
