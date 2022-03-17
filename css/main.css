@@ -5,21 +5,67 @@
 
 /* 02- ON STANDARDISE LE BODY ET ON LE MET À ZERO */
 
+.show {
+  display: block;
+}
+
+#allb1, #allb2, #allb3, #allb4{
+  background-color: white;
+}
+
+#myBtnContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cetor{
+  width: 100%;
+  text-align: center;
+  padding: 50px 0; 
+}
+
+.btn {
+  width: 10%;
+  border: #7A7A7A 1px solid;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+  background-color: transparent;
+  padding: 10px 5px;
+  padding-left: 5px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #7A7A7A;
+  background-color: white;
+}
+
+.filterDiv {
+  display: none;
+  /* Hidden by default */
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
-.superposition{
+
+.superposition {
   height: 150px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background-image: url("../medias/img/rectangle_22.jpg");
   background-repeat: none;
   background-size: cover;
   position: relative;
 }
-.superposition h1{
+
+.superposition h1 {
   display: block;
   width: 100%;
   height: 50px;
@@ -32,9 +78,10 @@ body {
   position: absolute;
   top: 25px;
 }
+
 /* [ALEX] - CSS PROPRE À LA PAGE [ACTUS] */
 
-#filtresimple{
+#filtresimple {
   display: flex;
   width: 90%;
   background-color: red;
@@ -42,21 +89,21 @@ body {
   margin: 0 auto;
 }
 
- #flexcorrector {
-   display: block !important;
- }
+#flexcorrector {
+  display: block !important;
+}
 
- .all#flexcorrector {
+.all#flexcorrector {
   margin: 10px;
 }
 
 
-.filtresimpleli{
+.filtresimpleli {
   padding: 25px;
   background-color: #111111;
 }
 
-.filtresimplelien{
+.filtresimplelien {
   padding: 25px;
   background-color: #111111;
 }
@@ -85,17 +132,17 @@ main#actus {
 
 #b1actus {
   background-color: #E5E5E5;
-  cursor:pointer
+  cursor: pointer
 }
 
 #b2actus {
   background-color: hotpink;
-  cursor:pointer
+  cursor: pointer
 }
 
 #b3actus {
   background-color: #000000;
-  cursor:pointer
+  cursor: pointer
 }
 
 .buttonactus {
@@ -143,6 +190,17 @@ main#actus {
   width: 40px;
 }
 
+.margoulin{
+  font-family: arial;
+}
+
+.active{
+  border-color: #FF4070;
+  background-color: white;
+  color: #FF4070;
+  font-weight: bold;
+}
+
 .titrearticleactus {
   font-family: 'Roboto Mono', monospace;
   font-weight: 800;
@@ -156,7 +214,7 @@ main#actus {
   text-decoration: underline;
 }
 
-#flexcorrector{
+#flexcorrector {
   display: flex;
   flex-direction: column;
 }
@@ -172,6 +230,7 @@ main#actus {
 p.articlepara {
   margin-bottom: 20px;
   line-height: 1.5;
+  text-align: justify;
   /* font-size: 14px; */
   /* margin-bottom: 8px; */
 }
@@ -204,7 +263,7 @@ p.articlepara {
 .pga_card {
   display: flex;
   position: relative;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
@@ -256,21 +315,21 @@ p.articlepara {
   margin-bottom: 25px;
 }
 
-.spanactusgris{
+.spanactusgris {
   font-size: 12px;
   background-color: black;
   color: white;
   padding: 5px;
 }
 
-.spanactusrose{
+.spanactusrose {
   font-size: 12px;
   background-color: white;
   color: black;
   padding: 5px;
 }
 
-.spanactusblack{
+.spanactusblack {
   font-size: 12px;
   background-color: #FF4070;
   color: white;
@@ -287,26 +346,78 @@ p.articlepara {
 }
 
 /* CI-DESSOUS TOUT CE QUI CONCERNE LE RESPONSIVE */
-@media  screen and (min-width: 460px){
-.superposition h1{
-  width: 600px;
-  margin-right: 0px;
-  right: 0px;
+@media(max-width:1522px) {
+  .btn{
+    width: 20%;
+  }
 }
-}
+
+
+@media(max-width:1440px) {
+  .pga_card {
+    height: 360px;
+  }
+
+
+
 
 @media(max-width:1200px) {
 
-main#actus{
-  display: flex;
-  flex-wrap: wrap;;
+  main#actus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pga_card {
+    height: auto;
+  }
 }
 
-.pga_card{
-  height: auto;
+@media(max-width:768px) {
+
+.btn{
+  width: 95%;
+  margin: 10px 2px;
+}
 }
 
+@media(max-width:609px) {
+  .pga_card{
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .superposition{
+   margin-bottom: 10px;
+  }
+
+  .pga_image_container{
+    width: auto;
+    height: 250px;
+  }
+  .pga_informations{
+    width: 80%;
+    text-align: left;
+  }
+  .pga_card{
+    flex-direction: column;
+  }
+  .superposition h1 {
+    width: 600px;
+    margin-right: 0px;
+    right: 0px;
+  }
+  p.articlepara{
+    width: 100%;
+    text-align: justify;
+  }
+  #myBtnContainer {
+  flex-direction: column;
+  width: 90%;
 }
-
-
-
+.btn{
+  width: 90%;
+}
+  
+}
+}

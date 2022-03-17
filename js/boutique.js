@@ -38,8 +38,6 @@
       document.getElementById("clicbold0").style.borderLeft = "1px solid #FF4070";
       document.getElementById("clicbold0").style.fontWeight = "bold";
       document.getElementById("cbild+0").style.color = "#FF4070";
-      document.getElementById("v0").style.display = "block";
-      document.getElementById("v0").style.color = "#FF4070";
     } else {
       console.log("c'est les bijoux");
     }
@@ -56,8 +54,6 @@
       document.getElementById("clicbold1").style.borderLeft = "1px solid #FF4070";
       document.getElementById("clicbold1").style.fontWeight = "bold";
       document.getElementById("cbild+1").style.color = "#FF4070";
-      document.getElementById("v1").style.display = "block";
-      document.getElementById("v1").style.color = "#FF4070";
     } else {
       console.log("c'est les badges");
     }
@@ -74,8 +70,6 @@
       document.getElementById("clicbold2").style.borderLeft = "1px solid #FF4070";
       document.getElementById("clicbold2").style.fontWeight = "bold";
       document.getElementById("cbild+2").style.color = "#FF4070";
-      document.getElementById("v2").style.display = "block";
-      document.getElementById("v2").style.color = "#FF4070";
     } else {
       console.log("c'est les bijoux");
     }
@@ -91,8 +85,6 @@
       document.getElementById("clicbold3").style.borderLeft = "1px solid #FF4070";
       document.getElementById("clicbold3").style.fontWeight = "bold";
       document.getElementById("cbild+3").style.color = "#FF4070";
-      document.getElementById("v3").style.display = "block";
-      document.getElementById("v3").style.color = "#FF4070";
     } else {
       console.log("c'est les bijoux");
     }
@@ -116,8 +108,6 @@
     }
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
-
-    var le1 = document.getElementById("v4");
 
     var nouveaufiltre = document.getElementById("clicbold4");
     nouveaufiltre.style.backgroundColor = "white";
@@ -150,8 +140,6 @@
         dbg.style.color = "#FF4070";
         // dbg.style.fontSize = "18px";
         nouveaufiltre.style.fontWeight = "bold";
-        document.getElementById("v4").style.display = "block";
-        document.getElementById("v4").style.color = "#FF4070";
         nouveaufiltre.classList.add("geek");
         le1.style.display = "block";
       } else {
@@ -431,7 +419,7 @@
     if (mq.matches) {
 
     } else {
-      document.getElementById("v1").style.display = "none";
+      
     }
 
     // JAVASCRIPT POUR LE CLIC SUR LE BOUTON LIKE CI-DESSOUS.
