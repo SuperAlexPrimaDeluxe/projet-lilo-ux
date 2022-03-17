@@ -192,6 +192,7 @@ h2 + hr{
     justify-content: space-between;
     padding: 10px;
     background: rgba(0, 0, 0, 0.9);
+    color: white;
     border: 1px solid black;
     cursor: pointer;
 }
