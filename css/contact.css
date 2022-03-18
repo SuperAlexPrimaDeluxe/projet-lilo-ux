@@ -6,13 +6,13 @@
     font-weight: 400;
     font-size: 18px;
     color: black;
-
 }
 .superposition{
-    height: 190px;
+    height: 160px;
     width: 100%;
     margin-bottom: 100px;
-    background-image: url("../medias/img/rectangle_22.jpg");
+    /* background-image: url("../medias/img/rectangle_22.jpg"); */
+    background-image: url("../images/rectangle_22.jpg");
     background-repeat: none;
     background-size: cover;
     position: relative;
@@ -28,37 +28,27 @@
     line-height: 2.8rem;
     background-color: black;
     position: absolute;
-    top: 50px;
+    top: 45px;
 }
-.dechirure-1{
+.superposition::after{
+    content:"";
     display: block;
     width: 100%;
-    height: 70px;
-    background-image: url("../medias/img/dechirure-cv.webp");
-    background-size: cover;
+    height: 60px;
+    /* background-image: url("../medias/img/dechirure-cv.webp"); */
+    background-image: url("../images/dechirure_cv.webp");
+    /* background-size: cover; */
     position: absolute;
-    top: 125px;
+    top: 120px;
 }
 main{
     width: 90%;
     margin: 0 auto;
 }
-button{
-    font-family: 'Montserrat';
-}
 .atelier_lilo{
     width: 100%;
     margin: 0 auto;
 }
-/* .dechirure-1{
-    display: block;
-    width: 100%;
-    height: 50px;
-    background-image: url("../medias/img/dechirure-cv.webp");
-    background-size: cover;
-    position: absolute;
-    top: 360px;
-} */
 h2{
     display: block;
     text-align: center;
@@ -69,9 +59,11 @@ h2{
     margin: 70px;
 }
 .adresse{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 70px auto;
-    background-color: white;
+    /* background-color: white; */
     overflow: hidden;
 }
 h4{
@@ -237,7 +229,6 @@ h2 + hr{
 .corps-formulaire{
     width: 100%;
     margin: 70px auto 0;
-
 }
 .contactez-nous .groupe{
     margin-top: 20px;
@@ -264,35 +255,36 @@ h2 + hr{
 textarea::placeholder {
     color: #d35379;  
 }
-.contactez-nous .pied-formulaire button{
-    width: 100%;
+.contactez-nous .pied-formulaire a{
+    display: block;
     background-color: #d35379;
     color: white;
     font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    padding: 10px 20px;
-    display: block;
+    padding: 10px 0;
     margin: 70px auto;
     outline: none;
     cursor: pointer;
     transition: transform 0.5s;
 }
-.contactez-nous .pied-formulaire button:hover{
+.contactez-nous .pied-formulaire a:hover{
     transform: scale(1.05);
 }
 .newsletter{
     height: 100px;
 }
 
-@media screen and (min-width: 360px) {
-    .contactez-nous .pied-formulaire button{
+/* ************ */
+
+@media screen and (min-width: 460px) {
+    .contactez-nous .pied-formulaire a{
         width: 100%;
     }
     .adresse{
-        display: flex;
-        height: 450px;
+        /* height: 450px; */
         width: 100%;
-        
     }
     .faq{
         width: 75%;
@@ -309,7 +301,7 @@ textarea::placeholder {
         border: 1px solid black;
         padding: 20px;
     }
-    .contactez-nous .pied-formulaire button{
+    .contactez-nous .pied-formulaire a{
         width: 300px;
         margin-right: 0;
     } 
@@ -326,20 +318,8 @@ textarea::placeholder {
         width: 50%;
         margin: 0 auto;;
     }
-    .adresse{
-        display: flex;
-        height: 450px;
-        width: 70%;
-        margin: 70px auto;
-    }
-    .carte-visite{
-        margin: auto;
-    }
-    .polaroid-shop{
-        margin: auto;
-    }
     .points-vente{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
     .faq{
@@ -357,9 +337,26 @@ textarea::placeholder {
         border: 1px solid black;
         padding: 20px;
     }
-    .contactez-nous .pied-formulaire button{
+}
+@media screen and (min-width: 1050px) {
+    .adresse{
+        flex-direction: row;
+        height: 450px;
+        width: 70%;
+        margin: 70px auto;
+    }
+    .carte-visite{
+        margin: auto;
+    }
+    .polaroid-shop{
+        margin: auto;
+    }
+    .points-vente{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .contactez-nous .pied-formulaire a{
         width: 300px;
         margin-right: 0;
     }
 }
-
