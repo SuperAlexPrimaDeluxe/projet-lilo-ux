@@ -71,7 +71,7 @@ h4{
     font-weight: bold;
     padding: 20px 0;
 }
-.polaroid-shop{
+.adresse .polaroid-shop{
     height: 330px;
     width: 290px;
     margin: 60px auto 40px;
@@ -80,7 +80,7 @@ h4{
     z-index: 50;
     scale: 10%;
 }
-.polaroid-shop .shop{
+.adresse .polaroid-shop .shop{
     display: block;
     height: 250px;
     width: 250px;
@@ -89,7 +89,7 @@ h4{
     transform: rotate(.1deg);
     position: relative;
 }
-.polaroid-shop .adhesive{
+.adresse .polaroid-shop .adhesive{
     height: 118px;
     width :130px;
     position: relative;
@@ -255,9 +255,10 @@ textarea::placeholder {
 }
 .contactez-nous .pied-formulaire a{
     display: block;
-    background-color: #d35379;
+    background-color: black;
     color: white;
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -268,7 +269,9 @@ textarea::placeholder {
     transition: transform 0.5s;
 }
 .contactez-nous .pied-formulaire a:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
+    background-color: #d35379;
+    color: white;
 }
 .newsletter{
     height: 100px;
