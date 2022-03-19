@@ -8,15 +8,8 @@ html{
     font-weight: 400;
     font-size: 18px;
 }
-.btn-options a{
-    display: block;
-    text-decoration: none;
-    /* width: 300px; */
-    text-align: center;
-    /* height: 45px;     */
-}
 .superposition{
-    height: 150px;
+    height: 160px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url("../medias/img/rectangle_22.jpg");
@@ -27,15 +20,25 @@ html{
 .superposition h1{
     display: block;
     width: 100%;
-    height: 100px;
+    /* height: 50px; */
     color: white;
     text-align: center;
     font-size: 2.2rem;
     padding: 5px 0;
-    line-height: 2.8rem;
+    /* line-height: 2.8rem; */
+    line-height: 2.4rem;
     background-color: black;
     position: absolute;
-    top: 20px;
+    top: 45px;
+}
+.superposition::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-image: url("../medias/img/dechirure-cv.webp");
+    position: absolute;
+    top: 120px;
 }
 main{
     width: 90%;
@@ -43,12 +46,6 @@ main{
 }
 hr{
     margin: 10px 0;
-}
-button{
-    transition: transform 0.5s;
-}
-button:hover{
-    transform: scale(1.05);
 }
 .wishlist-1375{
     display: flex;  
@@ -98,57 +95,64 @@ button:hover{
 }
 .poubelle-delete{
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     padding: 5px;
     margin: 5px;
 }
 .informations-article li:nth-child(1){
     font-weight: bold;
 }
-/* .recapitulatif-wishlist ul, li{
+.recapitulatif-wishlist ul, li{
     list-style: none;
     padding: 5px;
-} */
+}
 .btn-1-ajout, .btn-2-valider, .btn-vers-boutique{
+    width: 300px;
+    display: block;
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    background-color: black;
-    padding: 10px;
-    margin: 30px 0;
-    cursor: pointer;
-}
-.btn-1-ajout{
-    width: 300px;
-}
-
-#h4a, #h4b, #h4c{
     text-align: center;
-} 
-.btn-vers-boutique{
-    color: #d35379;
-    background-color: white;
-    border: 1px solid #d35379;
-    width: 50%;
+    text-decoration: none;
+    background-color: black;
+    border: 3px solid black;
+    padding: 10px 0px;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: transform 0.5s;
 }
-.btn-2-valider{
-    width: 50%;
-    background-color: #d35379;
+.btn-vers-boutique{
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+.btn-options .btn-2-valider{
+    line-height: 2.4rem;
+    height: 44.8px;
 }
 .btn-options{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.btn-1-ajout:hover, .btn-2-valider:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #d35379;
+    border: 3px solid #d35379;
+}
+.btn-vers-boutique:hover{
+    transform: scale(1.03);
+    background-color: white;
+    color: #d35379;
+    border: 2px solid #d35379;
 }
 h4{
     display: block;
-    height: 30px;
-    margin: 75px auto;
-    text-align: left;
+    margin: 75px 0;
     font-size: 1.2rem;
     font-size: bold;
+    text-align: center;
 }
 .newsletter{
     height: 100px;
@@ -378,48 +382,50 @@ h4{
     
     /* ************************************** */
 
-@media screen and (min-width: 460px){
-    .btn-options a{
-        width: 300px;
+    @media screen and (min-width: 768px){
+        .superposition h1{
+            width: 600px;
+            margin-right: 0px;
+            right: 0px;
+            height: 50px;
+            top: 50px;
+        }
+        main{
+            width: 75%;
+            margin: auto;
+        }
     }
-}
-
-@media screen and (min-width: 768px){
-    .superposition h1{
-        width: 600px;
-        margin-right: 0px;
-        right: 0px;
-        height: 50px;
-        top: 50px;
+    
+    @media screen and (min-width: 1050px){
+        .btn-options{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
     }
-    main{
-        width: 75%;
-        margin: auto;
+    
+    @media screen and (min-width: 1375px){
+        main{
+            width: 70%;
+            margin: auto;
+        }
+        .wishlist-1375{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .informations-article{
+            width: 35%;
+        }
+        .description-article{
+            text-align: left;
+        }
+        .btn-1-ajout{
+            margin: 5px 0;
+        }
+        .carousel{
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
     }
-}
-
-@media screen and (min-width: 1375px){
-    main{
-        width: 70%;
-        margin: auto;
-    }
-    .wishlist-1375{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .informations-article{
-        width: 35%;
-    }
-    .description-article{
-        text-align: left;
-    }
-    .btn-1-ajout{
-        margin: 5px 0;
-    }
-    .carousel{
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-    }
-}
