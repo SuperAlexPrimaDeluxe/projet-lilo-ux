@@ -237,7 +237,7 @@ h2 + hr{
     margin-top: 5px;
     padding: 10px 5px 10px 30px;
     border: 1px solid black;
-    outline-color: #d35379;
+    outline-color: #d35379!important;
     font-size: 1rem;
 }
 .contactez-nous .groupe textarea{
