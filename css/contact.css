@@ -266,7 +266,7 @@ textarea::placeholder {
     margin: 70px auto;
     outline: none;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 .contactez-nous .pied-formulaire a:hover{
     transform: scale(1.03);
