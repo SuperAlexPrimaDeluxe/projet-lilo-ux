@@ -233,7 +233,7 @@ h2 + hr{
     display: flex;
     flex-direction: column;
 }
-.contactez-nous .groupe input{
+.contactez-nous .corps-formulaire .groupe input{
     margin-top: 5px;
     padding: 10px 5px 10px 30px;
     border: 1px solid black;
