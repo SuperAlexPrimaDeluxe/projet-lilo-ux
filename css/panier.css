@@ -19,7 +19,7 @@ li{
     background-size: cover;
     position: relative;
 }
-.superposition h1{
+.superposition .titre-mon-panier{
     display: block;
     width: 100%;
     color: white;
