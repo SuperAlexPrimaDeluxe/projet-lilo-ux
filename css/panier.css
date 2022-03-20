@@ -8,20 +8,15 @@ html{
     font-weight: 400;
     font-size: 18px;
 }
-button{
-    transition: transform 0.5s;
-}
-button:hover{
-    transform: scale(1.05);
-}
 li{
     list-style: none;
 }
 .superposition{
-    height: 150px;
+    height: 160px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url("../medias/img/rectangle_22.jpg");
+    /* background-image: url("../images/rectangle_22.jpg"); */
     background-repeat: none;
     background-size: cover;
     position: relative;
@@ -29,19 +24,29 @@ li{
 .superposition h1{
     display: block;
     width: 100%;
-    height: 50px;
     color: white;
+    background-color: black;
     text-align: center;
     font-size: 2.2rem;
     padding: 5px 0;
-    line-height: 2.8rem;
-    background-color: black;
+    line-height: 2.4rem;
     position: absolute;
-    top: 25px;
+    top: 45px;
+}
+.superposition::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 60px;
+    /* background-image: url("../medias/img/dechirure-cv.webp"); */
+    background-image: url("../images/dechirure_cv.webp");
+    /* background-size: cover; */
+    position: absolute;
+    top: 120px;
 }
 main{
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 hr{
     margin: 10px 0;
@@ -49,11 +54,11 @@ hr{
 .resume-panier{
     background-color: black;
     color: white;
-    padding: 10px 30px;
+    padding: 10px;
+    margin: 0 auto;
 }
 .resume-panier ul{
-    height: 60px;
-    padding-inline-end: 5px;
+    padding: 5px;
     text-align: center;
 }
 .resume-panier li{
@@ -65,6 +70,7 @@ hr{
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
+    margin: 0 auto;
 }
 .produit-1{
     background-image: url("../medias/img/produits/badge_boom_boom.jpg");
@@ -99,26 +105,27 @@ hr{
 }
 .poubelle-prix-article{
     width: 100%;
-    height: 214px;
+    height: 240px;
     display: flex;
     justify-content: space-around;
     align-items: end;
 }
 .partie-1{
-    width: 50%;
-    height: 214px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
 }
 .partie-2{
-    width: 50%;
-    height: 214px;
+    display: block;
+    width: 45%;
 }
 .partie-2 ul{
-    height: 50%;
+    height: 103px;
+    margin: auto 0;
     display: block;
+    padding-bottom: 10px;
 }
 .wishlist-1375 li{
     padding: 5px;
@@ -128,10 +135,15 @@ hr{
 }
 .trash{
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     padding: 5px;
-    margin: 22px auto;
+    margin: 35px auto;
+    border: #d35379 2px solid;
+    transition: transform 0.5s;
+}
+.trash:hover{
+    transform: scale(1.03);
 }
 .quantite{
     height: 50%;
@@ -143,38 +155,46 @@ hr{
     text-align: end;
     padding:  5px 30px;
 }
-.btn-1-valider, .btn-2-valider, .btn-vers-boutique{
+.btn-options-1 a, .btn-options-2 a{
+    width: 90%;
+    display: block;
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    padding: 10px;
-    margin: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 40px auto 30px;
     cursor: pointer;
-}
-.btn-1-valider, .btn-2-valider{
-    color: white;
-    background-color: #d35379;
+    width: 300px;
+    transition: transform 0.5s;
 }
 .btn-vers-boutique{
-    color: #d35379;
+    color: black;
     background-color: white;
-    border: 1px solid #d35379;
-    width: 50%;
+    border: 3px solid black;   
 }
-.valider-1 .btn-1-valider{
-    margin-top: 40px;
+.btn-valider{
+    color: white;
+    background-color: black;
+    border: 3px solid black;  
+    line-height: 2.8rem;
+    height: 54px;   
 }
-.btn-1-valider{
-    height: 66.8px;
-    width: 100%;
-}
-.btn-2-valider{
-    width: 50%;
-}
-.btn-options{
+.btn-options-1, .btn-options-2{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.btn-vers-boutique:hover{
+    transform: scale(1.03);
+    background-color: white;
+    color: #d35379;
+    border: 3px solid #d35379;
+} 
+.btn-valider:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #d35379;
+    border: 3px solid #d35379;
 }
 h4{
     display: block;
@@ -196,28 +216,38 @@ h4{
     padding: 5px 0;
     align-items: center;
 }
-.quantite span, .compteur{
-    padding: 10px 0 5px;
+.quantite span{
+    padding-bottom: 20px;
 }
 .compteur{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 5px;
 }
 .compteur button{
     width: 40px;
     height: 40px;
     font-size: 1rem;
     background-color: black;
-    color: honeydew;
+    color: white;
+    transition: transform 0.5s;
+}
+.compteur button:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #d35379;
+    border: 3px solid #d35379;
 }
 .compteur h2{
     display: block;
-    width: 40px;
-    height: 40px;
     color: black;
+    font-size: 1rem;
     font-weight: normal;
+    width: 40px;
+    height: 44.8px;   
+    line-height: 2.4rem;
 } 
 .newsletter{
     height: 100px;
@@ -227,28 +257,15 @@ h4{
     .poubelle-prix-article{
         justify-content: space-around;
     }
-    .partie-1, .partie-2{
-        width: 30%;
-    }
-    .btn-1-valider, .btn-options button{
-        width: 300px;
-    }
     .valider-1{
         text-align: end;
-    }
-}
-@media  screen and (min-width: 460px){
-    .superposition h1{
-        width: 600px;
-        margin-right: 0px;
-        right: 0px;
     }
 }
 
 @media screen and (min-width: 768px){
     main{
         width: 75%;
-        margin: auto;
+        /* margin: 0 auto; */
     }
     .resume-panier{
         display: flex;
@@ -257,6 +274,12 @@ h4{
         background-color: black;
         color: white;
         padding: 10px 30px;
+    }
+    .btn-valider{
+        line-height: 3rem;
+    }
+    .btn-vers-boutique{
+        line-height: 1.5rem;
     }
     .poubelle-prix-article{
         height: auto;
@@ -274,15 +297,20 @@ h4{
         justify-content: space-around;
         text-align: center;
     }  
-    .trash{
-        padding-top: 25px;
-    }
 }
+
+@media screen and (min-width: 1050px){
+    .btn-options-1, .btn-options-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+} 
 
 @media screen and (min-width: 1375px){
     main{
         width: 70%;
-        margin: auto;
     }
     .wishlist-1375{
         flex-direction: row;
@@ -291,8 +319,5 @@ h4{
     }
     .informations-article{
         width: 80%;
-    }
-    .informations-article :nth-child(4){
-        border-left: 1px solid black;
     }
 }
