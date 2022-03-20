@@ -97,11 +97,13 @@ h3{
 .gauche, .droite{
     width: 100%;
 }
-.coordonnees ul, .coordonnees li, .commandes ul, .commandes li, .commandes a{
-    padding: 5px;
+.coordonnees ul, .coordonnees li, .commandes ul, .commandes li{
     list-style-type: none;
-    color: black;
     font-size: 18px;
+}
+.coordonnees a, .commandes a{
+    color: black;
+    text-decoration: underline;
 }
 .droite ul:nth-child(3){
     display: flex;
