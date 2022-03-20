@@ -101,6 +101,7 @@ h3{
     padding: 5px;
     list-style-type: none;
     color: black;
+    font-size: 18px;
 }
 .droite ul:nth-child(3){
     display: flex;
@@ -134,7 +135,7 @@ input::placeholder {
     color: #d35379;
     padding-left: 5px;
 }
-.confirmation button, .suppression a:nth-child(2){
+.confirmation .conf-btn-2, .suppression .btn-non{
     display: block;
     width: 300px;
     color: white;
@@ -149,7 +150,7 @@ input::placeholder {
     cursor: pointer;
     transition: transform 0.5s;
 }
-.confirmation a, .suppression a:nth-child(1){
+.confirmation .conf-btn-1, .suppression .btn-oui{
     display: block;
     width: 300px;
     color: black;
@@ -164,13 +165,13 @@ input::placeholder {
     cursor: pointer;
     transition: transform 0.5s;
 } 
-.conf-btn-2:hover, .confirmation button:hover{
+.confirmation .conf-btn-2:hover, .suppression .btn-non:hover{
     color: white;
     background-color: #d35379;
     border: 3px solid #d35379;
     transform: scale(1.05);
 }
-.conf-btn-1:hover, .suppression:nth-child(1):hover{
+.confirmation .conf-btn-1:hover, .suppression .btn-oui:hover{
     color: #d35379;
     background-color: white;
     border: 3px solid #d35379;
