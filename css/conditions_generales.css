@@ -26,7 +26,7 @@ html{
     text-align: center;
     font-size: 2.2rem;
     padding: 5px 0;
-    line-height: 2.8rem;
+    line-height: 2.0rem;
     position: absolute;
     top: 45px;
 }
@@ -64,6 +64,13 @@ p{
     text-indent: 50px;
 }
 /* ********** */
+@media screen and (min-width: 530px) {
+    .superposition h1{
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+}     
+
 @media screen and (min-width: 768px) {
     .superposition h1{
         width: 600px;
