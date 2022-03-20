@@ -20,12 +20,11 @@
 .superposition h1{
     display: block;
     width: 100%;
-    height: 50px;
     color: white;
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
-    line-height: 2.8rem;
+    line-height: 2.2rem;
     padding: 5px 0;
     background-color: black;
     position: absolute;
@@ -184,6 +183,7 @@ img.modepaiement{
         width: 600px;
         margin-right: 0px;
         right: 0px;
+        line-height: 2.8rem;
     }
     .paiement{
         width: 50%;
