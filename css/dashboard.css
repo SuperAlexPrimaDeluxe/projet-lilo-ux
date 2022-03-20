@@ -208,13 +208,13 @@ input::placeholder {
         margin: 0 auto;
     }
 }
-.superposition h1{
-    width: 600px;
-    margin-right: 0px;
-    right: 0px;
-}
 
 @media screen and (min-width:860px) {
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
+    }
     main{
         width: 50%;
         margin: 0 auto;
