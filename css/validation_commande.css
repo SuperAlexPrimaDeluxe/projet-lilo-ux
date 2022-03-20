@@ -2,21 +2,45 @@
 *{
     margin: 0;
     padding: 0;
-}
-html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
+.superposition{
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("../medias/img/rectangle_22.jpg");
+    /* background-image: url("../images/rectangle_22.jpg"); */
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+.superposition h1{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 5px 0;
+    line-height: 2.8rem;
+    position: absolute;
+    top: 45px;
+}
+.superposition::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-image: url("../medias/img/dechirure-cv.webp");
+    /* background-image: url("../images/dechirure_cv.webp"); */
+    position: absolute;
+    top: 120px;
+}
 main{
     width: 90%;
     margin: auto;
-}
-h1{
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 50px ;
 }
 hr{
     margin: 10px 0;
