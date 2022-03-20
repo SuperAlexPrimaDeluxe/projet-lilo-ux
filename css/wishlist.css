@@ -91,12 +91,6 @@ hr{
     width: 90%;
     align-items: center;
 }
-.poubelle-prix-article img{
-    transition: transform 0.5s;
-}
-.poubelle-prix-article img:hover{
-    transform: scale(1.03);
-}
 .poubelle-delete{
     display: block;
     height: 35px;
@@ -104,6 +98,11 @@ hr{
     padding: 5px;
     margin: 5px;
     border: #d35379 2px solid;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.poubelle-delete:hover{
+    transform: scale(1.03);
 }
 .recapitulatif-wishlist ul, li{
     list-style: none;
