@@ -139,6 +139,7 @@ hr{
     padding: 5px;
     margin: 35px auto;
     border: #d35379 2px solid;
+    cursor: pointer;
     transition: transform 0.5s;
 }
 .trash:hover{
