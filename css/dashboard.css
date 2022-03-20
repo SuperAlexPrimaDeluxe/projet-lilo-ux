@@ -2,21 +2,20 @@
 *{
     margin: 0; 
     padding: 0; 
-}
-html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
 .superposition{
-    height: 150px;
+    height: 160px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url("../medias/img/rectangle_22.jpg");
+    /* background-image: url("../images/rectangle_22.jpg"); */
     background-repeat: none;
     background-size: cover;
     position: relative;
-  }
+}
 .superposition h1{
     display: block;
     width: 100%;
@@ -28,14 +27,19 @@ html{
     line-height: 2.8rem;
     background-color: black;
     position: absolute;
-    top: 50px;
-  }
-/* h1{
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 75px;
-} */
+    top: 45px;
+}
+.superposition::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-image: url("../medias/img/dechirure-cv.webp");
+    /* background-image: url("../images/dechirure_cv.webp"); */
+    /* background-size: cover; */
+    position: absolute;
+    top: 120px;
+}
 h2{
     text-align: center;
     margin: 100px;
@@ -70,7 +74,7 @@ h3{
     align-items: center;
     border: 1px solid black;
 }
-.titre-coordonnees img, .titre-commandes img, .titre-mp img, .titre-supprimer-compte img{
+.titre-coordonnees img, .droite img, .titre-commandes img, .titre-mp img, .titre-supprimer-compte img{
     height: 30px;
     width: 30px;
     padding: 10px;
@@ -97,6 +101,16 @@ h3{
     padding: 5px;
     list-style-type: none;
     color: black;
+}
+.droite ul:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+.droite ul:nth-child(3) img{
+    padding: 0px;
+}
+.droite ul:nth-child(3) a{
+    color: #d35379;
 }
 .mp .sous-section{
     flex-direction: column;
@@ -164,7 +178,7 @@ input::placeholder {
 }
 .confirmation, .suppression{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .message-confirmation{
     height: 32.5px;
@@ -214,8 +228,5 @@ input::placeholder {
     } 
     .titre-coordonnees, .titre-commandes, .titre-mp, .titre-supprimer-compte{
         justify-content: left;
-    }
-    .confirmation button, .suppression button:nth-child(1), .confirmation button:nth-child(2), .suppression button:nth-child(2){
-        width: 300px;
     }
 }
