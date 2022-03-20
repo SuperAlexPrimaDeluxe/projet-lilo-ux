@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
-    padding: 0;   
-}
-html{
+    padding: 0;  
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: black;
 }
 .superposition{
-    height: 150px;
+    height: 160px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url("../medias/img/rectangle_22.jpg");
+    /* background-image: url("../images/rectangle_22.jpg"); */
     background-repeat: none;
     background-size: cover;
     position: relative;
@@ -22,25 +22,25 @@ html{
     width: 100%;
     height: 50px;
     color: white;
-    text-align: center;
     font-size: 2.2rem;
-    padding: 5px 0;
+    font-weight: bold;
+    text-align: center;
     line-height: 2.8rem;
+    padding: 5px 0;
     background-color: black;
     position: absolute;
-    top: 50px;
+    top: 45px;
 }
-/* .dechirure-1{
+.superposition::after{
+    content:"";
     display: block;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-image: url("../medias/img/dechirure-cv.webp");
-    background-size: cover;
+    /* background-image: url("../images/dechirure_cv.webp"); */
     position: absolute;
-    top: 360px;
-} */
-
-/* ************************************************** */
+    top: 120px;
+}
 main{
     width: 90%;
     margin: 0 auto;
@@ -54,21 +54,22 @@ main{
 hr{
     margin: 10px 0;
 }
-h2{
+.container h2{
     font-size: 2.25rem;
     margin: 40px;
     text-align: left;
 }
-h3{
+.promo h3{
     padding: 10px;
 }
 .connexion h2{
     margin-bottom: 15px;
 }
-p{
+.paiement p{
     padding: 10px;
 }
-.contenu-total span, .tva-final span{
+.contenu-total h3, .contenu-total span{
+    color: black;
     padding: 15px;
 }
 .sous-total, .frais-port, .tva{
@@ -77,28 +78,40 @@ p{
     align-items: center;
 }
 .tva-final{
-    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     opacity: 90%;
-    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
 }
+.tva-final h3, .tva-final span{
+    color: white;
+    padding: 15px;
+}
+
+/* le contenair */
 .container{
    width: 100%;
-   -webkit-user-select: none;
+   /* margin-bottom: 1px; */
+   /* font-size: 22px; */
+   /* -webkit-user-select: none;
    -moz-user-select: none;
-   -ms-user-select: none;
+   -ms-user-select: none; */
     user-select: none;
     display: flex;
     align-items:center;
     cursor: pointer;
     justify-content:space-between;
+
+
 }
+
+/*la case cocher */
 .container input{
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
     appearance: none;
 }
 .check{
@@ -121,55 +134,62 @@ p{
     transform: rotate(45deg);
         margin-bottom: 0px;
         bottom: 1px;
-}
 
+}
 /********************
 Image de paiement
 *********************/
 img.modepaiement{
     width: 60px;
     margin-left:50px;
+    border: 1px solid black;
 }
+
+
 
 /**************************************************/
 /*button*/
 /**************************************************/
 .btn-continuer{
-    width: 300px;
+    display: block;
+    color: white;
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    text-align: center;
     border: none;
-    padding: 10px;
-    margin: 70px 0;
+    padding: 10px 0;
+    margin: 50px auto;
     cursor: pointer;
-    color: white;
+    background-color: black;
+    transition: transform 0.5s;
+}
+.btn-continuer:hover{
+    transform: scale(1.03);
     background-color: #d35379;
-}
-.valider-1{
-    text-align: right;
-}
-.newsletter{
-    height: 100px;
+    color: white;
 }
 
 /* ********** */
 @media screen and (min-width:460px) {
-    .main{
-        width: 300px;    
-    }     
-    .paiement,.btn-continuer{
+    .paiement{
         width: 75%;
+    }
+    .btn-continuer{
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 860px){
+@media screen and (min-width: 768px){
     .superposition h1{
         width: 600px;
         margin-right: 0px;
         right: 0px;
     }
-    .paiement, .btn-continuer{
+    .paiement{
         width: 50%;
+    }
+    .valider-1 a{
+        width: 300px;
+        margin-right: 0;
     }
 }
