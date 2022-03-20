@@ -2,8 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-}
-html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -152,6 +150,7 @@ hr{
     font-weight: bold;
 }
 .montant-total{
+    font-weight: bold;
     text-align: end;
     padding:  5px 30px;
 }
@@ -263,6 +262,11 @@ h4{
 }
 
 @media screen and (min-width: 768px){
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
+    }
     main{
         width: 75%;
         /* margin: 0 auto; */
