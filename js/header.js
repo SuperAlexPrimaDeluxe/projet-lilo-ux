@@ -62,8 +62,8 @@ class MyHeader extends HTMLElement {
                     <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact &nbsp;<span id="ultarrow2">▼</span></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
                             <li><a href="contact.html#pointdevente" id="pdv">Nos point de ventes</a></li>
-                            <li><a href="contact.html#fdecontact" id="fde">Formulaire de contact</a></li>
                             <li><a href="contact.html#FAQQ" id="FAQlinker">Foire aux questions</a></li>
+                            <li><a href="contact.html#fdecontact" id="fde">Formulaire de contact</a></li> 
                         </ul>
                     </li>
     
