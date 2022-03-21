@@ -167,7 +167,8 @@ li.none {
     /* font-weight: 700;
     letter-spacing: 3; */
     background-color: #ff4079b2;
-    border: none;
+    cursor: pointer;
+    /* border: none; */
     /* width: 20%; */
 }
 
@@ -283,6 +284,11 @@ textarea:focus {
         background-repeat: no-repeat;
     }
 
+    #ultarrow1, #ultarrow2{
+        color: white;
+        font-size: 10px;
+    }
+
     .shortkiki {
         width: 30%;
     }
@@ -329,7 +335,7 @@ textarea:focus {
 
     #ctnmenures li {
         width: 100%;
-        background-color: #2E2E2E;
+        background-color: black;
         color: white;
         border-top: 1px solid white;
         transition: none;
@@ -337,7 +343,7 @@ textarea:focus {
 
     #ctnmenures li:hover {
         width: 100%;
-        background-color: #2E2E2E;
+        background-color: #ff4079;
     }
 
     #ctnmenures li a {

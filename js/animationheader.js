@@ -43,11 +43,11 @@ btn.onclick = function () {
 lionclick.onclick = function () {
   if (getsousmenuboutique.style.display == "none") {
     getsousmenuboutique.style.display = "block";
-    document.getElementById("arrowdown1").style.transform = "rotate(180deg)";
+    document.getElementById("ultarrow1").innerHTML = "▲";
 
   } else {
     getsousmenuboutique.style.display = "none";
-    document.getElementById("arrowdown1").style.transform = "rotate(0deg)";
+    document.getElementById("ultarrow1").innerHTML = "▼";
   }
 };
 
@@ -56,12 +56,12 @@ lionclick.onclick = function () {
 lionclick2.onclick = function () {
   if (getsousmenucontact.style.display == "none") {
     getsousmenucontact.style.display = "block";
-    document.getElementById("arrowdown2").style.transform = "rotate(180deg)";
+    document.getElementById("ultarrow2").innerHTML = "▲"
 
   } else {
     getsousmenucontact.style.display = "none";
     console.log(getsousmenucontact);
-    document.getElementById("arrowdown2").style.transform = "rotate(0deg)";
+    document.getElementById("ultarrow2").innerHTML = "▼"
   }
 };
 

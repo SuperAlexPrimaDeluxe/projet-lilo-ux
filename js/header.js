@@ -46,7 +46,7 @@ class MyHeader extends HTMLElement {
     
                 <div id="ctnmenures">
                     <li><a href="index.html" id="returnhome2">Accueil</a></li>
-                    <li class="has-childrenheader" id="colorerheader"><a href="boutique.html" id="supresslink1">Boutique<img id="arrowdown1" src="medias/icons/downarrow.svg"></a>
+                    <li class="has-childrenheader" id="colorerheader"><a href="boutique.html" id="supresslink1">Boutique &nbsp;<span id="ultarrow1">▼</span></a>
         
                         <!-- sous menu-->
                         <ul class="sous-menuheader" id="sousmenuboutique">
@@ -59,7 +59,7 @@ class MyHeader extends HTMLElement {
     
                     <li><a href="actus.html" id="actusredirect">Actus</a></li>
     
-                    <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact<img id="arrowdown2" src="medias/icons/downarrow.svg"></a>
+                    <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact &nbsp;<span id="ultarrow2">▼</span></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
                             <li><a href="contact.html#pointdevente" id="pdv">Nos point de ventes</a></li>
                             <li><a href="contact.html#fdecontact" id="fde">Formulaire de contact</a></li>

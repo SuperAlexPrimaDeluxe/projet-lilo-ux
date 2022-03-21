@@ -20,3 +20,8 @@ $(".carousel").owlCarousel({
     }
   });
   
+  var popol3000 = document.getElementById("poubdeleter");
+  popol3000.onclick = function () {
+    document.getElementById("hrtocache").style.display = "none";
+    document.getElementById("1375").style.display = "none";
+  }

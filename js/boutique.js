@@ -433,12 +433,14 @@
       if (document.getElementById("hbk1").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
         document.getElementById("hbk1").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
         document.getElementById("hbk1").style.width = "27px";
+        alert("L'article a bien été ajouté dans votre wishlist !");
         document.getElementById("psty2").textContent++;
 
       } else {
         document.getElementById("hbk1").style.filter = "none";
         document.getElementById("hbk1").style.width = "25px";
         document.getElementById("psty2").textContent--;
+        alert("L'article a bien été retiré de votre wishlist !");
       }
     }
 
@@ -448,10 +450,12 @@
       if (document.getElementById("hbk2").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
         document.getElementById("hbk2").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
         document.getElementById("hbk2").style.width = "27px";
+        alert("L'article a bien été ajouté dans votre wishlist !");
         document.getElementById("psty2").textContent++;
       } else {
         document.getElementById("hbk2").style.filter = "none";
         document.getElementById("hbk2").style.width = "25px";
+        alert("L'article a bien été retiré de votre wishlist !");
         document.getElementById("psty2").textContent--;
       }
     }
@@ -490,10 +494,12 @@
       if (document.getElementById("hbk5").style.filter !== "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)") {
         document.getElementById("hbk5").style.filter = "invert(35%) sepia(34%) saturate(3369%) hue-rotate(320deg) brightness(107%) contrast(101%)";
         document.getElementById("hbk5").style.width = "27px";
+        alert("L'article a bien été ajouté dans votre wishlist !");
         document.getElementById("psty2").textContent++;
       } else {
         document.getElementById("hbk5").style.filter = "none";
         document.getElementById("hbk5").style.width = "25px";
+        alert("L'article a bien été retiré de votre wishlist !");
         document.getElementById("psty2").textContent--;
       }
     }
@@ -594,4 +600,9 @@
         document.getElementById("hbk12").style.width = "25px";
         document.getElementById("psty2").textContent--;
       }
+    }
+
+    var alerter1 = document.getElementById("alerter1");
+    alerter1.onclick = function () {
+      alert("Votre article a bien été ajouté dans votre panier !");
     }
