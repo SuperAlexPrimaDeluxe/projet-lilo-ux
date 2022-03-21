@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: black;
 }
 .superposition{
     height: 160px;
@@ -104,10 +101,7 @@ hr{
 .poubelle-delete:hover{
     transform: scale(1.03);
 }
-.recapitulatif-wishlist ul, li{
-    list-style: none;
-    padding: 5px;
-}
+
 .btn-1-ajout:hover, .btn-2-valider:hover{
     transform: scale(1.03);
     color: white;
