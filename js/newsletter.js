@@ -9,12 +9,12 @@ class MyNewsLetter extends HTMLElement {
             </p>
         </div>
         <div id="bloc2">
-            <img id="imgnew2" src="../medias/img/newsletter-machine.svg">
+            <img id="imgnew2" src="./medias/img/newsletter-machine.svg">
             <h4 class="h4new">Inscrivez-vous ici!</h4>
 
             <form action="" class="fields">
                 <input type="text" placeholder="Entrez votre adresse email" name="mail" required="">
-                <button id="newb"><a href="merci-new.html"><img src="../medias/icons/newsletters-enveloppe.svg"
+                <button id="newb"><a href="merci-new.html"><img src="./medias/icons/newsletters-enveloppe.svg"
                             class="logoenveloppe" alt=""></a></button>
             </form>
         </div>
