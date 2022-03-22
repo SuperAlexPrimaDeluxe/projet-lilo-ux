@@ -139,6 +139,12 @@ button:hover{
        margin: 0 auto;
     }
 
+    #flexcorrector {
+        margin: 10px !important;
+        width: 80% !important;
+        padding: 15px !important;
+      }
+
     /*titre au dessus de l'image*/
     h2.momoh2{
         font-size: 20px;
@@ -192,11 +198,9 @@ button:hover{
         
     } 
     p.artmoni{
-  
        font-size: 14px;
     }
     button.btnmomo{
-       
         font-size: 20px;
         height: 45px auto;
         width:327px auto;
@@ -206,8 +210,10 @@ button:hover{
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-    
-      
+    }
+
+    .pga_informations #flexcorrector{
+        width: 80%;
     }
 
 

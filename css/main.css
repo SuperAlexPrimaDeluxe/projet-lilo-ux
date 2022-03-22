@@ -384,6 +384,11 @@ p.articlepara {
 }
 
 @media(max-width:768px) {
+  #flexcorrector {
+    margin: 10px;
+    width: 80%;
+    padding: 15px;
+  }
 .superposition h1{
   width: 100%;
   margin: auto;
