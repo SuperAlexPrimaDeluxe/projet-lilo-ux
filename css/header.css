@@ -101,6 +101,10 @@ header .top_header .iconheader img:hover {
     font-weight: bold;
 }
 
+#ultarrow1, #ultarrow2{
+  display: none;
+}
+
 /* Naviguation */
 
 .navheader ul {
@@ -287,6 +291,7 @@ textarea:focus {
     #ultarrow1, #ultarrow2{
         color: white;
         font-size: 10px;
+        display: initial;
     }
 
     .shortkiki {
@@ -380,6 +385,7 @@ textarea:focus {
         padding-left: 10px;
         color: #fff;
         font-weight: 200;
+        background-color: black;
     }
 
     .sous-menuheader a {
@@ -392,7 +398,7 @@ textarea:focus {
 
     .sous-menuheader a:hover {
         /*4*/
-        color: #ff4079;
+        color: white;
     }
 
     .sous-menuheader .sous-menuheader {
