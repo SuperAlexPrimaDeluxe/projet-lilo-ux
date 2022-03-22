@@ -7,8 +7,8 @@ document.getElementById("icon3").src = "../medias/icons/coeur_lilo.svg";
 document.getElementById("burgerheader").src = "../medias/icons/burger.svg"; 
 document.getElementById("closeheader").src = "../medias/icons/close.svg"; 
 document.getElementById("lasupericonederecherche").src = "../medias/icons/search.svg";
-document.getElementById("arrowdown1").src = "../medias/icons/downarrow.svg";
-document.getElementById("arrowdown2").src = "../medias/icons/downarrow.svg";
+// document.getElementById("arrowdown1").src = "../medias/icons/downarrow.svg";
+// document.getElementById("arrowdown2").src = "../medias/icons/downarrow.svg";
 document.getElementById("searchdesktoop").src = "../medias/icons/search.svg";
 
 /* Appel des îcones et img pour le FOOTER */
