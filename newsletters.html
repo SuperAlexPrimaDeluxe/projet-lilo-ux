@@ -6,68 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/newsletters.css">
+    <link rel="stylesheet" href="../css/newsletters.css">
 </head>
-
-<style>
-    #newsletter2{
-        width: 50%;
-        height: 400px;
-        background-color: #f3dde3;
-        position: relative;
-    }
-    #bloc2{
-        width: 100%;
-        background-color: red;
-        position: absolute;
-        bottom: 0;
-    }
-    #imgnew2{
-        width: 200px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 9999;
-    }
-/*mail ensemble*/
-.fields{
-    background-color: aqua;
-    padding: 35px 0 35px 20px;
-    display: flex;
-   
-    height: 28px;
-    font-size: 15px;
-   
-}
-/*mail case*/
-.fields input{
-    width:280px;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    
-    font-size: 15px;
-   
-}
-
-.h4new{
-    padding-left: 20px;
-}
-/*logo enveloppe*/
-.logoenveloppe{
-    padding: 5px;
-    border-bottom-right-radius: 0px;
-    position: relative;
-}
-/*bouton mail*/
-button#newb{
-    border: none;
-    cursor: pointer;
-    background-color: black;
-   
- 
-}
-</style>
-
 <body>
     <div class="newsletter">
         <div class="info">
@@ -100,16 +40,21 @@ button#newb{
 
 
     <div id="newsletter2">
-        <img id="imgnew2" src="./medias/img/newsletter-machine.svg">
+        
+        <h2 class="h2new">Ne manquez pas<br>les nouveautés!</h2>
+        <div classe="sous-texte1">
+            <p class="h3new">Abonnez-vous à la newsletter de<br> Lilo pour recevoir toutes les <br>actualités
+            </p>
+        </div>
         <div id="bloc2">
+            <img id="imgnew2" src="../medias/img/newsletter-machine.svg">
             <h4 class="h4new">Inscrivez-vous ici!</h4>
 
             <form action="" class="fields">
                 <input type="text" placeholder="Entrez votre adresse email" name="mail" required="">
-                <button id="newb"><a href="merci-new.html"><img src="./medias/icons/newsletters-enveloppe.svg"
+                <button id="newb"><a href="merci-new.html"><img src="?./medias/icons/newsletters-enveloppe.svg"
                             class="logoenveloppe" alt=""></a></button>
             </form>
-            
         </div>
     </div>
 </body>
