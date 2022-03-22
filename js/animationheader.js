@@ -71,7 +71,7 @@ else{
   console.log("la bille noire de Konoha");
 }
 
-var delamuerte = document.getElementById("envoidelamort");
-delamuerte.onclick = function () {
-alert("Votre demande à bien été envoyée à LILO.");
-}
+// var delamuerte = document.getElementById("envoidelamort");
+// delamuerte.onclick = function () {
+// alert("Votre demande à bien été envoyée à LILO.");
+// }

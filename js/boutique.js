@@ -1,29 +1,25 @@
     // Quand on clique sur le li tous les produits.
     var liclick1 = document.getElementById("clicbold0");
     liclick1.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/boutique.html');
+      window.open('boutique.html');
     }
 
     //Quand on clique sur le li Badges.
     var liclick2 = document.getElementById("clicbold1");
     liclick2.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/badges.html');
+      window.open('badges.html');
     }
 
     //Quand on clique sur le li Bijoux.
     var liclick3 = document.getElementById("clicbold2");
     liclick3.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/bijoux.html');
+      window.open('bijoux.html');
     }
 
     //Quand on clique sur le li Papeterie.
     var liclick4 = document.getElementById("clicbold3");
     liclick4.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/papetrie.html');
+      window.open('papetrie.html');
     }
 
     //Ensemble des produits
@@ -31,7 +27,6 @@
     console.log(touspd.textContent);
 
     if (touspd.textContent.includes('LA BOUTIQUE')) {
-      alert("OK");
       document.getElementById("clicbold0").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold0").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold0").style.borderTop = "1px solid #FF4070";
@@ -47,7 +42,6 @@
     console.log(badges.textContent);
 
     if (badges.textContent.includes('BADGES')) {
-      alert("OK");
       document.getElementById("clicbold1").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold1").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold1").style.borderTop = "1px solid #FF4070";
@@ -63,7 +57,6 @@
     console.log(bijoux.textContent);
 
     if (bijoux.textContent.includes('BIJOUX')) {
-      alert("OK");
       document.getElementById("clicbold2").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold2").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold2").style.borderTop = "1px solid #FF4070";
@@ -78,7 +71,6 @@
     var papeterie = document.getElementById("bannertxt");
     console.log(papeterie.textContent);
     if (papeterie.textContent.includes('PAPETERIE')) {
-      alert("OK");
       document.getElementById("clicbold3").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold3").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold3").style.borderTop = "1px solid #FF4070";
