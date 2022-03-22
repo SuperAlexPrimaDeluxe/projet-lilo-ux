@@ -382,6 +382,11 @@ p.articlepara {
   main{
  
   }
+
+  #kaino{
+    width: 100%;
+    text-align: center;
+  }
   .pga_card {
     height: 360px;
   }
