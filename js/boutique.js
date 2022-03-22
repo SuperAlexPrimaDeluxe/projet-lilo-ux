@@ -101,6 +101,8 @@
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
 
+    var le1 = document.getElementById("v4");
+
     var nouveaufiltre = document.getElementById("clicbold4");
     nouveaufiltre.style.backgroundColor = "white";
     var x = nouveaufiltre.style.backgroundColor;
@@ -217,11 +219,11 @@
 
       /* Conditions d'affichage lors du clic sur le le boutton 2 */
 
-      // /* Quand je clique sur NOUVEAUTES & FAVORIS il affiche le contenu des 2 ou ALL si décoché */
+      // 1 + 2 coché - OK affiche les deux et pas le 3
 
       if (le1.style.display === "block" && le2.style.display === "block") {
 
-        // console.log("les deux s'affichent");
+        console.log("les deux s'affichent");
 
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
@@ -235,8 +237,6 @@
 
       } else if (le1.style.display === "block" && le2.style.display === "none") {
 
-        // console.log("le 1 pd");
-
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
         }
@@ -246,7 +246,9 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-      } else if (le1.style.display === "none" && le2.style.display === "block") {
+      } 
+      
+      else if (le1.style.display === "none" && le2.style.display === "block") {
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "none";
         }
@@ -315,6 +317,8 @@
         le3.style.display = "none";
       }
 
+       // 3 CLICEKR AFFIHCE LES 3
+      
       if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
 
         for (let i = 0; i < nodeList1.length; i++) {
@@ -326,7 +330,7 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "block";
         }
-        console.log("Les 3 sont cochés motherfucka !!!");
+  
 
       } else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "none") {
 
@@ -339,8 +343,47 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-        console.log("Les 3 sont cochés motherfucka !!!");
+        console.log("1+2");
 
+      }
+   
+      else if (le1.style.display === "block" && le3.style.display === "block") {
+
+        console.log("les deux s'affichent");
+
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
+
+      } else if (le1.style.display === "block" && le3.style.display === "none") {
+
+        // console.log("le 1 pd");
+
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "none";
+        }
+      } else if (le1.style.display === "none" && le3.style.display === "block") {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "none";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
       }
     };
 
@@ -593,6 +636,8 @@
         document.getElementById("psty2").textContent--;
       }
     }
+
+    //CODE CI DESSOUS EST UTILISE SIMPLEMENT DANS LE PANIER DU COUP ERREUR DANS LA CONSOLE OK 
 
     var alerter1 = document.getElementById("alerter1");
     alerter1.onclick = function () {
