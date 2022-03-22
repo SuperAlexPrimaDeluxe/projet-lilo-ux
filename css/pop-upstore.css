@@ -55,15 +55,12 @@ hr {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 30%;
-    height: 400px;
-
+    width: 50%;
 }
 
 /*---image pop Upstore-----*/
 .store1 {
     width: 100%;
-    margin-top: 100px;
 }
 
 /*---image petit pop upstore-----*/
@@ -109,7 +106,6 @@ hr {
 .store7 {
     width: 75px;
     background-color: white;
- 
     object-fit: cover;
 
 }
@@ -149,7 +145,7 @@ h4.date {
 p.artmoni {
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
-
+    padding-top: 50px;
 }
 
 img.badge,
@@ -302,15 +298,13 @@ button:hover {
     .texte,
     .titrearticlemomo {
         margin-left: 0px;
-        width: 95%;
-        height: 400px auto;
+        width: 100%;
+        padding: 0;
     }
 
     h3.titrearticlemomo {
-        padding-top: 0px;
+        padding-top: 30px;
         font-size: 20px;
-        text-align: center;
-
     }
 
     h4.date {
