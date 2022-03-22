@@ -88,7 +88,17 @@ background-color: white;
 }
 
 .btn:hover{
+ border: 1px solid#FF4079;
+ color: #FF4079;
+ cursor: pointer;
+}
 
+#phraseintrobulle{
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
