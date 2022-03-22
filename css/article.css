@@ -61,7 +61,7 @@ img.badge {
     height: 537px auto;
     width: 537px auto;
     float: left; */
-    width: 30%;
+    width: 50%;
 }
     /*--- fin image badge-----*/
 
@@ -86,7 +86,7 @@ h3.titrearticlemomo{
 p.artmoni{
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
-
+    margin-top: 25px;
 
 }
 img.badge,.texte{
@@ -106,15 +106,13 @@ button.btnmomo {
     border: none;
     height: 61px;
     padding: 10px;
-    margin: 30px 10px;
-    width: 100%;
+    margin: 30px 0px;
+    width: 30%;
 }
 
 button:hover{
     background-color:#d35379;
     cursor: pointer;
-   
-
 }
 
 .article-all{
@@ -127,6 +125,12 @@ button:hover{
 
 
 /*==================fin: Autres articles récents  proposé en carousel==============================*/
+
+@media (max-width: 1400px){
+    button.btnmomo {
+        width: 100%;
+    }
+}
 
 /*==================RESPONSIVE: 460px==============================*/
 @media (max-width: 768px){
@@ -164,7 +168,7 @@ button:hover{
 
     /*-------- bloc image +texte de l'article---------*/
 
-
+    
 
     .article-all{
      display: inline-block;
@@ -190,14 +194,14 @@ button:hover{
     }
     .texte{
       margin-left: 0px;
-      width: 95%;
+      width: 100%;
       height: 0 auto;
     }
     h3.titrearticlemomo{
         padding-top: 0px;
         font-size: 20px;
-        text-align: center;
-        
+        padding-top: 30px;
+        text-justify: unset;
     } 
     p.artmoni{
        font-size: 14px;
@@ -205,7 +209,7 @@ button:hover{
     button.btnmomo{
         font-size: 20px;
         height: 45px auto;
-        width:100px auto;
+        width:100%;
         padding-left: 0px;
         padding-right: 0px;
         align-items: center;
@@ -217,9 +221,20 @@ button:hover{
     .pga_informations #flexcorrector{
         width: 80%;
     }
+}
 
-
- 
-   
- 
+@media (max-width: 500px){
+    h3.titrearticlemomo{
+        padding-top: 30px;
+        font-size: 20px;
+    } 
+    img.badge{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .datum{
+        font-size: 15px;
+        margin: 0;
+    }
 }
