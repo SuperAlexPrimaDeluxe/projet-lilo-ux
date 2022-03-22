@@ -27,6 +27,21 @@
   padding: 50px 0; 
 }
 
+h2.petitsonge{
+margin-bottom: 20px;
+padding-top: 40px;
+font-size: 30px;
+font-weight: 500;
+line-height: 28px;
+color: #7a7a7a;
+font-family: "Roboto Mono", sans-serif;
+text-align: left;
+}
+
+span.datum{
+  text-align: left;
+}
+
 .btn {
   width: 10%;
   border: #7A7A7A 1px solid;
@@ -364,14 +379,27 @@ p.articlepara {
 
 
 @media(max-width:1440px) {
+  main{
+ 
+  }
   .pga_card {
     height: 360px;
   }
-
+  #textlefter{
+    text-align: left;
+  }
+}
 
 
 
 @media(max-width:1200px) {
+ 
+
+  #flexcorrector {
+    margin: 10px;
+    width: 65%;
+    padding: 15px;
+  }
 
   main#actus {
     display: flex;
@@ -386,7 +414,7 @@ p.articlepara {
 @media(max-width:768px) {
   #flexcorrector {
     margin: 10px;
-    width: 80%;
+    width: 65%;
     padding: 15px;
   }
 .superposition h1{
@@ -438,5 +466,5 @@ p.articlepara {
   width: 90%;
 }
 }
-}
+
 
