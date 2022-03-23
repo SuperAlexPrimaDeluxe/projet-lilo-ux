@@ -459,7 +459,7 @@ img.hbk {
 }
 
 /*Responsive*/
-@media(max-width:1130px) {
+@media(max-width:1500px) {
     .cards.container2 {
         display: flex;
         flex-wrap: wrap;
