@@ -459,9 +459,10 @@ img.hbk {
 }
 
 /*Responsive*/
-@media(max-width:1200px) {
+@media(max-width:1130px) {
     .cards.container2 {
-        grid-template-columns: none;
+        display: flex;
+        flex-wrap: wrap;
     }
     .card2nav {
         display: flex;
@@ -473,6 +474,21 @@ img.hbk {
     .gridelement{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .card2{
+        position: relative;
+overflow: hidden;
+width: 90%;
+margin: 0 auto;
+border: 1px solid black;
+border: none;
+border-radius: 25px;
+max-height: 700px;
+color: white;
+transition: 0.3s ease;
+flex-grow: 1;
+width: 25%;
     }
 
     .gridelement2{
@@ -501,9 +517,7 @@ img.hbk {
 }
 
 @media(max-width:768px) {
-    .cards.container2 {
-        grid-template-columns: none;
-    }
+   
     .card2nav {
         grid-column: 1 / span 2;
     }
