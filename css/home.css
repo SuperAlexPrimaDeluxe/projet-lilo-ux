@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27");
-@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap%27");
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 
-* body {
+/* * body {
     width: 100%;
     margin: 0;
 }
@@ -18,407 +17,257 @@
 
 .pastille-type1{
     background-color: grey;
-}
+} */
 
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
-
-.hachure::after {
-    content: "";
-    display: block;
-    height: 60px;
-    background-image: url(../medias/img/dechirure_lilo.png);
-    width: 100%;
-    transform: rotate(180deg);
-}
-
 
 .hachure {
     width: 100%;
-    background-image: url(../medias/img/home-badge-motif.png);
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    background-position: center;
+    height: 300px;
+    background-image: url(../medias/img/home-badge-motif.png); 
     background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    position: relative;
 }
-
-h2 {
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 80px;
-    text-align: center;
+.hachure::after{
+    width: 100%;
+    height: 60px;
+    content: "";
+    display: block;
+    background-image: url(../medias/img/dechirure_lilo.png);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 270px;
+}
+.phrase-type{
+    height: 200px;
+    width: 1000px;
+    margin: 20px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    
+}
+.phrase-type h2{
     color: rgb(0, 0, 0);
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Special Elite', cursive;
+    font-size: 2.3rem;
+    line-height: 1.9rem;
+    text-align: center;
+    padding: 14px 5px 2px;
+    margin: 10px auto;
+}
+.phrase-type h2:nth-child(1){
+    width: 920px;
+    transform: rotate(-2deg);
+}
+.phrase-type h2:nth-child(2){
+    width: 440px;
 }
 
 /*-------LlLO PRESENTATION-------*/
 
-.lilo {
-    display: flex;
-    align-items: center;
-    width: 65%;
+.indexbyloane{
+    width: 100%;
+    margin: 0 auto;
 }
 
+.lilo {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 100px;
+}
 .lilo-photo {
+    display: block;
     width: 470px;
     border-radius: 10%;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.116);
+    margin-top: 100px;
 }
-
 .logo-lilo {
     width: 450px;
+    padding-bottom: 50px;
 }
-
 .text-lilo {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
+.spanindexbyloane{
+    width: 470px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin: 0 auto;
+}
+.spanindexbyloane p{
+    padding: 10px 0;
+}
 
-.indexbyloane{
+/* --------------------- */
+
+.block-pola{
     width: 100%;
-}
-
-.indexbyloane a{
-    width: 50%;
-}
-
-span.spanindexbyloane {
-    padding: 60px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    line-height: 2;
-    text-align: center;
-}
-
-#rose {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    background-color: #373737;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding: 16px 8px;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 100px;
-}
-
-#rose:hover{
-    animation-direction: alternate-reverse;
-    background-color: #D35379;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
-    
-}
-
-#rose2 {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    background-color: #e9beca;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    padding: 16px 8px;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 100px;
-}
-
-#rose2:hover{
-    animation-direction: alternate-reverse;
-    background-color: #D35379;
-    color: white;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgba(0, 0, 0, 0.152);
-    
-}
-
-
-/*-------BLOCK_POLAROID-------*/
-
-
-.block-pola::before {
-    content: "";
-    display: block;
-    height: 65px;
-    background-image: url(../medias/img/dechirure_lilo.png);
-    width: 100%;
-}
-
-
-.block-pola::after {
-    content: "";
-    display: block;
-    height: 65px;
-    background-image: url(../medias/img/dechirure_lilo.png);
-    width: 100%;
-    transform: rotate(180deg);
-}
-
-.block-pola {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #201a25;
 }
-
-.polaroid {
+.block-pola::before{
     width: 100%;
+    height: 60px;
+    content: "";
+    display: block;
+    background-image: url(../medias/img/dechirure_lilo.png);
+    background-repeat: repeat-x;
 }
-
-a.indexbyloane {
-    background-color: #373737;
-    font-family: 'Montserrat', sans-serif;
+.block-pola h1{
+    display: block;
+    width: 600px;
     color: white;
-    text-decoration: none;
-    border: none;
-    padding: 10px 15px;
+    font-size: 3rem;
+    line-height: 3rem;
     text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
+    font-family: 'Special Elite', sans-serif;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 43px 0 28px;
+    margin: 100px auto 0;
 }
-
-a.indexbyloane:hover{
-    background-color: #D35379;
-
+.polaroid{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
 }
-
-
-
-/*-------POLAROID-------*/
-
-h1 {
-    font-family: 'Lily Script One', cursiv;
-    color: white;
-    font-size: 70px;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
-    padding: 28px;
-
+.box-1a, .box-2a, .box-3a{
+    background-color: rgb(240, 235, 235);
+    padding: 25px;
+    position: relative;
 }
-
-h3 {
-    margin-bottom: 16px;
-    margin-top: 7px;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .collant1 {
+    width: 250px;
+    height: 200px;
     position: absolute;
     top: -111px;
     left: 61px;
     transform: rotate(354deg);
 }
-
 .collant2 {
+    width: 250px;
+    height: 200px;
     position: absolute;
     top: -106px;
     left: 52px;
     transform: rotate(344deg);
 }
-
 .collant3 {
+    width: 250px;
+    height: 200px;
     position: absolute;
     top: -111px;
     left: 61px;
     transform: rotate(171deg);
 }
-
-.collant4 {
-    position: absolute;
-    top: -111px;
-    left: 61px;
-    transform: rotate(354deg);
+h3 {
+    color: black;
+    margin-bottom: 16px;
+    margin-top: 7px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
-
-.collant5 {
-    position: absolute;
-    top: -111px;
-    left: 61px;
-    transform: rotate(354deg);
+.indexbyloane-a{
+    width: 200px;
+    display: block;
+    color: white;
+    background-color: #373737;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 10px 0;
+    margin-left: 0;
+    cursor: pointer;
+    transition: transform 0.5s;
 }
-
-.collant6 {
-    position: absolute;
-    top: -111px;
-    left: 61px;
-    transform: rotate(354deg);
+.indexbyloane-a:hover{
+    transform: scale(1.03);
+    background-color: #D35379;
 }
-
-.ligne-box1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.box1 {
-    margin: 60px;
-    padding: 20px;
-    background-color: rgb(240, 235, 235);
-    z-index: 0;
+.box-1a {
     transform: rotate(3deg);
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+    transition: transform 0.5s;
 }
-
-.box2 {
-    margin: 60px;
-    padding: 20px;
-    background-color: rgb(235, 235, 235);
-    z-index: 0;
+.box-1a:hover{
+    transform: rotate(5deg);
+}
+.box-2a{
     transform: rotate(1deg);
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+    transition: transform 0.5s;
 }
-
-.box3 {
-    margin: 60px;
-    padding: 20px;
-    background-color: rgb(243, 242, 242);
-    z-index: 0;
+.box-2a:hover{
+    transform: rotate(5deg);
+}
+.box-3a{
     transform: rotate(-4deg);
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
-
+    transition: transform 0.5s;
 }
-
-
-.ligne-box2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.box-3a:hover{
+    transform: rotate(5deg);
 }
-
-
-.box4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-    margin: 60px;
-    padding: 20px;
-    width: 100%;
-    height: 400px;
-    border: 1px solid white;
-    background-color: #201a25;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
+.box-1b, .box-2b, .box-3b{
+    width: 300px;
+    color: white;
+    padding: 20px 0;
+    margin: 50px 0 0;
 }
-
-.box5 {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-    margin: 60px;
-    padding: 20px;
-    width: 100%;
-    height: 400px;
-    border: 1px solid white;
-    background-color: #201a25;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
-}
-
-.box6 {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-    margin: 60px;
-    padding: 20px;
-    width: 100%;
-    height: 400px;
-    border: 1px solid white;
-    background-color: #201a25;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%), 10px 9px 20px 11px rgb(0 0 0 / 25%);
-}
-
-
-
-.box3:hover {
+.rouge-levre{
+    display: block;
+    width: 280px;
+    margin: 0 100px 0 auto;
     transform: rotate(10deg);
 }
-.box2:hover {
-    transform: rotate(10deg);
+.rose2 {
+    width: 500px;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin: 70px auto;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: transform 0.5s;
 }
-.box1:hover {
-    transform: rotate(10deg);
+.rose2:hover{
+    transform: scale(1.03);
+    color: #D35379;
+    border: 3px solid #D35379;
 }
-
-
-.box::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    top: -30px;
-    left: -35px;
-    transform: rotate(-15deg);
-    background-image: url(./media/collant);
-    background-size: cover;
-    z-index: 10;
-}
-
-
-
-@media (max-width: 1300px) {
-    .main {
-        width: 100%;
-    }
-
-    .ligne-box1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ligne-box2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hachure {
-        width: 100%;
-    }
-
-    body {
-        width: 100%;
-    }
-
-    .lilo {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .polaroid {
-        display: flex;
-        align-content: center;
-    }
-
+.newsletter{
+    height: 300px;
+    background-color: #201a25;
 }
 
-@media (max-width: 840px) {
+/* @media (max-width: 840px) {
     .main {
         width: 100%;
     }
@@ -532,4 +381,4 @@ h3 {
     .lilo-photo {
         width: 178px;
     }
-}
+} */
