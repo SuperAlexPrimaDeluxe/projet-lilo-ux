@@ -11,6 +11,7 @@
 
 #allb1, #allb2, #allb3, #allb4{
   background-color: white;
+  cursor: pointer;
 }
 
 #myBtnContainer {
