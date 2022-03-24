@@ -1,29 +1,25 @@
     // Quand on clique sur le li tous les produits.
     var liclick1 = document.getElementById("clicbold0");
     liclick1.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/boutique.html');
+      window.open('boutique.html');
     }
 
     //Quand on clique sur le li Badges.
     var liclick2 = document.getElementById("clicbold1");
     liclick2.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/badges.html');
+      window.open('badges.html');
     }
 
     //Quand on clique sur le li Bijoux.
     var liclick3 = document.getElementById("clicbold2");
     liclick3.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/bijoux.html');
+      window.open('bijoux.html');
     }
 
     //Quand on clique sur le li Papeterie.
     var liclick4 = document.getElementById("clicbold3");
     liclick4.onclick = function () {
-      alert("ssssss");
-      window.open('/projet-lilo-ux/papetrie.html');
+      window.open('papetrie.html');
     }
 
     //Ensemble des produits
@@ -31,7 +27,6 @@
     console.log(touspd.textContent);
 
     if (touspd.textContent.includes('LA BOUTIQUE')) {
-      alert("OK");
       document.getElementById("clicbold0").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold0").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold0").style.borderTop = "1px solid #FF4070";
@@ -47,7 +42,6 @@
     console.log(badges.textContent);
 
     if (badges.textContent.includes('BADGES')) {
-      alert("OK");
       document.getElementById("clicbold1").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold1").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold1").style.borderTop = "1px solid #FF4070";
@@ -63,7 +57,6 @@
     console.log(bijoux.textContent);
 
     if (bijoux.textContent.includes('BIJOUX')) {
-      alert("OK");
       document.getElementById("clicbold2").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold2").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold2").style.borderTop = "1px solid #FF4070";
@@ -78,7 +71,6 @@
     var papeterie = document.getElementById("bannertxt");
     console.log(papeterie.textContent);
     if (papeterie.textContent.includes('PAPETERIE')) {
-      alert("OK");
       document.getElementById("clicbold3").style.borderRight = "1px solid #FF4070";
       document.getElementById("clicbold3").style.borderBottom = "1px solid #FF4070";
       document.getElementById("clicbold3").style.borderTop = "1px solid #FF4070";
@@ -108,6 +100,8 @@
     }
 
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
+
+    var le1 = document.getElementById("v4");
 
     var nouveaufiltre = document.getElementById("clicbold4");
     nouveaufiltre.style.backgroundColor = "white";
@@ -225,11 +219,11 @@
 
       /* Conditions d'affichage lors du clic sur le le boutton 2 */
 
-      // /* Quand je clique sur NOUVEAUTES & FAVORIS il affiche le contenu des 2 ou ALL si décoché */
+      // 1 + 2 coché - OK affiche les deux et pas le 3
 
       if (le1.style.display === "block" && le2.style.display === "block") {
 
-        // console.log("les deux s'affichent");
+        console.log("les deux s'affichent");
 
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
@@ -243,8 +237,6 @@
 
       } else if (le1.style.display === "block" && le2.style.display === "none") {
 
-        // console.log("le 1 pd");
-
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "block";
         }
@@ -254,7 +246,9 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-      } else if (le1.style.display === "none" && le2.style.display === "block") {
+      } 
+      
+      else if (le1.style.display === "none" && le2.style.display === "block") {
         for (let i = 0; i < nodeList1.length; i++) {
           nodeList1[i].style.display = "none";
         }
@@ -323,6 +317,8 @@
         le3.style.display = "none";
       }
 
+       // 3 CLICEKR AFFIHCE LES 3
+      
       if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "block") {
 
         for (let i = 0; i < nodeList1.length; i++) {
@@ -334,7 +330,7 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "block";
         }
-        console.log("Les 3 sont cochés motherfucka !!!");
+  
 
       } else if (le1.style.display === "block" && le2.style.display === "block" && le3.style.display === "none") {
 
@@ -347,8 +343,47 @@
         for (let k = 0; k < nodeList3.length; k++) {
           nodeList3[k].style.display = "none";
         }
-        console.log("Les 3 sont cochés motherfucka !!!");
+        console.log("1+2");
 
+      }
+   
+      else if (le1.style.display === "block" && le3.style.display === "block") {
+
+        console.log("les deux s'affichent");
+
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
+
+      } else if (le1.style.display === "block" && le3.style.display === "none") {
+
+        // console.log("le 1 pd");
+
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "block";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "none";
+        }
+      } else if (le1.style.display === "none" && le3.style.display === "block") {
+        for (let i = 0; i < nodeList1.length; i++) {
+          nodeList1[i].style.display = "none";
+        }
+        for (let j = 0; j < nodeList2.length; j++) {
+          nodeList2[j].style.display = "none";
+        }
+        for (let k = 0; k < nodeList3.length; k++) {
+          nodeList3[k].style.display = "block";
+        }
       }
     };
 
@@ -601,6 +636,8 @@
         document.getElementById("psty2").textContent--;
       }
     }
+
+    //CODE CI DESSOUS EST UTILISE SIMPLEMENT DANS LE PANIER DU COUP ERREUR DANS LA CONSOLE OK 
 
     var alerter1 = document.getElementById("alerter1");
     alerter1.onclick = function () {

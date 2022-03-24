@@ -2,44 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 /*1ère partie= rose pale*/
-.newsletter{
+.newsletter {
     display: flex;
     width: 695px;
     background-color: #f3dde3;
     margin: 0 auto;
     position: relative;
-  
+
 }
+
 /*Ne manquez pas...=h2*/
-.h2new{
-    padding-left: 65px;
+.h2new {
+    padding-left: 20px;
     background: transparent;
     text-align: left;
     margin: 0;
-    color:black;
-    font-family:'Montserrat', sans-serif;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
     font-size: 38px;
     display: block;
 
 }
+
 /*Abonnez-vous..=h3*/
-.h3new{
-    font-family:'Montserrat', sans-serif;
-    padding-left: 65px;
+.h3new {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
     font-size: 14px;
     font-weight: normal;
-   
+
 }
+
 /*2ème partie= rose fonce*/
-.bloc2{
+.bloc2 {
     height: 100px;
     background-color: #e6b3c1bd;
     display: flex;
     width: 695px;
     margin: 0 auto;
 }
+
 /*Inscivez vous=h4*/
-.h4new{
+.h4new {
     padding-left: 135px;
     margin: 0;
     padding-top: 10px;
@@ -49,42 +53,53 @@
     color: white;
 
 }
+
 /*mail ensemble*/
-.fields{
-    
+.fields {
+
     padding-left: 65px;
     display: flex;
     padding-top: 35px;
     height: 28px;
     font-size: 15px;
-   
+
 }
+
 /*mail case*/
-.fields input{
-    width:280px;
+.fields input {
+    width: 60%;
     border: none;
     font-family: "Montserrat", sans-serif;
-    
     font-size: 15px;
-   
+
 }
+
 /*logo enveloppe*/
-.logoenveloppe{
+.logoenveloppe {
     padding: 5px;
     border-bottom-right-radius: 0px;
     position: relative;
 }
+
+
 /*bouton mail*/
-button#newb{
+button#newb {
     border: none;
     cursor: pointer;
     background-color: black;
-   
- 
+
+
 }
 
 /*3eme partie: image (machine à écrire)*/
-img#imgnew{
+img#imgnew {
+    width: 250px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+img#imgnew2 {
     width: 250px;
     bottom: 0;
     right: 0;
@@ -92,143 +107,142 @@ img#imgnew{
 
 }
 
-input:focus{
+input:focus {
     box-shadow: none;
 }
-  
-  /*Responsive: 
-  Sur les écran de 520px de large ou moin, les colonnes s'empile les unes sur les autres */
 
-@media (max-width: 768px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-    .bloc2{
-        width: 174%;
-    }
-    
-    #imgnew{
-        display: none;
-    }
+/* BOUTON ALEX V2 */
+
+main-newsletter {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#newsletter2 {
+    width: 40%;
+    height: 250px;
+    background-color: #f3dde3;
+    position: relative;
+}
+
+#bloc2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/*mail ensemble*/
+.fields {
+    background-color: #e6b3c1bd;
+    ;
+    padding: 35px 0 35px 20px;
+    display: flex;
+
+    height: 28px;
+    font-size: 15px;
 
 }
 
-@media (max-width: 675px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-    .bloc2{
-        width: 174%;
-    }
-    
-    #imgnew{
-        display: none;
-    }
-
-}
-
-@media (max-width: 250px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-
-    .bloc1{
-        margin-left: -25px;
-    }
-    
-    .bloc2{
-        width: 89%;
-        margin-left: -25px;
-    }
-    
-    #imgnew{
-        display: none;
-    }
-
-}
-
-@media (max-width: 375px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-
-    .bloc1{
-        margin-left: -25px;
-    }
-    
-    .bloc2{
-        width: 89%;
-        margin-left: -25px;
-    }
-    
-    #imgnew{
-        display: none;
-    }
-
-}
-
-@media (max-width: 414px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-
-    .bloc1{
-        margin-left: -25px;
-    }
-    
-    .bloc2{
-        width: 93%;
-        margin-left: -25px;
-    }
-    
-    #imgnew{
-        display: none;
-    }
-
-}
-
-@media (max-width: 560px){
-    .newsletter {
-        width: 100%;
-        margin-bottom: -50px;
-    }
-
-    .bloc1{
-        margin-left: -25px;
-    }
-    
-    .bloc2{
-        width: 116%;
-        
-        margin-left: -25px;
-    }
-    
-    #imgnew{
-        display: none;
-    }
-
-}
-/*case pour écrire l'adresse mail*/
-/*.caseemail{
-    height: 27px;
-    width: 237px;
-    background-color: rgb(252, 249, 249);
-    border:none;
-    vertical-align: middle;
-    display:inline-block;
-}/*bouton envoi*/
-/*.button1{
-    cursor: pointer;
-    height:30px;
-    width: 46px;
-    margin-top: 56px;
-    background-color:black;
+/*mail case*/
+.fields input {
+    width: 60%;
     border: none;
-    vertical-align:bottom;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
 
+}
+
+.h4new {
+    padding-left: 20px;
+}
+
+/*logo enveloppe*/
+.logoenveloppe {
+    padding: 5px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+}
+
+/*bouton mail*/
+button#newb {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+
+
+}
+
+/*Responsive: 
+  Sur les écran de 520px de large ou moin, les colonnes s'empile les unes sur les autres */
+@media (max-width: 1700px) {
+    #newsletter2 {
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 1300px) {
+    #newsletter2 {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    #newsletter2 {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 900px) {
+    #newsletter2 {
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #newsletter2 {
+        width: 100%;
+
+    }
+
+    .bloc2 {
+        width: 174%;
+    }
+
+    .fields input {
+        width: 60%;
+    }
+
+    img#imgnew2 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 540px) {
+    .fields input {
+        width: 50%;
+    }
+
+    img#imgnew2 {
+        width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #newsletter2 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .fields input {
+        width: 90%;
+    }
+
+    img#imgnew2 {
+        display: none;
+    }
 }
