@@ -480,7 +480,8 @@ textarea:focus {
         font-weight: 700;
         line-height: 0 !important;
         text-indent: 40px;
-        padding: 10px 0;
+        padding: 12px 0;
+        border: none;
     }
 
     .supersearch input {
