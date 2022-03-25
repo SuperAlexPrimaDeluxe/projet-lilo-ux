@@ -43,7 +43,39 @@ html {
     position: relative;
 }
 
+.superposition {
+    height: 160px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("../medias/img/rectangle_22.jpg");
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
 
+.superposition h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 5px 40px;
+    line-height: 2.8rem;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.superposition::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-image: url("../medias/img/dechirure-cv.webp");
+    position: absolute;
+    top: 120px;
+}
 
 #clicbold0,
 #clicbold1,
@@ -84,6 +116,7 @@ html {
     right: 15px;
     font-size: 30px;
 }
+
 
 
 /* 4) CSS relatif à la grille contenant les produits */
@@ -127,11 +160,6 @@ select {
 del {
     text-decoration-thickness: 1px;
 }
-
-.productdescription span {
-    color: #F04022;
-}
-
 
 .robolight {
     color: white;
@@ -246,6 +274,7 @@ figure {
     color: white;
     padding: 30px;
     margin: 0;
+    height: 50px;
 }
 
 .card img {
@@ -254,9 +283,14 @@ figure {
 
 .productdescription {
     padding: 0 30px 0 30px;
-    color: #7a7a7a;
+    color: #bdbdbd;
     margin: 0;
     font-size: 16px;
+    height: 50px;
+}
+
+.grugementdernier{
+    color: red;
 }
 
 .infoprix {
@@ -310,22 +344,24 @@ ul.pb_nav_lat_title>li {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 1.2em;
-    color: #26A08A;
+    color: white;
     position: absolute;
-    left: 94%;
-    transform: translateX(-100%);
+    padding: 4px 20px;
+    right: 0;
     top: 3%;
+    background-color: #26A08A;
 }
 
 .outmention {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 1.2em;
-    color: #a02626;
+    color: white;
     position: absolute;
-    left: 94%;
-    transform: translateX(-100%);
+    padding: 4px 20px;
+    right: 0;
     top: 3%;
+    background-color: rgb(212, 0, 0);
 }
 
 .reduction2 {
@@ -478,7 +514,74 @@ img.hbk {
 }
 
 /*Responsive*/
-@media(max-width:1400px) {
+
+@media(max-width:1600px) {
+    .cards.container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card2nav {
+        display: flex;
+        grid-column: 1 / span 3;
+    }
+
+    .card2nav ul {
+        width: 60%;
+    }
+
+    .gridelement {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card2 {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid black;
+        border: none;
+        border-radius: 25px;
+        max-height: 700px;
+        color: white;
+        transition: 0.3s ease;
+        flex-grow: 1;
+        width: 20%;
+    }
+
+    .card2 img {
+        object-position: center;
+        width: 100%;
+    }
+
+    .gridelement2 {
+        flex-direction: column;
+    }
+
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .GE2:hover {
+        background-color: #ff4079;
+    }
+
+    #inputsearchmobile {
+        width: 97%;
+    }
+}
+
+@media(max-width:1401px) {
     .cards.container2 {
         display: flex;
         flex-wrap: wrap;
@@ -513,7 +616,7 @@ img.hbk {
         width: 20%;
     }
 
-    .card2 img{
+    .card2 img {
         object-position: center;
         width: 100%;
     }
@@ -564,13 +667,76 @@ img.hbk {
         flex-grow: 1;
         width: 25%;
     }
-    
-    .card2 img{
+
+    .card2 img {
+        object-position: center;
+        width: 100%;
+    }
+}
+
+@media(max-width:880px) {
+    .cards.container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card2nav {
+        display: flex;
+        grid-column: 1 / span 3;
+    }
+
+    .card2nav ul {
+        width: 50%;
+    }
+
+    .gridelement {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card2 {
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 1px solid black;
+        border: none;
+        border-radius: 25px;
+        max-height: 700px;
+        color: white;
+        transition: 0.3s ease;
+        flex-grow: 1;
+        width: 40%;
+    }
+
+    .card2 img {
         object-position: center;
         width: 100%;
     }
 
+    .gridelement2 {
+        flex-direction: column;
+    }
 
+    .GE2 {
+        display: block;
+        width: 80%;
+        text-align: center;
+        background-color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .GE2:hover {
+        background-color: #ff4079;
+    }
+
+    #inputsearchmobile {
+        width: 97%;
+    }
 }
 
 @media(max-width:768px) {

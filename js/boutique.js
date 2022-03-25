@@ -97,8 +97,10 @@
     } else if (badgesp1.textContent.includes('46 résultats sur 46')) {
       document.getElementById("linktonumero4").style.backgroundColor = "#FF4079";
       document.getElementById("linktonumero4").style.color = "white";
+    } else if (badgesp1.textContent.includes('12 résultats sur 12')) {
+      document.getElementById("linktonumero1").style.backgroundColor = "#FF4079";
+      document.getElementById("linktonumero1").style.color = "white";
     }
-
     /* CHANGEMENT AU CLIC POUR LE FILTRE NOUVEAUTE */
 
     var le1 = document.getElementById("v4");
