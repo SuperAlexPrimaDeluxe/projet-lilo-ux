@@ -471,7 +471,7 @@ textarea:focus {
         position: absolute;
         top: 0;
         right: 0;
-        width: 100%;
+        width: 90%;
     }
 
     #inputsearchmobile {
