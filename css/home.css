@@ -27,10 +27,10 @@
     font-size: 18px;
 }
 
-.hachure {
+.hachure{
     width: 100%;
     height: 300px;
-    background-image: url(../medias/img/home-badge-motif.png); 
+    background-image: url(../images/rectangle_22.jpg); 
     background-size: cover;
     background-position: center;
     margin-bottom: 100px;
@@ -47,13 +47,10 @@
     top: 270px;
 }
 .phrase-type{
-    height: 200px;
-    width: 1000px;
-    margin: 20px;
+    height: 300px;
+    width: 100%;
+    /* margin: 20px; */
     position: absolute;
-    top: 60px;
-    right: 50px;
-    
 }
 .phrase-type h2{
     color: rgb(0, 0, 0);
@@ -63,24 +60,34 @@
     line-height: 1.9rem;
     text-align: center;
     padding: 14px 5px 2px;
-    margin: 10px auto;
+    margin: 15px auto;
+    position: absolute;
 }
-.phrase-type h2:nth-child(1){
-    width: 920px;
+.hach-a, .hach-a-bis{
+    display: none;
+}
+.phrase-type .hach-first{
+    width: 910px;
     transform: rotate(-2deg);
+    top: 20%;
+    right: 6%;
 }
-.phrase-type h2:nth-child(2){
+.phrase-type .hach-b{
+    display: block;
     width: 440px;
-}
+    top: 60%;
+    right: 25%;
+} 
+
 
 /*-------LlLO PRESENTATION-------*/
+
 
 .indexbyloane{
     width: 100%;
     margin: 0 auto;
 }
-
-.lilo {
+.lilo{
     width: 75%;
     display: flex;
     align-items: center;
@@ -115,7 +122,9 @@
     padding: 10px 0;
 }
 
+
 /* --------------------- */
+
 
 .block-pola{
     width: 100%;
@@ -143,7 +152,7 @@
     margin: 100px auto 0;
 }
 .polaroid{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -154,7 +163,7 @@
     padding: 25px;
     position: relative;
 }
-.collant1 {
+.collant1{
     width: 250px;
     height: 200px;
     position: absolute;
@@ -162,7 +171,7 @@
     left: 61px;
     transform: rotate(354deg);
 }
-.collant2 {
+.collant2{
     width: 250px;
     height: 200px;
     position: absolute;
@@ -170,7 +179,7 @@
     left: 52px;
     transform: rotate(344deg);
 }
-.collant3 {
+.collant3{
     width: 250px;
     height: 200px;
     position: absolute;
@@ -178,7 +187,7 @@
     left: 61px;
     transform: rotate(171deg);
 }
-h3 {
+h3{
     color: black;
     margin-bottom: 16px;
     margin-top: 7px;
@@ -267,118 +276,130 @@ h3 {
     background-color: #201a25;
 }
 
-/* @media (max-width: 840px) {
-    .main {
-        width: 100%;
-    }
 
-    .ligne-box1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .ligne-box2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hachure {
-        width: 100%;
-    }
-
-    body {
-        width: 100%;
-    }
-
+@media (max-width: 1300px) {
     .lilo {
-        display: flex;
-        flex-direction: column;
-
+        flex-direction: column-reverse; 
     }
-
-    .lilo:div:nth-of-type(1){
-        background-color: #D35379;
+    .spanindexbyloane p{
+        margin: 0;
     }
-
-    .lilo-photo {
-        width: 400px;
-    }
-
     .polaroid{
-        display: flex;
+        width: 100%;
         flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .box-badges, .box-papeterie{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+
+    }
+    .box-bijoux{
+        width: 70%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+    }
+    .box-1a, .box-2a, .box-3a{
+        width: 279px;
+        background-color: rgb(240, 235, 235);
+        padding: 25px;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 1045px) {
+    .hach-first{
+        display: none;
+        }
+    .hach-a{
+        display: block;
+        width: 370px;
+        top: 13%;
+        right: 15%;
+        position: absolute; 
+        }
+    .hach-a-bis{
+        display: block;
+        width: 530px;
+        top: 35%;
+        right: 10%;
+        transform: rotate(-3deg);
+        position: absolute;
+        }
+    .hach-b{
+        display: block;
+        width: 160px;
+        top: 50%;
+        right: 15% ;
+        position: absolute;
+        }
+} 
+
+
+@media (max-width: 975px) {
+    .box-badges, .box-bijoux, .box-papeterie{
+        flex-direction: column;
+        justify-content: center;    
     }
 }
 
 
 @media (max-width: 768px) {
-    .main {
-        width: 100%;
-    }
-
-    .ligne-box1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ligne-box2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hachure {
-        width: 100%;
-    }
-
-    body {
-        width: 100%;
-    }
-
-    .lilo {
-        display: flex;
-        flex-direction: column;
-
+    .block-pola h1{
+        width: 300px;
     }
     .lilo-photo {
-        width: 248px;
+        width: 360px;
     }
 }
 
-@media (max-width: 350px) {
-    .main {
-        width: 100%;
-    }
 
-    .ligne-box1 {
+@media (max-width: 680px) {
+    .polaroid{
+        overflow: hidden;
+    }
+    .phrase-type .hach-first{
+        display: none;
+    }
+    .phrase-type{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+    .phrase-type h2{
+        position: static;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .hach-a{
+        position: static;
+        width: 160px;
+     }
+    .hach-a-bis{
+        position: static;
+        width: 230px;
+    }
+    .phrase-type .hach-b{
+        position: static;
+        width: 190px;
     }
 
-    .ligne-box2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    .spanindexbyloane p{
+            width: 90%;
+            margin: 0 auto;
+        }
 
-    .hachure {
-        width: 100%;
-    }
+    .rose2{
+        width: 90%;
+        }
+}
 
-    body {
-        width: 100%;
-    }
-
-    .lilo {
-        display: flex;
-        flex-direction: column;
-
-    }
-    .lilo-photo {
-        width: 178px;
-    }
-} */
