@@ -442,7 +442,7 @@ textarea:focus {
     }
 
     #burgerheader {
-        width: 30px;
+        width: 29px;
     }
 
     .is-open {
@@ -453,7 +453,7 @@ textarea:focus {
     #closeheader {
         display: none;
         width: 27px;
-        height: 27px;
+        height: 21px;
     }
 
     #sousmenuboutique {
