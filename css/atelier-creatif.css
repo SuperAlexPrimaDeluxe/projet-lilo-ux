@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+main-newsletter{
+    margin: 100px;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -124,7 +128,6 @@ p {
     margin-left: 36px;
     width: 318px;
     grid-column: 4;
-
     margin-right: 65px;
 
 }
@@ -167,7 +170,6 @@ p {
   
     .flexermobile {
         display: initial;
-       
         flex: 1;
     }
 

@@ -14,8 +14,8 @@ class MyNewsLetter extends HTMLElement {
 
             <form action="" class="fields">
                 <input type="text" placeholder="Entrez votre adresse email" name="mail" required="">
-                <button id="newb"><a href="merci-new.html"><img src="./medias/icons/newsletters-enveloppe.svg"
-                            class="logoenveloppe" alt=""></a></button>
+                <button id="newb"><a href="merci-new.html" id="sendolink"><img src="./medias/icons/newsletters-enveloppe.svg"
+                            class="logoenveloppe" id="loppe" alt=""></a></button>
             </form>
         </div>
     </div>`

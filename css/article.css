@@ -6,10 +6,10 @@
 /*===============================Header=============================================*/
 
 *{
-    margin:0;
+    /* margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; */
 }
 html{
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +17,10 @@ html{
     font-size: 18px;
     text-align: justify; 
     text-justify: inter-word;
+}
+
+main-newsletter{
+    margin: 100px;
 }
 
 /*==========================================Main================================================*/
@@ -221,6 +225,9 @@ button:hover{
     .pga_informations #flexcorrector{
         width: 80%;
     }
+    main-newsletter{
+        margin: 0;
+    }
 }
 
 @media (max-width: 500px){
@@ -235,6 +242,9 @@ button:hover{
     }
     .datum{
         font-size: 15px;
+        margin: 0;
+    }
+    main-newsletter{
         margin: 0;
     }
 }
