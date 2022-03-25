@@ -207,9 +207,18 @@ input{
 }
 
 
+@media(max-width:1150px){
+    .all {
+        width: 90%;
+    }
+    #lastspanfooter{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+    }
+}
 
-
-@media(max-width:768px) {
+@media(max-width:800px) {
     .footer {
         width: 100%;
         height: auto;
@@ -279,5 +288,9 @@ input{
     }
 
       .column:nth-child(6) { order: -1; }
+
+      #lastspanfooter{
+        padding-top: 30px;
+      }
 
 }
