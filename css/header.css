@@ -28,7 +28,7 @@ header .top_header {
 }
 
 #logoheader {
-    width: 100px;
+    width: 70px;
     opacity: 90%;
     transition: .4s ease;
 }
@@ -471,7 +471,7 @@ textarea:focus {
         position: absolute;
         top: 0;
         right: 0;
-        width: 90%;
+        width: 100%;
     }
 
     #inputsearchmobile {
