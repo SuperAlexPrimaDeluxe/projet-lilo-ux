@@ -517,7 +517,8 @@ textarea:focus {
 
     header .top_header {
         padding: 0px;
-        
+        height: initial;
+        width: 98%;   
     }
 
     #arrowdown1 {
