@@ -28,7 +28,7 @@ header .top_header {
 }
 
 #logoheader {
-    width: 70px;
+    width: 100px;
     opacity: 90%;
     transition: .4s ease;
 }
@@ -286,6 +286,10 @@ textarea:focus {
     header {
         background-size: 100% auto;
         background-repeat: no-repeat;
+    }
+
+    #logoheader {
+        width: 70px;
     }
 
     #ultarrow1, #ultarrow2{
