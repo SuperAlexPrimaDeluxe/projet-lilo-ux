@@ -117,6 +117,57 @@ html {
     font-size: 30px;
 }
 
+#gdd1{
+visibility: hidden;
+}
+
+#gdd2{
+    display: none;   
+}
+
+
+#gdd3{
+    display: none;  
+}
+
+
+#gdd4{
+    display: none; 
+}
+
+
+#gdd5{
+    visibility: hidden;
+}
+
+
+#gdd6{
+    display: none; 
+}
+
+#gdd7{
+    visibility: hidden;
+}
+
+#gdd8{
+    display: none;  
+}
+
+#gdd9{
+    display: none;
+}
+
+#gdd10{
+    display: none; 
+}
+
+#gdd11{
+    visibility: hidden;
+}
+
+#gdd12{
+    display: none;
+}
 
 /* 4) CSS relatif à la grille contenant les produits */
 
@@ -273,6 +324,7 @@ figure {
     color: white;
     padding: 30px;
     margin: 0;
+    height: 50px;
 }
 
 .card img {
@@ -284,6 +336,7 @@ figure {
     color: #bdbdbd;
     margin: 0;
     font-size: 16px;
+    height: 50px;
 }
 
 .grugementdernier{
@@ -578,7 +631,7 @@ img.hbk {
     }
 }
 
-@media(max-width:1400px) {
+@media(max-width:1401px) {
     .cards.container2 {
         display: flex;
         flex-wrap: wrap;
