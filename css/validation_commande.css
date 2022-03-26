@@ -117,12 +117,12 @@ hr{
     align-items: center;
     background-color: black;
     opacity: 90%;
-    color: white;
     padding: 10px 30px;
     margin: 20px 0;
 }
 .votre-commande li{
     padding: 5px 0 0;
+    color: white;
 }
 .newsletter{
     height: 100px;
