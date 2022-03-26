@@ -79,10 +79,10 @@ hr{
     background-size: cover;
 }
 .produit-3{
-    background-image: url("../medias/img/produits/bo_mosaic.webp");
+    background-image: url("../medias/img/produits/cp_fille_craquante.webp");
 }
 .produit-4{
-    background-image: url("../medias/img/produits/cp_fille_craquante.webp");
+    background-image: url("../medias/img/produits/bo_mosaic.webp");
 }
 .produit-1, .produit-2, .produit-3, .produit-4{
     display: block;
