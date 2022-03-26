@@ -110,17 +110,27 @@ main li{
     font-weight: bold;
 }
 .votre-commande{
-    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     opacity: 90%;
     color: white;
-    margin: 10px 0;
+    padding: 10px 30px;
+    margin: 20px 0;
 }
-
-@media screen and (min-width: 769px){
+.votre-commande li{
+    padding: 5px 0 0;
+}
+.newsletter{
+    height: 100px;
+}
+@media screen and (min-width: 768px){
+    .superposition h1{
+        width: 600px;
+        margin-right: 0px;
+        right: 0px;
+    }
     main{
         width: 70%;
         margin: auto;
@@ -128,17 +138,13 @@ main li{
     .article-wl{
         width: 350px;
     }
-    .description-article ul:nth-child(1){
+    .article{
+        width: 40%;
+    }
+    .article ul{
         width: 50%;
     }
-    .description-article ul:nth-child(2){
-        width: 30%;
-    }
     .description-article{
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: center;
-        width: 70%;
+        margin-left: 30px;
     }
-    
 }
