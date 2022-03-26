@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto 100px;
+    margin: 0 auto 200px auto;
 }
 .lilo-photo {
     display: block;
@@ -110,16 +110,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-left: 50px;
 }
 .spanindexbyloane{
-    width: 470px;
+    /* width: 470px; */
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
     margin: 0 auto;
 }
 .spanindexbyloane p{
-    padding: 10px 0;
+    padding: 10px;
 }
 
 
@@ -129,6 +130,7 @@
 .block-pola{
     width: 100%;
     background-color: #201a25;
+    padding-bottom: 100px;
 }
 .block-pola::before{
     width: 100%;
@@ -281,9 +283,14 @@ h3{
 @media (max-width: 1300px) {
     .lilo {
         flex-direction: column-reverse; 
+        width: 90%;
+        /* ***** */
+    }
+    .text-lilo{
+        margin: 0 auto;
     }
     .spanindexbyloane p{
-        margin: 0;
+        margin: 0 auto;
     }
     .polaroid{
         width: 100%;
@@ -357,16 +364,59 @@ h3{
     .block-pola h1{
         width: 300px;
     }
-    .lilo-photo {
+    .lilo-photo{
         width: 360px;
+    }
+    .indexbyloane{
+        width: 90%;
     }
 }
 
 
 @media (max-width: 680px) {
+    .logo-lilo{
+        width: 80%;
+    }
+    .lilo-photo{
+        width: 80%;
+    }
     .polaroid{
         overflow: hidden;
     }
+    .phrase-type .hach-first{
+        display: none;
+    }
+    .phrase-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phrase-type h2{
+        position: static;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 8px 0 0px;
+        margin: 15px auto;
+    }
+    .hach-a{
+        position: static;
+        width: 235px;
+     }
+    .hach-a-bis{
+        position: static;
+        width: 335px;
+    }
+    .phrase-type .hach-b{
+        position: static;
+        width: 270px;
+    }
+    .rose2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 360px) {
     .phrase-type .hach-first{
         display: none;
     }
@@ -391,15 +441,9 @@ h3{
     .phrase-type .hach-b{
         position: static;
         width: 190px;
-    }
-
-    .spanindexbyloane p{
-            width: 90%;
-            margin: 0 auto;
-        }
-
-    .rose2{
-        width: 90%;
-        }
+    } 
+    .block-pola h1{
+        width: 250px;
+    } 
 }
 
