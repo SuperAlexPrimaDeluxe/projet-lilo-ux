@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: black;
 }
 .superposition{
     height: 160px;
@@ -95,7 +96,7 @@ hr{
 .recapitulatif-achat ul{
     padding: 0 30px;
 }
-main li{
+.detail-article li{
     list-style: none;
     padding: 5px;
 }
