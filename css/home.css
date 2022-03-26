@@ -365,19 +365,13 @@ h3{
         width: 300px;
     }
     .lilo-photo{
-        width: 360px;
-    }
-    .indexbyloane{
-        width: 90%;
+        width: 80%;
     }
 }
 
 
 @media (max-width: 680px) {
     .logo-lilo{
-        width: 80%;
-    }
-    .lilo-photo{
         width: 80%;
     }
     .polaroid{
