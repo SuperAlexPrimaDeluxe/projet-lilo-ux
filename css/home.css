@@ -273,12 +273,14 @@ h3{
     color: #D35379;
     border: 3px solid #D35379;
 }
+.carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
 .newsletter{
     height: 300px;
-    background-color: #201a25;
 }
-
-
 
 @media (max-width: 1300px) {
     .lilo {
