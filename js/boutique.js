@@ -444,21 +444,6 @@
       }
     };
 
-
-
-
-
-
-
-
-    const mq = window.matchMedia("(min-width: 960px)");
-
-    if (mq.matches) {
-
-    } else {
-      
-    }
-
     // JAVASCRIPT POUR LE CLIC SUR LE BOUTON LIKE CI-DESSOUS.
     // Piste d'amélioration rendre le tout dynamique avec l'appel d'une boucle et d'une classe.
     // Pourquoi cela n'a pas été fait ? -> délais du projet et plus simple de dupliquer les 12 éléments dans cette version de démo pur !!!!!
@@ -644,4 +629,15 @@
     var alerter1 = document.getElementById("alerter1");
     alerter1.onclick = function () {
       alert("Votre article a bien été ajouté dans votre panier !");
+    }
+
+
+    // Correction pour les cartes.
+
+    const mq = window.matchMedia("(min-width: 960px)");
+
+    if (mq.matches) {
+
+    } else {
+      
     }
