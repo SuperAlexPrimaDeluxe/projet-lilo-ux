@@ -27,7 +27,7 @@ main{
     padding: 5px 0;
     line-height: 2.8rem;
     position: absolute;
-    top: 45px;
+    top: 20px;
 }
 .superposition::after{
     content:"";
