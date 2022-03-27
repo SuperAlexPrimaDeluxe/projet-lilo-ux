@@ -409,22 +409,6 @@ textarea:focus {
         background: #1e76d6;
     }
 
-    #arrowdown1 {
-        display: inline;
-        position: relative;
-        left: 80%;
-        text-align: center;
-        content: url(/medias/icons/downarrow.svg);
-    }
-
-    #arrowdown2 {
-        display: inline;
-        position: relative;
-        left: 81.5%;
-        text-align: center;
-        content: url(/medias/icons/downarrow.svg);
-    }
-
     #arrowremove1 {
         display: none;
 
