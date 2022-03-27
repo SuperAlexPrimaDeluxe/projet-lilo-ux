@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+main{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,7 @@
     padding: 5px 0;
     line-height: 2.2rem;
     position: absolute;
-    top: 45px;
+    top: 20px;
 }
 .superposition::after{
     content:"";
@@ -88,7 +88,7 @@ hr{
     margin: 0 auto;
 }
 .produit-1{
-    background-image: url("../medias/img/badge_boom_boom.jpg");
+    background-image: url("../medias/img/badges/badge_boum_boum.jpg");
     background-size: 120%;
 }
 .produit-2{
@@ -97,6 +97,7 @@ hr{
 }
 .produit-3{
     background-image: url("../medias/img/produits/cp_fille_craquante.webp");
+    background-size: 120%;
 }
 .produit-1, .produit-2, .produit-3{
     display: block;
@@ -152,11 +153,11 @@ hr{
 .btn-options-1 a, .btn-options-2 a{
     width: 90%;
     display: block;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     margin: 40px auto 30px;
     cursor: pointer;
     width: 300px;
@@ -167,14 +168,14 @@ hr{
     background-color: white;
     border: 3px solid black;
     line-height: 2.8rem;
-    height: 54px;      
+    height: 40px;      
 }
 .btn-valider{
     color: white;
     background-color: black;
     border: 3px solid black;  
     line-height: 2.8rem;
-    height: 54px;   
+    height: 40px;   
 }
 .btn-options-1, .btn-options-2{
     display: flex;
