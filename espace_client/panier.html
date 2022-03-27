@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/panier.css">
     <link rel="stylesheet" href="../css/footer.css">
     <script src="../js/header.js" defer></script>
-    <script src="../js/main.js" defer></script>
+    <!-- <script src="../js/main.js" defer></script> -->
     <script src="../js/panier.js" defer></script>
     <script src="../js/footer.js" defer></script>
     <script src="../js/animationheader.js" defer></script>
@@ -29,12 +29,12 @@
         <div class="resume-panier">
             <ul>
                 <li>VOTRE PANIER :</li>
-                <li>3 ARTICLES AJOUTES</li>
+                <li><span id="rko2">3</span> ARTICLES AJOUTES</li>
             </ul>
             <hr>
             <ul>
                 <li>TOTAL TTC :</li>
-                <li>99,00€</li>
+                <li><span id="rko3">29</span>,00€</li>
             </ul>
         </div>
         <!-- <div class="btn-options-1">
@@ -59,7 +59,7 @@
                             <span>Quantité</span>
                             <div class="compteur">
                                 <button onclick="decrement()">-</button>
-                                <h2 id="counting">15<h2>
+                                <h2 id="counting">1<h2>
                                 <button onclick="increment()">+</button>
                             </div> 
                         </div> 
@@ -72,7 +72,7 @@
                         </ul>
                         <ul>
                             <li >Prix/Total</li>
-                            <li>75,00€</li>
+                            <li><span id="rko">5</span>,00€</li>
                             <li>TVA (incluse)</li>
                         </ul>
                     </div>
@@ -95,9 +95,9 @@
                         <div class="quantite">  
                             <span>Quantité</span>
                             <div class="compteur">
-                                <button onclick="decrement()">-</button>
-                                <h2 id="counting">1<h2>
-                                <button onclick="increment()">+</button>
+                                <button onclick="decrement2()">-</button>
+                                <h2 id="counting2">1<h2>
+                                <button onclick="increment2()">+</button>
                             </div> 
                         </div> 
                     </div>
@@ -132,9 +132,9 @@
                         <div class="quantite">  
                             <span>Quantité</span>
                             <div class="compteur">
-                                <button onclick="decrement()">-</button>
-                                <h2 id="counting">1<h2>
-                                <button onclick="increment()">+</button>
+                                <button onclick="decrement3()">-</button>
+                                <h2 id="counting3">1<h2>
+                                <button onclick="increment3()">+</button>
                             </div> 
                         </div> 
                     </div>
@@ -155,7 +155,7 @@
         </div>
         <hr>
         
-        <p class="montant-total">Montant total : 99,00€</p>
+        <p class="montant-total">Montant total : <span id="rko4">29</span>,00€</p>
         <hr>
         <hr>
         
