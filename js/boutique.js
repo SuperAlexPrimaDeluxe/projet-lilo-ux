@@ -629,6 +629,7 @@
     var alerter1 = document.getElementById("alerter1");
     alerter1.onclick = function () {
       alert("Votre article a bien été ajouté dans votre panier !");
+      document.getElementById("psty1").textContent++;
     }
 
 

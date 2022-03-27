@@ -19,9 +19,19 @@ $(".carousel").owlCarousel({
       }
     }
   });
+
+
+// au chargment du Javascript
+
+var marcello = document.getElementById("psty2");
+marcello.textContent = "3";
+
+  // Au clic sur la poubelle.
   
   var popol3000 = document.getElementById("poubdeleter");
   popol3000.onclick = function () {
     document.getElementById("hrtocache").style.display = "none";
+    document.getElementById("psty2").textContent--;
     document.getElementById("1375").style.display = "none";
   }
+
