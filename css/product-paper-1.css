@@ -126,27 +126,18 @@ p{
     color: black;
 }
 
-
-@media (max-width: 900px){
-    .texte{
-        margin-left: 35px;
-    }
-
-}
-
-@media (max-width: 820px){
-
+@media (max-width: 1050px){
     .all-product{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 200px;
-        margin-top: 200px;
+        margin-bottom: 100px;
+        margin-top: 100px;
     }
 
     .texte{
         margin-left: 0;
-        margin-top: -75px;
+        margin-top: 75px;
     }
 
     .small{
@@ -154,40 +145,37 @@ p{
         height: 220px;
     }
 
+    .coeur{
+        width: 30px;
+    }
 }
 
-@media (max-width: 444px){
-
+@media (max-width: 500px){
     .all-product{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0px;
     }
-
-    .texte{
-        width: 250px;
-        margin-left: 0;
-        margin-top: -75px;
-    }
-
-    .small{
-        width: 220px;
-        height: 220px;
-    }
-
     .big{
-        width: 265px;
-        height: 265px;
-        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
     }
-
     .boom1{
-        width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        transform: none;
     }
-
-    .images{
+    .texte{
+        width: 100%;
+    }
+    .ajoutpanierlolo{
+        width: 90%;
+        margin: 0 auto;
         display: flex;
-        align-items: center;
     }
-
 }
+
+
+
+
