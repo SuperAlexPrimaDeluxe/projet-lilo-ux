@@ -23,8 +23,7 @@ header .top_header {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    height: 10vh;
-    padding: 25px 50px;
+    padding: 5px 25px;
 }
 
 #logoheader {
@@ -288,8 +287,19 @@ textarea:focus {
         background-repeat: no-repeat;
     }
 
-    #logoheader {
-        width: 70px;
+    header .top_header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #logoheader{
+        padding: 10px;
+    }
+
+    .iconheader{
+        margin: 5px 20px;
     }
 
     #ultarrow1, #ultarrow2{
@@ -503,7 +513,7 @@ textarea:focus {
 
 @media(max-width: 500px) {
 
-    header .top_header {
+    /* header .top_header {
         padding: 0px;
         height: initial;
         width: 98%;   
@@ -515,5 +525,5 @@ textarea:focus {
 
     #arrowdown2 {
         left: 72.5%;
-    }
+    } */
 }
