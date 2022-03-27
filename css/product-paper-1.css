@@ -56,6 +56,12 @@
     margin-top: 15px;
 }
 
+.ajoutpanierlolo{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /*CONTENU TEXTE*/
 
 .texte{
@@ -88,10 +94,11 @@ button{
     color: white;
     padding: 15px 130px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 button:hover{
-    background-color: #ec658e;
+    background-color: #FF4079;
 
 }
 
