@@ -9,7 +9,7 @@ class MyHeader extends HTMLElement {
         <div class="top_header">
             <a href="index.html" id="returnhome"><img src="medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader"/></a>
             <div class="iconheader">
-                <span class="headerusername"><a href="login/connexion.html" id="txtconnexion" style="display: none">Connexion</a><a href="login/dashboard.html" id="godash0">Sarah</a></span>
+                <span class="headerusername"><a href="login/connexion.html" id="txtconnexion" style="display: none">Connexion</a><a href="login/connexion.html" id="godash0">Connexion</a></span>
                 <div class="ctn_icons_right_header">
                     <span class="pastille-type1"></span>
                     <a href="login/dashboard.html" id="godash"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
