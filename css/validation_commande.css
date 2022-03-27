@@ -6,13 +6,13 @@
     font-weight: 400;
     font-size: 18px;
     color: black;
+    list-style: none;
 }
 .superposition{
     height: 160px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url("../medias/img/rectangle_22.jpg");
-    /* background-image: url("../images/rectangle_22.jpg"); */
     background-repeat: none;
     background-size: cover;
     position: relative;
@@ -26,7 +26,7 @@
     font-size: 2.2rem;
     font-weight: bold;
     padding: 5px 0;
-    line-height: 2.8rem;
+    line-height: 2.2rem;
     position: absolute;
     top: 45px;
 }
@@ -35,8 +35,7 @@
     display: block;
     width: 100%;
     height: 60px;
-    background-image: url("../medias/img/dechirure-cv.webp");
-    /* background-image: url("../images/dechirure_cv.webp"); */
+    background-image: url("../medias/img/dechirure_lilo.png");
     position: absolute;
     top: 120px;
 }
@@ -65,7 +64,7 @@ hr{
     align-items: center;
     border: 1px solid black;
     margin: 20px 0 10px 0;
-    padding: 0 30px;
+    padding: 0 5px;
 }
 .resume-commande ul{
     display: flex;
@@ -74,59 +73,131 @@ hr{
 }
 .resume-commande a{
     color: black;
+    padding: 5px;
 }
-.resume-commande .icone{
+.resume-commande .print{
     height: 30px;
     width: auto;
+    padding: 5px;
 }
-.recapitulatif-achats .detail-article{
-    display: flex;
-    justify-content: space-between;
+.validation-commande-1375{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between; 
     align-items: center;
+    margin: 0 auto;
 }
-.recapitulatif-achats .detail-article .article{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.produit-1{
+    background-image: url("../medias/img/badge_boom_boom.jpg");
+    background-size: 120%;
 }
-.article .produit{
+.produit-2{
+    background-image: url("../medias/img/produits/bo_vitamine_d.webp");
+    background-size: cover;
+}
+.produit-3{
+    background-image: url("../medias/img/produits/cp_fille_craquante.webp");
+}
+.produit-1, .produit-2, .produit-3{
     display: block;
     height: 120px;
     width: 120px;
 }
-.recapitulatif-achat ul{
-    padding: 0 30px;
+.informations-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.detail-article li{
-    list-style: none;
-    padding: 5px;
-}
-.quantite, .prix-article{
-    height: 120px;
-    padding: 10px 0;
+.description-article{
+    text-align: center;
+    margin: 10px 0 0 0;
 }
 .quantite{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
 }
-.quantite-prix ul :nth-child(1){
+.partie-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.validation-commande-1375 li, .validation-commande-1375 span{
+    padding: 5px;
+}
+.print:hover{
+    transform: scale(1.03);
+}
+.description-article li:nth-child(1), .quantite span:nth-child(1), .partie-2 li:nth-child(1){
     font-weight: bold;
 }
 .votre-commande{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: white;
     background-color: black;
     opacity: 90%;
-    padding: 10px 30px;
-    margin: 20px 0;
+    padding: 10px;
+    margin: 0 auto;
+}
+.votre-commande ul{
+    padding: 5px;
+    text-align: center;
 }
 .votre-commande li{
-    padding: 5px 0 0;
     color: white;
+    padding-top: 5px;
 }
+.btn-options-1 a, .btn-options-2 a{
+    width: 90%;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 40px auto 30px;
+    cursor: pointer;
+    width: 300px;
+    transition: transform 0.5s;
+}
+.btn-vers-boutique{
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    line-height: 2.8rem;
+    height: 54px;      
+}
+.btn-valider{
+    color: white;
+    background-color: black;
+    border: 3px solid black;  
+    line-height: 2.8rem;
+    height: 54px;   
+}
+.btn-options-1, .btn-options-2{
+    display: flex;
+    flex-direction: column;
+}
+.btn-vers-boutique:hover{
+    transform: scale(1.03);
+    background-color: white;
+    color: #d35379;
+    border: 3px solid #d35379;
+} 
+.btn-valider:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #d35379;
+    border: 3px solid #d35379;
+}
+
 .newsletter{
     height: 100px;
 }
+
+
 @media screen and (min-width: 768px){
     .superposition h1{
         width: 630px;
@@ -137,16 +208,99 @@ hr{
         width: 70%;
         margin: auto;
     }
-    .article-wl{
-        width: 350px;
+    .resume-commande{
+        padding: 10px 30px;
     }
-    .article{
-        width: 40%;
-    }
-    .article ul{
-        width: 50%;
+    .produit-1, .produit-2, .produit-3, .produit-4{
+        display: block;
+        height: 120px;
+        width: 120px;
     }
     .description-article{
-        margin-left: 30px;
+        padding: 15px;
+        margin: 0 auto
+    }
+    .quantite-prix{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .quantite-prix hr{
+        display: none;
+    }
+    .quantite-prix .partie-1{
+        width: 25%;
+        margin: 0 auto;
+    }
+    .quantite-prix .quantite{
+        margin: 0;
+        padding: 0;
+    }
+    .quantite-prix .quantite span{
+        padding: 5px;
+    }
+    .quantite-prix .partie-2{
+        width: 58%;
+        justify-content: space-between;
+    }
+    .votre-commande{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
     }
 }
+
+
+@media screen and (min-width: 1050px){
+    .btn-options-1, .btn-options-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+} 
+
+
+@media screen and (min-width: 1375px){
+    main{
+        width: 70%;
+    }
+    .validation-commande-1375{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .informations-article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .informations-article{
+        width: 80%;
+    }
+    .description-article{
+        width: 30%;
+    }
+    .quantite-prix .partie-2{
+        justify-content: space-around;
+        margin: 0;
+        width:70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

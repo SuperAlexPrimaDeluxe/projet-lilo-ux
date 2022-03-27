@@ -50,8 +50,9 @@ hr{
     margin: 10px 0;
 }
 .resume-panier{
-    background-color: black;
     color: white;
+    background-color: black;
+    opacity: 90%;
     padding: 10px;
     margin: 0 auto;
 }
