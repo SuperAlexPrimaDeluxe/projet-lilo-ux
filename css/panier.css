@@ -163,7 +163,7 @@ hr{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     margin: 40px auto 30px;
     cursor: pointer;
     width: 300px;
