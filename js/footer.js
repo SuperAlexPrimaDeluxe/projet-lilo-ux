@@ -35,8 +35,7 @@ class MyFooter extends HTMLElement {
                                 <li><a href="actus.html" id="actusfooter">Actus</a></li>
                                 <li><a href="contact.html" id="contactfooter">Contact</a></li>
                                 <li><a href="espace_client/panier.html" id="panierfooter">Panier</a></li>
-                                <li><a href="#">Aide</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="contact.html#FAQQ" id="faqfooter">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,9 +68,9 @@ class MyFooter extends HTMLElement {
                         <div class="block-footer-compte">
                             <h3 class="h3-footer">mon compte</h3>
                             <ul class="liste-compte">
-                                <li><a href="#">Profil</a></li>
-                                <li><a href="#">Paramètres</a></li>
-                                <li><a href="#">Confidentialité</a></li>
+                                <li><a href="login/dashboard.html" id="dashboardfofo">Profil</a></li>
+                                <li><a href="login/dashboard.html" id="dashboardfofo2">Paramètres</a></li>
+                                <li><a href="conditions_generales.html" id="condgen">Confidentialité</a></li>
                             </ul>
                         </div>
                     </div>

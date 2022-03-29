@@ -9,9 +9,9 @@ class MyHeader extends HTMLElement {
         <div class="top_header">
             <a href="index.html" id="returnhome"><img src="medias/icons/lilo_logo.svg" width="100px" alt="" id="logoheader"/></a>
             <div class="iconheader">
-                <span class="headerusername"><a href="login/connexion.html" id="txtconnexion" style="display: none">Connexion</a><a href="login/dashboard.html" id="godash0">Sarah</a></span>
+                <span class="headerusername"><a href="login/connexion.html" id="txtconnexion" style="display: none">Connexion</a><a href="login/connexion.html" id="godash0">Sarah</a></span>
                 <div class="ctn_icons_right_header">
-                    <span class="pastille-type1"></span>
+                    <span class="pastille-type1" id="mopppy1"></span>
                     <a href="login/dashboard.html" id="godash"><img src="medias/icons/poeple2.svg" alt="" id="icon1" /></a>
                 </div>
                 <div class="ctn_icons_right_header">
@@ -61,7 +61,7 @@ class MyHeader extends HTMLElement {
     
                     <li class="has-childrenheader" id="colorerheader2"><a href="contact.html" id="supresslink2">Contact &nbsp;<span id="ultarrow2">▼</span></a>
                         <ul class="sous-menuheader" id="sousmenucontact">
-                            <li><a href="contact.html#pointdevente" id="pdv">Nos point de ventes</a></li>
+                            <li><a href="contact.html#pointdevente" id="pdv">Nos points de ventes</a></li>
                             <li><a href="contact.html#FAQQ" id="FAQlinker">Foire aux questions</a></li>
                             <li><a href="contact.html#fdecontact" id="fde">Formulaire de contact</a></li> 
                         </ul>

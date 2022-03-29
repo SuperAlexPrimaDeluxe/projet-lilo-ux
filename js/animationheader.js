@@ -31,6 +31,7 @@ btn.onclick = function () {
     targetDiv.style.display = "block";
     closegetter.style.display = "block";
     burgergetter.style.display = "none";
+    document.getElementById("inputsearchmobile").style.borderBottom = "0px";
   }else {
     targetDiv.style.display = "none";
     closegetter.style.display = "none";

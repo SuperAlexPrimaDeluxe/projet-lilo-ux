@@ -100,8 +100,9 @@ header .top_header .iconheader img:hover {
     font-weight: bold;
 }
 
-#ultarrow1, #ultarrow2{
-  display: none;
+#ultarrow1,
+#ultarrow2 {
+    display: none;
 }
 
 /* Naviguation */
@@ -279,6 +280,7 @@ textarea:focus {
 #lionlymobile {
     display: none;
 }
+
 @media(max-width: 1200px) {
 
     header {
@@ -294,11 +296,11 @@ textarea:focus {
         padding: 0;
     }
 
-    #logoheader{
+    #logoheader {
         padding: 10px;
     }
 
-    .iconheader{
+    .iconheader {
         /* margin: 5px 20px; */
         position: absolute;
         bottom: 5px;
@@ -323,11 +325,11 @@ textarea:focus {
         padding: 0;
     }
 
-    #logoheader{
+    #logoheader {
         padding: 10px;
     }
 
-    .iconheader{
+    .iconheader {
         /* margin: 5px 20px; */
         position: absolute;
         bottom: 5px;
@@ -335,7 +337,8 @@ textarea:focus {
 
     }
 
-    #ultarrow1, #ultarrow2{
+    #ultarrow1,
+    #ultarrow2 {
         color: white;
         font-size: 10px;
         display: initial;
@@ -511,15 +514,18 @@ textarea:focus {
         font-weight: 700;
         line-height: 0 !important;
         text-indent: 40px;
-        padding: 12px 5px;
+        padding: 13px 5px;
         border: none;
         border-radius: 0px !important;
+        border-bottom: 1px solid white;
+        border-top: 0;
+        border-left: 0;
     }
 
     .supersearch input {
         position: absolute;
         right: 0;
-        
+
     }
 
     a.justlink2header {
