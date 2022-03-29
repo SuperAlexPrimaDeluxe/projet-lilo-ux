@@ -56,7 +56,7 @@ footer::before {
 }
 
 .h4-footer {
-    color: #7B7B7B;
+    color: #7a7a7a;
     font-size: 14px;
     margin: 10px 0px;
     text-align: left;
@@ -69,20 +69,20 @@ ul {
 }
 
 li {
-    color: #7B7B7B;
+    color: #7a7a7a;
     list-style-type: none;
     font-size: 14px;
     line-height: 170%;
 }
 
 a {
-    color: #7B7B7B;
+    color: #7a7a7a;
     background-color: transparent;
     text-decoration: none;
 }
 
 span {
-    color: #7B7B7B;
+    color: #7a7a7a;
     background-color: transparent;
     text-decoration: none;
 }
@@ -152,7 +152,7 @@ span {
 
 input{
     background-color: #2E2E2E;
-    border: 2px solid #7B7B7B;
+    border: 2px solid #7a7a7a;
     font-family: 'Montserrat', sans-serif;
     width: 345px;
 }
@@ -183,8 +183,8 @@ input{
 }
 
 .facebook .insta .messenger .mail {
-    color: #7B7B7B;
-    background-color: #7B7B7B;
+    color: #7a7a7a;
+    background-color: #7a7a7a;
     width: 100%;
 }
 
@@ -197,12 +197,12 @@ input{
  }
 
  .liens a:nth-child(1){
-    border-left: 1px solid #7b7b7b;
+    border-left: 1px solid #7a7a7a;
     padding: 0 5px;
 }
 
 .liens a{
-    border-right: 1px solid #7b7b7b;
+    border-right: 1px solid #7a7a7a;
     padding: 0 5px;
 }
 
@@ -270,12 +270,12 @@ input{
     }
 
     .liens a:nth-child(1){
-        border-left: 1px solid #7b7b7b;
+        border-left: 1px solid #7a7a7a;
         padding: 0 5px;
     }
 
     .liens a{
-        border-right: 1px solid #7b7b7b;
+        border-right: 1px solid #7a7a7a;
         padding: 0 5px;
     }
 
