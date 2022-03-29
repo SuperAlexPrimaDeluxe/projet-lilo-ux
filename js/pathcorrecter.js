@@ -55,5 +55,10 @@ document.getElementById("boutiqueindex").href = "../index.html";
 document.getElementById("actusfooter").href = "../actus.html";
 document.getElementById("contactfooter").href ="../contact.html";
 document.getElementById("panierfooter").href ="../espace_client/panier.html";
+document.getElementById("faqfooter").href ="../contact.html#FAQQ";
+document.getElementById("dashboardfofo").href ="../login/dashboard.html";
+document.getElementById("dashboardfofo2").href ="../login/dashboard.html";
+document.getElementById("condgen").href ="../conditions_generales.html";
+
 
 
