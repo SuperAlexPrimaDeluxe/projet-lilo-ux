@@ -514,7 +514,7 @@ textarea:focus {
         font-weight: 700;
         line-height: 0 !important;
         text-indent: 40px;
-        padding: 13px 5px;
+        padding: 13px 0px;
         border: none;
         border-radius: 0px !important;
         border-bottom: 1px solid white;
