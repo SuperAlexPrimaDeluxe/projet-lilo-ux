@@ -145,7 +145,7 @@ h4.date {
 p.artmoni {
     font-family: "Roboto Mono", sans-serif;
     line-height: 25px;
-    padding-top: 50px;
+    padding-top: 5px;
 }
 
 img.badge,
@@ -167,8 +167,8 @@ button.btnmomo {
     font-weight: bold;
     border: none;
     height: 61px;
-    padding: 10px;
-    margin: 30px 0px;
+    padding: 10px 50px;
+    /* margin: 30px 0px; */
     width: 100%;
 }
 
