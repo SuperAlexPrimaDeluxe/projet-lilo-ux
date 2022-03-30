@@ -38,7 +38,7 @@ html {
     border: #7A7A7A 1px solid;
     border-radius: 50px;
     display: flex;
-    margin: 10px 0px;
+    margin: 10px 10px 10px 0;
     background-color: white;
     padding: 10px 5px;
     position: relative;
