@@ -120,12 +120,14 @@ ul.navheader li {
 }
 
 .navheader a {
-    padding: 1em;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+padding: 15px 10px;
+display: block;
+text-align: center;
+text-decoration: none;
+color: white;
+line-height: 1.2rem;
 }
+
 
 li.none {
     display: none;
