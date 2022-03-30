@@ -151,6 +151,10 @@ select {
     padding-left: 15px;
 }
 
+.page-numbers li{
+    list-style-type: none;
+}
+
 .page-numbers a {
     background-color: #f2f2f2;
     padding: 10px 15px;

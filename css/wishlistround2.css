@@ -383,6 +383,18 @@ h4{
     
     
     /* ************************************** */
+    @media screen and (max-width: 1200px){
+        .wrapper{
+            width: 100%;
+        }
+        .carousel{
+            padding: 0;
+        }
+        .card-prix{
+            width: 95%;
+            padding: 10px;
+        }
+        }
 
     @media screen and (max-width: 768px){
     .wrapper{
