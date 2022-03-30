@@ -81,7 +81,6 @@ else{
    document.getElementById('searchheader').onkeypress = function(e){
       var evt = e || window.event;
       if(evt.keyCode == 13){
-          alert("GNE MONGOL");
           window.location = "recherche.html"; 
       }
    }
