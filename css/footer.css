@@ -57,6 +57,7 @@ footer::before {
 
 .h4-footer {
     color: #7a7a7a;
+    height: auto;
     font-size: 16px;
     margin: 10px 0px;
     text-align: left;
