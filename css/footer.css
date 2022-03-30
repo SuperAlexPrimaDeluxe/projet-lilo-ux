@@ -57,7 +57,7 @@ footer::before {
 
 .h4-footer {
     color: #7a7a7a;
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 0px;
     text-align: left;
 }
@@ -75,7 +75,7 @@ ul {
     line-height: 170%;
 }
 
-a {
+.all a {
     color: #7a7a7a;
     background-color: transparent;
     text-decoration: none;
