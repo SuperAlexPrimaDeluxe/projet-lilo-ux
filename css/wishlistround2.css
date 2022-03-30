@@ -3,6 +3,7 @@ main{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
 }
 .superposition{
     height: 160px;
@@ -87,6 +88,12 @@ hr{
     justify-content: space-around;
     width: 90%;
     align-items: center;
+}
+.poubelle-prix-article ul {
+    list-style: none;
+}
+.description-article {
+    list-style: none;
 }
 .poubelle-delete{
     display: block;
