@@ -264,6 +264,8 @@ del {
     width: 350px;
     height: 300px;
     object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .totalinfo {
@@ -529,7 +531,28 @@ img.hbk {
 
 /*Responsive*/
 
-@media(max-width:1600px) {
+@media(max-width:1750px) {
+    .card2 {
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 1px solid black;
+        border: none;
+        border-radius: 25px;
+        max-height: 700px;
+        color: white;
+        transition: 0.3s ease;
+        flex-grow: 1;
+        width: 95%;
+    }
+
+    .card2 img {
+        object-position: center;
+        width: 100%;
+    }
+}
+
+@media(max-width:1420px) {
     .cards.container2 {
         display: flex;
         flex-wrap: wrap;
@@ -541,7 +564,7 @@ img.hbk {
     }
 
     .card2nav ul {
-        width: 60%;
+        width: 50%;
     }
 
     .gridelement {
@@ -595,7 +618,7 @@ img.hbk {
     }
 }
 
-@media(max-width:1401px) {
+@media(max-width:1300px) {
     .cards.container2 {
         display: flex;
         flex-wrap: wrap;
@@ -607,7 +630,7 @@ img.hbk {
     }
 
     .card2nav ul {
-        width: 50%;
+        width: 60%;
     }
 
     .gridelement {
