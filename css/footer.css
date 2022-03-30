@@ -67,6 +67,7 @@ footer::before {
 
 ul {
     padding: 0;
+    list-style: none;
 }
 
 .all li {
