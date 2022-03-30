@@ -72,7 +72,7 @@ header .top_header .iconheader img:hover {
 }
 
 .ctn_icons_right_header {
-    padding: 5px;
+    padding: 5px 10px;
     position: relative;
 }
 
@@ -89,7 +89,7 @@ header .top_header .iconheader img:hover {
 .pastille-type2 {
     position: absolute;
     top: -1px;
-    right: -5px;
+    right: 0px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
