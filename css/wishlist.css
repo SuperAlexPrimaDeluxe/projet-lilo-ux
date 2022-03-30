@@ -85,6 +85,9 @@ hr{
     align-items: center;
     width: 100%;
 }
+.poubelle-prix-article ul {
+    list-style: none;
+}
 .poubelle-prix-article ul li{
     list-style-type: none !important;
     padding: 5px;
