@@ -3,6 +3,7 @@ main{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
 }
 .superposition{
     height: 160px;
