@@ -85,6 +85,13 @@ hr{
     align-items: center;
     width: 100%;
 }
+.informations-article ul{
+    list-style-type: none;
+    padding: 5px;
+}
+.informations-article ul li{
+    padding: 5px;
+}
 .poubelle-prix-article{
     display: flex;
     justify-content: space-around;
@@ -104,10 +111,10 @@ hr{
 .poubelle-delete:hover{
     transform: scale(1.03);
 }
-.recapitulatif-wishlist ul{
+/* .recapitulatif-wishlist ul{
     list-style-type: none;
     padding: 5px;
-}
+} */
 .btn-1-ajout:hover, .btn-2-valider:hover{
     transform: scale(1.03);
     color: white;
