@@ -85,10 +85,10 @@ hr{
     align-items: center;
     width: 100%;
 }
-.poubelle-prix-article ul{
+.poubelle-prix-article ul li{
     list-style-type: none !important;
     padding: 5px;
-}.informations-article ul{
+}.informations-article ul li{
     list-style-type: none !important;
     padding: 5px;
 }
