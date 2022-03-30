@@ -14,11 +14,11 @@ class MyFooter extends HTMLElement {
                             <h3 class="h3-footer">à propos de moi</h3>
                             <ul class="liste-info">
                                 <h4 class="h4-footer">Contact</h4>
-                                <li>+32 (0)470 98 78 52</li>
-                                <li>info@lilo.com</li>
+                                <li class="poiu">+32 (0)470 98 78 52</li>
+                                <li class="poiu">info@lilo.com</li>
                                 <h4 class="h4-footer">Adresse</h4>
-                                <li>3 Rue des Arbalestriers, 7500 Mons</li>
-                                <li><b>Ouvert du lundi au vendredi<br>de 10h à 18h</b></li>
+                                <li class="poiu">3 Rue des Arbalestriers, 7500 Mons</li>
+                                <li class="poiu"><b>Ouvert du lundi au vendredi<br>de 10h à 18h</b></li>
                             </ul>
                         </div>
                     </div>
@@ -30,12 +30,12 @@ class MyFooter extends HTMLElement {
                         <div class="block-footer-back">
                             <h3 class="h3-footer">site</h3>
                             <ul class="liste-site">
-                                <li><a href="index.html" id="indexfooter">Accueil</a></li>
-                                <li><a href="boutique.html" id="boutiqueindex">Boutique</a></li>
-                                <li><a href="actus.html" id="actusfooter">Actus</a></li>
-                                <li><a href="contact.html" id="contactfooter">Contact</a></li>
-                                <li><a href="espace_client/panier.html" id="panierfooter">Panier</a></li>
-                                <li><a href="contact.html#FAQQ" id="faqfooter">FAQ</a></li>
+                                <li class="poiu"><a href="index.html" id="indexfooter">Accueil</a></li>
+                                <li class="poiu"><a href="boutique.html" id="boutiqueindex">Boutique</a></li>
+                                <li class="poiu"><a href="actus.html" id="actusfooter">Actus</a></li>
+                                <li class="poiu"><a href="contact.html" id="contactfooter">Contact</a></li>
+                                <li class="poiu"><a href="espace_client/panier.html" id="panierfooter">Panier</a></li>
+                                <li class="poiu"><a href="contact.html#FAQQ" id="faqfooter">FAQ</a></liclass=>
                             </ul>
                         </div>
                     </div>
@@ -68,9 +68,9 @@ class MyFooter extends HTMLElement {
                         <div class="block-footer-compte">
                             <h3 class="h3-footer">mon compte</h3>
                             <ul class="liste-compte">
-                                <li><a href="login/dashboard.html" id="dashboardfofo">Profil</a></li>
-                                <li><a href="login/dashboard.html" id="dashboardfofo2">Paramètres</a></li>
-                                <li><a href="conditions_generales.html" id="condgen">Confidentialité</a></li>
+                                <li class="poiu"><a href="login/dashboard.html" id="dashboardfofo">Profil</a></li>
+                                <li class="poiu"><a href="login/dashboard.html" id="dashboardfofo2">Paramètres</a></li>
+                                <li class="poiu"><a href="conditions_generales.html" id="condgen">Confidentialité</a></li>
                             </ul>
                         </div>
                     </div>
