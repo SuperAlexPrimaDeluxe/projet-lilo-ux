@@ -88,6 +88,12 @@ hr{
     width: 90%;
     align-items: center;
 }
+.poubelle-prix-article ul {
+    list-style: none;
+}
+.description-article {
+    list-style: none;
+}
 .poubelle-delete{
     display: block;
     height: 25px;
