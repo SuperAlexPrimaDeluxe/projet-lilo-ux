@@ -76,3 +76,13 @@ else{
 // delamuerte.onclick = function () {
 // alert("Votre demande à bien été envoyée à LILO.");
 // }
+
+
+   document.getElementById('searchheader').onkeypress = function(e){
+      var evt = e || window.event;
+      if(evt.keyCode == 13){
+          alert("GNE MONGOL");
+          window.location = "recherche.html"; 
+      }
+   }
+
