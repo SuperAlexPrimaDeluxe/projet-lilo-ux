@@ -105,7 +105,7 @@ hr{
     transform: scale(1.03);
 }
 .recapitulatif-wishlist ul{
-    list-style: none;
+    list-style-type: none;
     padding: 5px;
 }
 .btn-1-ajout:hover, .btn-2-valider:hover{
