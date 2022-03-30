@@ -20,6 +20,14 @@ html {
     margin-top: 150px;
 }
 
+a.GE2 {
+    text-decoration:  none;
+}
+
+a.rose2 {
+    text-decoration:  none;
+}
+
 .GE2:hover {
     background-color: #D35379;
 }
