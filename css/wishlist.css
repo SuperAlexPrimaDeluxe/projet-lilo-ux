@@ -104,7 +104,7 @@ hr{
 .poubelle-delete:hover{
     transform: scale(1.03);
 }
-.recapitulatif-wishlist ul, li{
+.recapitulatif-wishlist ul{
     list-style: none;
     padding: 5px;
 }
